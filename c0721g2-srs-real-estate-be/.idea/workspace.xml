@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1f594ae-de9e-4f9e-b853-e5d1c90e66b4" name="Default Changelist" comment="" />
+    <list default="true" id="a1f594ae-de9e-4f9e-b853-e5d1c90e66b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +43,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../5 .module 4/furama-resort-management" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -64,6 +71,9 @@
       <workItem from="1641381945720" duration="2314000" />
       <workItem from="1641430913978" duration="12594000" />
       <workItem from="1641523534465" duration="25000" />
+      <workItem from="1641532209693" duration="415000" />
+      <workItem from="1641540183434" duration="1386000" />
+      <workItem from="1641604242208" duration="1036000" />
     </task>
     <servers />
   </component>
@@ -75,10 +85,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1641436475004" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1641523557406">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1641604324309">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1641523557406" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1641604324309" />
     <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1641378345219">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -111,5 +121,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1493" height="173" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1641378345219" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1641532626317">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1641532626317" />
   </component>
 </project>
