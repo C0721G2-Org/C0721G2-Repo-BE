@@ -26,28 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/image/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/image/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +90,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="" />
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
       <created>1641635288431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -119,6 +98,7 @@
       <workItem from="1641635305449" duration="190000" />
       <workItem from="1641635550213" duration="604000" />
       <workItem from="1641636206133" duration="1980000" />
+      <workItem from="1641733078472" duration="529000" />
     </task>
     <servers />
   </component>
@@ -142,10 +122,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641636068945">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="651" y="170" key="FileChooserDialogImpl" timestamp="1641733110698">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641733110698" />
     <state width="1306" height="176" key="GridCell.Tab.0.bottom" timestamp="1641636410891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
