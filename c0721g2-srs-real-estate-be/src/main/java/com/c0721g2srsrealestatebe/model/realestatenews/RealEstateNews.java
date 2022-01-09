@@ -3,6 +3,7 @@ package com.c0721g2srsrealestatebe.model.realestatenews;
 import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.model.image.Image;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -37,6 +38,7 @@ public class RealEstateNews {
     @ManyToOne(targetEntity = Direction.class)
     private Direction direction;
     @ManyToOne(targetEntity = Customer.class)
+    @JsonManagedReference
     private Customer customer;
     @OneToMany(targetEntity = Image.class)
     private List<Image> imageList;
