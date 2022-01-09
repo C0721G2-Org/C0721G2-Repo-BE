@@ -32,6 +32,7 @@ public class Employee {
     private String address;
     @Column(name = "date_of_Birth", columnDefinition = "DATE")
     private LocalDate dateOfBirth;
+    private String idCard;
     @Column(name = "gender", columnDefinition = "TINYINT")
     private Integer gender;
     @ManyToOne(targetEntity = Degree.class)
@@ -47,19 +48,28 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {
+    public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, String idCard, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.address = address;
         this.dateOfBirth = dateOfBirth;
+        this.idCard = idCard;
         this.gender = gender;
         this.degree = degree;
         this.position = position;
         this.appUser = appUser;
         this.image = image;
         this.deleted = deleted;
+    }
+
+    public String getIdCard() {
+        return idCard;
+    }
+
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
     public String getId() {
