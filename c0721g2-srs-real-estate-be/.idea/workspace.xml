@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/image/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/image/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="23PUbdhUm7Tz2TvLgGpht78EFEF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="c0721g2-srs-real-estate-be.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="" />
+      <created>1641635288431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641635288431</updated>
+      <workItem from="1641635305449" duration="190000" />
+      <workItem from="1641635550213" duration="604000" />
+      <workItem from="1641636206133" duration="1980000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641636248196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641636068945">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom" timestamp="1641636410891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1306" height="176" key="GridCell.Tab.0.center" timestamp="1641636410890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1306" height="176" key="GridCell.Tab.0.left" timestamp="1641636410890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1306" height="176" key="GridCell.Tab.0.right" timestamp="1641636410890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom" timestamp="1641636410891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1306" height="176" key="GridCell.Tab.1.center" timestamp="1641636410891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1306" height="176" key="GridCell.Tab.1.left" timestamp="1641636410891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1306" height="176" key="GridCell.Tab.1.right" timestamp="1641636410891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog" timestamp="1641702219739">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.816@0.0.1536.816" timestamp="1641702219739" />
+  </component>
+</project>
