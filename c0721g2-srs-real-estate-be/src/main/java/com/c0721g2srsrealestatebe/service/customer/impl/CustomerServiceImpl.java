@@ -1,4 +1,30 @@
 package com.c0721g2srsrealestatebe.service.customer.impl;
 
-public class CustomerServiceImpl {
+import com.c0721g2srsrealestatebe.Exception.UserNotFoundException;
+import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.repository.customer.ICustomerRepository;
+import com.c0721g2srsrealestatebe.service.customer.ICustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CustomerServiceImpl implements ICustomerService {
+    ICustomerRepository iCustomerRepository;
+
+    @Autowired
+    public CustomerServiceImpl(ICustomerRepository customerRepository) {
+        this.iCustomerRepository = customerRepository;
+    }
+
+    public Customer addCustomer(Customer customer){
+        System.out.println("Add");
+        return iCustomerRepository.save(customer);
+    }
+
+    public Customer findCustomerById(String id) {
+        return iCustomerRepository.findCustomerById(id).orElseThrow(() -> new UserNotFoundException(
+                "Customer by Id " + id + " was not found"));
+    }
+
+
 }

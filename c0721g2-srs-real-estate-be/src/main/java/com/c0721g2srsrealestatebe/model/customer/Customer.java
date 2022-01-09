@@ -5,6 +5,7 @@ import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.SQLDelete;
@@ -28,21 +29,32 @@ public class Customer {
                     @Parameter(name = CustomIdGenerator.VALUE_PREFIX_PARAMETER, value = "KH-"),
                     @Parameter(name = CustomIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%04d")})
     private String id;
+
     private String name;
+
     private String email;
+
     private String phoneNumber;
+
     private String address;
+
     private String idCard;
+
     @Column(name = "date_of_Birth", columnDefinition = "DATE")
     private LocalDate dateOfBirth;
+
     @Column(name = "gender", columnDefinition = "TINYINT")
     private Integer gender;
+
     @OneToOne(targetEntity = AppUser.class)
     private AppUser appUser;
+
     @OneToOne(targetEntity = Image.class)
     private Image image;
+
     @OneToMany(mappedBy = "customer" )
     @JsonBackReference
+    @JsonManagedReference
     private List<RealEstateNews> realEstateNewsList;
     private Boolean deleted = Boolean.FALSE;
 
