@@ -4,6 +4,7 @@ import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.SQLDelete;
@@ -31,6 +32,7 @@ public class Customer {
     private String email;
     private String phoneNumber;
     private String address;
+    private String idCard;
     @Column(name = "date_of_Birth", columnDefinition = "DATE")
     private LocalDate dateOfBirth;
     @Column(name = "gender", columnDefinition = "TINYINT")
@@ -40,24 +42,34 @@ public class Customer {
     @OneToOne(targetEntity = Image.class)
     private Image image;
     @OneToMany(mappedBy = "customer" )
+    @JsonBackReference
     private List<RealEstateNews> realEstateNewsList;
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {
     }
 
-    public Customer(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, Integer gender, AppUser appUser, Image image, List<RealEstateNews> realEstateNewsList, Boolean deleted) {
+    public Customer(String id, String name, String email, String phoneNumber, String address, String idCard, LocalDate dateOfBirth, Integer gender, AppUser appUser, Image image, List<RealEstateNews> realEstateNewsList, Boolean deleted) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.address = address;
+        this.idCard = idCard;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
         this.appUser = appUser;
         this.image = image;
         this.realEstateNewsList = realEstateNewsList;
         this.deleted = deleted;
+    }
+
+    public String getIdCard() {
+        return idCard;
+    }
+
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
     public String getId() {
