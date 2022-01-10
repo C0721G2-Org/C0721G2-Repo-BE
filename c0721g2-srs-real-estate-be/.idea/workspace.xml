@@ -25,42 +25,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RealEstateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/realstatenews/CusDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/realstatenews/DirectionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/realstatenews/ImageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/realstatenews/RealEstateTypeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/image/IImageRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/image/IImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/image/ImageService.java" afterDir="false" />
+    <list default="true" id="a8b0ac21-af54-4798-9bc7-d1bbee23a8e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/customid/CustomIdGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/customid/CustomIdGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/image/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/image/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/customid/CustomIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/customid/CustomIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/image/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/image/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -176,46 +151,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641709150179" />
-    <state width="1877" height="642" key="GridCell.Tab.0.bottom" timestamp="1641806361078">
+    <state width="1877" height="388" key="GridCell.Tab.0.bottom" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="642" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361078" />
-    <state width="1877" height="642" key="GridCell.Tab.0.center" timestamp="1641806361078">
+    <state width="1877" height="388" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
+    <state width="1877" height="388" key="GridCell.Tab.0.center" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1877" height="642" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361078" />
-    <state width="1877" height="642" key="GridCell.Tab.0.left" timestamp="1641806361078">
+    <state width="1877" height="388" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
+    <state width="1877" height="388" key="GridCell.Tab.0.left" timestamp="1641809968349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1877" height="642" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361078" />
-    <state width="1877" height="642" key="GridCell.Tab.0.right" timestamp="1641806361078">
+    <state width="1877" height="388" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968349" />
+    <state width="1877" height="388" key="GridCell.Tab.0.right" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1877" height="642" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361078" />
-    <state width="1877" height="642" key="GridCell.Tab.1.bottom" timestamp="1641806361079">
+    <state width="1877" height="388" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
+    <state width="1877" height="388" key="GridCell.Tab.1.bottom" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="642" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361079" />
-    <state width="1877" height="642" key="GridCell.Tab.1.center" timestamp="1641806361079">
+    <state width="1877" height="388" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
+    <state width="1877" height="388" key="GridCell.Tab.1.center" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="642" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361079" />
-    <state width="1877" height="642" key="GridCell.Tab.1.left" timestamp="1641806361079">
+    <state width="1877" height="388" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
+    <state width="1877" height="388" key="GridCell.Tab.1.left" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="642" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361079" />
-    <state width="1877" height="642" key="GridCell.Tab.1.right" timestamp="1641806361079">
+    <state width="1877" height="388" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
+    <state width="1877" height="388" key="GridCell.Tab.1.right" timestamp="1641809968350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="642" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641806361079" />
+    <state width="1877" height="388" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641809968350" />
     <state width="1877" height="642" key="GridCell.Tab.2.bottom" timestamp="1641806361079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

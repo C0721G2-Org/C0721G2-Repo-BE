@@ -1,8 +1,6 @@
 package com.c0721g2srsrealestatebe.controller;
 
 import com.c0721g2srsrealestatebe.dto.RealEstateDTO;
-import com.c0721g2srsrealestatebe.dto.realstatenews.ImageDTO;
-import com.c0721g2srsrealestatebe.dto.realstatenews.RealEstateTypeDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
@@ -18,10 +16,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 
@@ -57,6 +51,7 @@ public class RealEstateNewsController {
         return new ResponseEntity<>(realEstateNews.get(), HttpStatus.OK);
     }
 
+    // 5.6.2 add Real estate new detail
     @PostMapping("/post")
     public void saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO){
         RealEstateNews news = this.formatDTO(realEstateDTO);
@@ -69,7 +64,6 @@ public class RealEstateNewsController {
             })
         );
     }
-
 
     public RealEstateNews formatDTO(RealEstateDTO realEstateDTO){
         RealEstateNews realEstateNews = new RealEstateNews();

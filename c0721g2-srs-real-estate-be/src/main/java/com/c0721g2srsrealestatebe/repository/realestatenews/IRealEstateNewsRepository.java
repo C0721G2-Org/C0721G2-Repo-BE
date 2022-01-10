@@ -52,6 +52,7 @@ public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews,
     @Query(value = " select * from real_estate_news where id =:id ", nativeQuery = true)
     Optional<RealEstateNews> findNewsById(@Param("id") String id);
 
+    // 5.6.2 add Real estate new detail
     @Query(value = "SELECT MAX(id) FROM real_estate_news;", nativeQuery = true)
     String lastId();
 

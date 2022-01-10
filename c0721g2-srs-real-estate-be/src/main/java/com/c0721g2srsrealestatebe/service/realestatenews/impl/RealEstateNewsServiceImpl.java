@@ -42,6 +42,8 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return realEstateNewsRepository.findById(newId);
     }
 
+
+    // 5.6.2 add Real estate new detail
     @Override
     public RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews) {
 //        realEstateNewsRepository.saveNews(realEstateNews.getAddress(),realEstateNews.getApproval(),realEstateNews.getArea(),realEstateNews.getDescription(),
