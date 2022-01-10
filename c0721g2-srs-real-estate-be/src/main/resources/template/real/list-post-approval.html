@@ -1,0 +1,635 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Bất động sản</title>-->
+
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"-->
+<!--          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"-->
+<!--          crossorigin="anonymous">-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!--    <meta name='viewport' content='width=device-width, initial-scale=1'>-->
+<!--    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>-->
+<!--    <style>-->
+<!--        * {-->
+<!--            font-family: Arial;-->
+<!--        }-->
+
+<!--        .dropdown:hover .dropdown-menu {-->
+<!--            display: block;-->
+<!--            margin-top: 0;-->
+<!--        / / remove the gap so it doesn 't close-->
+<!--        }-->
+
+<!--        .trans-nav:before {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            left: 0;-->
+<!--            bottom: 0;-->
+<!--            width: 0;-->
+<!--            height: 0;-->
+<!--            background: black;-->
+<!--        }-->
+
+<!--        .trans-nav:after {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            left: 0;-->
+<!--            bottom: 0;-->
+<!--            width: 0;-->
+<!--            height: 2px;-->
+<!--            background: red;-->
+<!--            transition: all 0.3s ease 0s;-->
+<!--            -webkit-transition: all 0.3s ease 0s;-->
+<!--        }-->
+
+<!--        .trans-nav:hover {-->
+<!--            color: red;-->
+<!--        }-->
+
+<!--        .trans-nav:hover:after {-->
+<!--            width: 100%;-->
+<!--        }-->
+
+<!--        .main-bg {-->
+<!--            background-color: #ffcc33-->
+<!--        }-->
+
+<!--        .main-color {-->
+<!--            color: #ffcc33-->
+<!--        }-->
+
+<!--        .dropdown-menu {-->
+<!--            margin-right: -800px;-->
+<!--        }-->
+
+<!--        .dropdown-menu li {-->
+<!--            display: inline-block;-->
+<!--        }-->
+
+<!--        .btn-post-custom {-->
+<!--            background-color: #FE9900;-->
+<!--        }-->
+
+<!--        .btn.btn-post-custom:hover {-->
+<!--            background-color: green;-->
+<!--        }-->
+
+<!--        /* Float */-->
+<!--        .hvr-float {-->
+<!--            display: inline-block;-->
+<!--            vertical-align: middle;-->
+<!--            -webkit-transform: perspective(1px) translateZ(0);-->
+<!--            transform: perspective(1px) translateZ(0);-->
+<!--            box-shadow: 0 0 1px rgba(0, 0, 0, 0);-->
+<!--            -webkit-transition-duration: 0.3s;-->
+<!--            transition-duration: 0.3s;-->
+<!--            -webkit-transition-property: transform;-->
+<!--            transition-property: transform;-->
+<!--            -webkit-transition-timing-function: ease-out;-->
+<!--            transition-timing-function: ease-out;-->
+<!--        }-->
+
+<!--        .hvr-float:hover, .hvr-float:focus, .hvr-float:active {-->
+<!--            -webkit-transform: translateY(-8px);-->
+<!--            transform: translateY(-8px);-->
+<!--            background-color: #ffcc33;-->
+<!--            color: white;-->
+<!--        }-->
+
+<!--        /* Sweep To Right */-->
+<!--        .hvr-sweep-to-right {-->
+<!--            /*display: inline-block;*/-->
+<!--            vertical-align: middle;-->
+<!--            -webkit-transform: perspective(1px) translateZ(0);-->
+<!--            transform: perspective(1px) translateZ(0);-->
+<!--            box-shadow: 0 0 1px rgba(0, 0, 0, 0);-->
+<!--            position: relative;-->
+<!--            -webkit-transition-property: color;-->
+<!--            transition-property: color;-->
+<!--            -webkit-transition-duration: 0.3s;-->
+<!--            transition-duration: 0.3s;-->
+<!--        }-->
+
+<!--        .hvr-sweep-to-right:before {-->
+<!--            content: "";-->
+<!--            position: absolute;-->
+<!--            z-index: -1;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            right: 0;-->
+<!--            bottom: 0;-->
+<!--            background: gray;-->
+<!--            -webkit-transform: scaleX(0);-->
+<!--            transform: scaleX(0);-->
+<!--            -webkit-transform-origin: 0 50%;-->
+<!--            transform-origin: 0 50%;-->
+<!--            -webkit-transition-property: transform;-->
+<!--            transition-property: transform;-->
+<!--            -webkit-transition-duration: 0.3s;-->
+<!--            transition-duration: 0.3s;-->
+<!--            -webkit-transition-timing-function: ease-out;-->
+<!--            transition-timing-function: ease-out;-->
+<!--        }-->
+
+<!--        .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {-->
+<!--            color: white;-->
+<!--        }-->
+
+<!--        .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {-->
+<!--            -webkit-transform: scaleX(1);-->
+<!--            transform: scaleX(1);-->
+<!--        }-->
+
+<!--        .pleft0 {-->
+<!--            padding-left: 0;-->
+<!--        }-->
+
+<!--        /*openSideBar*/-->
+<!--        /*closeSideBar*/-->
+<!--        .Main-agile {-->
+<!--            background: url(img/b1.jpg) no-repeat 0px 0px;-->
+<!--            background-size: cover;-->
+<!--            -webkit-background-size: cover;-->
+<!--            -moz-background-size: cover;-->
+<!--            -o-background-size: cover;-->
+<!--            -moz-background-size: cover;-->
+<!--            min-height: 794px;-->
+<!--        }-->
+
+<!--        .pull-left {-->
+<!--            float: left !important;-->
+<!--        }-->
+
+<!--        .pull-right {-->
+<!--            float: right !important-->
+<!--        }-->
+
+<!--        .overflow {-->
+<!--            white-space: nowrap;-->
+<!--            overflow: hidden;-->
+<!--            text-overflow: ellipsis;-->
+<!--        }-->
+
+<!--        .content2line {-->
+<!--            height: 47px;-->
+<!--            display: -webkit-box;-->
+<!--            -webkit-line-clamp: 2;-->
+<!--            -webkit-box-orient: vertical;-->
+<!--            overflow: hidden;-->
+<!--            text-overflow: ellipsis;-->
+<!--        }-->
+
+<!--        .card:hover {-->
+<!--            cursor: pointer;-->
+<!--            transform: scale(1.05);-->
+<!--            box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);-->
+<!--        }-->
+
+<!--        .slide {-->
+<!--            display: block;-->
+<!--            vertical-align: middle;-->
+<!--            position: relative;-->
+
+<!--        }-->
+
+<!--        .carousel-caption-center {-->
+<!--            position: absolute;-->
+<!--            right: 15%;-->
+<!--            top: 30%;-->
+<!--            left: 15%;-->
+<!--            text-align: center-->
+<!--        }-->
+
+<!--        .slider-content {-->
+<!--            position: absolute;-->
+<!--            top: 20%;-->
+<!--            text-align: center;-->
+<!--            color: #FFF;-->
+<!--            width: 100%;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--</head>-->
+
+<!--<body>-->
+
+<!--&lt;!&ndash;<div class="container-fluid">&ndash;&gt;-->
+<!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+<!--<nav class="navbar navbar-expand-lg navbar-light fs-6 pb-3 pt-3 main-bg sbt">-->
+<!--    <div class="container-fluid">-->
+<!--        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 " href="asset/img/Untitle-2.png">-->
+<!--            <img class="navbar-brand" width="90%" src="asset/img/final1.png" alt="">-->
+<!--        </a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"-->
+<!--                data-bs-target="#navbarSupportedContent"-->
+<!--                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse " id="navbarSupportedContent">-->
+<!--            <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--                <li class="nav-item dropdown ">-->
+<!--                    <a class="navbar-brand trans-nav fw-bold" href="#" id="saleList" role="button"-->
+<!--                       data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                        Nhà đất bán-->
+<!--                    </a>-->
+<!--                    <ul class="dropdown-menu main-bg border-0 pb-0 fw-bold" aria-labelledby="navbarDropdown">-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Bán nhà </a></li>-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Bán đất nền dự án</a></li>-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Bán loại bất động sản khác</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown fw-bold">-->
+<!--                    <a class="navbar-brand trans-nav" href="#" id="buyList" role="button"-->
+<!--                       data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                        Nhà đất cho thuê-->
+<!--                    </a>-->
+<!--                    <ul class="dropdown-menu main-bg border-0 pb-0 " aria-labelledby="navbarDropdown">-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Cho thuê nhà</a></li>-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Cho thuê đất nền</a></li>-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Cho thuê loại bất động sản khác</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown fw-bold">-->
+<!--                    <a class="navbar-brand trans-nav" href="#" id="order" role="button"-->
+<!--                       data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                        Cần mua - Cần thuê-->
+<!--                    </a>-->
+<!--                    <ul class="dropdown-menu main-bg border-0 pb-0 fw-bold" aria-labelledby="navbarDropdown">-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Nhà đất cần mua</a></li>-->
+<!--                        <li><a class="dropdown-item hvr-float fw-bold" href="#">Nhà đất cần thuê</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <ul class="d-flex navbar-nav  mb-2 mb-lg-0 fw-bold">-->
+<!--                <li class="nav-item d-flex ">-->
+<!--                    <a class="navbar-brand hvr-float" href="#">Đăng nhập</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item d-flex fw-bold">-->
+<!--                    <a class="navbar-brand hvr-float " href="#">Đăng ký</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <form class="d-flex">-->
+<!--                <button class=" navbar-brand btn btn-success text-white" type="submit">Đăng tin</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--&lt;!&ndash; End of nav bar &ndash;&gt;-->
+
+
+<!--<div class="container-fluid">-->
+<!--    <div class="row">-->
+<!--        &lt;!&ndash;        <side-bar>&ndash;&gt;-->
+<!--        <nav id="sidebarMenu " class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">-->
+<!--            <div class="position-sticky pt-3">-->
+<!--                <ul class="nav flex-column">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           data-bs-parent="#sidebar" aria-current="page"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-tasks fa-fw"></i>-->
+<!--                            Quản lý trang web-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-bell fa-fw"></i>-->
+<!--                            Thông báo-->
+<!--                        </a>-->
+<!--                    </li>-->
+
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-users fa-fw"></i>-->
+<!--                            Quản lý nhân viên-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-user-tie fa-fw"></i>-->
+<!--                            Thông tin khách hàng-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-city fa-fw"></i>-->
+<!--                            Thông tin BĐS-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-vote-yea"></i>-->
+<!--                            Danh sách phê duyệt bài đăng-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="#news" data-bs-toggle="collapse"-->
+<!--                           class="nav-link px-0 align-middle text-dark hvr-sweep-to-right">-->
+<!--                            <i class="fas fa-poll-h"></i> <span-->
+<!--                                data-toggle="collapse" aria-expanded="false"-->
+<!--                                class="dropdown-toggle">Quản lý tin đăng</span></a>-->
+<!--                        <ul class="collapse nav flex-column ms-1" id="news" data-bs-parent="#menu">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link text-dark hvr-sweep-to-right"-->
+<!--                                   href="#">-->
+<!--                                    Đăng mới-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link text-dark hvr-sweep-to-right "-->
+<!--                                   href="#">-->
+<!--                                    Tin đã đăng-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link text-dark hvr-sweep-to-right "-->
+<!--                                   href="#">-->
+<!--                                    Tin nháp-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="fas fa-hand-holding-usd fa-fw"></i>-->
+<!--                            Giao dịch-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <i class="far fa-calendar-alt fa-fw"></i>-->
+<!--                            Lịch làm việc-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"-->
+<!--                                 viewBox="0 0 24 24"-->
+<!--                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"-->
+<!--                                 stroke-linejoin="round" class="feather feather-layers" aria-hidden="true">-->
+<!--                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>-->
+<!--                                <polyline points="2 17 12 22 22 17"></polyline>-->
+<!--                                <polyline points="2 12 12 17 22 12"></polyline>-->
+<!--                            </svg>-->
+<!--                            Hồ sơ biểu mẫu-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-dark hvr-sweep-to-right pleft0"-->
+<!--                           href="https://getbootstrap.com/docs/5.1/examples/dashboard/#">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"-->
+<!--                                 viewBox="0 0 24 24"-->
+<!--                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"-->
+<!--                                 stroke-linejoin="round" class="feather feather-file-text"-->
+<!--                                 aria-hidden="true">-->
+<!--                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>-->
+<!--                                <polyline points="14 2 14 8 20 8"></polyline>-->
+<!--                                <line x1="16" y1="13" x2="8" y2="13"></line>-->
+<!--                                <line x1="16" y1="17" x2="8" y2="17"></line>-->
+<!--                                <polyline points="10 9 9 9 8 9"></polyline>-->
+<!--                            </svg>-->
+<!--                            Thống kê-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--        &lt;!&ndash;        </side-bar>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;<body>&ndash;&gt;-->
+<!--        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">-->
+<!--            <div class="col-10 px-0 ps-5 ">-->
+<!--                <div class="row me-2 mt-2 fs-5 ">-->
+<!--                    <div class="row col-3">-->
+<!--                        <div class="input-group">-->
+<!--                            <label class="input-group-text btn-post-custom fw-bold" for="inputGroupSelect01">Chọn loại nhu cầu</label>-->
+<!--                            <select class="form-select" id="inputGroupSelect01">-->
+<!--                                <option selected>Tất cả</option>-->
+<!--                                <option value="1">Người mua/thuê</option>-->
+<!--                                <option value="2">Người bán/cho thuê</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row col-3">-->
+<!--                        <div class="input-group">-->
+<!--                            <label class="input-group-text btn-post-custom fw-bold" for="inputGroupSelect02">Chọn loại BĐS</label>-->
+<!--                            <select class="form-select" id="inputGroupSelect02">-->
+<!--                                <option selected>Tất cả</option>-->
+<!--                                <option value="1">Đất</option>-->
+<!--                                <option value="2">Nhà</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row col-3">-->
+<!--                        <div class="input-group">-->
+<!--                            <label class="input-group-text btn-post-custom fw-bold" for="inputGroupSelect03">Chọn Vị trí</label>-->
+<!--                            <select class="form-select" id="inputGroupSelect03">-->
+<!--                                <option selected>Tất cả</option>-->
+<!--                                <option value="1">Ngoại ô</option>-->
+<!--                                <option value="2">Trung tâm</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row col-3 bg-primary bg-opacity-50 " >-->
+<!--                        <div class="ms-auto p-2 bd-highlight">-->
+<!--                            <form class="d-flex ">-->
+<!--                                <input class="form-control me-3" type="text" placeholder="Nhập diện tích">-->
+<!--                                <button class="btn btn-primary fw-bold" type="button">Tìm kiếm</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="mt-3 me-5 table-responsive{-sm|-md|-lg|-xl|-xxl}">-->
+<!--                    <table class="table fs-5 table-striped table-hover table-bordered shadow text-center">-->
+<!--                        <thead class=" table-light text-center">-->
+<!--                        <tr>-->
+<!--                            <th>STT</th>-->
+<!--                            <th>Mã BĐ</th>-->
+<!--                            <th>Mã KH</th>-->
+<!--                            <th>Loại NC</th>-->
+<!--                            <th>Loại BĐS</th>-->
+<!--                            <th>Vị trí</th>-->
+<!--                            <th>Diện tích (Min - Max)</th>-->
+<!--                            <th>Tác vụ</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <th:block th:each="real_estate_news,status : ${real_estate_news}">-->
+<!--                            <tr>-->
+<!--                                <td th:text="${status.count}"></td>-->
+<!--                                <td th:text="${real_estate_news.id}"></td>-->
+<!--                                <td th:text="${real_estate_news.customer_id}"></td>-->
+<!--                                <td th:text="${real_estate_news.kind_of_news}"></td>-->
+<!--&lt;!&ndash;                                <td th:if="${real_estate_news.customerGender==0}" th:text="Male"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <td th:if="${real_estate_news.customerGender==1}" th:text="Female"></td>&ndash;&gt;-->
+<!--                                <td th:text="${real_estate_news.direction_id}"></td>-->
+<!--                                <td th:text="${real_estate_news.customerPhone}"></td>-->
+<!--                                <td th:text="${real_estate_news.customerEmail}"></td>-->
+<!--                                <td>-->
+<!--                                    &lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"-->
+<!--                                            data-bs-target="#exampleModal">-->
+<!--                                        <a>Chi tiết</a>-->
+<!--                                    </button>-->
+<!--                                    <button class="btn btn-success text-center">Duyệt</button>-->
+<!--                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"-->
+<!--                                            data-bs-target="#exampleModal">-->
+<!--                                        <a>Không duyệt</a>-->
+<!--                                    </button>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </th:block>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--                <div class="me-5 pe-4 ">-->
+<!--                    <ul class="pagination pagination-sm justify-content-end " style="margin:20px 0">-->
+<!--                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">Next</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--        </main>-->
+<!--        &lt;!&ndash;</body>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;<footer>&ndash;&gt;-->
+<!--<div class="container-fluid main-bg">-->
+<!--    <div class="container text-center text-md-left">-->
+
+<!--        &lt;!&ndash; Grid row &ndash;&gt;-->
+<!--        <div class="row">-->
+
+<!--            &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--            <div class="col-md-6 mr-auto my-md-4 my-0 mt-4 mb-1" align="justify">-->
+<!--                <a href="#"><img-->
+<!--                        width="30%"-->
+<!--                        src="asset/img/final1.png">-->
+<!--                </a>-->
+<!--                <br>-->
+<!--                &lt;!&ndash; Content &ndash;&gt;-->
+<!--                <div>-->
+<!--                    <span class="font-weight-bold">Trụ sở chính: </span>-->
+<!--                    <span>Số 23, Lô TT01, KĐT Mon City, Mỹ Đình 2, Nam Từ Liêm, Hà Nội.</span>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <span class="font-weight-bold">Đà Nẵng: </span>-->
+<!--                    <span>Tầng 10, 295 Nguyễn Tất Thành, Phường Thanh Bình, Quận Hải Châu, TP Đà Nẵng.</span>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <span class="font-weight-bold">Quảng Trị: </span>-->
+<!--                    <span>133 Lý Thường Kiệt, TP Đông Hà, Tỉnh Quảng Trị.</span>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <span class="font-weight-bold">Văn phòng tuyển sinh Việt Trì: </span>-->
+<!--                    <span>Băng 1, Đường Quang Trung, P. Dữu Lâu, TP Việt Trì, Phú Thọ.</span>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <span class="font-weight-bold">Văn phòng tuyển sinh Thái Nguyên: </span>-->
+<!--                    <span>36A Cách Mạng Tháng Tám, Phường Phan Đình Phùng.</span>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <span class="font-weight-bold">Văn phòng tuyển sinh Vinh: </span>-->
+<!--                    <span>50 Hà Huy Tập, TP Vinh, Tỉnh Nghệ An.</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Grid column &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Grid column &ndash;&gt;-->
+<!--            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1" align="justify">-->
+<!--                &lt;!&ndash; Links &ndash;&gt;-->
+<!--                <h5 class="font-weight-bold text-uppercase mb-4">VỀ CHÚNG TÔI</h5>-->
+
+<!--                <ul class="nav flex-column">-->
+<!--                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-decoration-underline">Giới thiệu</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0  text-decoration-underline">Tuyển dụng</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-decoration-underline">Truyền-->
+<!--                        thông</a></li>-->
+<!--                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-decoration-underline ">Blog</a></li>-->
+<!--                </ul>-->
+
+<!--            </div>-->
+<!--            &lt;!&ndash; Grid column &ndash;&gt;-->
+
+<!--            <hr class="clearfix w-100 d-md-none">-->
+
+<!--            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1" align="justify">-->
+<!--                &lt;!&ndash; Links &ndash;&gt;-->
+<!--                <h5 class="font-weight-bold text-uppercase mb-4">Liên hệ</h5>-->
+
+<!--                <ul class="nav flex-column">-->
+
+<!--                    <li>-->
+<!--                        <p>-->
+<!--                            <i class="fas fa-envelope "></i> info@example.com</p>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <p>-->
+<!--                            <i class="fas fa-phone "></i> + 01 234 567 88</p>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <p>-->
+<!--                            <i class="fas fa-print "></i> + 01 234 567 89</p>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                &lt;!&ndash; Facebook &ndash;&gt;-->
+<!--                <a type="button" class="btn-floating btn-fb">-->
+<!--                    <i class="fab fa-facebook-f"></i>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Twitter &ndash;&gt;-->
+<!--                <a type="button" class="btn-floating btn-tw">-->
+<!--                    <i class="fab fa-twitter"></i>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Google +&ndash;&gt;-->
+<!--                <a type="button" class="btn-floating btn-gplus">-->
+<!--                    <i class="fab fa-google-plus-g"></i>-->
+<!--                </a>-->
+<!--                &lt;!&ndash; Dribbble &ndash;&gt;-->
+<!--                <a type="button" class="btn-floating btn-dribbble">-->
+<!--                    <i class="fab fa-dribbble"></i>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Grid row &ndash;&gt;-->
+<!--    </div>-->
+
+<!--    <div class="text-center align-content-center py-4 my-4 border-dark border-top">-->
+<!--        <div class="nav-item fs-6">Tập đoàn Hưng Thịnh, Tầng 10, 295 Nguyễn Tất Thành, Phường Thanh Bình, Quận Hải Châu,-->
+<!--            TP Đà Nẵng.-->
+<!--        </div>-->
+<!--        <div class="nav-item fs-6">Giấy chứng nhận đăng ký doanh nghiệp số 0312120782 do Sở Kế Hoạch và Đầu Tư-->
+<!--            TPHCM-->
+<!--            cấp-->
+<!--            ngày 11/01/2013-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--&lt;!&ndash;</footer>&ndash;&gt;-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"-->
+<!--        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"-->
+<!--        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--</body>-->
+<!--</html>-->
