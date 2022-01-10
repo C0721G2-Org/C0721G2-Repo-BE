@@ -14,22 +14,29 @@ public interface IRealEstateNewsService {
     // 5.5.4  List history post
     Page< RealEstateNews > findAllNewsByCustomerId(String customerId,
                                                    Pageable pageable);
+
     // 5.5.4 Search title and customerId and kindOfNew
-    Page< RealEstateNews > findAllNewsByCustomerIdAndTitleAndType( String customerId,
-                                                                   String title,
-                                                                   Integer typeOfNew,
-                                                                   Pageable pageable);
+    Page< RealEstateNews > findAllNewsByCustomerIdAndTitleAndType(String customerId,
+                                                                  String title,
+                                                                  Integer typeOfNew,
+                                                                  Pageable pageable);
+
     // 5.5.4 List search customerId and title
-    Page< RealEstateNews > findAllNewsByCustomerIdAndTitle (String customerId,
-                                                            String title,
-                                                            Pageable pageable);
+    Page< RealEstateNews > findAllNewsByCustomerIdAndTitle(String customerId,
+                                                           String title,
+                                                           Pageable pageable);
 
     // 5.5.4 List search customerId and kindOfNew
     Page< RealEstateNews > findAllNewsByCustomerIdAndType(String customerId,
                                                           Integer typeOfNew,
                                                           Pageable pageable);
     // 5.6.3 show Real estate new detail
-    Optional<RealEstateNews> findNewsById(String newId);
+    Optional<RealEstateNews> findNewsById(String Id);
+
+    // 5.5.4 List search customerId and Nhà
+    Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId,
+                                                             Integer realNewType,
+                                                             Pageable pageable);
 
     RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
 
