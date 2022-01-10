@@ -20,7 +20,6 @@ import java.util.function.Function;
 public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     @Autowired
     private IRealEstateNewsRepository iRealEstateNewsRepository;
-    private IImageService iImageService;
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
@@ -59,16 +58,7 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     // 5.6.3 show Real estate new detail
     @Override
     public Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId, Integer realNewType, Pageable pageable) {
-        return null;
-    }
-    @Override
-    public RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews) {
-//        realEstateNewsRepository.saveNews(realEstateNews.getAddress(),realEstateNews.getApproval(),realEstateNews.getArea(),realEstateNews.getDescription(),
-//                realEstateNews.getKindOfNews(),realEstateNews.getPrice(),realEstateNews.getStatus(),realEstateNews.getTitle(),realEstateNews.getCustomer().getId(),
-//                realEstateNews.getDirection().getId(),realEstateNews.getRealEstateType().getId());
-        realEstateNewsRepository.save(realEstateNews);
-        System.out.println(realEstateNewsRepository.lastId());
-        return realEstateNewsRepository.findNewsById(realEstateNewsRepository.lastId()).orElse(null);
+        return iRealEstateNewsRepository.findAllNewsByCustomerIdAndRealNewType(customerId,realNewType, pageable);
     }
 
 }

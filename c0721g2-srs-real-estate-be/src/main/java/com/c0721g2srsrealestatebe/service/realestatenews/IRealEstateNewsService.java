@@ -39,7 +39,4 @@ public interface IRealEstateNewsService {
     Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId,
                                                            Integer realNewType,
                                                            Pageable pageable);
-
-    //5.6.2 Tran
-    RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
 }

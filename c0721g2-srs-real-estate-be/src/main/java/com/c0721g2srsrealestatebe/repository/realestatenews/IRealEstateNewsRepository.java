@@ -4,12 +4,10 @@
     import org.springframework.data.domain.Page;
     import org.springframework.data.domain.Pageable;
     import org.springframework.data.jpa.repository.JpaRepository;
-    import org.springframework.data.jpa.repository.Modifying;
     import org.springframework.data.jpa.repository.Query;
     import org.springframework.data.repository.query.Param;
     import org.springframework.stereotype.Repository;
 
-    import javax.transaction.Transactional;
     import java.util.Optional;
 
     @Repository
@@ -51,7 +49,7 @@
         @Query(value = " select * \n" +
                 "  from real_estate_news\n" +
                 "  where customer_id = :customerId and kind_of_news = :realNewType and approval =2", nativeQuery = true)
-        Page< RealEstateNews > findAllNewsByCustomerIdAndHouse(@Param("customerId") String customerId,
+        Page< RealEstateNews > findAllNewsByCustomerIdAndRealNewType(@Param("customerId") String customerId,
                                                               @Param("realNewType") Integer realNewType,
                                                               Pageable pageable);
 
@@ -59,18 +57,4 @@
         @Query(value = " select * from real_estate_news where id =:id ", nativeQuery = true)
         Optional<RealEstateNews> findNewsById(@Param("id") String id);
 
-        // 5.6.2 A Tran
-        @Query(value = "SELECT MAX(id) FROM real_estate_news;", nativeQuery = true)
-        String lastId();
-        // 5.6.2 A Tran
-        @Modifying
-        @Transactional
-        @Query(value = "insert into real_estate_news (address,approval,area,`description`,kind_of_news,price,`status`,title,customer_id,direction_id,real_estate_type_id) " +
-                " values (:address,:approval,:area,:description,:kind_of_news,:price,:status,:title,:customer_id,:direction_id,:real_estate_type_id)", nativeQuery = true)
-        Integer saveNews(@Param("address") String address, @Param("approval") Integer approval,
-                         @Param("area") Double area, @Param("description") String description, @Param("kind_of_news") Integer kind_of_news,
-                         @Param("price") Double price, @Param("status") Integer status, @Param("title") String title, @Param("customer_id") String customer_id,
-                         @Param("direction_id") Long direction_id, @Param("real_estate_type_id") Long real_estate_type_id);
-
-        Optional<RealEstateNews> findById(String id);
     }
