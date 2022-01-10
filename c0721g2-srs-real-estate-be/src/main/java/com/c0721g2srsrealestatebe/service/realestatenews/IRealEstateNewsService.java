@@ -31,4 +31,6 @@ public interface IRealEstateNewsService {
     // 5.6.3 show Real estate new detail
     Optional<RealEstateNews> findNewsById(String newId);
 
+    RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
+
 }

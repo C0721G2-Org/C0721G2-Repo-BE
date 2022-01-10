@@ -20,6 +20,10 @@ public class Image {
         this.url = url;
     }
 
+    public Image(String url) {
+        this.url = url;
+    }
+
     public Long getId() {
         return id;
     }
@@ -34,5 +38,13 @@ public class Image {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "id=" + id +
+                ", url='" + url + '\'' +
+                '}';
     }
 }

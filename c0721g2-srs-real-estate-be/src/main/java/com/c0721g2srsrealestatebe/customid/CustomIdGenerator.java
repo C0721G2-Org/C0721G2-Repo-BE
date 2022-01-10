@@ -24,7 +24,8 @@ public class CustomIdGenerator extends SequenceStyleGenerator {
 
     @Override
     public Serializable generate(SharedSessionContractImplementor session, Object object) throws HibernateException {
-        return valuePrefix +String.format(numberFormat, super.generate(session,object));
+        String id = valuePrefix +String.format(numberFormat, super.generate(session,object));
+        return id;
     }
 
     @Override

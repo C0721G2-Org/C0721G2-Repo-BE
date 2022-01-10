@@ -42,8 +42,10 @@ public class Customer {
     @OneToOne(targetEntity = Image.class)
     private Image image;
     @OneToMany(mappedBy = "customer" )
-    @JsonBackReference
+    @JsonBackReference(value = "customers_real_estate_news")
     private List<RealEstateNews> realEstateNewsList;
+
+
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {
@@ -158,5 +160,23 @@ public class Customer {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", gender=" + gender +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", realEstateNewsList=" + realEstateNewsList +
+                ", deleted=" + deleted +
+                '}';
     }
 }
