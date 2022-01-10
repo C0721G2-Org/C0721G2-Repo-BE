@@ -1,11 +1,16 @@
 package com.c0721g2srsrealestatebe.controller;
 
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
+import com.c0721g2srsrealestatebe.dto.CustomerDTO;
+import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
+import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/customerInformation")
@@ -23,20 +28,33 @@ public class CustomerController {
         return new ResponseEntity<>(customer, HttpStatus.OK);
     }
 
-//    @RequestMapping(value = "/add", method = RequestMethod.POST
-//            consumes = MediaType.APPLICATION_JSON_VALUE,
-//           produces = MediaType.APPLICATION_JSON_VALUE
-//            )
-//    public ResponseEntity<Customer> add(@RequestBody Customer customer) {
-//        Customer customerAdd=customerService.addCustomer(customer);
-//        return new ResponseEntity<>(customerAdd,HttpStatus.OK);
-//    }
-
-
-
-    @PutMapping(value = "/update", consumes = {"application/json","application/xml"})
-    public ResponseEntity<Customer> update(@RequestBody Customer customer) {
-        Customer customerUpdate = customerService.addCustomer(customer);
-        return new ResponseEntity<>(customerUpdate,HttpStatus.OK);
+    @PutMapping(value = "/update", consumes = {"application/json", "application/xml"})
+    public ResponseEntity<Customer> update(@Valid @RequestBody CustomerDTO customerDTO, BindingResult bindingResult) {
+        new CustomerDTO().validate(customerDTO, bindingResult);
+        if (bindingResult.hasFieldErrors("name")){
+            System.out.println("tên bạn nhập không đúng");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        } else if (bindingResult.hasFieldErrors("idCard")){
+            System.out.println("card bạn nhập không đúng");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        customerDTO.toString();
+        Customer customer1=new Customer();
+        System.out.println(customerDTO.toString());
+        BeanUtils.copyProperties(customerDTO,customer1);
+        customerService.addCustomer(customer1);
+        return new ResponseEntity<>(customer1,HttpStatus.OK);
+    }
+    @PutMapping(value = "/newpassword")
+    public ResponseEntity<AppUser>update(@Valid @RequestBody AppUserDTO appUserDTO, BindingResult bindingResult){
+        new AppUserDTO().validate(appUserDTO,bindingResult);
+        if (bindingResult.hasFieldErrors("password")){
+            System.out.println("mật nhập không đúng");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        AppUser appUser=new AppUser();
+        System.out.println(appUserDTO.toString());
+        BeanUtils.copyProperties(appUserDTO,appUser);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

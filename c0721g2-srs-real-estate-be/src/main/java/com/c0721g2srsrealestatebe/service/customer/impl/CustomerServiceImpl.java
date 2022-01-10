@@ -1,6 +1,7 @@
 package com.c0721g2srsrealestatebe.service.customer.impl;
 
 import com.c0721g2srsrealestatebe.Exception.UserNotFoundException;
+import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.repository.customer.ICustomerRepository;
 import com.c0721g2srsrealestatebe.service.customer.ICustomerService;
@@ -23,8 +24,20 @@ public class CustomerServiceImpl implements ICustomerService {
 
     public Customer findCustomerById(String id) {
         return iCustomerRepository.findCustomerById(id).orElseThrow(() -> new UserNotFoundException(
-                "Customer by Id " + id + " was not found"));
+                "Customer with Id " + id + " was not found"));
     }
+
+    @Override
+    public void editCustomer(CustomerDTO customerDTO) {
+        iCustomerRepository.editCustomer(customerDTO.getName(),customerDTO.getDateOfBirth().toString() ,customerDTO.getIdCard(),
+                customerDTO.getAddress(), customerDTO.getPhoneNumber(),customerDTO.getAppUser().getId(), customerDTO.getId());
+    }
+
+    @Override
+    public Integer finByIdCard(String idCard) {
+        return null;
+    }
+
 
 
 }

@@ -1,34 +1,33 @@
-package com.c0721g2srsrealestatebe.model.account;
+package com.c0721g2srsrealestatebe.dto;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
 
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.Set;
 
-@Entity(name = "app_users")
-public class AppUser {
-    @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+public class AppUserDTO implements Validator {
     private String id;
     private String username;
+    @Size(min = 6, max = 12)
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$" ,
+            message = "Mật khẩu phải ít nhất có 1 ký tự hoa và thường và 1 số")
     private String password;
     private Boolean isEnabled;
     private String verificationCode;
-    @ManyToMany(fetch = FetchType.EAGER)
-    private Set<Role> roles;
 
-    public AppUser() {
+    public AppUserDTO() {
     }
 
-    public AppUser(String id, String username, String password, Boolean isEnabled, String verificationCode, Set<Role> roles) {
+    public AppUserDTO(String id, String username, String password, Boolean isEnabled, String verificationCode) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.isEnabled = isEnabled;
         this.verificationCode = verificationCode;
-        this.roles = roles;
     }
 
     public String getId() {
@@ -71,11 +70,24 @@ public class AppUser {
         this.verificationCode = verificationCode;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    @Override
+    public String toString() {
+        return "AppUserDTO{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", isEnabled=" + isEnabled +
+                ", verificationCode='" + verificationCode + '\'' +
+                '}';
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return false;
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+
     }
 }
