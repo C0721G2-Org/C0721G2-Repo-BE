@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-
+@RequestMapping("/real-estate-new")
 @RestController
 public class RealEstateNewsController {
     @Autowired
@@ -21,69 +21,61 @@ public class RealEstateNewsController {
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
-    @GetMapping("/real-estate-new")
-    public ResponseEntity< Page< RealEstateNews > > getHistoryPost(
+    @GetMapping("/history-post")
+    public ResponseEntity< Page< RealEstateNews > > showHistoryPostNews(
             @RequestParam(defaultValue = "0") int page,
-            @RequestParam(value = "customerId") String customerId) {
+            @RequestParam(value = "customerId") String customerId,
+            @RequestParam(value = "title") Optional< String > title,
+            @RequestParam(value = "kindOfNew") Optional< Integer > kindOfNew) {
         Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
-        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerId
-                (customerId, pageable);
+        Page< RealEstateNews > realEstateNewsPage =null;
+        if ((!title.isPresent()) && !kindOfNew.isPresent()) {
+
+            realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerId
+                    (customerId, pageable);
+            System.out.println("s");
+        }
+        if (title.isPresent() && !kindOfNew.isPresent()) {
+            realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndTitle
+                    (customerId, title.get(), pageable);
+        }
+        if (!title.isPresent() && kindOfNew.isPresent()) {
+            realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndType
+                    (customerId, kindOfNew.get(), pageable);
+        }
+        if (title.isPresent() && kindOfNew.isPresent()) {
+            realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndTitleAndType
+                    (customerId, title.get(), kindOfNew.get(), pageable);
+        }
         if (realEstateNewsPage.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
     }
 
-    //    // 5.5.4 Search title and customerId and kindOfNew
-//    @GetMapping("/real-estate-new")
-//    public ResponseEntity< Page< RealEstateNews > > findNewByCustomerIdAndTitleAndKindOfNew(
-//            @RequestParam(defaultValue = "0") int page,
-//            @RequestParam(value = "customerId") String customerId,
-//            @RequestParam(value = "title") String title,
-//            @RequestParam(value = "kindOfNew") Integer kindOfNew) {
-//        Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
-//        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndTitleAndType
-//                (customerId, title, kindOfNew, pageable);
-//        if (realEstateNewsPage.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
-//        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
-//    }
-//    // 5.5.4 List search customerId and title
-//    @GetMapping("/real-estate-new")
-//    public ResponseEntity< Page< RealEstateNews > > findNewByCustomerIdAndTitle(
-//            @RequestParam(defaultValue = "0") int page,
-//            @RequestParam(value = "customerId") String customerId,
-//            @RequestParam(value = "title") String title) {
-//        Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
-//        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndTitle
-//                (customerId, title, pageable);
-//        if (realEstateNewsPage.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
-//        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
-//    }
-//    // 5.5.4 List search customerId and kindOfNew
-//    @GetMapping("/real-estate-new")
-//    public ResponseEntity< Page< RealEstateNews > > findNewByCustomerIdAndKindOfNew(
-//            @RequestParam(defaultValue = "0") int page,
-//            @RequestParam(value = "customerId") String customerId,
-//            @RequestParam(value = "kindOfNew") Integer kindOfNew) {
-//        Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
-//        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndType
-//                (customerId, kindOfNew, pageable);
-//        if (realEstateNewsPage.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
-//        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
-//    }
-    // 5.6.3 show Real estate new detail
-    @GetMapping("/real-estate-new/{id}")
+    @GetMapping("/history-post/new-type")
+    public ResponseEntity< Page< RealEstateNews > > getHistoryPostHouseOrLand(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(value = "customerId") String customerId,
+            @RequestParam(value = "realNewType") Integer realNewType) {
+        Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
+        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndNewType
+                (customerId, realNewType, pageable);
+        if (realEstateNewsPage.isEmpty()) {
+                        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        System.out.println("abc");
+        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
+    }
+
+    //     5.6.3 show Real estate new detail
+    @GetMapping("/{id}")
     public ResponseEntity< RealEstateNews > findNewById(@PathVariable(value = "id") String id) {
         Optional< RealEstateNews > realEstateNews = realEstateNewsService.findNewsById(id);
+        System.out.println(id);
         if (realEstateNews.isPresent()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(realEstateNews.get(), HttpStatus.OK);
         }
-        return new ResponseEntity<>(realEstateNews.get(), HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
