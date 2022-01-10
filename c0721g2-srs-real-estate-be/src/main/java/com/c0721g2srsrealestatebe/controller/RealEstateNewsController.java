@@ -78,4 +78,38 @@ public class RealEstateNewsController {
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+
+    //5.6.2
+    @PostMapping("/post")
+    public void saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO){
+        RealEstateNews news = this.formatDTO(realEstateDTO);
+        System.out.println(news);
+        RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
+        realEstateDTO.getImageList().forEach((imageDTO -> {
+                    Image image = new Image();
+                    image.setUrl(imageDTO.getUrl());
+                    iImageService.saveImg(image,realEstateNews.getId());
+                })
+        );
+    }
+
+
+    public RealEstateNews formatDTO(RealEstateDTO realEstateDTO){
+        RealEstateNews realEstateNews = new RealEstateNews();
+        Customer customer = new Customer();
+        customer.setId(realEstateDTO.getCustomer().getId());
+        realEstateNews.setTitle(realEstateDTO.getTitle());
+        realEstateNews.setDescription(realEstateDTO.getDescription());
+        realEstateNews.setAddress(realEstateDTO.getAddress());
+        realEstateNews.setArea(realEstateDTO.getArea());
+        realEstateNews.setPrice(realEstateDTO.getPrice());
+        realEstateNews.setApproval(1);
+        realEstateNews.setKindOfNews(realEstateDTO.getKindOfNews());
+        realEstateNews.setStatus(realEstateDTO.getStatus());
+        realEstateNews.setRealEstateType(new RealEstateType(realEstateDTO.getRealEstateType().getId()));
+        realEstateNews.setDirection(new Direction(realEstateDTO.getDirection().getId()));
+        realEstateNews.setCustomer(customer);
+        return realEstateNews;
+    }
 }

@@ -39,7 +39,7 @@ public interface IRealEstateNewsService {
     Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId,
                                                            Integer realNewType,
                                                            Pageable pageable);
-    // 5.5.4 Get list image
-    List< Image > findListImageByRealEstateId(String realEstateId);
 
+    //5.6.2 Tran
+    RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
 }
