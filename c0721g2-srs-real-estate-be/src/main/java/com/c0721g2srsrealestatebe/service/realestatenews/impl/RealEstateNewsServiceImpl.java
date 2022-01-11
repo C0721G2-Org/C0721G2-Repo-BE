@@ -18,6 +18,11 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     IRealEstateNewsRepository iRealEstateNewsRepository;
 
     @Override
+    public Page<RealEstateNews> findAllNewsPage(Pageable pageable) {
+        return iRealEstateNewsRepository.findAll(pageable);
+    }
+
+    @Override
     public List<RealEstateType> findAllByRealEstateType() {
         return null;
     }
@@ -42,10 +47,6 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return null;
     }
 
-    @Override
-    public Page<RealEstateNews> findAllNewsPage(Pageable pageable) {
-        return iRealEstateNewsRepository.findAll(pageable);
-    }
 
     @Override
     public List<Direction> findAllByDirection() {

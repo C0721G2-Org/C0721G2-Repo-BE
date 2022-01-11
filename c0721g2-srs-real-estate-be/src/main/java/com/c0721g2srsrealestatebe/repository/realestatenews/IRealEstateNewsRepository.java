@@ -10,8 +10,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews, String> {
-//    @Query(value = "select * from real_estate_news where real_estate_type_id like :idTypeSearch and direction_id like :directionCusSearch and area like areaSearch" , nativeQuery = true)
+//    @Query(value = "select * from real_estate_news where real_estate_type_id like :idTypeSearch and direction_id like :directionCusSearch and area like areaSearch" , )
 //    Page<RealEstateNews> search(Pageable pageable, @Param("idTypeSearch")  String idTypeSearch ,
 //                                @Param("directionCusSearch")  String directionCusSearch ,
 //                                @Param("areaSearch")  String areaSearch );
+
+    @Query(value = "select * from real_estate_news ", nativeQuery = true)
+    Page<RealEstateNews> findAllByRealEstateNews(Pageable pageable);
 }
