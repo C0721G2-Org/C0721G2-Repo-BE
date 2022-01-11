@@ -49,4 +49,5 @@ public class RealEstateRestController_detailRealEstateNewTaiVD {
                 .andExpect(jsonPath("$.direction.id").value(1))
                 .andExpect(jsonPath("$.realEstateType.id").value(1));
     }
+
 }

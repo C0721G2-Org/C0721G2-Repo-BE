@@ -15,7 +15,7 @@ public class EmailServiceImpl implements EmailService {
     @Override
     public void sendSimpleMessage(String customerEmail, String name, String phone) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("ductai4991@gmail.com");
+        message.setFrom("hungthinhc07g2@gmail.com");
         message.setTo(customerEmail);
         message.setSubject("Một khách hàng quan tâm tới bài đăng của bạn");
         message.setText("Chào bạn \n" +

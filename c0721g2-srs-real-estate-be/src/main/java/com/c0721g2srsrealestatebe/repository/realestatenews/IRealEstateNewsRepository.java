@@ -13,22 +13,25 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 @Repository
-public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews, String> {
+public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews, String > {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
     @Query(value = "    select * \n" +
             "  from real_estate_news\n" +
-            "  where customer_id like concat('%',:customerId,'%') and kind_of_news like concat('%',:kindOfNew,'%')" +
-            "  and title like concat('%',trim(:title),'%') and approval =2 ", nativeQuery = true)
+            "  where customer_id like concat('%',:customerId,'%') " +
+            "  and title like concat('%',trim(:title),'%')  " +
+            "  and kind_of_news like concat('%',:kindOfNew,'%')" +
+            "  and real_estate_type_id like concat('%',:realNewType,'%')" +
+            "  and approval =2 ", nativeQuery = true)
     Page< RealEstateNews > findAllNewsBySearchField(@Param("customerId") String customerId,
-                                                                  @Param("title") String title,
-                                                                  @Param("kindOfNew") String typeOfNew,
-                                                                  @Param("realNewType") String realNewType,
-                                                                  Pageable pageable);
+                                                    @Param("title") String title,
+                                                    @Param("kindOfNew") String typeOfNew,
+                                                    @Param("realNewType") String realNewType,
+                                                    Pageable pageable);
 
     // 5.6.3 show Real estate new detail
     @Query(value = " select * from real_estate_news where id =:id ", nativeQuery = true)
-    Optional<RealEstateNews> findNewsById(@Param("id") String id);
+    Optional< RealEstateNews > findNewsById(@Param("id") String id);
 
     // 5.6.2 add Real estate new detail
     @Query(value = "SELECT MAX(id) FROM real_estate_news;", nativeQuery = true)
@@ -43,5 +46,5 @@ public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews,
                      @Param("price") Double price, @Param("status") Integer status, @Param("title") String title, @Param("customer_id") String customer_id,
                      @Param("direction_id") Long direction_id, @Param("real_estate_type_id") Long real_estate_type_id);
 
-    Optional<RealEstateNews> findById(String id);
+    Optional< RealEstateNews > findById(String id);
 }

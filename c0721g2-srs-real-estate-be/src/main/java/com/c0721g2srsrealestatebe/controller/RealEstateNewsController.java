@@ -19,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.Optional;
 
 
@@ -34,17 +35,17 @@ public class RealEstateNewsController {
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
-        @GetMapping("/history-post")
+    @GetMapping("/history-post")
     public ResponseEntity< Page< RealEstateNews > > showHistoryPostNews(
             @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "",value = "customerId") String customerId,
-            @RequestParam(defaultValue = "",value = "title") String title,
-            @RequestParam(defaultValue = "",value = "kindOfNew") String kindOfNew,
-            @RequestParam(defaultValue = "",value = "realNewType") String realNewType) {
+            @RequestParam(defaultValue = "", value = "customerId") String customerId,
+            @RequestParam(defaultValue = "", value = "title") String title,
+            @RequestParam(defaultValue = "", value = "kindOfNew") String kindOfNew,
+            @RequestParam(defaultValue = "", value = "realNewType") String realNewType) {
         Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
-        Page< RealEstateNews > realEstateNewsPage =realEstateNewsService.
-                findAllNewsBySearchField(customerId, title, kindOfNew,realNewType, pageable);
-//
+        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
+                findAllNewsBySearchField(customerId, title, kindOfNew, realNewType, pageable);
+
         if (realEstateNewsPage.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
@@ -64,13 +65,13 @@ public class RealEstateNewsController {
 
     // 5.6.3 send mail to customer
     @PostMapping("/email")
-    public ResponseEntity<Void> emailSend(@RequestParam ("customerMail") Optional<String> customerMail,
-                                          @RequestParam ("name") Optional<String> name,
-                                          @RequestParam ("phone")Optional<String> phone) {
-        if(customerMail.isPresent() && name.isPresent() && phone.isPresent()){
-            emailService.sendSimpleMessage(customerMail.get(),name.get(),phone.get());
+    public ResponseEntity< Void > emailSend(@RequestParam("customerMail") Optional< String > customerMail,
+                                            @RequestParam("name") Optional< String > name,
+                                            @RequestParam("phone") Optional< String > phone) {
+        if (customerMail.isPresent() && name.isPresent() && phone.isPresent()) {
+            emailService.sendSimpleMessage(customerMail.get(), name.get(), phone.get());
             return new ResponseEntity<>(HttpStatus.OK);
-        }else {
+        } else {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -78,8 +79,8 @@ public class RealEstateNewsController {
 
     // 5.6.2 add Real estate new detail
     @PostMapping("/post")
-    public ResponseEntity< RealEstateNews > saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO, BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+    public ResponseEntity< RealEstateNews > saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
         }
         RealEstateNews news = this.copyProperties(realEstateDTO);
@@ -87,15 +88,15 @@ public class RealEstateNewsController {
         realEstateDTO.getImageList().forEach((imageDTO -> {
                     Image image = new Image();
                     image.setUrl(imageDTO.getUrl());
-                    iImageService.saveImg(image,realEstateNews.getId());
+                    iImageService.saveImg(image, realEstateNews.getId());
                 })
         );
         return new ResponseEntity<>(realEstateNews, HttpStatus.OK);
     }
 
-    public RealEstateNews copyProperties(RealEstateDTO realEstateDTO){
+    public RealEstateNews copyProperties(RealEstateDTO realEstateDTO) {
         RealEstateNews realEstateNews = new RealEstateNews();
-        BeanUtils.copyProperties(realEstateDTO,realEstateNews);
+        BeanUtils.copyProperties(realEstateDTO, realEstateNews);
         Customer customer = new Customer();
         customer.setId(realEstateDTO.getCustomer().getId());
         realEstateNews.setRealEstateType(new RealEstateType(realEstateDTO.getRealEstateType().getId()));
