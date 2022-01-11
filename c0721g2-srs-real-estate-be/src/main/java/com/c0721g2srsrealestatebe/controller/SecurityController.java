@@ -76,4 +76,5 @@ public class SecurityController {
         appUserService.saveNewPassword(bCryptPasswordEncoder.encode(resetPassRequest.getPassword()), resetPassRequest.getCode());
         return ResponseEntity.ok(new MessageResponse("success"));
     }
+
 }
