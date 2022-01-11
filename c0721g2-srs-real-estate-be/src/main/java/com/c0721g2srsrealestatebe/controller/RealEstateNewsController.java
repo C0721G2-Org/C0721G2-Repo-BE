@@ -28,6 +28,8 @@ public class RealEstateNewsController {
     private IRealEstateNewsService realEstateNewsService;
     @Autowired
     private IImageService iImageService;
+    @Autowired
+    private EmailService emailService;
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
@@ -87,6 +89,20 @@ public class RealEstateNewsController {
             return new ResponseEntity<>(realEstateNews.get(), HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    // 5.6.3 send mail to customer
+    @PostMapping("/email")
+    public ResponseEntity<Void> emailSend(@RequestParam ("customerMail") Optional<String> customerMail,
+                                          @RequestParam ("name") Optional<String> name,
+                                          @RequestParam ("phone")Optional<String> phone) {
+        if(customerMail.isPresent() && name.isPresent() && phone.isPresent()){
+            emailService.sendSimpleMessage(customerMail.get(),name.get(),phone.get());
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
     }
 
     // 5.6.2 add Real estate new detail

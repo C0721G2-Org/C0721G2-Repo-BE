@@ -26,10 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +111,7 @@
       <workItem from="1641778387929" duration="24316000" />
       <workItem from="1641806376413" duration="397000" />
       <workItem from="1641865242847" duration="5032000" />
+      <workItem from="1641870479915" duration="1949000" />
     </task>
     <servers />
   </component>
