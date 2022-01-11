@@ -3,7 +3,6 @@ package com.c0721g2srsrealestatebe.model.customer;
 import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.image.Image;
-import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
@@ -42,8 +41,10 @@ public class Customer {
     @OneToOne(targetEntity = Image.class)
     private Image image;
     @OneToMany(mappedBy = "customer" )
-    @JsonBackReference
+    @JsonBackReference(value = "customers_real_estate_news")
     private List<RealEstateNews> realEstateNewsList;
+
+
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {
@@ -158,5 +159,23 @@ public class Customer {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", gender=" + gender +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", realEstateNewsList=" + realEstateNewsList +
+                ", deleted=" + deleted +
+                '}';
     }
 }

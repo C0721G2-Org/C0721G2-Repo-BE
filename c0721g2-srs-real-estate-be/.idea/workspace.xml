@@ -25,9 +25,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+=======
+    <list default="true" id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+>>>>>>> origin/real-estate
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +62,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="Class" />
         <option value="Interface" />
+=======
+        <option value="Interface" />
+        <option value="Class" />
+>>>>>>> origin/real-estate
       </list>
     </option>
   </component>
@@ -99,7 +112,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+=======
+      <changelist id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="" />
+>>>>>>> origin/real-estate
       <created>1641635288431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -107,8 +124,15 @@
       <workItem from="1641635305449" duration="190000" />
       <workItem from="1641635550213" duration="604000" />
       <workItem from="1641636206133" duration="1980000" />
+<<<<<<< HEAD
       <workItem from="1641776353194" duration="31571000" />
       <workItem from="1641865831049" duration="1967000" />
+=======
+      <workItem from="1641777460101" duration="908000" />
+      <workItem from="1641778387929" duration="24316000" />
+      <workItem from="1641806376413" duration="397000" />
+      <workItem from="1641865242847" duration="5032000" />
+>>>>>>> origin/real-estate
     </task>
     <servers />
   </component>
@@ -144,6 +168,7 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+<<<<<<< HEAD
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1641797892606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,13 +229,93 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1641787458757" />
+=======
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1641813315435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641813315435" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641709150179">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641709150179" />
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.1.bottom" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="270" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.1.center" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="270" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.1.left" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="270" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.1.right" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="270" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.bottom" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.center" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.left" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.right" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+>>>>>>> origin/real-estate
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog" timestamp="1641702219739">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.816@0.0.1536.816" timestamp="1641702219739" />
+<<<<<<< HEAD
     <state x="118" y="25" key="new project wizard" timestamp="1641783723060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="118" y="25" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1641783723060" />
+=======
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641798110711">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641798110711" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="realEstateNews.value.customer" />
+      </configuration>
+    </watches-manager>
+>>>>>>> origin/real-estate
   </component>
 </project>
