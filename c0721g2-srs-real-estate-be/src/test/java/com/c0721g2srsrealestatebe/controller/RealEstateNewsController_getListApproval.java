@@ -35,5 +35,27 @@ public class RealEstateNewsController_getListApproval {
                 responseEntity.getBody().getContent().get(0).getTitle());
         Assertions.assertEquals("100.0",
                 responseEntity.getBody().getContent().get(0).getArea());
+        Assertions.assertEquals("BD-1001",
+                responseEntity.getBody().getContent().get(0).getId());
+        Assertions.assertEquals("Đường 2/9, Phường Hòa Cường Bắc, Hải Châu, Đà Nẵng",
+                responseEntity.getBody().getContent().get(0).getAddress());
+        Assertions.assertEquals("1",
+                responseEntity.getBody().getContent().get(0).getApproval());
+        Assertions.assertEquals("Chính chủ cần bán cặp đất mặt tiền đường 2/9, trục đường chính của thành phố Đà Nẵng,\n" +
+                        "   Nằm trong cụm khai thác tổ hợp khách sạn, du lịch, văn phòng cho thuê...\n" +
+                        "   Đối diện khu thương mại tổ hợp dịch vụ du lịch bậc nhất Đà Nẵng.",
+                responseEntity.getBody().getContent().get(0).getDescription());
+        Assertions.assertEquals("1",
+                responseEntity.getBody().getContent().get(0).getKindOfNews());
+        Assertions.assertEquals("15000000000.0",
+                responseEntity.getBody().getContent().get(0).getPrice());
+        Assertions.assertEquals("1",
+                responseEntity.getBody().getContent().get(0).getStatus());
+        Assertions.assertEquals("KH-0002",
+                responseEntity.getBody().getContent().get(0).getCustomer());
+        Assertions.assertEquals("1",
+                responseEntity.getBody().getContent().get(0).getDirection());
+        Assertions.assertEquals("1",
+                responseEntity.getBody().getContent().get(0).getRealEstateType());
     }
 }

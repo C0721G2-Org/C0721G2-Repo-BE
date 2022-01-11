@@ -26,21 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +162,7 @@
       <workItem from="1641823514964" duration="767000" />
       <workItem from="1641884928615" duration="6423000" />
       <workItem from="1641891725634" duration="480000" />
-      <workItem from="1641892268943" duration="1728000" />
+      <workItem from="1641892268943" duration="3060000" />
     </task>
     <servers />
   </component>
