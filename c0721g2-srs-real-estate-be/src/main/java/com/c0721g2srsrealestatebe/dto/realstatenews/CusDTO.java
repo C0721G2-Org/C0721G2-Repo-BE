@@ -8,10 +8,12 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.Column;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 import java.util.List;
 
 public class CusDTO {
+    @Pattern(regexp = "KH-\\d{4}",message = "wrong format")
     private String id;
 
     public CusDTO() {

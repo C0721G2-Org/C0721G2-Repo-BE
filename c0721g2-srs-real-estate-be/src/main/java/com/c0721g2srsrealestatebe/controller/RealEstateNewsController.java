@@ -7,6 +7,7 @@ import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
+import com.c0721g2srsrealestatebe.service.realestatenews.EmailService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,11 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -28,6 +33,8 @@ public class RealEstateNewsController {
     private IRealEstateNewsService realEstateNewsService;
     @Autowired
     private IImageService iImageService;
+    @Autowired
+    private EmailService emailService;
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
@@ -89,21 +96,37 @@ public class RealEstateNewsController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    // 5.6.3 send mail to customer
+    @PostMapping("/email")
+    public ResponseEntity<Void> emailSend(@RequestParam ("customerMail") Optional<String> customerMail,
+                                          @RequestParam ("name") Optional<String> name,
+                                          @RequestParam ("phone")Optional<String> phone) {
+        if(customerMail.isPresent() && name.isPresent() && phone.isPresent()){
+            emailService.sendSimpleMessage(customerMail.get(),name.get(),phone.get());
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+    }
+
     // 5.6.2 add Real estate new detail
     @PostMapping("/post")
-    public ResponseEntity< RealEstateNews > saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO, BindingResult bindingResult){
+    public ResponseEntity<List<FieldError>> saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
-            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+            System.out.println(bindingResult);
+            return new ResponseEntity<>(bindingResult.getFieldErrors(),HttpStatus.NOT_ACCEPTABLE);
         }
         RealEstateNews news = this.copyProperties(realEstateDTO);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
+        System.out.println(realEstateNews);
         realEstateDTO.getImageList().forEach((imageDTO -> {
             Image image = new Image();
             image.setUrl(imageDTO.getUrl());
             iImageService.saveImg(image,realEstateNews.getId());
             })
         );
-        return new ResponseEntity<>(realEstateNews, HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     public RealEstateNews copyProperties(RealEstateDTO realEstateDTO){
