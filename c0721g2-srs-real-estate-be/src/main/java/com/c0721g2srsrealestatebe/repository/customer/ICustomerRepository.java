@@ -29,10 +29,10 @@ public interface ICustomerRepository extends PagingAndSortingRepository<Customer
             "customers.deleted, customers.email," +
             " customers.gender,customers.id_card, customers.`name`, customers.phone_number," +
             " customers.app_user_id, customers.image_id)" +
-            " VALUES (:id,:address,:date_of_birth,:deleted,:email,:gender,:idCard,:name,:phone_number)", nativeQuery = true)
-    void saveCustomer(@Param("address") String address, @Param("date_of_birth") LocalDate date_of_birth, @Param("deleted")
+            " VALUES (:id,:address,:date_of_birth,:deleted,:email,:gender,:idCard,:name,:phone_number,:appUser)", nativeQuery = true)
+    void save(@Param("address") String address, @Param("date_of_birth") LocalDate date_of_birth, @Param("deleted")
             Boolean deleted, @Param("email") String email, @Param("gender") Integer gender, @Param("idCard") String idCard, @Param("name") String name,
-                      @Param("phone_number") String phone_number);
+                      @Param("phone_number") String phone_number,@Param("appUser") String appUser);
 
 
     @Query(value = "SELECT * FROM customers WHERE customers.id = :id", nativeQuery = true)

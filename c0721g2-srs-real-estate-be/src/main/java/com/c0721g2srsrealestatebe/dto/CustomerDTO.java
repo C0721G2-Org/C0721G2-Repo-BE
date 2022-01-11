@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
@@ -20,16 +21,10 @@ import java.util.List;
 
 //@Age
 public class CustomerDTO implements Validator {
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customer_seq")
-    @GenericGenerator(
-            name = "customer_seq",
-            strategy = "com.c0721g2srsrealestatebe.customid.CustomIdGenerator",
-            parameters = {
-                    @Parameter(name = CustomIdGenerator.INCREMENT_PARAM, value = "1"),
-                    @Parameter(name = CustomIdGenerator.VALUE_PREFIX_PARAMETER, value = "KH-"),
-                    @Parameter(name = CustomIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%04d")})
+
     private String id;
+
+
 
     @NotBlank(message = "you have to input your name")
     @Size(min = 2, message = "Tên ít nhất phải 2 ký tự")
@@ -46,7 +41,6 @@ public class CustomerDTO implements Validator {
     @DateTimeFormat(pattern = "MM-dd-yyyy")
     private LocalDate dateOfBirth;
 
-//    private int Age = dateOfBirth.getYear();
 
 
     @NotBlank(message = "Số CMND không được để trống.")
@@ -74,18 +68,19 @@ public class CustomerDTO implements Validator {
             message = "Email phải đúng định dạng.")
     private String email;
 
+    @NotNull
     private Integer gender;
 
-    private AppUserDTO appUser;
+    private AppUserDTO appUserDTO;
 
     private ImageDTO image;
 
-    public AppUserDTO getAppUser() {
-        return appUser;
+    public AppUserDTO getAppUserDTO() {
+        return appUserDTO;
     }
 
-    public void setAppUser(AppUserDTO appUser) {
-        this.appUser = appUser;
+    public void setAppUserDTO(AppUserDTO appUserDTO) {
+        this.appUserDTO = appUserDTO;
     }
 
     public ImageDTO getImage() {
@@ -173,19 +168,11 @@ public class CustomerDTO implements Validator {
         this.deleted = deleted;
     }
 
-    List<CustomerDTO> customerList = new ArrayList<>();
-
     private boolean checkIdCard;
     private boolean checkPhone;
 
 
-    public List<CustomerDTO> getCustomerList() {
-        return customerList;
-    }
 
-    public void setCustomerList(List<CustomerDTO> customerList) {
-        this.customerList = customerList;
-    }
 
     public boolean isCheckIdCard() {
         return checkIdCard;
@@ -211,11 +198,7 @@ public class CustomerDTO implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        CustomerDTO customerDTO = (CustomerDTO) target;
-        Date date = new Date();
-        for (CustomerDTO customer : customerList) {
-            //Chưa chắc việc update thông tin phải validate toàn bộ thông tin phải nhập
-        }
+
     }
 
     @Override
@@ -229,12 +212,10 @@ public class CustomerDTO implements Validator {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 ", gender=" + gender +
-                ", appUser=" + appUser +
+                ", appUser=" + appUserDTO +
                 ", image=" + image +
                 ", deleted=" + deleted +
-                ", customerList=" + customerList +
                 ", checkIdCard=" + checkIdCard +
-                ", checkPhone=" + checkPhone +
                 '}';
     }
 }

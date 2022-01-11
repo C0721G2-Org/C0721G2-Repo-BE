@@ -31,7 +31,8 @@ public class CustomerController_findCustomerById {
                 .andExpect(jsonPath("$.idCard").value("197241502"))
                 .andExpect(jsonPath("$.gender").value(0))
                 .andExpect(jsonPath("$.address").value("Đà Nẵng"))
-                .andExpect(jsonPath("$.dateOfBirth").value("1997-02-12"));
+                .andExpect(jsonPath("$.dateOfBirth").value("1997-02-12"))
+                .andExpect(jsonPath("$.appUser").value("159c674c-d64c-4649-abc0-68564e05dfa0"));
     }
     @Test
     public void findCustomerById_1() throws Exception {

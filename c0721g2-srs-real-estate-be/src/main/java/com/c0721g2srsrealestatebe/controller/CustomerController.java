@@ -34,11 +34,11 @@ public class CustomerController {
     }
 
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE,value = ("/create"))
-    public ResponseEntity<Customer> saveCustomer(@RequestBody @Valid CustomerDTO customerDTO, BindingResult bindingResult) {
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, value = ("/create"))
+    public ResponseEntity<Object> saveCustomer(@RequestBody @Valid CustomerDTO customerDTO, BindingResult bindingResult) {
         new CustomerDTO().validate(customerDTO, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        if (bindingResult.hasErrors()) {
+            return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.BAD_REQUEST);
         }
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
