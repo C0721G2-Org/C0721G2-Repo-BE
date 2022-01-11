@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.controller;
 
+import com.c0721g2srsrealestatebe.Exception.UserNotFoundException;
 import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
@@ -23,12 +24,19 @@ public class CustomerController {
 
     @GetMapping("id/{id}")
     public ResponseEntity<Customer> showId(@PathVariable("id") String id) {
-        System.out.println("showoff");
-        Customer customer = customerService.findCustomerById(id);
-        return new ResponseEntity<>(customer, HttpStatus.OK);
+
+       try {
+           System.out.println("showoff");
+           Customer customer = customerService.findCustomerById(id);
+           return new ResponseEntity<>(customer, HttpStatus.OK);
+       } catch ( UserNotFoundException e){
+           return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+       }
+
     }
 
-    @PutMapping(value = "/update", consumes = {"application/json", "application/xml"})
+
+    @PatchMapping(value = "/update", consumes = {"application/json", "application/xml"})
     public ResponseEntity<Customer> update(@Valid @RequestBody CustomerDTO customerDTO, BindingResult bindingResult) {
         new CustomerDTO().validate(customerDTO, bindingResult);
         if (bindingResult.hasFieldErrors("name")){
@@ -45,16 +53,33 @@ public class CustomerController {
         customerService.addCustomer(customer1);
         return new ResponseEntity<>(customer1,HttpStatus.OK);
     }
+    
     @PutMapping(value = "/newpassword")
     public ResponseEntity<AppUser>update(@Valid @RequestBody AppUserDTO appUserDTO, BindingResult bindingResult){
-        new AppUserDTO().validate(appUserDTO,bindingResult);
-        if (bindingResult.hasFieldErrors("password")){
-            System.out.println("mật nhập không đúng");
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-        AppUser appUser=new AppUser();
-        System.out.println(appUserDTO.toString());
-        BeanUtils.copyProperties(appUserDTO,appUser);
-        return new ResponseEntity<>(HttpStatus.OK);
+       try {
+           new AppUserDTO().validate(appUserDTO,bindingResult);
+           if (bindingResult.hasFieldErrors("password")){
+               System.out.println("mật nhập không đúng form");
+               return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+           }
+           AppUser appUser=new AppUser();
+           System.out.println(appUserDTO.toString());
+        /*
+        Phương thức encode từ người dùng và lấy pass từ dưới DB lên để so sánh
+        (Chưa viết xong)
+         */
+           BeanUtils.copyProperties(appUserDTO,appUser);
+           customerService.savePassword(appUserDTO);
+           return new ResponseEntity<>(HttpStatus.OK);
+       }catch (Exception e){
+           return new ResponseEntity<>(HttpStatus.OK);
+       }
+
     }
+
+
+
+
+
+
 }

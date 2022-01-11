@@ -23,6 +23,6 @@ public interface ICustomerRepository extends JpaRepository<Customer, Long> {
     Integer finByIdCard(String idCard);
 
     @Modifying
-    @Query(value = "update app_users as ap set ap.password =?1 where ap.id=?2 ",nativeQuery = true)
-    void saveNewPassword(String password,String id);
+    @Query(value = "update app_users as ap set ap.password =?1 where ap.username=?2 ",nativeQuery = true)
+    void saveNewPassword(String password,String userName);
 }

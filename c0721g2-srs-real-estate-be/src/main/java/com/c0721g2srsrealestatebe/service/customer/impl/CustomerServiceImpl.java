@@ -1,11 +1,13 @@
 package com.c0721g2srsrealestatebe.service.customer.impl;
 
 import com.c0721g2srsrealestatebe.Exception.UserNotFoundException;
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.repository.customer.ICustomerRepository;
 import com.c0721g2srsrealestatebe.service.customer.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -38,6 +40,10 @@ public class CustomerServiceImpl implements ICustomerService {
         return null;
     }
 
+    @Override
+    public void savePassword(AppUserDTO appUserDTO) {
+        iCustomerRepository.saveNewPassword(appUserDTO.getPassword(),appUserDTO.getUsername());
+    }
 
 
 }
