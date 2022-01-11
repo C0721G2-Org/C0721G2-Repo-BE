@@ -27,6 +27,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_name_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName(null);
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -46,7 +47,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -57,6 +58,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_name_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -76,7 +78,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -87,6 +89,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_name_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Từ Phước Thịnh567856");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -106,7 +109,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -117,6 +120,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_name_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Từ");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -136,7 +140,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -147,6 +151,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_name_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Từ Phước Thịnhokokokokokokokok");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -166,7 +171,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -178,6 +183,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_email_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail(null);
         employeeDTO.setPhoneNumber("0911111111");
@@ -197,7 +203,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -208,6 +214,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_email_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("");
         employeeDTO.setPhoneNumber("0911111111");
@@ -227,7 +234,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -238,6 +245,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_email_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuonggmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -257,7 +265,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -268,6 +276,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_email_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("a@b.con");
         employeeDTO.setPhoneNumber("0911111111");
@@ -287,7 +296,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -298,6 +307,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_email_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhaknaksjdkjasbdkjt@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -317,7 +327,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -329,6 +339,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_phone_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber(null);
@@ -348,7 +359,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -359,6 +370,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_phone_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("");
@@ -378,7 +390,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -389,6 +401,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_phone_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111abc");
@@ -408,7 +421,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -419,6 +432,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_phone_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("091111");
@@ -438,7 +452,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -449,6 +463,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_phone_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111123123");
@@ -468,7 +483,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -480,6 +495,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_address_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -499,7 +515,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -510,6 +526,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_address_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -529,7 +546,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -540,6 +557,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_address_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -559,7 +577,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -570,6 +588,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_address_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -591,7 +610,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -603,6 +622,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_idCard_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -622,7 +642,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -633,6 +653,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_idCard_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -652,7 +673,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -663,6 +684,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_idCard_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -682,7 +704,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -693,6 +715,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_idCard_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -712,7 +735,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -722,6 +745,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_idCard_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Nguyễn Văn An");
         employeeDTO.setEmail("nhatvuong@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -741,7 +765,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/studentRest/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -753,6 +777,7 @@ public class EmployeeController_editEmployee {
     public void editEmployee_18() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setId("NV-0003");
         employeeDTO.setName("Từ Phước Thịnh");
         employeeDTO.setEmail("tolagau@gmail.com");
         employeeDTO.setPhoneNumber("0911111111");
@@ -772,7 +797,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .patch("/api/employee/create")
+                        .patch("/api/employee/edit")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
