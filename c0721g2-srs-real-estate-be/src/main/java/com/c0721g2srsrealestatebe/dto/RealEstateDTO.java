@@ -4,40 +4,40 @@ import com.c0721g2srsrealestatebe.dto.realstatenews.CusDTO;
 import com.c0721g2srsrealestatebe.dto.realstatenews.DirectionDTO;
 import com.c0721g2srsrealestatebe.dto.realstatenews.ImageDTO;
 import com.c0721g2srsrealestatebe.dto.realstatenews.RealEstateTypeDTO;
-import com.c0721g2srsrealestatebe.model.customer.Customer;
-import com.c0721g2srsrealestatebe.model.image.Image;
-import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
-import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
+import org.springframework.format.annotation.NumberFormat;
 
-
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 import java.util.List;
 
-public class RealEstateDTO {
-    @Pattern(regexp = "", message = "")
+public class RealEstateDTO{
+
     private String id;
-    @NotBlank(message = "")
+    @NotBlank(message = "NotBlank")
     private String title;
     private String description;
-    @NotBlank(message = "")
+    @NotBlank(message = "NotBlank")
     private String address;
-    @Min(value = 0,message = "")
+    @Min(value = 0, message = "positive numbers")
+    @NotNull(message = "NotNull")
     private Double area;
-    @Min(value = 0,message = "")
+    @Min(value = 0, message = "positive numbers")
+    @NotNull(message = "NotNull")
     private Double price;
     private Integer approval;
-    @Min(value = 0,message = "")
-    @Max(value = 4,message = "")
+    @Min(value = 1, message = "value 1-2")
+    @Max(value = 2, message = "value 1-2")
+    @NotNull(message = "NotNull")
     private Integer kindOfNews;
-    @Min(value = 0,message = "")
-    @Max(value = 2,message = "")
+    @Min(value = 1, message = "value 1-2")
+    @Max(value = 2, message = "value 1-2")
+    @NotNull(message = "NotNull")
     private Integer status;
+    @NotNull(message = "NotNull")
     private RealEstateTypeDTO realEstateType;
+    @NotNull(message = "NotNull")
     private DirectionDTO direction;
     private CusDTO customer;
+    @Size(min=1, max=3,message = "size 1-5")
     private List<ImageDTO> imageList;
 
     public RealEstateDTO() {

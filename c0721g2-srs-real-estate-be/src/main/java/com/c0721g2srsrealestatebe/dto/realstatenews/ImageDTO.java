@@ -6,6 +6,10 @@ public class ImageDTO {
     public ImageDTO() {
     }
 
+    public ImageDTO(String url) {
+        this.url = url;
+    }
+
     public ImageDTO(Long id, String url) {
         this.url = url;
     }
