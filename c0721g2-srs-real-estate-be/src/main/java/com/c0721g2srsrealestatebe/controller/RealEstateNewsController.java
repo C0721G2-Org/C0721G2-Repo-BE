@@ -65,14 +65,15 @@ public class RealEstateNewsController {
 
     // 5.6.3 send mail to customer
     @PostMapping("/email")
-    public ResponseEntity< Void > emailSend(@RequestParam("customerMail") Optional< String > customerMail,
-                                            @RequestParam("name") Optional< String > name,
-                                            @RequestParam("phone") Optional< String > phone) {
-        if (customerMail.isPresent() && name.isPresent() && phone.isPresent()) {
-            emailService.sendSimpleMessage(customerMail.get(), name.get(), phone.get());
-            return new ResponseEntity<>(HttpStatus.OK);
+    public ResponseEntity< Void > emailSend(@RequestParam(defaultValue = "",value ="customerMail") String customerMail,
+                                            @RequestParam(defaultValue = "",value = "name") String  name,
+                                            @RequestParam(defaultValue = "",value ="phone") String  phone) {
+        if (customerMail.equals("") || name.equals("") || phone.equals("")) {
+            emailService.sendSimpleMessage(customerMail, name, phone);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } else {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(HttpStatus.OK);
+
         }
 
     }
