@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.service.customer;
 
+import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 
 import java.util.List;
