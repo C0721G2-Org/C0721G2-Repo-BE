@@ -1,6 +1,7 @@
 package com.c0721g2srsrealestatebe.dto.realstatenews;
 
 public class RealEstateTypeDTO {
+
     private Long id;
     private String name;
 
