@@ -1,19 +1,11 @@
 package com.c0721g2srsrealestatebe.dto;
 
 import com.c0721g2srsrealestatebe.model.account.AppUser;
-import com.c0721g2srsrealestatebe.model.employee.Degree;
-import com.c0721g2srsrealestatebe.model.employee.Employee;
-import com.c0721g2srsrealestatebe.model.employee.Position;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import javax.persistence.Column;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
@@ -21,7 +13,9 @@ import java.time.LocalDate;
 public class EmployeeDTO implements Validator {
     private String id;
     @NotBlank(message = "Không được bỏ trống tên")
-    @Pattern(regexp = "[A-Z][a-z]*([ ][A-Z][a-z]*)*", message = "Không được nhập số")
+    @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ\" +\n" +
+            "\"ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở\" +\n" +
+            "\"ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$", message = "Không được nhập số")
     private String name;
     @NotBlank(message = "Không được bỏ trống email")
     @Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+.[a-z]{2,6}$")
@@ -42,9 +36,9 @@ public class EmployeeDTO implements Validator {
 
     private Integer gender;
 
-    private DegreeDTO degree;
+    private DegreeDTO degreeDTO;
 
-    private PositionDTO position;
+    private PositionDTO positionDTO;
 
     private AppUser appUser;
 
@@ -53,6 +47,22 @@ public class EmployeeDTO implements Validator {
     private Boolean deleted = Boolean.FALSE;
 
     public EmployeeDTO() {
+    }
+
+    public DegreeDTO getDegreeDTO() {
+        return degreeDTO;
+    }
+
+    public void setDegreeDTO(DegreeDTO degreeDTO) {
+        this.degreeDTO = degreeDTO;
+    }
+
+    public PositionDTO getPositionDTO() {
+        return positionDTO;
+    }
+
+    public void setPositionDTO(PositionDTO positionDTO) {
+        this.positionDTO = positionDTO;
     }
 
     public String getId() {
@@ -119,22 +129,6 @@ public class EmployeeDTO implements Validator {
         this.gender = gender;
     }
 
-    public DegreeDTO getDegree() {
-        return degree;
-    }
-
-    public void setDegree(DegreeDTO degree) {
-        this.degree = degree;
-    }
-
-    public PositionDTO getPosition() {
-        return position;
-    }
-
-    public void setPosition(PositionDTO position) {
-        this.position = position;
-    }
-
     public AppUser getAppUser() {
         return appUser;
     }
@@ -158,6 +152,7 @@ public class EmployeeDTO implements Validator {
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
     }
+
 
     @Override
     public boolean supports(Class<?> clazz) {

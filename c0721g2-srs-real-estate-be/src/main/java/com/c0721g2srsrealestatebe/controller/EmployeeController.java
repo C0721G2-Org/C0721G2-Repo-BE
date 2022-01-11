@@ -48,15 +48,15 @@ public class EmployeeController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Employee>> getList(){
+    public ResponseEntity<List<Employee>> getList() {
         List<Employee> employeeList = iEmployeeService.findAll();
-        if (employeeList.isEmpty()){
+        if (employeeList.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/edit/{id}")
     public ResponseEntity<Employee> findByIdEmployee(@PathVariable String id) {
         Optional<Employee> employeeOptional = iEmployeeService.findById(id);
         if (!employeeOptional.isPresent()) {
@@ -74,6 +74,38 @@ public class EmployeeController {
         }
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
+
+//        Position position = new Position();
+//        position.setId(employeeDTO.getPositionDTO().getId());
+//        employee.setPosition(position);
+//
+//        Degree degree = new Degree();
+//        degree.setId(employeeDTO.getDegreeDTO().getId());
+//        employee.setDegree(degree);
+
+        this.iEmployeeService.saveEmployee(employee);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PatchMapping(value = "/edit")
+    public ResponseEntity<Object> updateEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
+                                                 BindingResult bindingResult) {
+        System.out.println(employeeDTO);
+        if (bindingResult.hasErrors()) {
+            return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.BAD_REQUEST);
+
+        }
+        Employee employee = new Employee();
+        BeanUtils.copyProperties(employeeDTO, employee);
+
+//        Position position = new Position();
+//        position.setId(employeeDTO.getPositionDTO().getId());
+//        employee.setPosition(position);
+//
+//        Degree degree = new Degree();
+//        degree.setId(employeeDTO.getDegreeDTO().getId());
+//        employee.setDegree(degree);
+
         this.iEmployeeService.saveEmployee(employee);
         return new ResponseEntity<>(HttpStatus.OK);
     }
