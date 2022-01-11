@@ -1,14 +1,9 @@
 package com.c0721g2srsrealestatebe.service.realestatenews;
 
-import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface IRealEstateNewsService {
@@ -37,6 +32,8 @@ public interface IRealEstateNewsService {
 
     // 5.5.4 List search customerId and Nhà
     Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId,
-                                                           Integer realNewType,
-                                                           Pageable pageable);
+                                                             Integer realNewType,
+                                                             Pageable pageable);
+
+    RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
 }

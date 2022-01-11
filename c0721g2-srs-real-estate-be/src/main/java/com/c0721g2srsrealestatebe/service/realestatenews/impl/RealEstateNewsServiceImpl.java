@@ -1,20 +1,14 @@
 package com.c0721g2srsrealestatebe.service.realestatenews.impl;
 
-import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.repository.realestatenews.IRealEstateNewsRepository;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.Iterator;
-import java.util.List;
 import java.util.Optional;
-import java.util.function.Function;
 
 @Service
 public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
@@ -55,10 +49,24 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return iRealEstateNewsRepository.findById(id);
     }
 
-    // 5.5.4 real new type
+    // 5.6.3 show Real estate new detail
     @Override
     public Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId, Integer realNewType, Pageable pageable) {
         return iRealEstateNewsRepository.findAllNewsByCustomerIdAndRealNewType(customerId,realNewType, pageable);
+    }
+
+
+    // 5.6.2 add Real estate new detail
+    @Override
+    public RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews) {
+//        realEstateNewsRepository.saveNews(realEstateNews.getAddress(),realEstateNews.getApproval(),realEstateNews.getArea(),realEstateNews.getDescription(),
+//                realEstateNews.getKindOfNews(),realEstateNews.getPrice(),realEstateNews.getStatus(),realEstateNews.getTitle(),realEstateNews.getCustomer().getId(),
+//                realEstateNews.getDirection().getId(),realEstateNews.getRealEstateType().getId());
+        System.out.println(123);
+        System.out.println(realEstateNews);
+        iRealEstateNewsRepository.save(realEstateNews);
+        System.out.println(iRealEstateNewsRepository.lastId());
+        return iRealEstateNewsRepository.findNewsById(iRealEstateNewsRepository.lastId()).orElse(null);
     }
 
 }

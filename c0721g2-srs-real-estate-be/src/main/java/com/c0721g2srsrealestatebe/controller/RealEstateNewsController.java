@@ -1,8 +1,15 @@
 package com.c0721g2srsrealestatebe.controller;
 
+import com.c0721g2srsrealestatebe.dto.RealEstateDTO;
+import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.model.image.Image;
+import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
+import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
+import com.c0721g2srsrealestatebe.service.image.IImageService;
 import com.c0721g2srsrealestatebe.service.realestatenews.EmailService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -10,18 +17,20 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.Optional;
 
-@RequestMapping("/real-estate-new")
+
 @RestController
+@RequestMapping("/real-estate-new")
 public class RealEstateNewsController {
     @Autowired
     private IRealEstateNewsService realEstateNewsService;
     @Autowired
+    private IImageService iImageService;
+    @Autowired
     private EmailService emailService;
-
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
@@ -66,7 +75,7 @@ public class RealEstateNewsController {
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.findAllNewsByCustomerIdAndNewType
                 (customerId, realNewType, pageable);
         if (realEstateNewsPage.isEmpty()) {
-                        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         System.out.println("abc");
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
@@ -82,6 +91,7 @@ public class RealEstateNewsController {
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
     // 5.6.3 send mail to customer
     @PostMapping("/email")
     public ResponseEntity<Void> emailSend(@RequestParam ("customerMail") Optional<String> customerMail,
@@ -94,5 +104,33 @@ public class RealEstateNewsController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+    }
+
+    // 5.6.2 add Real estate new detail
+    @PostMapping("/post")
+    public ResponseEntity< RealEstateNews > saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+        }
+        RealEstateNews news = this.copyProperties(realEstateDTO);
+        RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
+        realEstateDTO.getImageList().forEach((imageDTO -> {
+                    Image image = new Image();
+                    image.setUrl(imageDTO.getUrl());
+                    iImageService.saveImg(image,realEstateNews.getId());
+                })
+        );
+        return new ResponseEntity<>(realEstateNews, HttpStatus.OK);
+    }
+
+    public RealEstateNews copyProperties(RealEstateDTO realEstateDTO){
+        RealEstateNews realEstateNews = new RealEstateNews();
+        BeanUtils.copyProperties(realEstateDTO,realEstateNews);
+        Customer customer = new Customer();
+        customer.setId(realEstateDTO.getCustomer().getId());
+        realEstateNews.setRealEstateType(new RealEstateType(realEstateDTO.getRealEstateType().getId()));
+        realEstateNews.setDirection(new Direction(realEstateDTO.getDirection().getId()));
+        realEstateNews.setCustomer(customer);
+        return realEstateNews;
     }
 }
