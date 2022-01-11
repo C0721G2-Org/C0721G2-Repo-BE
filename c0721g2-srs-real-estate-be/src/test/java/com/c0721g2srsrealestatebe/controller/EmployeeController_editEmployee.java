@@ -46,7 +46,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -76,7 +76,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -106,7 +106,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -136,7 +136,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -166,7 +166,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -197,7 +197,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -227,7 +227,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -257,7 +257,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -287,7 +287,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -317,7 +317,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -348,7 +348,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -378,7 +378,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -408,7 +408,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -438,7 +438,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -468,7 +468,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -499,7 +499,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -529,7 +529,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -559,7 +559,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -591,7 +591,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -622,7 +622,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -652,7 +652,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -682,7 +682,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -712,7 +712,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -741,7 +741,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/studentRest/create")
+                        .patch("/studentRest/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())
@@ -772,7 +772,7 @@ public class EmployeeController_editEmployee {
 
         this.mockMvc
                 .perform(MockMvcRequestBuilders
-                        .post("/api/employee/create")
+                        .patch("/api/employee/create")
                         .content(this.objectMapper.writeValueAsString(employeeDTO))
                         .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andDo(print())

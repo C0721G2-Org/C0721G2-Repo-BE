@@ -70,18 +70,19 @@ public class EmployeeController {
     public ResponseEntity<Object> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
                                                  BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(bindingResult.getFieldErrors(),
+                    HttpStatus.NOT_ACCEPTABLE);
         }
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
 
-//        Position position = new Position();
-//        position.setId(employeeDTO.getPositionDTO().getId());
-//        employee.setPosition(position);
-//
-//        Degree degree = new Degree();
-//        degree.setId(employeeDTO.getDegreeDTO().getId());
-//        employee.setDegree(degree);
+        Position position = new Position();
+        position.setId(employeeDTO.getPositionDTO().getId());
+        employee.setPosition(position);
+
+        Degree degree = new Degree();
+        degree.setId(employeeDTO.getDegreeDTO().getId());
+        employee.setDegree(degree);
 
         this.iEmployeeService.saveEmployee(employee);
         return new ResponseEntity<>(HttpStatus.OK);
@@ -92,7 +93,7 @@ public class EmployeeController {
                                                  BindingResult bindingResult) {
         System.out.println(employeeDTO);
         if (bindingResult.hasErrors()) {
-            return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.NOT_ACCEPTABLE);
 
         }
         Employee employee = new Employee();
