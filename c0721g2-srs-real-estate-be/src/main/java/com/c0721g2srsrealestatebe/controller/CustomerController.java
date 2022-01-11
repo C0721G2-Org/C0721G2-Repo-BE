@@ -3,6 +3,10 @@ package com.c0721g2srsrealestatebe.controller;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,32 +22,32 @@ public class CustomerController {
     CustomerServiceImpl customerService;
 
     //thienlb - danh sach khach hang
-    @GetMapping("customer-list")
-    public ResponseEntity<Iterable<Customer>> showCustomer(
-//            @RequestParam(defaultValue = "") String name,
-//            @RequestParam(defaultValue = "") String phone,
-//            @RequestParam(defaultValue = "") String email
-    )
-    {
-
-//        if(name.equals("")
-        List<Customer> customers = (List<Customer>) customerService.findAllCustomer();
-        if (customers.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        return new ResponseEntity<>(customers, HttpStatus.OK);
-    }
-
-//    thienlb - phan trang
-//        @GetMapping()
-//    public ResponseEntity<?> showCustomer(@PageableDefault( sort = "id", direction = Sort.Direction.ASC) Pageable pageable){
-//        Page<Customer> customersPage = customerService.findCustomerPage(pageable);
-//        if(customersPage.isEmpty()){
+//    @GetMapping("customer-list")
+//    public ResponseEntity<Iterable<Customer>> showCustomer(
+////            @RequestParam(defaultValue = "") String name,
+////            @RequestParam(defaultValue = "") String phone,
+////            @RequestParam(defaultValue = "") String email
+//    )
+//    {
+//
+////        if(name.equals("")
+//        List<Customer> customers = (List<Customer>) customerService.findAllCustomer();
+//        if (customers.isEmpty()) {
 //            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 //        }
-//
-//        return new ResponseEntity<>(customersPage, HttpStatus.OK);
+//        return new ResponseEntity<>(customers, HttpStatus.OK);
 //    }
+
+//    thienlb - phan trang
+        @GetMapping("customer-list")
+    public ResponseEntity<Page<Customer>> showCustomer(@PageableDefault( sort = "id", direction = Sort.Direction.ASC) Pageable pageable){
+        Page<Customer> customersPage = customerService.findCustomerPage(pageable);
+        if(customersPage.isEmpty()){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+
+        return new ResponseEntity<>(customersPage, HttpStatus.OK);
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
