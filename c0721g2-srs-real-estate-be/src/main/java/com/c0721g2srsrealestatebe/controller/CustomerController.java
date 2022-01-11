@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -31,11 +31,7 @@ public class CustomerController {
     }
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Customer> saveCustomer(@Valid @RequestBody Customer customer, BindingResult bindingResult) {
-        new CustomerDTO().validate(customer, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+    public ResponseEntity<Customer> saveCustomer(@RequestBody Customer customer, BindingResult bindingResult) {
         return new ResponseEntity<>(customerService.save(customer), HttpStatus.CREATED);
     }
 
