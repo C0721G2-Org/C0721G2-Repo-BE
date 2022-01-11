@@ -31,10 +31,12 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
 =======
     <list default="true" id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+>>>>>>> origin/real-estate
+=======
 >>>>>>> origin/real-estate
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,6 +134,10 @@
       <workItem from="1641778387929" duration="24316000" />
       <workItem from="1641806376413" duration="397000" />
       <workItem from="1641865242847" duration="5032000" />
+<<<<<<< HEAD
+>>>>>>> origin/real-estate
+=======
+      <workItem from="1641870479915" duration="1949000" />
 >>>>>>> origin/real-estate
     </task>
     <servers />
