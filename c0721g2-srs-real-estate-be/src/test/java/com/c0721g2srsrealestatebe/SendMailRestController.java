@@ -31,6 +31,6 @@ public class SendMailRestController {
                 = this.estateNewsController.emailSend
                 ("", "Tai", "0918876320");
 
-        Assertions.assertEquals(400, responseEntity.getStatusCodeValue());
+        Assertions.assertEquals(501, responseEntity.getStatusCode().isError());
     }
 }

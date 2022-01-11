@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailServiceImpl implements EmailService {
-    @Qualifier("getJavaMailSender")
+//    @Qualifier("getJavaMailSender")
     @Autowired
     private JavaMailSender emailSender;
     @Override

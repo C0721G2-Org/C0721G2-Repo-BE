@@ -69,9 +69,10 @@ public class RealEstateNewsController {
                                             @RequestParam(defaultValue = "",value = "name") String  name,
                                             @RequestParam(defaultValue = "",value ="phone") String  phone) {
         if (customerMail.equals("") || name.equals("") || phone.equals("")) {
-            emailService.sendSimpleMessage(customerMail, name, phone);
+
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } else {
+            emailService.sendSimpleMessage(customerMail, name, phone);
             return new ResponseEntity<>(HttpStatus.OK);
 
         }
