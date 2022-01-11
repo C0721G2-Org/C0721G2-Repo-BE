@@ -8,6 +8,7 @@ import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -15,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
@@ -89,9 +91,11 @@ public class RealEstateNewsController {
 
     // 5.6.2 add Real estate new detail
     @PostMapping("/post")
-    public void saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO){
-        RealEstateNews news = this.formatDTO(realEstateDTO);
-        System.out.println(news);
+    public ResponseEntity< RealEstateNews > saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+        }
+        RealEstateNews news = this.copyProperties(realEstateDTO);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
         realEstateDTO.getImageList().forEach((imageDTO -> {
             Image image = new Image();
@@ -99,20 +103,14 @@ public class RealEstateNewsController {
             iImageService.saveImg(image,realEstateNews.getId());
             })
         );
+        return new ResponseEntity<>(realEstateNews, HttpStatus.OK);
     }
 
-    public RealEstateNews formatDTO(RealEstateDTO realEstateDTO){
+    public RealEstateNews copyProperties(RealEstateDTO realEstateDTO){
         RealEstateNews realEstateNews = new RealEstateNews();
+        BeanUtils.copyProperties(realEstateDTO,realEstateNews);
         Customer customer = new Customer();
         customer.setId(realEstateDTO.getCustomer().getId());
-        realEstateNews.setTitle(realEstateDTO.getTitle());
-        realEstateNews.setDescription(realEstateDTO.getDescription());
-        realEstateNews.setAddress(realEstateDTO.getAddress());
-        realEstateNews.setArea(realEstateDTO.getArea());
-        realEstateNews.setPrice(realEstateDTO.getPrice());
-        realEstateNews.setApproval(1);
-        realEstateNews.setKindOfNews(realEstateDTO.getKindOfNews());
-        realEstateNews.setStatus(realEstateDTO.getStatus());
         realEstateNews.setRealEstateType(new RealEstateType(realEstateDTO.getRealEstateType().getId()));
         realEstateNews.setDirection(new Direction(realEstateDTO.getDirection().getId()));
         realEstateNews.setCustomer(customer);
