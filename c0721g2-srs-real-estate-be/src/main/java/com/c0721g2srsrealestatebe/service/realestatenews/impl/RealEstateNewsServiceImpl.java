@@ -55,7 +55,7 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return iRealEstateNewsRepository.findById(id);
     }
 
-    // 5.6.3 show Real estate new detail
+    // 5.5.4 real new type
     @Override
     public Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId, Integer realNewType, Pageable pageable) {
         return iRealEstateNewsRepository.findAllNewsByCustomerIdAndRealNewType(customerId,realNewType, pageable);
