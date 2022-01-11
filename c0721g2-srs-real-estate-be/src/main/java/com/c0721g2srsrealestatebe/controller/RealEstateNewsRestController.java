@@ -21,24 +21,26 @@ public class RealEstateNewsRestController {
     private IRealEstateNewsService realEstateNewsService;
     //    /studentRest/list?page=0
 //    /studentRest/list?page=1
+    @GetMapping(value = {"/", "/list"})
+    public ResponseEntity<Page<RealEstateNews>> getListRealEstateNews(@RequestParam(defaultValue = "0") int page){
+        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
+        Page<RealEstateNews> realEstateNewstList = this.realEstateNewsService.findAllRealEstateNewsByApproval(pageable);
+
+        if (realEstateNewstList.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(realEstateNewstList, HttpStatus.OK);
+    }
+
 //    @GetMapping(value = {"/", "/list"})
-//    public ResponseEntity<Page<RealEstateNews>> getListRealEstateNews(@PageableDefault(size = 2) Pageable pageable) {
-//        Page<RealEstateNews> realEstateNewstList = this.realEstateNewsService.findAllRealEstateNewsByApproval(pageable);
-//
-//        if (realEstateNewstList.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//    public ResponseEntity< Page<RealEstateNews> > getAllRealEstatesByApproval(@RequestParam(defaultValue = "0") int page){
+//        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
+//        Page< RealEstateNews > realEstatesList = realEstateNewsService.findAllRealEstateNewsByApproval(pageable);
+//        if (realEstatesList.isEmpty()) {
+//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 //        }
-//
-//        return new ResponseEntity<>(realEstateNewstList, HttpStatus.OK);
+//        return new ResponseEntity<>(realEstatesList, HttpStatus.OK);
 //    }
 
-    @GetMapping(value = {"/", "/list"})
-    public ResponseEntity< Page<RealEstateNews> > getAllRealEstatesByApproval(@RequestParam(defaultValue = "0") int page){
-        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
-        Page< RealEstateNews > realEstatesList = realEstateNewsService.findAllRealEstateNewsByApproval(pageable);
-        if (realEstatesList.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        return new ResponseEntity<>(realEstatesList, HttpStatus.OK);
-    }
 }

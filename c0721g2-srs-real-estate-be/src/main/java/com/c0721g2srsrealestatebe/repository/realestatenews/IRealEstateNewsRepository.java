@@ -8,11 +8,12 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 @Repository
 public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews, Integer> {
-    @Query(value = " select * \n" +
-            "  from real_estate_news\n" +
-            "  where approval =2", nativeQuery = true)
+    @Query(value = "select * \n" +
+            " from real_estate_news\n" +
+            " where approval =2", nativeQuery = true)
     Page<RealEstateNews> findAllRealEstateNewsByApproval(Pageable pageable);
 
     @Query(value = " select * \n" +
