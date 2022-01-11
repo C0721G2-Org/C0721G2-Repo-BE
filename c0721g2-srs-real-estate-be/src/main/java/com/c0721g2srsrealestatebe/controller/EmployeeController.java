@@ -9,11 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -34,7 +34,7 @@ public class EmployeeController {
     IPositionService positionService;
 
     @GetMapping
-    public ResponseEntity<Page<Employee>> displayEmployee(@PageableDefault(value= 5) Pageable pageable) {
+    public ResponseEntity<Page<Employee>> showListEmployee(@PageableDefault(value= 5) Pageable pageable) {
         Page<Employee> employeeList = employeeService.findAllEmployeePage(pageable);
         if (employeeList.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -42,8 +42,7 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 
-
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Employee> delete(@PathVariable String id) {
         Optional<Employee> employeeOptional = this.employeeService.findByIdOp(id);
         if (!employeeOptional.isPresent()) {
