@@ -6,8 +6,6 @@ import com.c0721g2srsrealestatebe.dto.PositionDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -17,9 +15,7 @@ import java.time.LocalDate;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
-@AutoConfigureMockMvc
-public class EmployeeController_createEmployee {
+public class EmployeeController_editEmployee {
     @Autowired
     private MockMvc mockMvc;
 
@@ -28,7 +24,7 @@ public class EmployeeController_createEmployee {
 
     //Test name
     @Test
-    public void createEmployee_name_13() throws Exception {
+    public void editEmployee_name_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName(null);
@@ -58,7 +54,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_name_14() throws Exception {
+    public void editEmployee_name_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("");
@@ -88,7 +84,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_name_15() throws Exception {
+    public void editEmployee_name_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Từ Phước Thịnh567856");
@@ -118,7 +114,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_name_16() throws Exception {
+    public void editEmployee_name_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Từ");
@@ -148,7 +144,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_name_17() throws Exception {
+    public void editEmployee_name_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Từ Phước Thịnhokokokokokokokok");
@@ -179,7 +175,7 @@ public class EmployeeController_createEmployee {
 
     //Test email
     @Test
-    public void createEmployee_email_13() throws Exception {
+    public void editEmployee_email_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -209,7 +205,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_email_14() throws Exception {
+    public void editEmployee_email_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -239,7 +235,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_email_15() throws Exception {
+    public void editEmployee_email_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -269,7 +265,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_email_16() throws Exception {
+    public void editEmployee_email_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -299,7 +295,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_email_17() throws Exception {
+    public void editEmployee_email_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -330,7 +326,7 @@ public class EmployeeController_createEmployee {
 
     //Test phone
     @Test
-    public void createEmployee_phone_13() throws Exception {
+    public void editEmployee_phone_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -360,7 +356,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_phone_14() throws Exception {
+    public void editEmployee_phone_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -390,7 +386,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_phone_15() throws Exception {
+    public void editEmployee_phone_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -420,7 +416,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_phone_16() throws Exception {
+    public void editEmployee_phone_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -450,7 +446,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_phone_17() throws Exception {
+    public void editEmployee_phone_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -481,7 +477,7 @@ public class EmployeeController_createEmployee {
 
     //Test address
     @Test
-    public void createEmployee_address_13() throws Exception {
+    public void editEmployee_address_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -511,7 +507,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_address_14() throws Exception {
+    public void editEmployee_address_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -541,7 +537,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_address_16() throws Exception {
+    public void editEmployee_address_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -571,7 +567,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_address_17() throws Exception {
+    public void editEmployee_address_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -604,7 +600,7 @@ public class EmployeeController_createEmployee {
 
     //Test Id card
     @Test
-    public void createEmployee_idCard_13() throws Exception {
+    public void editEmployee_idCard_13() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -634,7 +630,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_idCard_14() throws Exception {
+    public void editEmployee_idCard_14() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -664,7 +660,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_idCard_15() throws Exception {
+    public void editEmployee_idCard_15() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -694,7 +690,7 @@ public class EmployeeController_createEmployee {
     }
 
     @Test
-    public void createEmployee_idCard_16() throws Exception {
+    public void editEmployee_idCard_16() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -723,7 +719,7 @@ public class EmployeeController_createEmployee {
                 .andExpect(status().is4xxClientError());
     }
     @Test
-    public void createEmployee_idCard_17() throws Exception {
+    public void editEmployee_idCard_17() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Nguyễn Văn An");
@@ -754,7 +750,7 @@ public class EmployeeController_createEmployee {
 
     //Thành công
     @Test
-    public void createEmployee_18() throws Exception {
+    public void editEmployee_18() throws Exception {
 
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setName("Từ Phước Thịnh");

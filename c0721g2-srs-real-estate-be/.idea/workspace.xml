@@ -89,8 +89,7 @@
       <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/create-emp.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/edit-emp.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/giaodien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/json/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" afterDir="false" />
@@ -105,14 +104,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" afterDir="false" />
@@ -136,6 +132,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -180,13 +179,70 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.EmployeeController_getEmployeeId.getInfoEmployee_3">
-    <configuration name="EmployeeController_getEmployeeId.getInfoEmployee_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EmployeeController_createEmployee.createEmployee_name_15">
+    <configuration name="EmployeeController_createEmployee.createEmployee_idCard_15" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_getEmployeeId.getInfoEmployee_1&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_idCard_15&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeeController_createEmployee.createEmployee_idCard_16" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_idCard_16&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeeController_createEmployee.createEmployee_idCard_17" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_idCard_17&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeeController_createEmployee.createEmployee_name_15" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_name_15&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -219,44 +275,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmployeeController_getEmployeeId.getInfoEmployee_3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_getEmployeeId.getInfoEmployee_3&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EmployeeController_getEmployeeId.getInfoEmployee_4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_getEmployeeId.getInfoEmployee_4&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="c0721g2-srs-real-estate-be.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
@@ -266,10 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EmployeeController_getEmployeeId.getInfoEmployee_3" />
+        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_name_15" />
         <item itemvalue="Gradle.EmployeeController_getEmployeeId.getInfoEmployee_2" />
-        <item itemvalue="Gradle.EmployeeController_getEmployeeId.getInfoEmployee_1" />
-        <item itemvalue="Gradle.EmployeeController_getEmployeeId.getInfoEmployee_4" />
+        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_idCard_17" />
+        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_idCard_16" />
+        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_idCard_15" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +310,7 @@
       <workItem from="1641811278493" duration="174000" />
       <workItem from="1641823294746" duration="1473000" />
       <workItem from="1641872267953" duration="1527000" />
-      <workItem from="1641883196732" duration="10182000" />
+      <workItem from="1641883196732" duration="18018000" />
     </task>
     <servers />
   </component>
@@ -341,26 +360,26 @@
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
     <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641872304421" />
-    <state width="1860" height="408" key="GridCell.Tab.0.bottom" timestamp="1641893678349">
+    <state width="1877" height="401" key="GridCell.Tab.0.bottom" timestamp="1641902024166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1860" height="408" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641893678349" />
-    <state width="1860" height="408" key="GridCell.Tab.0.center" timestamp="1641893678349">
+    <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641902024166" />
+    <state width="1877" height="401" key="GridCell.Tab.0.center" timestamp="1641902024166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1860" height="408" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641893678349" />
-    <state width="1860" height="408" key="GridCell.Tab.0.left" timestamp="1641893678349">
+    <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641902024166" />
+    <state width="1877" height="401" key="GridCell.Tab.0.left" timestamp="1641902024166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1860" height="408" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641893678349" />
-    <state width="1860" height="408" key="GridCell.Tab.0.right" timestamp="1641893678349">
+    <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641902024166" />
+    <state width="1877" height="401" key="GridCell.Tab.0.right" timestamp="1641902024166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1860" height="408" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641893678349" />
+    <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641902024166" />
     <state width="1860" height="408" key="GridCell.Tab.1.bottom" timestamp="1641893486754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
