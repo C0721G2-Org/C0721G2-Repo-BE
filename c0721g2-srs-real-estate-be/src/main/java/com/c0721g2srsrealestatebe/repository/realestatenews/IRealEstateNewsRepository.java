@@ -16,44 +16,15 @@ import java.util.Optional;
 public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews, String> {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
-    @Query(value = " select * \n" +
-            "  from real_estate_news\n" +
-            "  where customer_id = :customerId and approval =2 ", nativeQuery = true)
-    //    List< RealEstateNews > findAllNewsByCustomerId(@Param("customerId") String customerId);
-    Page< RealEstateNews > findAllNewsByCustomerId(@Param("customerId") String customerId, Pageable pageable);
-    // 5.5.4 Search title and customerId
     @Query(value = "    select * \n" +
             "  from real_estate_news\n" +
-            "  where customer_id = :customerId and kind_of_news = :kindOfNew \n" +
+            "  where customer_id like concat('%',:customerId,'%') and kind_of_news like concat('%',:kindOfNew,'%')" +
             "  and title like concat('%',trim(:title),'%') and approval =2 ", nativeQuery = true)
-    Page< RealEstateNews > findAllNewsByCustomerIdAndTitleAndType(@Param("customerId") String customerId,
+    Page< RealEstateNews > findAllNewsBySearchField(@Param("customerId") String customerId,
                                                                   @Param("title") String title,
-                                                                  @Param("kindOfNew") Integer typeOfNew,
+                                                                  @Param("kindOfNew") String typeOfNew,
+                                                                  @Param("realNewType") String realNewType,
                                                                   Pageable pageable);
-
-    // 5.5.4 List search title
-    @Query(value = "    select * \n" +
-            "  from real_estate_news\n" +
-            "  where customer_id = :customerId \n" +
-            "  and title like concat('%',trim(:title),'%') and approval =2 ", nativeQuery = true)
-    Page< RealEstateNews > findAllNewsByCustomerIdAndTitle(@Param("customerId") String customerId,
-                                                           @Param("title") String title,
-                                                           Pageable pageable);
-
-    // 5.5.4 List search customerId and kindOfNew
-    @Query(value = "    select * \n" +
-            "  from real_estate_news\n" +
-            "  where customer_id = :customerId and kind_of_news = :kindOfNew and approval =2 ", nativeQuery = true)
-    Page< RealEstateNews > findAllNewsByCustomerIdAndType(@Param("customerId") String customerId,
-                                                          @Param("kindOfNew") Integer typeOfNew,
-                                                          Pageable pageable);
-    // 5.5.4 List search customerId and realNewType
-    @Query(value = " select * \n" +
-            "  from real_estate_news\n" +
-            "  where customer_id = :customerId and kind_of_news = :realNewType and approval =2", nativeQuery = true)
-    Page< RealEstateNews > findAllNewsByCustomerIdAndRealNewType(@Param("customerId") String customerId,
-                                                                 @Param("realNewType") Integer realNewType,
-                                                                 Pageable pageable);
 
     // 5.6.3 show Real estate new detail
     @Query(value = " select * from real_estate_news where id =:id ", nativeQuery = true)

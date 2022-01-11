@@ -19,30 +19,12 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
-    @Override
-    public Page< RealEstateNews > findAllNewsByCustomerId(String customerId, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllNewsByCustomerId(customerId, pageable); 
-    }
-    // 5.5.4 Search title and customerId and kindOfNew
-    @Override
-    public Page< RealEstateNews > findAllNewsByCustomerIdAndTitleAndType
-    (String customerId, String title, Integer typeOfNew, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllNewsByCustomerIdAndTitleAndType
-                (customerId, title, typeOfNew, pageable);
-    }
 
-    // 5.5.4 List search customerId and title
     @Override
-    public Page< RealEstateNews > findAllNewsByCustomerIdAndTitle
-    (String customerId, String title, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllNewsByCustomerIdAndTitle(customerId, title, pageable);
-    }
-
-    // 5.5.4 List search customerId and kindOfNew
-    @Override
-    public Page< RealEstateNews > findAllNewsByCustomerIdAndType
-    (String customerId, Integer typeOfNew, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllNewsByCustomerIdAndType(customerId, typeOfNew, pageable);
+    public Page< RealEstateNews > findAllNewsBySearchField
+            (String customerId, String title, String typeOfNew, String realNewType, Pageable pageable) {
+        return iRealEstateNewsRepository.findAllNewsBySearchField
+                (customerId, title, typeOfNew, typeOfNew, pageable);
     }
 
     // 5.6.3 show Real estate new detail
@@ -50,13 +32,6 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     public Optional< RealEstateNews > findNewsById(String id) {
         return iRealEstateNewsRepository.findById(id);
     }
-
-    // 5.6.3 show Real estate new detail
-    @Override
-    public Page< RealEstateNews > findAllNewsByCustomerIdAndNewType(String customerId, Integer realNewType, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllNewsByCustomerIdAndRealNewType(customerId,realNewType, pageable);
-    }
-
 
     // 5.6.2 add Real estate new detail
     @Override
