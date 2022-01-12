@@ -11,16 +11,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface IRealEstateNewsRepository extends JpaRepository<RealEstateNews, Integer> {
-//    @Query(value = "select * \n" +
-//            " from real_estate_news\n" +
-//            " where approval =2", nativeQuery = true)
-//    Page<RealEstateNews> findAllRealEstateNewsByApproval(Pageable pageable);
-//
-//    @Query(value = " select * \n" +
-//            "  from real_estate_news\n" +
-//            "  where approval =2 and real_estate_news.address like concat('%',trim(:address),'%')", nativeQuery = true)
-//    Page<RealEstateNews> findAllRealEstateNewsByApprovalAndAddress(@Param("address") String title, Pageable pageable);
-
 
     @Query(value = " select * \n" +
             " from real_estate_news\n " +

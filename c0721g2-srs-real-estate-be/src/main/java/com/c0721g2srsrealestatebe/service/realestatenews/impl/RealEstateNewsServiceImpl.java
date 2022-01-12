@@ -15,21 +15,6 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     @Autowired
     IRealEstateNewsRepository iRealEstateNewsRepository;
 
-//    @Override
-//    public List<RealEstateNews> findAllRealEstateNews() {
-//        return iRealEstateNewsRepository.findAll();
-//    }
-//
-//    @Override
-//    public Page<RealEstateNews> findAllRealEstateNewsByApproval(Pageable pageable) {
-//        return iRealEstateNewsRepository.findAllRealEstateNewsByApproval(pageable);
-//    }
-//
-//    @Override
-//    public Page<RealEstateNews> findAllRealEstateNewsByApprovalAndAddress(String address, Pageable pageable) {
-//        return iRealEstateNewsRepository.findAllRealEstateNewsByApprovalAndAddress(address,pageable);
-//    }
-
     @Override
     public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, Pageable pageable) {
         return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, pageable);

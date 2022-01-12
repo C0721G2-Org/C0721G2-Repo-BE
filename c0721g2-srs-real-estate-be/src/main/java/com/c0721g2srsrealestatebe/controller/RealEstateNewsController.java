@@ -14,46 +14,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 @CrossOrigin
 public class RealEstateNewsController {
     @Autowired
     private IRealEstateNewsService realEstateNewsService;
 
-//    // 5.6.1  List real-estate
-//    @GetMapping("/list-real-estate-new")
-//    public ResponseEntity< List<RealEstateNews> > getAllRealEstates() {
-//        List< RealEstateNews > realEstatesList = realEstateNewsService.findAllRealEstateNews();
-//        if (realEstatesList.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
-//        return new ResponseEntity<>(realEstatesList, HttpStatus.OK);
-//    }
-
-//    @GetMapping("/list-real-estate-new/search-by-approval")
-//    public ResponseEntity< Page<RealEstateNews> > getAllRealEstatesByApproval(@RequestParam(defaultValue = "0") int page){
-//        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
-//        Page< RealEstateNews > realEstatesList = realEstateNewsService.findAllRealEstateNewsByApproval(pageable);
-//        if (realEstatesList.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
-//        return new ResponseEntity<>(realEstatesList, HttpStatus.OK);
-//    }
-
-//    @GetMapping("/list-real-estate-new/search-by-approval-and-address")
-//    public ResponseEntity< Page<RealEstateNews> > getAllRealEstatesByApprovalAndAddress(@RequestParam(value = "address") String address, @RequestParam(defaultValue = "0") int page) {
-//        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
-//        Page< RealEstateNews > realEstatesList = realEstateNewsService.findAllRealEstateNewsByApprovalAndAddress(address, pageable);
-//        if (realEstatesList.isEmpty()) {
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
-//        return new ResponseEntity<>(realEstatesList, HttpStatus.OK);
-//    }
-
-
-//    // 5.6.1  List real-estate
+//    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType
     @GetMapping("/list-real-estate-new/search")
     public ResponseEntity< Page< RealEstateNews > > getListRealEstateNews(
             @RequestParam(defaultValue = "", value = "address") String address,
