@@ -1,20 +1,7 @@
 package com.c0721g2srsrealestatebe.dto.realstatenews;
 
-<<<<<<< HEAD
-=======
-import com.c0721g2srsrealestatebe.model.account.AppUser;
-import com.c0721g2srsrealestatebe.model.image.Image;
-import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
-import javax.persistence.Column;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.validation.constraints.Pattern;
-import java.time.LocalDate;
-import java.util.List;
 
->>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
 public class CusDTO {
     @Pattern(regexp = "KH-\\d{4}",message = "wrong format")
     private String id;
