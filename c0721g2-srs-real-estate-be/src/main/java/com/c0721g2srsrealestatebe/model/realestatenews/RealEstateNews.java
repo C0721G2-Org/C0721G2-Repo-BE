@@ -62,21 +62,6 @@ public class RealEstateNews {
         this.imageList = imageList;
     }
 
-    public RealEstateNews(String title, String description, String address, Double area, Double price, Integer approval, Integer kindOfNews, Integer status, RealEstateType realEstateType, Direction direction, Customer customer, List<Image> imageList) {
-        this.title = title;
-        this.description = description;
-        this.address = address;
-        this.area = area;
-        this.price = price;
-        this.approval = approval;
-        this.kindOfNews = kindOfNews;
-        this.status = status;
-        this.realEstateType = realEstateType;
-        this.direction = direction;
-        this.customer = customer;
-        this.imageList = imageList;
-    }
-
     public String getId() {
         return id;
     }
@@ -179,24 +164,5 @@ public class RealEstateNews {
 
     public void setImageList(List<Image> imageList) {
         this.imageList = imageList;
-    }
-
-    @Override
-    public String toString() {
-        return "RealEstateNews{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", address='" + address + '\'' +
-                ", area=" + area +
-                ", price=" + price +
-                ", approval=" + approval +
-                ", kindOfNews=" + kindOfNews +
-                ", status=" + status +
-                ", realEstateType=" + realEstateType +
-                ", direction=" + direction +
-                ", customer=" + customer +
-                ", imageList=" + imageList +
-                '}';
     }
 }

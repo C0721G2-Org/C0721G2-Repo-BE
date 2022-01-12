@@ -43,7 +43,7 @@ public class Customer {
     private Image image;
     @OneToMany(mappedBy = "customer" )
     @JsonBackReference(value = "customers_real_estate_news")
-    private List<RealEstateNews> realEstateNewsList;
+    private List< RealEstateNews > realEstateNewsList;
 
 
     private Boolean deleted = Boolean.FALSE;
