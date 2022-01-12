@@ -4,6 +4,7 @@ import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -16,7 +17,7 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin(originPatterns = "http://localhost:4200")
-@RequestMapping("api/customers")
+@RequestMapping("/api/customers")
 public class CustomerController {
     @Autowired
     CustomerServiceImpl customerService;
@@ -37,9 +38,9 @@ public class CustomerController {
 //        }
 //        return new ResponseEntity<>(customers, HttpStatus.OK);
 //    }
-
+//
 //    thienlb - phan trang
-        @GetMapping("customer-list")
+    @GetMapping("customer-list-test")
     public ResponseEntity<Page<Customer>> showCustomer(@PageableDefault( sort = "id", direction = Sort.Direction.ASC) Pageable pageable){
         Page<Customer> customersPage = customerService.findCustomerPage(pageable);
         if(customersPage.isEmpty()){
@@ -48,7 +49,23 @@ public class CustomerController {
 
         return new ResponseEntity<>(customersPage, HttpStatus.OK);
     }
+//    ThienLb - tim kiem + phan trang
+     @GetMapping("/customer-list")
+    public ResponseEntity<Page<Customer>> findCustomerByPhoneAndNameAndEmail(@RequestParam(defaultValue = "0") int page ,
+                                                                             @RequestParam(defaultValue = "") String name,
+                                                                             @RequestParam(defaultValue = "") String phone,
+                                                                             @RequestParam(defaultValue = "") String email
+                                                                             ){
+         Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
+         Page< Customer > customersNewPage = customerService.findAllCustomerByNameAndPhoneAndEmailPage(name, phone, email, pageable);
 
+         if (customersNewPage.isEmpty()) {
+             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+         }
+         return new ResponseEntity<>(customersNewPage, HttpStatus.OK);
+
+    }
+//    http://localhost:8080/api/customers/customer-list-search?name=ngọc Nhật&phone=0907123123
     @GetMapping("/{id}")
     public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
         Optional<Customer> customerOptional = customerService.findCustomerById(id);

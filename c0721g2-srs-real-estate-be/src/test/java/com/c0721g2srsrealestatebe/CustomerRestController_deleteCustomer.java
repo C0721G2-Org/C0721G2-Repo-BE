@@ -37,7 +37,7 @@ public class CustomerRestController_deleteCustomer {
 //        Assertions.assertEquals(true,responseEntity.getBody().getDeleted().booleanValue());
 //        Mockito.when(iCustomerRepository.findById("KH-0002"));
 
-//     ThienLB -  xoa khach hang
+//     ThienLB -  xoa khach hang case 25 => 28
 //    [id] tồn tại trong database
     @Test
     public void deleteCustomer_1() throws Exception {

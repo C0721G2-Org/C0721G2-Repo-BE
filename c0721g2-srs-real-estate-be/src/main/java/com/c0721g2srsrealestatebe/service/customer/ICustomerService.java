@@ -23,4 +23,6 @@ public interface ICustomerService {
     Optional<Customer> findCustomerByPhone(String phone);
 
     Optional<Customer> findCustomerByEmail(String email);
+
+    Page<Customer> findAllCustomerByNameAndPhoneAndEmailPage(String name, String phone, String email, Pageable pageable);
 }

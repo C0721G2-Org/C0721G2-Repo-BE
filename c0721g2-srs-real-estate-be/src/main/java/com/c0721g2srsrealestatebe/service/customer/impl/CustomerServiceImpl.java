@@ -54,4 +54,10 @@ public class CustomerServiceImpl implements ICustomerService {
     public Optional<Customer> findCustomerByEmail(String email) {
         return iCustomerRepository.findCustomerByEmail(email);
     }
+
+    @Override
+    public Page<Customer> findAllCustomerByNameAndPhoneAndEmailPage(String name, String phone, String email, Pageable pageable) {
+        return iCustomerRepository.findAllCustomerByNameAndPhoneAndEmail(name, phone, email, pageable);
+    }
+
 }
