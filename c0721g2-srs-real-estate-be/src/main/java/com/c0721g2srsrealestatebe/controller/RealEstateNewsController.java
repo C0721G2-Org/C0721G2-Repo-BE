@@ -24,7 +24,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/real-estate-new")
+@RequestMapping("/api/real-estate-new")
 public class RealEstateNewsController {
     @Autowired
     private IRealEstateNewsService realEstateNewsService;
@@ -69,7 +69,6 @@ public class RealEstateNewsController {
                                             @RequestParam(defaultValue = "",value = "name") String  name,
                                             @RequestParam(defaultValue = "",value ="phone") String  phone) {
         if (customerMail.equals("") || name.equals("") || phone.equals("")) {
-
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } else {
             emailService.sendSimpleMessage(customerMail, name, phone);
