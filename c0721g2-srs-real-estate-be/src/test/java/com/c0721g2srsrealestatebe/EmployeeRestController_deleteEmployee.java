@@ -27,8 +27,8 @@ public class EmployeeRestController_deleteEmployee {
                         .delete("/employee/delete/{id}", "NV-0002"))
                 .andDo(print())
                 .andExpect(status().is2xxSuccessful())
-                .andExpect(jsonPath("$.name").value("Mai Thị Bích Phương"));
-//                .andExpect(jsonPath("$.dateOfBirth").value("1988-10-30"));
+                .andExpect(jsonPath("$.name").value("Mai Thị Bích Phương"))
+                .andExpect(jsonPath("$.dateOfBirth").value("1988-10-30"));
     }
 
     @Test

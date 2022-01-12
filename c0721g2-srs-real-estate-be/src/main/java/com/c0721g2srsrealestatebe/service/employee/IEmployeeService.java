@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Service
 public interface IEmployeeService {
-
+    public  Page<Employee> findAllEmployeeSearch(Pageable pageable,String name, String email, int degree_id);
     public Page<Employee> findAllEmployeePage(Pageable pageable);
     void deleteById(String id);
     Optional<Employee> findByIdOp(String id);

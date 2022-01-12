@@ -14,6 +14,8 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,7 +35,7 @@ public class EmployeeController {
     @Autowired
     IPositionService positionService;
 
-    @GetMapping
+    @GetMapping(value = "/list")
     public ResponseEntity<Page<Employee>> showListEmployee(@PageableDefault(value= 5) Pageable pageable) {
         Page<Employee> employeeList = employeeService.findAllEmployeePage(pageable);
         if (employeeList.isEmpty()) {
@@ -42,7 +44,22 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @GetMapping(value = "/search")
+    public ResponseEntity<Page<Employee>> searchEmployee(@PageableDefault(value= 10) Pageable pageable,
+                                                         @RequestParam(defaultValue = "") String name,
+                                                         @RequestParam(defaultValue = "") String email,
+                                                         @RequestParam(defaultValue = "")  int degree_id
+                                                         ) {
+        Page<Employee> employeeListSearch = employeeService.findAllEmployeeSearch(pageable, name, email, degree_id);
+        if (employeeListSearch.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(employeeListSearch, HttpStatus.OK);
+    }
+
+
+
+    @DeleteMapping("delete/{id}")
     public ResponseEntity<Employee> delete(@PathVariable String id) {
         Optional<Employee> employeeOptional = this.employeeService.findByIdOp(id);
         if (!employeeOptional.isPresent()) {

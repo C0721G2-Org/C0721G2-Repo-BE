@@ -18,8 +18,13 @@ public class EmployeeServiceImpl implements IEmployeeService {
     IEmployeeRepository iEmployeeRepository;
 
     @Override
+    public  Page<Employee> findAllEmployeeSearch(Pageable pageable, String name, String email, int degree) {
+        return this.iEmployeeRepository.searchEmployeeByNameOrEmailOrDegree(pageable, name,email,degree);
+    }
+
+    @Override
     public Page<Employee> findAllEmployeePage(Pageable pageable) {
-        return this.iEmployeeRepository.findAllEmployee(pageable);
+        return this.iEmployeeRepository.findAll(pageable);
     }
 
     @Override
