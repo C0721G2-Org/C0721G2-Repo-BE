@@ -1,22 +1,41 @@
 package com.c0721g2srsrealestatebe.payload.request;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+
 public class ResetPasswordRequest {
-    private String password;
-    private String code;
+    @NotBlank(message = "Mật khẩu không được để trống")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,12}$")
+    private String newPassword;
+    @NotBlank(message = "Mật khẩu không được để trống")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,12}$")
+    private String reNewPassword;
+    private String verificationCode;
 
-    public String getPassword() {
-        return password;
+    public ResetPasswordRequest() {
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public String getNewPassword() {
+        return newPassword;
     }
 
-    public String getCode() {
-        return code;
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public String getVerificationCode() {
+        return verificationCode;
+    }
+
+    public void setVerificationCode(String verificationCode) {
+        this.verificationCode = verificationCode;
+    }
+
+    public String getReNewPassword() {
+        return reNewPassword;
+    }
+
+    public void setReNewPassword(String reNewPassword) {
+        this.reNewPassword = reNewPassword;
     }
 }

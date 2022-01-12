@@ -13,4 +13,6 @@ public interface IAppUserService {
     void addVerificationCode(String email) throws MessagingException, UnsupportedEncodingException;
 
     void saveNewPassword(String passwordEncode, String code);
+
+    Boolean findUserByVerificationCode(String code);
 }
