@@ -1,6 +1,7 @@
 package com.c0721g2srsrealestatebe.dto;
 
 import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
@@ -13,35 +14,35 @@ import java.time.LocalDate;
 
 public class EmployeeDTO implements Validator {
     private String id;
-    @NotBlank(message = "Không được bỏ trống tên")
-    @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ\" +\n" +
-            "\"ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở\" +\n" +
-            "\"ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$", message = "Không được nhập số")
-    @Size(min = 6, max = 40, message = "Tên phải từ 6 đến 40 ký tự")
+//    @NotBlank(message = "Không được bỏ trống tên")
+//    @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ\" +\n" +
+//            "\"ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở\" +\n" +
+//            "\"ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$", message = "Không được nhập số")
+//    @Size(min = 6, max = 40, message = "Tên phải từ 6 đến 40 ký tự")
     private String name;
 
-    @NotBlank(message = "Không được bỏ trống email")
-
-    @Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+.[a-z]{2,6}$")
-    @Size(min = 8, max = 40, message = "Email phải từ 6 đến 40 ký tự")
+//    @NotBlank(message = "Không được bỏ trống email")
+//
+//    @Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+.[a-z]{2,6}$")
+//    @Size(min = 8, max = 40, message = "Email phải từ 6 đến 40 ký tự")
     private String email;
 
 //    @Pattern(regexp = "^(09|\\(84\\)\\+9)[01]\\d{7}$")
-    @NotBlank(message = "Không được bỏ trống số điện thoại")
-    @Pattern(regexp = "090\\d{7}||091\\d{7}||[(]84[)][+]90\\d{7}||[(]84[)][+]91\\d{7}", message = "Phải nhập đúng định dạng số điện thoại")
+//    @NotBlank(message = "Không được bỏ trống số điện thoại")
+//    @Pattern(regexp = "090\\d{7}||091\\d{7}||[(]84[)][+]90\\d{7}||[(]84[)][+]91\\d{7}", message = "Phải nhập đúng định dạng số điện thoại")
     private String phoneNumber;
 
-    @NotBlank(message = "Không được bỏ trống địa chỉ")
-    @Size(min = 6, max = 255, message = "Địa chỉ phải từ 6 đến 255 ký tự")
+//    @NotBlank(message = "Không được bỏ trống địa chỉ")
+//    @Size(min = 6, max = 255, message = "Địa chỉ phải từ 6 đến 255 ký tự")
     private String address;
 
-    @NotNull(message = "Không được để trống ngày sinh")
+//    @NotNull(message = "Không được để trống ngày sinh")
 //    @Pattern(regexp = "\\d{4}-\\d{2}-\\d{2}", message = "Không đúng định dạng ngày sinh")
     private LocalDate dateOfBirth;
 
-    @NotBlank(message = "Không được để trống CMND")
-    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$",
-            message = "Số CMND phải đúng định dạng: XXXXXXXXX hoặc XXXXXXXXXXXX.")
+//    @NotBlank(message = "Không được để trống CMND")
+//    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$",
+//            message = "Số CMND phải đúng định dạng: XXXXXXXXX hoặc XXXXXXXXXXXX.")
     private String idCard;
 
     private Integer gender;
@@ -56,8 +57,20 @@ public class EmployeeDTO implements Validator {
 
     private Boolean deleted = Boolean.FALSE;
 
-    public EmployeeDTO() {
+    private Long roleDTO;
+
+    public Long getRoleDTO() {
+        return roleDTO;
     }
+
+    public void setRoleDTO(Long roleDTO) {
+        this.roleDTO = roleDTO;
+    }
+
+    public EmployeeDTO() {
+
+    }
+
 
     public DegreeDTO getDegreeDTO() {
         return degreeDTO;
@@ -163,7 +176,6 @@ public class EmployeeDTO implements Validator {
         this.deleted = deleted;
     }
 
-
     @Override
     public boolean supports(Class<?> clazz) {
         return false;
@@ -173,5 +185,24 @@ public class EmployeeDTO implements Validator {
     public void validate(Object target, Errors errors) {
 
 
+    }
+
+    @Override
+    public String toString() {
+        return "EmployeeDTO{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", idCard='" + idCard + '\'' +
+                ", gender=" + gender +
+                ", degreeDTO=" + degreeDTO +
+                ", positionDTO=" + positionDTO +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", deleted=" + deleted +
+                '}';
     }
 }

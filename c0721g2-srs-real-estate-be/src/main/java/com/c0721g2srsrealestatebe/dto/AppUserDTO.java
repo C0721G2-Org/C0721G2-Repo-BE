@@ -1,33 +1,21 @@
-package com.c0721g2srsrealestatebe.model.account;
+package com.c0721g2srsrealestatebe.dto;
 
-import org.hibernate.annotations.GenericGenerator;
+import com.c0721g2srsrealestatebe.model.account.Role;
 
-import javax.persistence.*;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToMany;
 import java.util.Set;
 
-@Entity(name = "app_users")
-public class AppUser {
-    @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+public class AppUserDTO {
     private String id;
     private String username;
     private String password;
     private Boolean isEnabled;
     private String verificationCode;
-    @ManyToMany(fetch = FetchType.EAGER)
-    private Set<Role> roles;
 
-    public AppUser() {
-    }
+    private Set<RoleDTO> rolesDTO;
 
-    public AppUser(String id, String username, String password, Boolean isEnabled, String verificationCode, Set<Role> roles) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.isEnabled = isEnabled;
-        this.verificationCode = verificationCode;
-        this.roles = roles;
+    public AppUserDTO() {
     }
 
     public String getId() {
@@ -70,23 +58,23 @@ public class AppUser {
         this.verificationCode = verificationCode;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    public Set<RoleDTO> getRolesDTO() {
+        return rolesDTO;
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setRolesDTO(Set<RoleDTO> rolesDTO) {
+        this.rolesDTO = rolesDTO;
     }
 
     @Override
     public String toString() {
-        return "AppUser{" +
+        return "AppUserDTO{" +
                 "id='" + id + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", isEnabled=" + isEnabled +
                 ", verificationCode='" + verificationCode + '\'' +
-                ", roles=" + roles +
+                ", rolesDTO=" + rolesDTO +
                 '}';
     }
 }
