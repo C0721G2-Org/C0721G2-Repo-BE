@@ -18,8 +18,11 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -80,19 +83,21 @@ public class RealEstateNewsController {
 
     // 5.6.2 add Real estate new detail
     @PostMapping("/post")
-    public ResponseEntity< RealEstateNews > saveRealEstateNews(@RequestBody RealEstateDTO realEstateDTO, BindingResult bindingResult) {
-        if (bindingResult.hasErrors()) {
-            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+    public ResponseEntity<List<FieldError>> saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            System.out.println(bindingResult);
+            return new ResponseEntity<>(bindingResult.getFieldErrors(),HttpStatus.NOT_ACCEPTABLE);
         }
         RealEstateNews news = this.copyProperties(realEstateDTO);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
+        System.out.println(realEstateNews);
         realEstateDTO.getImageList().forEach((imageDTO -> {
                     Image image = new Image();
                     image.setUrl(imageDTO.getUrl());
                     iImageService.saveImg(image, realEstateNews.getId());
                 })
         );
-        return new ResponseEntity<>(realEstateNews, HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     public RealEstateNews copyProperties(RealEstateDTO realEstateDTO) {

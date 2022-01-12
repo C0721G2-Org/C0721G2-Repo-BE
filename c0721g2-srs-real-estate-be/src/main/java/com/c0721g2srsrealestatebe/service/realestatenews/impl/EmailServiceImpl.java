@@ -23,5 +23,6 @@ public class EmailServiceImpl implements EmailService {
                 "hungthinhgroup.com.\n" +
                 "Thanks and Regards\n");
         emailSender.send(message);
+
     }
 }
