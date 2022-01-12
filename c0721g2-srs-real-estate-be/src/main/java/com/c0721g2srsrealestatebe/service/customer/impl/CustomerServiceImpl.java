@@ -37,13 +37,9 @@ public class CustomerServiceImpl implements ICustomerService {
 
     @Override
     public Integer finByIdCard(String idCard) {
-        return null;
+        return iCustomerRepository.finByIdCard(idCard);
     }
 
-    @Override
-    public void savePassword(AppUserDTO appUserDTO) {
-        iCustomerRepository.saveNewPassword(appUserDTO.getPassword(),appUserDTO.getUsername());
-    }
 
 
 }

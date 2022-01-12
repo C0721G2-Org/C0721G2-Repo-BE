@@ -53,29 +53,7 @@ public class CustomerController {
         customerService.addCustomer(customer1);
         return new ResponseEntity<>(customer1,HttpStatus.OK);
     }
-    
-    @PutMapping(value = "/newpassword")
-    public ResponseEntity<AppUser>update(@Valid @RequestBody AppUserDTO appUserDTO, BindingResult bindingResult){
-       try {
-           new AppUserDTO().validate(appUserDTO,bindingResult);
-           if (bindingResult.hasFieldErrors("password")){
-               System.out.println("mật nhập không đúng form");
-               return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-           }
-           AppUser appUser=new AppUser();
-           System.out.println(appUserDTO.toString());
-        /*
-        Phương thức encode từ người dùng và lấy pass từ dưới DB lên để so sánh
-        (Chưa viết xong)
-         */
-           BeanUtils.copyProperties(appUserDTO,appUser);
-           customerService.savePassword(appUserDTO);
-           return new ResponseEntity<>(HttpStatus.OK);
-       }catch (Exception e){
-           return new ResponseEntity<>(HttpStatus.OK);
-       }
 
-    }
 
 
 

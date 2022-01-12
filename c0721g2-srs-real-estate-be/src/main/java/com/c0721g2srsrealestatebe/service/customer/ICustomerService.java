@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface ICustomerService {
     void editCustomer(CustomerDTO customerEditDTO);
     Integer finByIdCard(String idCard);
-    void savePassword(AppUserDTO appUserDTO);
+
 }
