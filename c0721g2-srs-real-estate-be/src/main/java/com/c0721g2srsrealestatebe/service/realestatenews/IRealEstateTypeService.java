@@ -1,5 +1,9 @@
 package com.c0721g2srsrealestatebe.service.realestatenews;
 
-public interface IRealEstateTypeService {
+import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 
+import java.util.List;
+
+public interface IRealEstateTypeService {
+    List<RealEstateType> realEstateTypeList();
 }
