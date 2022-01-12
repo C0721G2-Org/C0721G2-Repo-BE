@@ -1,6 +1,7 @@
 package com.c0721g2srsrealestatebe.dto;
 
 import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
+import com.c0721g2srsrealestatebe.model.account.Role;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -22,10 +23,8 @@ import java.util.List;
 //@Age
 public class CustomerDTO implements Validator {
 
+
     private String id;
-
-
-
     @NotBlank(message = "you have to input your name")
     @Size(min = 2, message = "Tên ít nhất phải 2 ký tự")
     @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ" +
@@ -74,6 +73,16 @@ public class CustomerDTO implements Validator {
     private AppUserDTO appUserDTO;
 
     private ImageDTO image;
+
+    private Long role;
+
+    public long getRole() {
+        return role;
+    }
+
+    public void setRole(long role) {
+        this.role = role;
+    }
 
     public AppUserDTO getAppUserDTO() {
         return appUserDTO;

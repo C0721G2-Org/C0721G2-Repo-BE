@@ -2,6 +2,8 @@ package com.c0721g2srsrealestatebe.controller;
 
 
 import com.c0721g2srsrealestatebe.dto.CustomerDTO;
+import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import org.springframework.beans.BeanUtils;
@@ -19,6 +21,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/api/customer")
 public class CustomerController {
     @Autowired
@@ -42,6 +45,13 @@ public class CustomerController {
         }
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
+
+//        Role role = new Role();
+//        role.setId(customerDTO.setRole(3));
+//        customerDTO.setRole(3);
+//        AppUser appUser = new AppUser();
+//        appUser.setUsername();
+
         customerService.save(customer);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
