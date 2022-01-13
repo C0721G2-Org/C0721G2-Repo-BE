@@ -1,7 +1,9 @@
 package com.c0721g2srsrealestatebe.controller;
 
+import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
+import com.c0721g2srsrealestatebe.service.realestatenews.IDirectionService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,26 +24,42 @@ import java.util.List;
 @CrossOrigin
 public class RealEstateNewsController {
     @Autowired
+    IDirectionService iDirectionService;
+    @Autowired
     private IRealEstateNewsService realEstateNewsService;
     @Autowired
     IRealEstateTypeService iRealEstateTypeService;
+
+    @GetMapping(value = "/direction")
+    public List<Direction> directionList(){
+        return iDirectionService.directionList();
+    }
 
     @GetMapping(value = "/dealEstateType")
     public List<RealEstateType> realEstateTypes(){
         return iRealEstateTypeService.realEstateTypeList();
     }
 
-//    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType
+//    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType, direction
     @GetMapping("/list-real-estate-new/search")
     public ResponseEntity< Page< RealEstateNews > > getListRealEstateNews(
             @RequestParam(defaultValue = "", value = "address") String address,
             @RequestParam(defaultValue = "", value = "kindOfNews") String kindOfNews,
             @RequestParam(defaultValue = "", value = "realEstateType") String realEstateType,
+            @RequestParam(defaultValue = "", value = "direction") String direction,
+            @RequestParam(defaultValue = "0", value = "minPrice") String minPrice,
+            @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
             @RequestParam(defaultValue = "0") int page
     ) {
-        Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
+        if(realEstateType.equals("undefined")){
+            realEstateType = "";
+        }
+        if(direction.equals("undefined")){
+            direction = "";
+        }
+        Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
-                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, pageable);
+                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);

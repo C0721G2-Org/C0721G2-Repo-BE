@@ -10,5 +10,5 @@ import java.util.List;
 
 public interface IRealEstateNewsService {
 
-    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, Pageable pageable);
+    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice,Pageable pageable);
 }
