@@ -18,8 +18,8 @@ public class EmployeeServiceImpl implements IEmployeeService {
     IEmployeeRepository iEmployeeRepository;
 
     @Override
-    public  Page<Employee> findAllEmployeeSearch(Pageable pageable, String name, String email, int degree) {
-        return this.iEmployeeRepository.searchEmployeeByNameOrEmailOrDegree(pageable, name,email,degree);
+    public  Page<Employee> findAllEmployeeSearch(Pageable pageable, String name, String email, String position) {
+        return this.iEmployeeRepository.searchEmployeeByNameOrEmailOrDegree(pageable, name,email,position);
     }
 
     @Override
@@ -29,7 +29,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void deleteById(String id) {
-        this.iEmployeeRepository.deleteEmployeeByID(id);
+        this.iEmployeeRepository.deleteById(id);
     }
 
     @Override

@@ -21,6 +21,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "employee")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class EmployeeController {
 
     @Qualifier("employeeServiceImpl")
@@ -36,7 +37,7 @@ public class EmployeeController {
     IPositionService positionService;
 
     @GetMapping(value = "/list")
-    public ResponseEntity<Page<Employee>> showListEmployee(@PageableDefault(value= 5) Pageable pageable) {
+    public ResponseEntity<Page<Employee>> showListEmployee(@PageableDefault(value= 10) Pageable pageable) {
         Page<Employee> employeeList = employeeService.findAllEmployeePage(pageable);
         if (employeeList.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -48,16 +49,14 @@ public class EmployeeController {
     public ResponseEntity<Page<Employee>> searchEmployee(@PageableDefault(value= 10) Pageable pageable,
                                                          @RequestParam(defaultValue = "") String name,
                                                          @RequestParam(defaultValue = "") String email,
-                                                         @RequestParam(defaultValue = "")  int degree_id
+                                                         @RequestParam(defaultValue = "")  String position_id
                                                          ) {
-        Page<Employee> employeeListSearch = employeeService.findAllEmployeeSearch(pageable, name, email, degree_id);
+        Page<Employee> employeeListSearch = employeeService.findAllEmployeeSearch(pageable, name, email, position_id);
         if (employeeListSearch.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(employeeListSearch, HttpStatus.OK);
     }
-
-
 
     @DeleteMapping("delete/{id}")
     public ResponseEntity<Employee> delete(@PathVariable String id) {

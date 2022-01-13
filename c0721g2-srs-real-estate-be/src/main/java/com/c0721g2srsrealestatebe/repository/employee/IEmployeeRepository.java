@@ -19,8 +19,8 @@ public interface IEmployeeRepository extends JpaRepository<Employee, String>, Jp
     @Query(value= " delete from employees where id = :id" , nativeQuery= true)
     void deleteEmployeeByID(@Param("id") String id );
 
-    @Query(value= "select *  from employees where  name like concat('%',:name,'%' ) and  email like concat('%',:email,'%' )" +
-            " and degree_id = :degree_id" , nativeQuery= true)
+    @Query(value= "select *  from employees where  name like concat('%',:name,'%') and  email like concat('%',:email,'%') " +
+            " and position_id like concat('%',:position_id,'%')" , nativeQuery= true)
     Page<Employee> searchEmployeeByNameOrEmailOrDegree(Pageable pageable, @Param("name") String name, @Param("email")
-            String email, @Param("degree_id") int degree_id );
+            String email, @Param("position_id") String position_id );
 }
