@@ -21,26 +21,31 @@ public class UpdatePassword {
     @Autowired
     PasswordEncoder passwordEncoder;
 
-    @PatchMapping(value = "/newpassword")
-    public ResponseEntity<AppUser> update(@Valid @RequestBody AppUserDTO appUserDTO, BindingResult bindingResult) {
+    @PatchMapping(value = "/newpassword/{Pass}")
+    public ResponseEntity<AppUser> update(@Valid @RequestBody AppUserDTO appUserDTO,
+                                          @PathVariable String Pass, BindingResult bindingResult) {
         try {
             new AppUserDTO().validate(appUserDTO, bindingResult);
             if (bindingResult.hasFieldErrors("password")) {
                 System.out.println("mật nhập không đúng form");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-
-            appUserDTO.setPassword(passwordEncoder.encode(appUserDTO.getPassword()));
+            System.out.println("pass cũ người dùng nhập sai");
             System.out.println(appUserDTO.getPassword());
-            if (appUserDTO.getPassword().equals(iAppUserService.findPasswordByUsername(appUserDTO.getUsername()))){
-
-                AppUser appUser = new AppUser();
-                System.out.println(appUserDTO.toString());
-                BeanUtils.copyProperties(appUserDTO, appUser);
-                iAppUserService.updatePassword(appUserDTO);
-                System.out.println("Đã lưu password");
+            System.out.println("pass mới");
+            System.out.println(Pass);
+            if (passwordEncoder.matches(
+                            iAppUserService.findPasswordByUsername(appUserDTO.getUsername()),appUserDTO.getPassword())
+                            && Pass != appUserDTO.getPassword()){
+                AppUserDTO appUser = new AppUserDTO();
+                String newPassword = passwordEncoder.encode(Pass);
+                System.out.println(newPassword);
+                appUser.setUsername(appUserDTO.getUsername());
+                appUser.setPassword(newPassword);
+                update(appUser);
                 return new ResponseEntity<>(HttpStatus.OK);
-            } else {
+            }
+            else {
                 System.out.println("nhập sai password");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
@@ -48,8 +53,16 @@ public class UpdatePassword {
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.OK);
         }
-
     }
 
+    @PostMapping("/updatedcontroller")
+    public ResponseEntity<AppUser> update(@RequestBody AppUserDTO password) {
+        try {
+            iAppUserService.updatePassword(password);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
 
+    }
 }

@@ -8,7 +8,7 @@ import com.c0721g2srsrealestatebe.repository.customer.ICustomerRepository;
 import java.util.Optional;
 
 public interface ICustomerService {
-    void editCustomer(CustomerDTO customerEditDTO);
+    void editCustomer(Customer customerEditDTO);
     Integer finByIdCard(String idCard);
 
 }

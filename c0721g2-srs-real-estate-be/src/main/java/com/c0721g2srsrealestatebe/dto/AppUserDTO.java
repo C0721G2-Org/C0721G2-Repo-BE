@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 public class AppUserDTO implements Validator {
     private String id;
     private String username;
-    @Size(min = 6, max = 12)
+    @Size(min = 8, max = 12)
     @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$" ,
             message = "Mật khẩu phải ít nhất có 1 ký tự hoa và thường và 1 số")
     private String password;

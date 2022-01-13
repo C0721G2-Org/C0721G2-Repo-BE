@@ -30,9 +30,9 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public void editCustomer(CustomerDTO customerDTO) {
-        iCustomerRepository.editCustomer(customerDTO.getName(),customerDTO.getDateOfBirth().toString() ,customerDTO.getIdCard(),
-                customerDTO.getAddress(), customerDTO.getPhoneNumber(),customerDTO.getAppUser().getId(), customerDTO.getId());
+    public void editCustomer(Customer customer) {
+        iCustomerRepository.editCustomer(customer.getName(),customer.getDateOfBirth().toString() ,customer.getIdCard(),
+                customer.getAddress(), customer.getPhoneNumber(),customer.getAppUser().getId(), customer.getId());
     }
 
     @Override
