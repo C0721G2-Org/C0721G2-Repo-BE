@@ -10,9 +10,6 @@ import java.util.Optional;
 
 public interface IDegreeService {
 
-    List<Degree> findAllDegree();
-
-    Optional<Degree> findById(Long id);
-
+    public List<Degree> findAll();
 
 }

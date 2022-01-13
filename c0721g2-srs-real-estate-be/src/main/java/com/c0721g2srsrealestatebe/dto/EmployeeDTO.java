@@ -14,35 +14,33 @@ import java.time.LocalDate;
 
 public class EmployeeDTO implements Validator {
     private String id;
-//    @NotBlank(message = "Không được bỏ trống tên")
-//    @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ\" +\n" +
-//            "\"ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở\" +\n" +
-//            "\"ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$", message = "Không được nhập số")
-//    @Size(min = 6, max = 40, message = "Tên phải từ 6 đến 40 ký tự")
+    @NotBlank(message = "Không được bỏ trống tên")
+    @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$", message = "Không được nhập số")
+    @Size(min = 6, max = 40, message = "Tên phải từ 6 đến 40 ký tự")
     private String name;
 
-//    @NotBlank(message = "Không được bỏ trống email")
-//
-//    @Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+.[a-z]{2,6}$")
+    @NotBlank(message = "Không được bỏ trống email")
+
+    @Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+.[a-z]{2,6}$")
 //    @Size(min = 8, max = 40, message = "Email phải từ 6 đến 40 ký tự")
     private String email;
 
 //    @Pattern(regexp = "^(09|\\(84\\)\\+9)[01]\\d{7}$")
-//    @NotBlank(message = "Không được bỏ trống số điện thoại")
-//    @Pattern(regexp = "090\\d{7}||091\\d{7}||[(]84[)][+]90\\d{7}||[(]84[)][+]91\\d{7}", message = "Phải nhập đúng định dạng số điện thoại")
+    @NotBlank(message = "Không được bỏ trống số điện thoại")
+    @Pattern(regexp = "^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$", message = "Phải nhập đúng định dạng số điện thoại")
     private String phoneNumber;
 
-//    @NotBlank(message = "Không được bỏ trống địa chỉ")
-//    @Size(min = 6, max = 255, message = "Địa chỉ phải từ 6 đến 255 ký tự")
+    @NotBlank(message = "Không được bỏ trống địa chỉ")
+    @Size(min = 6, max = 255, message = "Địa chỉ phải từ 6 đến 255 ký tự")
     private String address;
 
-//    @NotNull(message = "Không được để trống ngày sinh")
+    @NotNull(message = "Không được để trống ngày sinh")
 //    @Pattern(regexp = "\\d{4}-\\d{2}-\\d{2}", message = "Không đúng định dạng ngày sinh")
     private LocalDate dateOfBirth;
 
-//    @NotBlank(message = "Không được để trống CMND")
-//    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$",
-//            message = "Số CMND phải đúng định dạng: XXXXXXXXX hoặc XXXXXXXXXXXX.")
+    @NotBlank(message = "Không được để trống CMND")
+    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$",
+            message = "Số CMND phải đúng định dạng: XXXXXXXXX hoặc XXXXXXXXXXXX.")
     private String idCard;
 
     private Integer gender;
@@ -183,6 +181,7 @@ public class EmployeeDTO implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
+
 
 
     }

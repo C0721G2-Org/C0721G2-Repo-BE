@@ -15,14 +15,8 @@ public class DegreeServiceImpl implements IDegreeService {
     @Autowired
     IDegreeRepository iDegreeRepository;
 
-
     @Override
-    public List<Degree> findAllDegree() {
-        return iDegreeRepository.findAll();
-    }
-
-    @Override
-    public Optional<Degree> findById(Long id) {
-        return iDegreeRepository.findById(id);
+    public List<Degree> findAll() {
+        return this.iDegreeRepository.findAll();
     }
 }

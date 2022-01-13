@@ -13,6 +13,10 @@ import com.c0721g2srsrealestatebe.service.employee.IEmployeeService;
 import com.c0721g2srsrealestatebe.service.employee.IPositionService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -24,13 +28,21 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping(value = "/api/employee")
+@RequestMapping(value = "/employee")
+
 public class EmployeeController {
+
+    @Qualifier("employeeServiceImpl")
     @Autowired
     IEmployeeService iEmployeeService;
+
+    @Qualifier("degreeServiceImpl")
     @Autowired
     IDegreeService iDegreeService;
+
+    @Qualifier("positionServiceImpl")
     @Autowired
     IPositionService iPositionService;
 
@@ -39,7 +51,7 @@ public class EmployeeController {
 
     @GetMapping(value = "/position")
     public ResponseEntity<List<Position>> getPosition() {
-        List<Position> positions = iPositionService.findAllPosition();
+        List<Position> positions = iPositionService.findAll();
         if (positions.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
@@ -49,23 +61,47 @@ public class EmployeeController {
 
     @GetMapping(value = "/degree")
     public ResponseEntity<List<Degree>> getDegree() {
-        List<Degree> degrees = iDegreeService.findAllDegree();
+        List<Degree> degrees = iDegreeService.findAll();
         if (degrees.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(degrees, HttpStatus.OK);
     }
 
-    @GetMapping
-    public ResponseEntity<List<Employee>> getList() {
-        List<Employee> employeeList = iEmployeeService.findAll();
+    @GetMapping(value = "/list")
+    public ResponseEntity<Page<Employee>> showListEmployee(@PageableDefault(value = 10) Pageable pageable) {
+        Page<Employee> employeeList = iEmployeeService.findAllEmployeePage(pageable);
         if (employeeList.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/edit/{id}")
+    @GetMapping(value = "/search")
+    public ResponseEntity<Page<Employee>> searchEmployee(@PageableDefault(value = 10) Pageable pageable,
+                                                         @RequestParam(defaultValue = "") String name,
+                                                         @RequestParam(defaultValue = "") String email,
+                                                         @RequestParam(defaultValue = "") String position_id
+    ) {
+        Page<Employee> employeeListSearch = iEmployeeService.findAllEmployeeSearch(pageable, name, email, position_id);
+        if (employeeListSearch.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(employeeListSearch, HttpStatus.OK);
+    }
+
+    @DeleteMapping("delete/{id}")
+    public ResponseEntity<Employee> delete(@PathVariable String id) {
+        Optional<Employee> employeeOptional = this.iEmployeeService.findByIdOp(id);
+        if (!employeeOptional.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        iEmployeeService.deleteById(id);
+        return new ResponseEntity<>(employeeOptional.get(), HttpStatus.OK);
+    }
+
+
+    @GetMapping(value = "/detail/{id}")
     public ResponseEntity<Employee> findByIdEmployee(@PathVariable String id) {
         Optional<Employee> employeeOptional = iEmployeeService.findById(id);
         if (!employeeOptional.isPresent()) {
@@ -75,7 +111,7 @@ public class EmployeeController {
     }
 
 
-    @PatchMapping(value = "/create")
+    @PostMapping(value = "/create")
     public ResponseEntity<?> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
                                             BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {

@@ -15,7 +15,7 @@ public class PositionServiceImpl implements IPositionService {
     IPositionRepository iPositionRepository;
 
     @Override
-    public List<Position> findAllPosition() {
-        return iPositionRepository.findAll();
+    public List<Position> findAll() {
+        return this.iPositionRepository.findAll();
     }
 }
