@@ -133,3 +133,25 @@ values("NV-0002","Huế","1988-10-30", 0,"bichphuong@gmail.com","0","197241502",
   ("NV-0010","Hà Nội","1998-04-01", 0,"thinh@gmail.com","1","197241502","Đoàn Thị Điểm","0911111111",null,3,2,1),
   ("NV-0011","Quảng Ngãi","1998-04-01", 0,"thinh@gmail.com","1","197241502","Lê Phước Thịnh","0911111111",null,3,2,1);
   
+insert into images (id, `url`)
+value ( 3 , "https://file4.batdongsan.com.vn/crop/257x147/2021/11/28/20211128220348-1a17_wm.jpg"),
+  ( 4 , "https://file4.batdongsan.com.vn/crop/257x147/2022/01/04/20220104095042-13c2_wm.jpg"),
+  (5 , "https://file4.batdongsan.com.vn/crop/257x147/2020/03/17/20200317102146-f05d_wm.jpg"),
+  ( 6 , "https://file4.batdongsan.com.vn/crop/257x147/2022/01/14/20220114163532-f5e4_wm.jpg"),
+  ( 7 , "https://file4.batdongsan.com.vn/crop/257x147/2021/12/22/20211222163505-ecad_wm.jpg"),
+  ( 8 , "https://file4.batdongsan.com.vn/crop/257x147/2020/07/18/20200718122425-1bef_wm.jpg"),
+  ( 9 , "https://file4.batdongsan.com.vn/crop/260x146/2021/06/13/20210613155351-c517.jpg"),
+  ( 10 , "https://file4.batdongsan.com.vn/crop/260x146/2021/12/08/20211208165329-3714.jpg"),
+  ( 11 , "https://file4.batdongsan.com.vn/crop/354x200/2022/01/11/wxbwknn6/20220111162607-84e4.jpg");
+
+  insert into real_estate_news_image_list (real_estate_news_id, image_list_id)
+  value ('BD-1002', 11),
+  ('BD-1003', 3),
+  ('BD-1004', 4),
+  ('BD-1005', 5),
+  ('BD-1006', 6),
+  ('BD-1007', 7),
+  ('BD-1008', 8),
+  ('BD-1009', 9),
+  ('BD-1011', 10);
+  
