@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.repository.account;
 
+
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -35,4 +36,11 @@ public interface IAppUserRepository extends JpaRepository<AppUser,UUID> {
     @Modifying
     @Query(value ="update app_users set password=?1 where verification_code=?2",nativeQuery = true)
     void saveNewPassword( String passwordEncode, String code);
+
+    @Query(value = "SELECT * FROM app_users WHERE verification_code=:code" ,nativeQuery=true)
+    AppUser findUserByVerificationCode(@Param("code") String code);
+
+    @Modifying
+    @Query(value ="update app_users set verification_code=null where username=?1",nativeQuery = true)
+    void deleteVerificationCode( String username);
 }

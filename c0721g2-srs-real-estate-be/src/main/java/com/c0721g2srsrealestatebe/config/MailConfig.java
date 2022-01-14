@@ -9,11 +9,11 @@ import java.util.Properties;
 
 @Configuration
 public class MailConfig {
-    // Replace with your email here:
-    public static final String MY_EMAIL = "...@gmail.com";
+    // your email
+    public static final String MY_EMAIL = "plthienbkdn@gmail.com";
 
-    // Replace password!!
-    public static final String MY_PASSWORD = "...";
+    // password
+    public static final String MY_PASSWORD = "uermylnoujwkdsdk";
 
     // And receiver!
     public static final String MAIL_RECEIVER= "";
@@ -24,7 +24,6 @@ public class MailConfig {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
 
-        // mail FROM
         mailSender.setUsername(MY_EMAIL);
         mailSender.setPassword(MY_PASSWORD);
 
