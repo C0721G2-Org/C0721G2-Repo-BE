@@ -44,8 +44,10 @@ public class RealEstateNews {
     private List<Image> imageList;
 
     public RealEstateNews() {
+        //this is a constructor
     }
 
+    @SuppressWarnings("squid:S00107")
     public RealEstateNews(String id, String title, String description, String address, Double area, Double price, Integer approval, Integer kindOfNews, Integer status, RealEstateType realEstateType, Direction direction, Customer customer, List<Image> imageList) {
         this.id = id;
         this.title = title;

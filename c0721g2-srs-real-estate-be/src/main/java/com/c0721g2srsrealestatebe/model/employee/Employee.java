@@ -46,8 +46,10 @@ public class Employee {
     private Boolean deleted = Boolean.FALSE;
 
     public Employee() {
+        //this is a constructor
     }
 
+    @SuppressWarnings("squid:S00107")
     public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, String idCard, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {
         this.id = id;
         this.name = name;

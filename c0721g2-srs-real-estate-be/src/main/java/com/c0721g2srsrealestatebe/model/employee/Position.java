@@ -13,6 +13,7 @@ public class Position {
     private String name;
 
     public Position() {
+        //this is a constructor
     }
 
     public Long getId() {

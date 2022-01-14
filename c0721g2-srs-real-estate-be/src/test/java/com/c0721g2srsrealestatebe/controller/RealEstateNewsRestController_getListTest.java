@@ -7,25 +7,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @SpringBootTest
-public class RealEstateNewsRestController_getList {
+class RealEstateNewsRestController_getListTest {
     @Autowired
     private RealEstateNewsController realEstateNewsController;
 
     //Test dữ liệu null(xoá db)
     @Test
-    public void getListRealEstateNew_5() {
+    void getListRealEstateNew_5() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("", "", "", 0);
+                = this.realEstateNewsController.getListRealEstateNews("", "", "", "", "", "", 0);
         Assertions.assertEquals(204, responseEntity.getStatusCodeValue());
     }
 
     //Test dữ liệu đổ về mặc định (dữ liệu realestate: page 0; element 1)
     @Test
-    public void getListRealEstateNew_6() {
+    void getListRealEstateNew_6() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("", "", "", 0);
+                = this.realEstateNewsController.getListRealEstateNews("", "", "", "", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(6, responseEntity.getBody().getTotalElements());
@@ -56,9 +57,9 @@ public class RealEstateNewsRestController_getList {
 
     //Test search địa chỉ(key search: "Đà Nẵng", dữ liệu trả về: page 0; element: 4)
     @Test
-    public void getListRealEstateNew_6_search_by_address() {
+    void getListRealEstateNew_6_search_by_address() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("Đà Nẵng", "", "", 0);
+                = this.realEstateNewsController.getListRealEstateNews("Đà Nẵng", "", "", "", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(5, responseEntity.getBody().getTotalElements());
@@ -91,9 +92,9 @@ public class RealEstateNewsRestController_getList {
     //Test search địa chỉ kết hợp kindOfNews
     // (key search: ("Đà Nẵng", filter chọn loại "tin cho thuê"), dữ liệu trả về: page 0; element: 2)
     @Test
-    public void getListRealEstateNew_6_search_by_address_and_KindOfNews() {
+    void getListRealEstateNew_6_search_by_address_and_KindOfNews() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("Đà Nẵng", "2", "", 0);
+                = this.realEstateNewsController.getListRealEstateNews("Đà Nẵng", "2", "", "", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(3, responseEntity.getBody().getTotalElements());
@@ -126,9 +127,9 @@ public class RealEstateNewsRestController_getList {
     //Test search địa chỉ kết hợp kindOfNews và realEstateType
     // (key search: ("Đà Nẵng", filter chọn loại "tin cho thuê", filter chọn "nhà ở"), dữ liệu trả về: page 0; element: 2)
     @Test
-    public void getListRealEstateNew_6_search_by_address_and_KindOfNews_and_realEstateType() {
+    void getListRealEstateNew_6_search_by_address_and_KindOfNews_and_realEstateType() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("Đà Nẵng", "2", "2", 0);
+                = this.realEstateNewsController.getListRealEstateNews("Đà Nẵng", "2", "2","", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(2, responseEntity.getBody().getTotalElements());
@@ -160,9 +161,9 @@ public class RealEstateNewsRestController_getList {
     //Test search kindOfNews
     // (key search: (filter chọn loại "tin cho thuê"), dữ liệu trả về: page 0; element: 3)
     @Test
-    public void getListRealEstateNew_6_search_by_KindOfNews() {
+    void getListRealEstateNew_6_search_by_KindOfNews() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("", "2", "", 0);
+                = this.realEstateNewsController.getListRealEstateNews("", "2", "", "", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(4, responseEntity.getBody().getTotalElements());
@@ -195,9 +196,9 @@ public class RealEstateNewsRestController_getList {
     //Test search kết hợp kindOfNews và realEstateType
     // (key search: (filter chọn loại "tin cho thuê", filter chọn "nhà ở"), dữ liệu trả về: page 0; element: 2)
     @Test
-    public void getListRealEstateNew_6_search_by_KindOfNews_and_realEstateType() {
+    void getListRealEstateNew_6_search_by_KindOfNews_and_realEstateType() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("", "2", "2", 0);
+                = this.realEstateNewsController.getListRealEstateNews("", "2", "2", "", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(2, responseEntity.getBody().getTotalElements());
@@ -229,9 +230,9 @@ public class RealEstateNewsRestController_getList {
     //Test search realEstateType
     // (key search: (filter chọn "nhà ở"), dữ liệu trả về: page 0; element: 2)
     @Test
-    public void getListRealEstateNew_6_search_by_realEstateType() {
+    void getListRealEstateNew_6_search_by_realEstateType() {
         ResponseEntity<Page<RealEstateNews>> responseEntity
-                = this.realEstateNewsController.getListRealEstateNews("", "", "2", 0);
+                = this.realEstateNewsController.getListRealEstateNews("", "", "2", "", "", "", 0);
         Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
         Assertions.assertEquals(1, responseEntity.getBody().getTotalPages());
         Assertions.assertEquals(2, responseEntity.getBody().getTotalElements());

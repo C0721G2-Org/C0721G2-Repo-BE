@@ -48,7 +48,7 @@ public class Customer {
 
     public Customer() {
     }
-
+    @SuppressWarnings("squid:S00107")
     public Customer(String id, String name, String email, String phoneNumber, String address, String idCard, LocalDate dateOfBirth, Integer gender, AppUser appUser, Image image, List<RealEstateNews> realEstateNewsList, Boolean deleted) {
         this.id = id;
         this.name = name;

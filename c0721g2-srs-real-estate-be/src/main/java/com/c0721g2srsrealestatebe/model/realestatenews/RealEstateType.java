@@ -13,6 +13,7 @@ public class RealEstateType {
     private String name;
 
     public RealEstateType() {
+        //this is a constructor
     }
 
     public Long getId() {
