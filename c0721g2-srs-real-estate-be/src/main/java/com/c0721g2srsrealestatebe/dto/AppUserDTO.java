@@ -9,9 +9,10 @@ import javax.validation.constraints.Size;
 
 public class AppUserDTO implements Validator {
     private String id;
+
     private String username;
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",
-            message = "Mật khẩu phải ít nhất có 1 ký tự hoa và thường và 1 số")
+//    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",
+//            message = "Mật khẩu phải ít nhất có 1 ký tự hoa và thường và 1 số")
 //    @Min(value = 7,message = "Mật khẩu từ 7 kí tự trở lên")
     private String password;
     private Boolean isEnabled;

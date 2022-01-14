@@ -40,7 +40,7 @@ public class CustomerController {
     }
 
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE,value = "/create")
     public ResponseEntity<Object> saveCustomer(@RequestBody @Valid CustomerDTO customerDTO, BindingResult bindingResult) {
 //        new CustomerDTO().validate(customerDTO, bindingResult);
 //        if (bindingResult.hasErrors()) {
@@ -48,8 +48,6 @@ public class CustomerController {
 //        }
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
-
-
         Map<String,String> listErrors = new HashMap<>();
 
 
@@ -61,25 +59,28 @@ public class CustomerController {
 
         // tạo account
         AppUser appUser = new AppUser();
-        if (!appUserService.existsByUserName(customerDTO.getUserName())) {
-           listErrors.put("errorUsername","Tài khoản đã được đăng kí");
-            System.out.println(appUserService.existsByUserName(customerDTO.getUserName()));
-        }
-//        if (appUserService.existsByUserName2(appUser.getUsername()) != null) {
-//            listErrors.put("errorUsername","Tài khoản đã được đăng kí ");
+//        if (appUserService.existsByUserName(customerDTO.getUserName())) {
+//           listErrors.put("errorUsername","Tài khoản đã được đăng kí");
+//            System.out.println(appUserService.existsByUserName(customerDTO.getUserName()));
 //        }
+        if (appUserService.existsByUserName(customerDTO.getUserName())) {
+            System.out.println("123123");
+            listErrors.put("errorUsername","Tài khoản đã được đăng kí ");
+            return ResponseEntity.badRequest().body(listErrors);
+        }
 //        if (appUserService.existsByUserName3(appUser.getUsername())) {
 //            listErrors.put("errorUsername","Tài khoản đã được đăng kí ");
 //        }
 
-        if(!listErrors.isEmpty()){
-            return ResponseEntity.badRequest().body(listErrors);
-        }
 
 //        appUser.setUsername(appUser.getUsername());
 //        appUser.setPassword(appUser.getPassword());
-        appUser.setUsername(customerDTO.getUserName());
-        appUser.setPassword(customerDTO.getPassword());
+//        appUser.setUsername(customerDTO.getUserName());
+//        appUser.setPassword(customerDTO.getPassword());
+//        appUser.getPassword();
+//        appUser.getUsername();
+        appUser.setPassword(appUser.getPassword());
+        appUser.setUsername(appUser.getUsername());
         appUser.setRoles(roleSet);
 
         customer.setAppUser(appUser);

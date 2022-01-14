@@ -17,13 +17,13 @@ public class AppUserServiceImpl {
         return iAppUserRepository.existsByUsername(username);
     }
 
-    public String existsByUserName2(String username) {
+    public boolean existsByUserName2(String username) {
         return iAppUserRepository.existsByUsername2(username);
     }
 
-    public String existsByUserName3(String username) {
-        return iAppUserRepository.existsByUsername3(username);
-    }
+//    public String existsByUserName3(String username) {
+////        return iAppUserRepository.findAppUserByUsername(username);
+//    }
 
     public Optional<AppUser> findUserName(String id) {
         return iAppUserRepository.findById(id);
