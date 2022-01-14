@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7be9e626-4a8c-41d7-811b-b02c8cb04006" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/CustomerSocial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/TokenSocialRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,12 +16,16 @@
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/MailConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/ResetPasswordRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/ResetPasswordRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../5 .module 4/11_Web_service_RESTfull/exercise/blog-management" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../5 .module 4/15_authorization/exercise/spring-security" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -205,7 +212,9 @@
       <workItem from="1641862828555" duration="11820000" />
       <workItem from="1641883792839" duration="6638000" />
       <workItem from="1641907256363" duration="765000" />
-      <workItem from="1641950807880" duration="22767000" />
+      <workItem from="1641950807880" duration="24075000" />
+      <workItem from="1641989932386" duration="1973000" />
+      <workItem from="1642039863381" duration="23088000" />
     </task>
     <servers />
   </component>
@@ -217,46 +226,46 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="93" y="93" width="1350" height="630" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.816@0.0.1536.816" timestamp="1641878779619" />
-    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1641978188992">
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1642063726303">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1641978188992" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1641978295289">
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1642063726303" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1642062238980">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1641978295289" />
-    <state width="1493" height="60" key="GridCell.Tab.0.bottom" timestamp="1641979989370">
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1642062238980" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1642092499225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1641979989370" />
-    <state width="1493" height="60" key="GridCell.Tab.0.center" timestamp="1641979989369">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1642092499225" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1642092499224">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1641979989369" />
-    <state width="1493" height="60" key="GridCell.Tab.0.left" timestamp="1641979989369">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1642092499224" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1642092499224">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1641979989369" />
-    <state width="1493" height="60" key="GridCell.Tab.0.right" timestamp="1641979989369">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1642092499224" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1642092499225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1641979989369" />
-    <state width="1493" height="60" key="GridCell.Tab.1.bottom" timestamp="1641979989370">
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1642092499225" />
+    <state width="1493" height="203" key="GridCell.Tab.1.bottom" timestamp="1642092499225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1641979989370" />
-    <state width="1493" height="60" key="GridCell.Tab.1.center" timestamp="1641979989370">
+    <state width="1493" height="203" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1642092499225" />
+    <state width="1493" height="203" key="GridCell.Tab.1.center" timestamp="1642092499225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1641979989370" />
-    <state width="1493" height="60" key="GridCell.Tab.1.left" timestamp="1641979989370">
+    <state width="1493" height="203" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1642092499225" />
+    <state width="1493" height="203" key="GridCell.Tab.1.left" timestamp="1642092499225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1641979989370" />
-    <state width="1493" height="60" key="GridCell.Tab.1.right" timestamp="1641979989370">
+    <state width="1493" height="203" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1642092499225" />
+    <state width="1493" height="203" key="GridCell.Tab.1.right" timestamp="1642092499225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="60" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1641979989370" />
+    <state width="1493" height="203" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1642092499225" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1641698286678">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

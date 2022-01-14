@@ -1,8 +1,12 @@
 package com.c0721g2srsrealestatebe.service.account.impl;
 
 import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.account.Role;
+import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 import com.c0721g2srsrealestatebe.repository.account.IAppUserRepository;
 import com.c0721g2srsrealestatebe.service.account.IAppUserService;
+import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import net.bytebuddy.utility.RandomString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,6 +18,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.UnsupportedEncodingException;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -26,6 +32,12 @@ public class AppUserServiceImpl implements IAppUserService {
 
     @Autowired
     private JavaMailSender javaMailSender;
+
+    @Autowired
+    private RoleServiceImpl roleService;
+
+    @Autowired
+    private CustomerServiceImpl customerService;
 
     @Override
     public AppUser getAppUserByEmail(String email) {
@@ -66,6 +78,28 @@ public class AppUserServiceImpl implements IAppUserService {
     public Boolean findUserByVerificationCode(String code) {
         return appUserRepository.findUserByVerificationCode(code) != null;
     }
+
+    @Override
+    public AppUser createCustomerSocial(CustomerSocial customerSocial) {
+        Customer customer = new Customer();
+        customer.setName(customerSocial.getName());
+        customer.setEmail(customerSocial.getEmail());
+
+        AppUser appUser = new AppUser();
+        appUser.setUsername(customerSocial.getEmail());
+        appUser.setPassword(customerSocial.getPassword());
+        appUser.setEnabled(true);
+        Set<Role> roles = new HashSet<>();
+        Role role = roleService.findRoleByName("ROLE_CUSTOMER");
+        roles.add(role);
+
+        appUser.setRoles(roles);
+
+        customer.setAppUser(appUser);
+        this.customerService.saveCustomerSocial(customer);
+        return appUser;
+    }
+
 
     public void sendVerificationEmailForResetPassWord(String userName, String randomCode, String email) throws MessagingException, UnsupportedEncodingException {
         String subject = "Email xác thực!";
