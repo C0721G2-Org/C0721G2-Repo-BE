@@ -6,12 +6,16 @@ import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.realestatenews.IDirectionService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/real-estate-related")
+@CrossOrigin
 public class RealEstateRelatedController {
     @Autowired
     IDirectionService iDirectionService;
@@ -23,7 +27,7 @@ public class RealEstateRelatedController {
         return iDirectionService.directionList();
     }
 
-    @GetMapping(value = "/dealEstateType")
+    @GetMapping(value = "/realEstateType")
     public List<RealEstateType> realEstateTypes(){
         return iRealEstateTypeService.realEstateTypeList();
     }

@@ -28,6 +28,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/real-estate-new")
+@CrossOrigin
 public class RealEstateNewsController {
     @Autowired
     private IRealEstateNewsService realEstateNewsService;
