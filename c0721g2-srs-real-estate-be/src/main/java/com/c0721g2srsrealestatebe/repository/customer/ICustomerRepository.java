@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.repository.customer;
 
+import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -32,10 +33,9 @@ public interface ICustomerRepository extends PagingAndSortingRepository<Customer
             " VALUES (:id,:address,:date_of_birth,:deleted,:email,:gender,:idCard,:name,:phone_number,:appUser)", nativeQuery = true)
     void save(@Param("address") String address, @Param("date_of_birth") LocalDate date_of_birth, @Param("deleted")
             Boolean deleted, @Param("email") String email, @Param("gender") Integer gender, @Param("idCard") String idCard, @Param("name") String name,
-                      @Param("phone_number") String phone_number,@Param("appUser") String appUser);
+                      @Param("phone_number") String phone_number,@Param("appUser") AppUser appUser);
 
 
     @Query(value = "SELECT * FROM customers WHERE customers.id = :id", nativeQuery = true)
     Optional<Customer> findById(@Param("id") String id);
-
 }

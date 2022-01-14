@@ -5,6 +5,8 @@ import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.repository.account.IAppUserRepository;
+import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 import javax.validation.Valid;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @CrossOrigin("http://localhost:4200")
@@ -26,6 +27,8 @@ import java.util.Optional;
 public class CustomerController {
     @Autowired
     CustomerServiceImpl customerService;
+    @Autowired
+    AppUserServiceImpl appUserService;
 
     @GetMapping("/{id}")
     public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
@@ -37,23 +40,53 @@ public class CustomerController {
     }
 
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE, value = ("/create"))
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> saveCustomer(@RequestBody @Valid CustomerDTO customerDTO, BindingResult bindingResult) {
-        new CustomerDTO().validate(customerDTO, bindingResult);
-        if (bindingResult.hasErrors()) {
-            return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.BAD_REQUEST);
-        }
+//        new CustomerDTO().validate(customerDTO, bindingResult);
+//        if (bindingResult.hasErrors()) {
+//            return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.BAD_REQUEST);
+//        }
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
 
-//        Role role = new Role();
-//        role.setId(customerDTO.setRole(3));
-//        customerDTO.setRole(3);
-//        AppUser appUser = new AppUser();
-//        appUser.setUsername();
+
+        Map<String,String> listErrors = new HashMap<>();
+
+
+        //set role
+        Role role = new Role();
+        role.setId((long) 3);
+        Set<Role> roleSet = new HashSet<>();
+        roleSet.add(role);
+
+        // tạo account
+        AppUser appUser = new AppUser();
+        if (!appUserService.existsByUserName(customerDTO.getUserName())) {
+           listErrors.put("errorUsername","Tài khoản đã được đăng kí");
+            System.out.println(appUserService.existsByUserName(customerDTO.getUserName()));
+        }
+//        if (appUserService.existsByUserName2(appUser.getUsername()) != null) {
+//            listErrors.put("errorUsername","Tài khoản đã được đăng kí ");
+//        }
+//        if (appUserService.existsByUserName3(appUser.getUsername())) {
+//            listErrors.put("errorUsername","Tài khoản đã được đăng kí ");
+//        }
+
+        if(!listErrors.isEmpty()){
+            return ResponseEntity.badRequest().body(listErrors);
+        }
+
+//        appUser.setUsername(appUser.getUsername());
+//        appUser.setPassword(appUser.getPassword());
+        appUser.setUsername(customerDTO.getUserName());
+        appUser.setPassword(customerDTO.getPassword());
+        appUser.setRoles(roleSet);
+
+        customer.setAppUser(appUser);
 
         customerService.save(customer);
         return new ResponseEntity<>(HttpStatus.CREATED);
+
     }
 
 
