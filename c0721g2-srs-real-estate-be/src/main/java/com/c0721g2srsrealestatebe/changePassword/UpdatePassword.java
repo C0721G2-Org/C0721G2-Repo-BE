@@ -12,7 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-
+@CrossOrigin(value = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/account")
 public class UpdatePassword {
@@ -21,31 +21,39 @@ public class UpdatePassword {
     @Autowired
     PasswordEncoder passwordEncoder;
 
-    @PatchMapping(value = "/newpassword/{Pass}")
+    @GetMapping("/userName/{userName}")
+    public ResponseEntity<AppUser> update(@PathVariable String userName) {
+        try {
+            AppUser appUser = iAppUserService.findAppUserByUserName(userName);
+            System.out.println(userName);
+            return new ResponseEntity<>(appUser, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+    }
+
+    @PatchMapping(value = "/newpassword/{pass}")
     public ResponseEntity<AppUser> update(@Valid @RequestBody AppUserDTO appUserDTO,
-                                          @PathVariable String Pass, BindingResult bindingResult) {
+                                          @PathVariable String pass, BindingResult bindingResult) {
         try {
             new AppUserDTO().validate(appUserDTO, bindingResult);
             if (bindingResult.hasFieldErrors("password")) {
                 System.out.println("mật nhập không đúng form");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-            System.out.println("pass cũ người dùng nhập sai");
-            System.out.println(appUserDTO.getPassword());
-            System.out.println("pass mới");
-            System.out.println(Pass);
+
             if (passwordEncoder.matches(
-                            iAppUserService.findPasswordByUsername(appUserDTO.getUsername()),appUserDTO.getPassword())
-                            && Pass != appUserDTO.getPassword()){
+                    iAppUserService.findPasswordByUsername(appUserDTO.getUsername()), appUserDTO.getPassword())
+                    &&pass!=iAppUserService.findPasswordByUsername(appUserDTO.getUsername())) {
                 AppUserDTO appUser = new AppUserDTO();
-                String newPassword = passwordEncoder.encode(Pass);
-                System.out.println(newPassword);
-                appUser.setUsername(appUserDTO.getUsername());
-                appUser.setPassword(newPassword);
+                pass=passwordEncoder.encode(pass);
+                //String newPassword = passwordEncoder.encode(appUserDTO.getPassword());
+                System.out.println(pass);
+                //appUser.setUsername(appUserDTO.getUsername());
+                appUser.setPassword(pass);
                 update(appUser);
                 return new ResponseEntity<>(HttpStatus.OK);
-            }
-            else {
+            } else {
                 System.out.println("nhập sai password");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
@@ -55,7 +63,7 @@ public class UpdatePassword {
         }
     }
 
-    @PostMapping("/updatedcontroller")
+    @PostMapping("/save")
     public ResponseEntity<AppUser> update(@RequestBody AppUserDTO password) {
         try {
             iAppUserService.updatePassword(password);
