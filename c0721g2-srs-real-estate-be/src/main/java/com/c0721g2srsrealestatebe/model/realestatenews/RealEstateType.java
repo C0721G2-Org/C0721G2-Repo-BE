@@ -18,7 +18,6 @@ public class RealEstateType {
     private List<RealEstateNews> realEstateNewsList ;
 
     public RealEstateType() {
-        //this is constructor
     }
 
     public List<RealEstateNews> getRealEstateNewsList() {

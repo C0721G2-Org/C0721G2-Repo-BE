@@ -12,3 +12,4 @@ class C0721g2SrsRealEstateBeApplicationTests {
     }
 
 }
+

@@ -13,6 +13,7 @@ public class Position {
     private String name;
 
     public Position() {
+        //comment
     }
 
     public Long getId() {

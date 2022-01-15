@@ -13,6 +13,7 @@ public class Degree {
     private String name;
 
     public Degree() {
+        //comment
     }
 
     public Long getId() {

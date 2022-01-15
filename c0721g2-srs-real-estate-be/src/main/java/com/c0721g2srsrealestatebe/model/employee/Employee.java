@@ -38,14 +38,13 @@ public class Employee {
     private Degree degree;
     @ManyToOne(targetEntity = Position.class)
     private Position position;
-    @OneToOne(targetEntity = AppUser.class)
+    @OneToOne(targetEntity = AppUser.class, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class)
     private Image image;
     private Boolean deleted = Boolean.FALSE;
 
     public Employee() {
-        //this is constructor
     }
 
     @SuppressWarnings("squid:S00107")
@@ -167,5 +166,24 @@ public class Employee {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", idCard='" + idCard + '\'' +
+                ", gender=" + gender +
+                ", degree=" + degree +
+                ", position=" + position +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", deleted=" + deleted +
+                '}';
     }
 }

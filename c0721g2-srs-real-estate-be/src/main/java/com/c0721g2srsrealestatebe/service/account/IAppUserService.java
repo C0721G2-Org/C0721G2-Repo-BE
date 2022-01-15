@@ -6,6 +6,7 @@ import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 import javax.mail.MessagingException;
 import java.io.UnsupportedEncodingException;
 
+
 public interface IAppUserService {
     public AppUser getAppUserByEmail(String email);
 

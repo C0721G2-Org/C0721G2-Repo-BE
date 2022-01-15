@@ -1,6 +1,5 @@
 package com.c0721g2srsrealestatebe.config;
 
-
 import com.c0721g2srsrealestatebe.accessdenied.CustomAccessDeniedHandler;
 import com.c0721g2srsrealestatebe.jwt.JwtAuthenticationEntryPoint;
 import com.c0721g2srsrealestatebe.jwt.JwtFilter;

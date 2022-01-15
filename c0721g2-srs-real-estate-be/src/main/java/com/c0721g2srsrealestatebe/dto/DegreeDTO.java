@@ -1,28 +1,16 @@
-package com.c0721g2srsrealestatebe.model.account;
+package com.c0721g2srsrealestatebe.dto;
 
-import javax.persistence.*;
-import java.util.Set;
-
-@Entity(name = "roles")
-public class Role {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class DegreeDTO {
     private Long id;
     private String name;
-    @ManyToMany( mappedBy = "roles")
-    private Set<AppUser> appUsers;
 
-    public Role() {
+    public DegreeDTO() {
+        //comment
     }
 
-    public Role(Long id, String name) {
+    public DegreeDTO(Long id, String name) {
         this.id = id;
         this.name = name;
-    }
-
-    public Role(String name) {
-        this.name = name;
-
     }
 
     public Long getId() {
@@ -43,7 +31,7 @@ public class Role {
 
     @Override
     public String toString() {
-        return "Role{" +
+        return "DegreeDTO{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

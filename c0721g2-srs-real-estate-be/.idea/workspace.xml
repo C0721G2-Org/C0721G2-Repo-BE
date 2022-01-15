@@ -22,6 +22,7 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item name="BRANCH:post-history-TaiVD" type="e8cecc67:BranchNodeDescriptor" />
 =======
         <item name="BRANCH:post-approval-DoanhNV" type="e8cecc67:BranchNodeDescriptor" />
@@ -29,6 +30,9 @@
 =======
         <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
 >>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+        <item name="BRANCH:employee-create-ThinhTP" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       </path>
     </select>
   </component>
@@ -36,6 +40,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
     <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,6 +89,84 @@
 =======
 >>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/src/_02_loop_java/exercise/max.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/src/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 5/exam/src/json/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/.idea/procduce.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/create-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/edit-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/[C0721G2]_Prototype_ThinhTP/create-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/[C0721G2]_Prototype_ThinhTP/edit-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/img/Untitled-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/img/final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/img/logo-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/create-emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/edit-emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/giaodien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeEditDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/json/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 2/Module 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/Module 2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 2/src/_test_btnhom_vs_bttuan/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/src/_test_btnhom_vs_bttuan/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-delete/customer-delete.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-delete/customer-delete.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/json-server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/json-server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -93,6 +176,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
@@ -100,6 +184,10 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" afterDir="false" />
 =======
 >>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
@@ -107,6 +195,7 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
@@ -122,12 +211,25 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
 >>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/DegreeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/DegreeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/PositionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/PositionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
@@ -175,6 +277,28 @@
 =======
 >>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam.module.ts" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,12 +380,21 @@
       </list>
     </option>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
 <<<<<<< HEAD
   <component name="ProjectId" id="23PUbdhUm7Tz2TvLgGpht78EFEF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
 =======
 <<<<<<< HEAD
@@ -294,6 +427,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 =======
@@ -318,12 +452,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 >>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../a hưng/C0721G2-Repo-BE/c0721g2-srs-real-estate-be" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
@@ -397,11 +536,23 @@
       <method v="2" />
     </configuration>
     <configuration name="CustomerController_createCustomer.createCustomer_17" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration name="EmployeeController_createEmployee.createEmployee_name_14" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_createCustomer.createCustomer_17&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_name_14&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
         <option name="taskDescriptions">
           <list />
         </option>
@@ -415,12 +566,20 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="CustomerController_createCustomer.createCustomer_18" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <configuration name="EmployeeController_editEmployee.editEmployee_18" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_createCustomer.createCustomer_18&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_editEmployee.editEmployee_18&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
         <option name="taskDescriptions">
           <list />
         </option>
@@ -434,12 +593,17 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="CustomerController_findCustomerById.findCustomerById_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <configuration name="EmployeeController_editEmployee.editEmployee_idCard_17" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -453,6 +617,9 @@
 =======
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_findCustomerById.findCustomerById_1&quot;" />
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_editEmployee.editEmployee_idCard_17&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
         <option name="taskDescriptions">
           <list />
         </option>
@@ -466,6 +633,7 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -477,10 +645,14 @@
 =======
     <configuration name="CustomerController_findCustomerById.findCustomerById_4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <configuration name="EmployeeController_editEmployee.editEmployee_name_13" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsController_getListApproval.getListApproval_6&quot;" />
@@ -490,6 +662,9 @@
 =======
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_findCustomerById.findCustomerById_4&quot;" />
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_editEmployee.editEmployee_name_13&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
         <option name="taskDescriptions">
           <list />
         </option>
@@ -505,8 +680,11 @@
     </configuration>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     <configuration name="c0721g2-srs-real-estate-be [sonarqube]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -527,11 +705,14 @@
       <method v="2" />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
 =======
 >>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
 =======
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="c0721g2-srs-real-estate-be.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
@@ -539,6 +720,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <recent_temporary>
       <list>
@@ -570,6 +752,15 @@
         <item itemvalue="Gradle.CustomerController_findCustomerById.findCustomerById_4" />
         <item itemvalue="Gradle.CustomerController_findCustomerById.findCustomerById_1" />
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
+        <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_18" />
+        <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_name_13" />
+        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_name_14" />
+        <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_idCard_17" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       </list>
     </recent_temporary>
   </component>
@@ -578,6 +769,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -622,6 +814,9 @@
 =======
       <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
       <created>1641635288431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -629,6 +824,7 @@
       <workItem from="1641635305449" duration="190000" />
       <workItem from="1641635550213" duration="604000" />
       <workItem from="1641636206133" duration="1980000" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -709,6 +905,21 @@
       <workItem from="1642170473288" duration="6207000" />
 >>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <workItem from="1641737590720" duration="6382000" />
+      <workItem from="1641778508733" duration="19467000" />
+      <workItem from="1641811278493" duration="174000" />
+      <workItem from="1641823294746" duration="1473000" />
+      <workItem from="1641872267953" duration="1527000" />
+      <workItem from="1641883196732" duration="18018000" />
+      <workItem from="1641906783673" duration="3002000" />
+      <workItem from="1641969858605" duration="20159000" />
+      <workItem from="1641995005923" duration="661000" />
+      <workItem from="1642043807904" duration="14169000" />
+      <workItem from="1642124277705" duration="8600000" />
+      <workItem from="1642136346983" duration="13944000" />
+      <workItem from="1642214891215" duration="16713000" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     </task>
     <servers />
   </component>
@@ -729,6 +940,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <option value="post-history-TaiVD" />
 =======
                         <option value="dev" />
@@ -739,6 +951,9 @@
 =======
                         <option value="main" />
 >>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+                        <option value="employee-create-ThinhTP" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
                       </list>
                     </value>
                   </entry>
@@ -752,6 +967,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1016,6 +1232,61 @@
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1641974824523" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641974996727">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state x="726" y="61" key="#Auto_Import" timestamp="1642217414378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="61" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1642217414378" />
+    <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641797135026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+    <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641797135026" />
+    <state x="100" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1641893725749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641893725749" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1642232609442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1642232609442" />
+    <state x="715" y="389" width="492" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1641977663051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="389" width="492" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1641977663051" />
+    <state x="651" y="170" key="FileChooserDialogImpl" timestamp="1642071516072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642071516072" />
+    <state width="1877" height="735" key="GridCell.Tab.0.bottom" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="735" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.center" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="735" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.left" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="735" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.right" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="735" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.bottom" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="735" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.center" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     </state>
 <<<<<<< HEAD
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641709150179" />
@@ -1049,6 +1320,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+<<<<<<< HEAD
     <state width="1877" height="153" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
     <state width="1877" height="153" key="GridCell.Tab.1.left" timestamp="1641882798740">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -1139,6 +1411,16 @@
 =======
     <state x="184" y="9" key="SettingsEditor" timestamp="1641971850112">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1877" height="735" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.left" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="735" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.right" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1641971850112" />
 >>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
@@ -1219,6 +1501,7 @@
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <state width="1877" height="183" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
     <state width="1877" height="183" key="GridCell.Tab.2.bottom" timestamp="1642065302521">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -1264,10 +1547,34 @@
     </state>
     <state x="-145" y="129" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641807023655" />
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <state width="1877" height="735" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="507" key="GridCell.Tab.2.bottom" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.center" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.left" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.right" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1642232452422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642232452422" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog" timestamp="1641702219739">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.816@0.0.1536.816" timestamp="1641702219739" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1337,5 +1644,11 @@
       </breakpoints>
     </breakpoint-manager>
 >>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <state x="616" y="240" key="run.anything.popup" timestamp="1642221928443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1642221928443" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
   </component>
 </project>

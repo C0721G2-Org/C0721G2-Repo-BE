@@ -128,4 +128,5 @@ public class AppUserServiceImpl implements IAppUserService {
     public boolean existsByUserName(String username) {
         return iAppUserRepository.existsByUsername(username);
     }
+
 }
