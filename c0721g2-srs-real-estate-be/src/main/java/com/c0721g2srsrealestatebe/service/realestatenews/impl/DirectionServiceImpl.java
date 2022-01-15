@@ -7,15 +7,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 
 @Service
 public class DirectionServiceImpl implements IDirectionService {
     @Autowired
     IDirectionRepository iDirectionRepository;
 
-
     @Override
     public List<Direction> directionList() {
         return iDirectionRepository.findAll();
+    }
+
+    @Override
+    public List<Direction> findAllDirection() {
+        return iDirectionRepository.findAll();
+    }
+
+    @Override
+    public Optional<Direction> findById(Long id) {
+        return Optional.empty();
     }
 }

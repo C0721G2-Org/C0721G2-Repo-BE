@@ -17,4 +17,8 @@ public class RealEstateTypeServiceImpl implements IRealEstateTypeService {
     public List<RealEstateType> realEstateTypeList() {
         return iRealEstateTypeRepository.findAll();
     }
+
+    public List<RealEstateType> findAllRealEstateType() {
+        return iRealEstateTypeRepository.findAll();
+    }
 }

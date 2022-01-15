@@ -38,12 +38,13 @@ public class RealEstateNews {
     @ManyToOne(targetEntity = Direction.class)
     private Direction direction;
     @ManyToOne(targetEntity = Customer.class)
-    @JsonManagedReference
+//    @JsonManagedReference
     private Customer customer;
     @OneToMany(targetEntity = Image.class)
     private List<Image> imageList;
 
     public RealEstateNews() {
+        //update data
     }
 
     public RealEstateNews(String id, String title, String description, String address, Double area, Double price, Integer approval, Integer kindOfNews, Integer status, RealEstateType realEstateType, Direction direction, Customer customer, List<Image> imageList) {

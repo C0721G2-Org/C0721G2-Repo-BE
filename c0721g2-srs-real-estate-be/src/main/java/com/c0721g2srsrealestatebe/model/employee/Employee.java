@@ -2,7 +2,6 @@ package com.c0721g2srsrealestatebe.model.employee;
 
 import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
-import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
@@ -46,6 +45,7 @@ public class Employee {
     private Boolean deleted = Boolean.FALSE;
 
     public Employee() {
+        //update data
     }
 
     public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, String idCard, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {

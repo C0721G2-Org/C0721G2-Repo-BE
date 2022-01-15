@@ -41,4 +41,29 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return iRealEstateNewsRepository.findNewsById(iRealEstateNewsRepository.lastId()).orElse(null);
     }
 
+    // 5.7.1 Xem danh sách nhu cầu - Override method hiển thị List DoanhNV
+    @Override
+    public Page<RealEstateNews> findAllNewsPage(Pageable pageable) {
+        return iRealEstateNewsRepository.findAllByRealEstateNews(pageable);
+    }
+    // 5.7.1 Xem danh sách nhu cầu - Override method tìm kiếm DoanhNV
+    @Override
+    public Page<RealEstateNews> searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(Pageable pageable,
+                                                                                              String kinOfNews,
+                                                                                              String directionId,
+                                                                                              String realEstateTypeId) {
+        return iRealEstateNewsRepository.searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(pageable,
+                "%" +kinOfNews+ "%","%" +directionId+ "%", "%" +realEstateTypeId+ "%");
+    }
+    // 5.7.1 Xem danh sách nhu cầu - Override method Không Duyệt hiển thị Dialog DoanhNV
+    @Override
+    public Optional<RealEstateNews> findByIdOp(String id) {
+        return iRealEstateNewsRepository.findById(id);
+    }
+    // 5.7.1 Xem danh sách nhu cầu - Override method Không Duyệt hiển thị Dialog DoanhNV
+    @Override
+    public void deleteById(String id) {
+        iRealEstateNewsRepository.deleteById(id);
+    }
 }
+
