@@ -18,4 +18,6 @@ public interface IAppUserService {
     Boolean findUserByVerificationCode(String code);
 
     AppUser createCustomerSocial(CustomerSocial customerSocial);
+
+    boolean existsByUserName(String username);
 }

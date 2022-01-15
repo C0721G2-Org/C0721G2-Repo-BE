@@ -38,6 +38,9 @@ public class AppUserServiceImpl implements IAppUserService {
     @Autowired
     private CustomerServiceImpl customerService;
 
+    @Autowired
+    IAppUserRepository iAppUserRepository;
+
     @Override
     public AppUser getAppUserByEmail(String email) {
         return appUserRepository.getAppUserByEmailCustomer(email);
@@ -120,5 +123,9 @@ public class AppUserServiceImpl implements IAppUserService {
         javaMailSender.send(message);
 
     }
-}
 
+    // Tùng kiểm tra username
+    public boolean existsByUserName(String username) {
+        return iAppUserRepository.existsByUsername(username);
+    }
+}

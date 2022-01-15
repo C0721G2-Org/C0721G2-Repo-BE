@@ -8,6 +8,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import java.util.Properties;
 
+
 @SpringBootApplication
 public class C0721g2SrsRealEstateBeApplication {
     public static void main(String[] args) {

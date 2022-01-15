@@ -14,6 +14,15 @@ import java.util.UUID;
 @Transactional
 public interface IAppUserRepository extends JpaRepository<AppUser,UUID> {
 
+    //Tung
+    boolean existsByUsername(String username);
+
+    @Modifying
+    @Query(value = "insert into app_users(username,password) values (:username,:password)", nativeQuery = true)
+    void addNewAccount(String username, String password);
+
+
+    //Hien
     @Query(value=  "SELECT * FROM app_users WHERE username= :username" ,nativeQuery=true)
     AppUser getAppUserByUsername(@Param("username") String username);
 

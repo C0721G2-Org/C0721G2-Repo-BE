@@ -4,25 +4,24 @@ import com.c0721g2srsrealestatebe.model.customer.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface ICustomerService {
-    Iterable<Customer> findAllCustomer();
 
-    Optional<Customer> findCustomerById(String id);
+    Iterable<Customer> findAll();
 
-    Customer saveCustomer(Customer customer);
+    Optional<Customer> findById(String id);
+
+    Customer save(Customer customer);
 
     void removeCustomer(String id);
 
-    Page<Customer> findCustomerPage(Pageable pageable);
+    List<Customer> searchByName(String name);
 
-    Optional<Customer> findCustomerByName(String name);
-    Optional<Customer> findCustomerByPhone(String phone);
-
-    Optional<Customer> findCustomerByEmail(String email);
+    // thienlb
+    Page<Customer> findAllCustomerByNameAndPhoneAndEmailPage(String name, String phone, String email, Pageable pageable);
 
     //phuong thuc nay cua Hien
     void saveCustomerSocial(Customer customer);
-
 }
