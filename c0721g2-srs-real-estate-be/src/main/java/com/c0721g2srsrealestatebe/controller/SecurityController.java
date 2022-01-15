@@ -2,13 +2,11 @@ package com.c0721g2srsrealestatebe.controller;
 
 import com.c0721g2srsrealestatebe.jwt.JwtUtils;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
-import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.payload.request.*;
 import com.c0721g2srsrealestatebe.payload.response.JwtResponse;
 import com.c0721g2srsrealestatebe.payload.response.MessageResponse;
 import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.account.impl.MyUserDetailsImpl;
-import com.c0721g2srsrealestatebe.service.account.impl.UserDetailsServiceImpl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;
 import com.google.api.client.http.javanet.NetHttpTransport;
@@ -65,29 +63,24 @@ public class SecurityController {
 
 
     @PostMapping("/login")
-    public ResponseEntity<?> authenticateUser(@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<Object> authenticateUser(@RequestBody LoginRequest loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),
                         loginRequest.getPassword()));
-        System.out.println("test1");
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        System.out.println("test2");
 
         MyUserDetailsImpl myUserDetails = (MyUserDetailsImpl) authentication.getPrincipal();
         String jwtToken = jwtUtils.generateToken(myUserDetails);
 
         List<String> roles = myUserDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority).collect(Collectors.toList());
-        System.out.println("jwttoken: " + jwtToken);
-        System.out.println("jwttoken: " + myUserDetails.getUsername());
-        System.out.println("jwttoken: " + roles);
         return ResponseEntity.ok(new JwtResponse(jwtToken, myUserDetails.getUsername(), roles));
 
     }
 
     @PostMapping("/send-verification-email")
-    public ResponseEntity<?> reset(@RequestBody LoginRequest loginRequest) throws MessagingException, UnsupportedEncodingException {
+    public ResponseEntity<Object> reset(@RequestBody LoginRequest loginRequest) throws MessagingException, UnsupportedEncodingException {
         if (appUserService.existsUserByEmail(loginRequest.getEmail())) {
             appUserService.addVerificationCode(loginRequest.getEmail());
             return ResponseEntity.ok(new MessageResponse("Đã gửi email xác nhận"));
@@ -98,10 +91,9 @@ public class SecurityController {
     }
 
     @PostMapping("/check-verification-code")
-    public ResponseEntity<?> checkVerificationCode(@RequestBody VerifyRequest verifyRequest) {
+    public ResponseEntity<Object> checkVerificationCode(@RequestBody VerifyRequest verifyRequest) {
         Boolean isVerified = appUserService.findUserByVerificationCode(verifyRequest.getCode());
-        System.out.println("Code:" + verifyRequest.getCode());
-        if (isVerified) {
+        if (Boolean.TRUE.equals(isVerified)) {
             return ResponseEntity.ok(new MessageResponse("valid"));
         } else {
             return ResponseEntity.ok(new MessageResponse("invalid"));
@@ -109,7 +101,7 @@ public class SecurityController {
     }
 
     @PostMapping("/reset-password")
-    public ResponseEntity<?> doResetPassword(@Valid @RequestBody ResetPasswordRequest resetPassRequest) {
+    public ResponseEntity<Object> doResetPassword(@Valid @RequestBody ResetPasswordRequest resetPassRequest) {
         if (resetPassRequest.getNewPassword().equals(resetPassRequest.getReNewPassword())) {
             appUserService.saveNewPassword(bCryptPasswordEncoder.encode(resetPassRequest.getNewPassword()), resetPassRequest.getVerificationCode());
             return ResponseEntity.ok(new MessageResponse("success"));
@@ -124,7 +116,7 @@ public class SecurityController {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
         Map<String, String> errors = new HashMap<>();
-        ex.getBindingResult().getAllErrors().forEach((error) -> {
+        ex.getBindingResult().getAllErrors().forEach(error -> {
             String fieldName = ((FieldError) error).getField();
             String errorMessage = error.getDefaultMessage();
             errors.put(fieldName, errorMessage);
@@ -133,7 +125,7 @@ public class SecurityController {
     }
 
     @PostMapping("/google")
-    public ResponseEntity<?> google(@RequestBody TokenSocialRequest token) throws IOException {
+    public ResponseEntity<Object> google(@RequestBody TokenSocialRequest token) throws IOException {
         final NetHttpTransport transport = new NetHttpTransport();
         final JacksonFactory jacksonFactory = JacksonFactory.getDefaultInstance();
         GoogleIdTokenVerifier.Builder verifier =
@@ -142,7 +134,7 @@ public class SecurityController {
         final GoogleIdToken googleIdToken = GoogleIdToken.parse(verifier.getJsonFactory(), token.getToken());
         final GoogleIdToken.Payload payload = googleIdToken.getPayload();
 
-        AppUser appUser = new AppUser();
+        AppUser appUser;
         if (appUserService.existsUserByEmail(payload.getEmail())) {
             appUser = appUserService.getAppUserByEmail(payload.getEmail());
         } else {
@@ -162,11 +154,11 @@ public class SecurityController {
     }
 
     @PostMapping("/facebook")
-    public ResponseEntity<?> facebook(@RequestBody TokenSocialRequest tokenSocialRequest) throws IOException {
+    public ResponseEntity<Object> facebook(@RequestBody TokenSocialRequest tokenSocialRequest) {
         Facebook facebook = new FacebookTemplate(tokenSocialRequest.getToken());
         final String[] fields = {"email", "name"};
         User user = facebook.fetchObject("me", User.class, fields);
-        AppUser appUser = new AppUser();
+        AppUser appUser;
         if (appUserService.existsUserByEmail(user.getEmail())) {
             appUser = appUserService.getAppUserByEmail(user.getEmail());
 

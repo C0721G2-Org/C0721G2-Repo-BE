@@ -13,7 +13,6 @@ public class Degree {
     private String name;
 
     public Degree() {
-        //update data
     }
 
     public Long getId() {

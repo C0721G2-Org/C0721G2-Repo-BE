@@ -13,6 +13,7 @@ public class ResetPasswordRequest {
     private String verificationCode;
 
     public ResetPasswordRequest() {
+        //constructor
     }
 
     public String getNewPassword() {

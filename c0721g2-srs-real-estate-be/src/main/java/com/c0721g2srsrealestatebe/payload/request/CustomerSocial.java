@@ -6,6 +6,7 @@ public class CustomerSocial {
     private String password;
 
     public CustomerSocial() {
+        //constructor
     }
 
     public String getPassword() {

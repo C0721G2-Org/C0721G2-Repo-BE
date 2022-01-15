@@ -14,7 +14,7 @@ import java.util.function.Function;
 @Service
 public class JwtUtils {
     private String secret = "c0721g2";
-    public static final long JWT_TOKEN_VALIDITY = 5*60*60;
+    public static final long JWT_TOKEN_VALIDITY =(long) (5*60*60);
 
     private Claims getAllClaimsFromToken(String token) {
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
@@ -33,18 +33,9 @@ public class JwtUtils {
         return getClaimFromToken(token, Claims::getExpiration);
     }
 
-    public Date getIssuedAtDateFromToken(String token) {
-        return getClaimFromToken(token, Claims::getIssuedAt);
-    }
-
     private Boolean isTokenExpired(String token) {
         final Date expiration = getExpirationDateFromToken(token);
         return expiration.before(new Date());
-    }
-
-    private Boolean ignoreTokenExpiration(String token) {
-        // here you specify tokens, for that the expiration is ignored
-        return false;
     }
 
     public String generateToken(MyUserDetailsImpl userDetails) {
@@ -60,10 +51,6 @@ public class JwtUtils {
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY*1000))
                 .signWith(SignatureAlgorithm.HS512, secret).compact();
-    }
-
-    public Boolean canTokenBeRefreshed(String token) {
-        return (!isTokenExpired(token) || ignoreTokenExpiration(token));
     }
 
     public Boolean validateToken(String token, MyUserDetailsImpl userDetails) {

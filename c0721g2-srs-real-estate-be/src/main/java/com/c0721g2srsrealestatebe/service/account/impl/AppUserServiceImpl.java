@@ -54,17 +54,15 @@ public class AppUserServiceImpl implements IAppUserService {
         String code = RandomString.make(64);
         appUserRepository.addVerificationCode(code, username);
         this.sendVerificationEmailForResetPassWord(username, code, email);
-        CompletableFuture<Void> future = CompletableFuture.runAsync(() -> {
-            System.out.println("Chờ xác nhận email");
+        CompletableFuture.runAsync(() -> {
             try {
                 TimeUnit.MINUTES.sleep(10);
             } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
                 throw new IllegalStateException(e);
             }
             appUserRepository.deleteVerificationCode(username);
-            System.out.println("Xóa verification code " + appUserRepository.findUserByVerificationCode(code));
         });
-
     }
 
     @Override

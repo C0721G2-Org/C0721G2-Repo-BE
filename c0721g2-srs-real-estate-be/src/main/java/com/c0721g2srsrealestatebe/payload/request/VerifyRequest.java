@@ -4,6 +4,7 @@ public class VerifyRequest {
     private String code;
 
     public VerifyRequest() {
+        //constructor
     }
 
 

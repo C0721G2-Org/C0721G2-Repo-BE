@@ -4,6 +4,7 @@ public class TokenSocialRequest {
     private String token;
 
     public TokenSocialRequest() {
+        //constructor
     }
 
     public String getToken() {

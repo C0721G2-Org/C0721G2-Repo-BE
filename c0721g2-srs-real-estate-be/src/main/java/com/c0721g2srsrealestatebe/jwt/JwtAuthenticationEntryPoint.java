@@ -1,6 +1,5 @@
 package com.c0721g2srsrealestatebe.jwt;
 
-import com.c0721g2srsrealestatebe.accessdenied.CustomAccessDeniedHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.AuthenticationException;

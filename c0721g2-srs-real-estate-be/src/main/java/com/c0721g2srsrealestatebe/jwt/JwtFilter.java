@@ -37,9 +37,9 @@ public class JwtFilter extends OncePerRequestFilter {
             try {
                 username = jwtUtils.getUsernameFromToken(jwtToken);
             } catch (IllegalArgumentException e) {
-                System.out.println("Unable to get JWT Token");
+                logger.warn("Unable to get JWT Token");
             } catch (ExpiredJwtException e) {
-                System.out.println("JWT Token has expired");
+                logger.warn("JWT Token has expired");
             }
         } else {
             logger.warn("JWT Token does not begin with Bearer String");
@@ -51,7 +51,7 @@ public class JwtFilter extends OncePerRequestFilter {
             MyUserDetailsImpl userDetails = this.userDetailsService.loadUserByUsername(username);
 
             // if token is valid configure Spring Security to manually set authentication
-            if (jwtUtils.validateToken(jwtToken, userDetails)) {
+            if (Boolean.TRUE.equals(jwtUtils.validateToken(jwtToken, userDetails)) ) {
 
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
                         userDetails, null, userDetails.getAuthorities());
