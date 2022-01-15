@@ -10,16 +10,12 @@ import org.hibernate.annotations.Parameter;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
-import org.w3c.dom.ls.LSOutput;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
-import java.lang.reflect.Array;
+import javax.validation.constraints.*;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
@@ -44,10 +40,13 @@ public class CustomerDTO implements Validator {
             "ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở" +
             "ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$",
             message = "Không được chứa ký tự đặc biệt")
+    //^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ" +
+    //            "ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở" +
+    //            "ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$
     private String name;
 
 
-//    @NotBlank(message = "you have to input your birthday")
+    //    @NotBlank(message = "you have to input your birthday")
 //    @Pattern(regexp = "^(?:19\\d{2}|20\\d{2})[-/.](?:0[1-9]|1[012])[-/.](?:0[1-9]|[12][0-9]|3[01])$",
 //            message = "Ngày sinh phải đúng định dạng: dd/MM/yyyy.")
     @DateTimeFormat(pattern = "MM-dd-yyyy")
@@ -56,9 +55,8 @@ public class CustomerDTO implements Validator {
 //    private int Age = dateOfBirth.getYear();
 
 
-
     @NotBlank(message = "Số CMND không được để trống.")
-    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$",
+    @Pattern(regexp = "^([0-9]{9})$",
             message = "Số CMND phải đúng định dạng: XXXXXXXXX hoặc XXXXXXXXXXXX.")
     private String idCard;
 
@@ -73,13 +71,12 @@ public class CustomerDTO implements Validator {
     }
 
     @NotBlank(message = "Số điện thoại không được để trống.")
-    @Pattern(regexp = "^(0|(\\(84\\)\\+))+([9][0-1][0-9]{7})$",
+    @Pattern(regexp = "^(0)+([9][0-1][0-9]{7})$",
             message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
     private String phoneNumber;
-
+    @Email
     @NotBlank(message = "Email không được để trống.")
-    @Pattern(regexp = "^(?:^|\\s)[\\w!#$%&'*+/=?^`{|}~-](\\.?[\\w!#$%&'*+/=?^`{|}~-]+)*@\\w+[.-]?\\w*\\.[a-zA-Z]{2,3}\\b$",
-            message = "Email phải đúng định dạng.")
+//            regexp = "[.a-zA-Z0-9\\\\-]*\\\\.[a-zA-Z0-9][a-zA-Z0-9\\\\-]"
     private String email;
 
     private Integer gender;
@@ -107,8 +104,8 @@ public class CustomerDTO implements Validator {
     private Boolean deleted = Boolean.FALSE;
 
     public CustomerDTO() {
+        //rỗng
     }
-
 
 
     public String getId() {
@@ -134,7 +131,8 @@ public class CustomerDTO implements Validator {
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-//    public int getAge() {
+
+    //    public int getAge() {
 //        return Age;
 //    }
 //
@@ -221,9 +219,9 @@ public class CustomerDTO implements Validator {
     public void validate(Object target, Errors errors) {
         CustomerDTO customerDTO = (CustomerDTO) target;
         Date date = new Date();
-            for (CustomerDTO customer : customerList) {
-              //Chưa chắc việc update thông tin phải validate toàn bộ thông tin phải nhập
-            }
+        for (CustomerDTO customer : customerList) {
+            //Chưa chắc việc update thông tin phải validate toàn bộ thông tin phải nhập
+        }
     }
 
     @Override
