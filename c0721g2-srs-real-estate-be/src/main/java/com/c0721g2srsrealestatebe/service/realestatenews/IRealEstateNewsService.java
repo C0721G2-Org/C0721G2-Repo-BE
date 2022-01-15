@@ -10,15 +10,19 @@ public interface IRealEstateNewsService {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
     Page< RealEstateNews > findAllNewsBySearchField(String customerId,
-                                                                  String title,
-                                                                  String typeOfNew,
-                                                                  String realNewType,
-                                                                  Pageable pageable);
+                                                    String title,
+                                                    String typeOfNew,
+                                                    String realNewType,
+                                                    Pageable pageable);
+
     ;
+
     // 5.6.3 show Real estate new detail
-    Optional<RealEstateNews> findNewsById(String Id);
+    Optional< RealEstateNews > findNewsById(String Id);
 
     RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
 
-
+    // Khai
+    Page< RealEstateNews > findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice, Pageable pageable);
 }
+

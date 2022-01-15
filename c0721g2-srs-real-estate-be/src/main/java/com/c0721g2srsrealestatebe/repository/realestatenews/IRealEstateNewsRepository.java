@@ -51,4 +51,26 @@ public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews
                      @Param("direction_id") Long direction_id, @Param("real_estate_type_id") Long real_estate_type_id);
 
     Optional< RealEstateNews > findById(String id);
+    // Khai
+    @Query(value = " select * \n" +
+            " from real_estate_news\n " +
+            " where address like concat('%',trim(:address),'%')\n " +
+            " and kind_of_news like concat('%',trim(:kindOfNews),'%')\n " +
+            " and real_estate_type_id like concat('%',trim(:realEstateType),'%')\n " +
+            " and direction_id like concat('%',trim(:direction),'%')\n " +
+            " and price between :minPrice and :maxPrice " +
+            " and approval =2 ", nativeQuery = true, countQuery = " select count(*) from real_estate_news " +
+            " where address like concat('%',trim(:address),'%') " +
+            " and kind_of_news like concat('%',trim(:kindOfNews),'%') " +
+            " and real_estate_type_id like concat('%',trim(:realEstateType),'%') " +
+            " and direction_id like concat('%',trim(:direction),'%') " +
+            " and price between :minPrice and :maxPrice " +
+            " and approval =2 ")
+    Page<RealEstateNews> findAllRealEstateNewsByFilter(@Param("address")String address,
+                                                       @Param("kindOfNews")String kindOfNews,
+                                                       @Param("realEstateType")String realEstateType,
+                                                       @Param("direction")String direction,
+                                                       @Param("minPrice")String minPrice,
+                                                       @Param("maxPrice")String maxPrice,
+                                                       Pageable pageable);
 }
