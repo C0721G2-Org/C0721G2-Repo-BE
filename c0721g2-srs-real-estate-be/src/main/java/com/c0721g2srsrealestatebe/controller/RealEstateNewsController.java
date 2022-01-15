@@ -62,6 +62,7 @@ public class RealEstateNewsController {
                 findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
+            System.out.println("no content");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
