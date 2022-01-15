@@ -32,6 +32,9 @@ public interface IRealEstateNewsService {
 
     // 5.7.1 Xem danh sách nhu cầu - Method Không duyệt gọi Dialog DoanhNV
     void deleteById(String id);
+
+    // 5.6.1 KhaiPN
+    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice,Pageable pageable);
 }
 
 

@@ -21,10 +21,14 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item name="BRANCH:post-history-TaiVD" type="e8cecc67:BranchNodeDescriptor" />
 =======
         <item name="BRANCH:post-approval-DoanhNV" type="e8cecc67:BranchNodeDescriptor" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       </path>
     </select>
   </component>
@@ -32,6 +36,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
     <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
@@ -67,6 +72,8 @@
 >>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
 >>>>>>> 8d0a5635471aba49a399373603a7c0db0d02b39c
 =======
+=======
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -77,9 +84,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" afterDir="false" />
+=======
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
@@ -87,6 +97,7 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" afterDir="false" />
@@ -97,6 +108,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" afterDir="false" />
@@ -104,6 +118,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" afterDir="false" />
@@ -131,6 +146,12 @@
 =======
 >>>>>>> origin
 >>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsRestController_getList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsRestController_getListTest.java" afterDir="false" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +218,13 @@
 >>>>>>> origin
 >>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -219,7 +247,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+=======
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -269,6 +301,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.c0721g2srsrealestatebe.service.realestatenews" />
@@ -277,15 +310,36 @@
   <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
     <configuration name="RealEstateNewsController_getListApproval.getListApproval_5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration name="RealEstateNewsRestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.c0721g2srsrealestatebe.controller.RealEstateNewsRestController" />
+      <module name="c0721g2-srs-real-estate-be.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.c0721g2srsrealestatebe.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealEstateNewsRestController_getList.getListRealEstateNew_1" type="GradleRunConfiguration" factoryName="Gradle">
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.RealEstateRestController_createRealEstate.createRealEstate&quot;" />
 =======
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsController_getListApproval.getListApproval_5&quot;" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsRestController_getList.getListRealEstateNew_1&quot;" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
         <option name="taskDescriptions">
           <list />
         </option>
@@ -300,13 +354,21 @@
       <method v="2" />
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <configuration name="RealEstateNewsController_getListApproval.getListApproval_6" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <configuration name="RealEstateNewsRestController_getList.getListStudent_1" type="GradleRunConfiguration" factoryName="Gradle">
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsController_getListApproval.getListApproval_6&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsRestController_getList.getListStudent_1&quot;" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
         <option name="taskDescriptions">
           <list />
         </option>
@@ -320,6 +382,7 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="c0721g2-srs-real-estate-be [sonarqube]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -340,6 +403,8 @@
       <method v="2" />
     </configuration>
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="c0721g2-srs-real-estate-be.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
@@ -350,12 +415,16 @@
     <recent_temporary>
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <item itemvalue="Gradle.RealEstateRestController_createRealEstate.createRealEstate" />
 =======
         <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
         <item itemvalue="Gradle.RealEstateNewsController_getListApproval.getListApproval_6" />
         <item itemvalue="Gradle.RealEstateNewsController_getListApproval.getListApproval_5" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+        <item itemvalue="Application.RealEstateNewsRestController" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       </list>
     </recent_temporary>
   </component>
@@ -364,6 +433,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -400,6 +470,9 @@
 =======
       <changelist id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="" />
 >>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
       <created>1641635288431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -407,6 +480,7 @@
       <workItem from="1641635305449" duration="190000" />
       <workItem from="1641635550213" duration="604000" />
       <workItem from="1641636206133" duration="1980000" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -451,6 +525,14 @@
 =======
 >>>>>>> origin
 >>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+      <workItem from="1641781755127" duration="172000" />
+      <workItem from="1641781999838" duration="14804000" />
+      <workItem from="1641827739363" duration="811000" />
+      <workItem from="1641866025833" duration="10929000" />
+      <workItem from="1642040045813" duration="14910000" />
+      <workItem from="1642124959133" duration="6829000" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     </task>
     <servers />
   </component>
@@ -470,6 +552,7 @@
                       <list>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <option value="post-history-TaiVD" />
 =======
                         <option value="dev" />
@@ -477,6 +560,9 @@
 =======
                         <option value="post-approval-DoanhNV" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+                        <option value="main" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
                       </list>
                     </value>
                   </entry>
@@ -491,10 +577,18 @@
   </component>
   <component name="WindowStateProjectService">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <state x="414" y="132" key="#C0721g2SrsRealEstateBeApplication" timestamp="1641781886881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="132" key="#C0721g2SrsRealEstateBeApplication/0.0.1920.1040@0.0.1920.1040" timestamp="1641781886881" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641636248196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -822,10 +916,82 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1642125520212" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+    <state x="1530" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1641884356909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1530" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641884356909" />
+    <state x="485" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1641781879748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="485" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641781879748" />
+    <state x="651" y="170" key="FileChooserDialogImpl" timestamp="1641896872790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641896872790" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.bottom" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.center" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.left" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.right" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.bottom" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.center" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.left" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.right" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog" timestamp="1641702219739">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.816@0.0.1536.816" timestamp="1641702219739" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -872,5 +1038,11 @@
 =======
 >>>>>>> origin
 >>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+    <state x="736" y="278" key="refactoring.ChangeSignatureDialog" timestamp="1641809621608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="278" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641809621608" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
   </component>
 </project>

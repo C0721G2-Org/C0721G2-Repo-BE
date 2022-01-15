@@ -13,6 +13,7 @@ public class Degree {
     private String name;
 
     public Degree() {
+        //this is a constructor
     }
 
     public Long getId() {

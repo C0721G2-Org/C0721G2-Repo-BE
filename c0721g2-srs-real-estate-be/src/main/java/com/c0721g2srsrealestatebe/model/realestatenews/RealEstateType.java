@@ -18,7 +18,6 @@ public class RealEstateType {
     private List<RealEstateNews> realEstateNewsList ;
 
     public RealEstateType() {
-        //update data
     }
 
     public List<RealEstateNews> getRealEstateNewsList() {

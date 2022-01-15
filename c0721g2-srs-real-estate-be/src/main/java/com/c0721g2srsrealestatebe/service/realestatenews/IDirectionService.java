@@ -11,3 +11,4 @@ public interface IDirectionService {
     List<Direction> findAllDirection();
     Optional<Direction> findById(Long id);
 }
+

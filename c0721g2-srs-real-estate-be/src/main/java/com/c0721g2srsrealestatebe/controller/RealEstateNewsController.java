@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.controller;
 
+
 import com.c0721g2srsrealestatebe.dto.RealEstateDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.model.image.Image;
@@ -8,9 +9,8 @@ import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
 import com.c0721g2srsrealestatebe.service.realestatenews.EmailService;
-import com.c0721g2srsrealestatebe.service.realestatenews.IDirectionService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
-import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateTypeService;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -121,8 +121,36 @@ public class RealEstateNewsController {
     }
 
 
+//    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType, direction KhaiPN
+    @GetMapping("/search")
+    public ResponseEntity< Page< RealEstateNews > > getListRealEstateNews(
+            @RequestParam(defaultValue = "", value = "address") String address,
+            @RequestParam(defaultValue = "", value = "kindOfNews") String kindOfNews,
+            @RequestParam(defaultValue = "", value = "realEstateType") String realEstateType,
+            @RequestParam(defaultValue = "", value = "direction") String direction,
+            @RequestParam(defaultValue = "0", value = "minPrice") String minPrice,
+            @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
+            @RequestParam(defaultValue = "0") int page
+    ) {
+        if(realEstateType.equals("undefined")){
+            realEstateType = "";
+        }
+        if(direction.equals("undefined")){
+            direction = "";
+        }
+        Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
+        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
+                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
 
-    // 5.6.2 add Real estate new detail
+        if (realEstateNewsPage.isEmpty()) {
+            System.out.println("no content");
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
+    }
+
+
+    // 5.6.2 add Real estate new detail TranNN
     @PostMapping("/post")
     public ResponseEntity<List<FieldError>> saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult){
         if(bindingResult.hasErrors()){

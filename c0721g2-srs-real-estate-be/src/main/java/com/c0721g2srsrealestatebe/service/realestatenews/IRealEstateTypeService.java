@@ -8,5 +8,4 @@ import java.util.List;
 public interface IRealEstateTypeService {
     List<RealEstateType> realEstateTypeList();
     List<RealEstateType> findAllRealEstateType();
-
 }

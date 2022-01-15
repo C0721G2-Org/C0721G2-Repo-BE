@@ -8,6 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+
 import java.util.Optional;
 
 @Service
@@ -64,6 +65,12 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     @Override
     public void deleteById(String id) {
         iRealEstateNewsRepository.deleteById(id);
+    }
+
+    // 5.6.1 KhaiPN
+    @Override
+    public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice, Pageable pageable) {
+        return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, direction,  minPrice,  maxPrice, pageable);
     }
 }
 
