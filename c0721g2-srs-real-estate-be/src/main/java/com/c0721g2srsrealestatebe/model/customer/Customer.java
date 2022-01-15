@@ -37,7 +37,7 @@ public class Customer {
     private LocalDate dateOfBirth;
     @Column(name = "gender", columnDefinition = "TINYINT")
     private Integer gender;
-    @OneToOne(targetEntity = AppUser.class)
+    @OneToOne(targetEntity = AppUser.class, cascade = CascadeType.ALL)
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class)
     private Image image;

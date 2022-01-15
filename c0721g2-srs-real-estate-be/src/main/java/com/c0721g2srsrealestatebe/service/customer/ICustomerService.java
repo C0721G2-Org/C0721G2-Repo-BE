@@ -21,4 +21,8 @@ public interface ICustomerService {
     Optional<Customer> findCustomerByPhone(String phone);
 
     Optional<Customer> findCustomerByEmail(String email);
+
+    //phuong thuc nay cua Hien
+    void saveCustomerSocial(Customer customer);
+
 }

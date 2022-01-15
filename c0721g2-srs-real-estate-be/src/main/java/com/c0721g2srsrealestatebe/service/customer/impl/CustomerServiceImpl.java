@@ -8,10 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
+@Transactional
 public class CustomerServiceImpl implements ICustomerService {
     @Autowired
     ICustomerRepository iCustomerRepository;
@@ -56,4 +58,10 @@ public class CustomerServiceImpl implements ICustomerService {
     public Optional<Customer> findCustomerByEmail(String email) {
         return iCustomerRepository.findCustomerByEmail(email);
     }
+
+    @Override
+    public void saveCustomerSocial(Customer customer) {
+        this.iCustomerRepository.save(customer);
+    }
 }
+

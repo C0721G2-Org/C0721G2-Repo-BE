@@ -30,6 +30,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
@@ -46,6 +47,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
 >>>>>>> 2983574122b4ccbd908d50f1b2d3ed09b6bdaa7b
 =======
+=======
+    <list default="true" id="a1f594ae-de9e-4f9e-b853-e5d1c90e66b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
 <<<<<<< HEAD
@@ -55,6 +63,7 @@
 >>>>>>> origin/real-estate
 =======
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
 >>>>>>> 8d0a5635471aba49a399373603a7c0db0d02b39c
 =======
@@ -119,6 +128,9 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" afterDir="false" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+>>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +142,18 @@
       <ProjectState />
     </projectState>
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+=======
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -149,6 +173,7 @@
         </projects_view>
       </state>
     </system>
+<<<<<<< HEAD
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,13 +193,29 @@
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
       </list>
     </option>
+=======
+>>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="23PUbdhUm7Tz2TvLgGpht78EFEF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+=======
+<<<<<<< HEAD
+  <component name="ProjectId" id="23Gujg3BMfv299JbLddKNClXRg1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+=======
+  <component name="ProjectId" id="23PUbdhUm7Tz2TvLgGpht78EFEF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+>>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -188,11 +229,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../thi_md5/thi-md5" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+=======
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,6 +253,10 @@
 <<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+<<<<<<< HEAD
+=======
+>>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -311,6 +366,7 @@
     <task active="true" id="Default" summary="Default task">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
 =======
       <changelist id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="" />
@@ -318,6 +374,32 @@
 =======
       <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+      <changelist id="a1f594ae-de9e-4f9e-b853-e5d1c90e66b4" name="Default Changelist" comment="" />
+      <created>1641372881785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641372881785</updated>
+      <workItem from="1641372888340" duration="446000" />
+      <workItem from="1641373854200" duration="4460000" />
+      <workItem from="1641381945720" duration="2314000" />
+      <workItem from="1641430913978" duration="12594000" />
+      <workItem from="1641523534465" duration="25000" />
+      <workItem from="1641532209693" duration="415000" />
+      <workItem from="1641540183434" duration="1386000" />
+      <workItem from="1641604242208" duration="1036000" />
+      <workItem from="1641605322440" duration="10906000" />
+      <workItem from="1641623237315" duration="2354000" />
+      <workItem from="1641627737298" duration="24000" />
+      <workItem from="1641628726893" duration="6924000" />
+      <workItem from="1641693190470" duration="1205000" />
+      <workItem from="1641698903778" duration="725000" />
+      <workItem from="1641705814158" duration="8827000" />
+      <workItem from="1641779608676" duration="13065000" />
+      <workItem from="1641804414213" duration="445000" />
+=======
+      <changelist id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
       <created>1641635288431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -325,6 +407,7 @@
       <workItem from="1641635305449" duration="190000" />
       <workItem from="1641635550213" duration="604000" />
       <workItem from="1641636206133" duration="1980000" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <workItem from="1641776353194" duration="31571000" />
@@ -365,6 +448,9 @@
       <workItem from="1642135492465" duration="7145000" />
       <workItem from="1642214222592" duration="1599000" />
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+>>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
     </task>
     <servers />
   </component>
@@ -404,6 +490,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641636248196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -452,6 +539,59 @@
     </state>
     <state width="1306" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
     <state width="1306" height="220" key="GridCell.Tab.2.bottom" timestamp="1641833590542">
+=======
+<<<<<<< HEAD
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1641803806247">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1641803806247" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1641804156871">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1641804156871" />
+    <state width="1493" height="248" key="GridCell.Tab.0.bottom" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.0.center" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.0.left" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.0.right" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.1.bottom" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.1.center" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.1.left" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state width="1493" height="248" key="GridCell.Tab.1.right" timestamp="1641804286497">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="248" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1641804286497" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1641800416082">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1641800416082" />
+    <state x="209" y="69" key="new project wizard" timestamp="1641612951838">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="69" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1641612951838" />
+=======
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641636248196">
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1306" height="220" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
@@ -586,6 +726,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <state width="1877" height="153" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
 =======
@@ -728,5 +869,8 @@
       </breakpoints>
     </breakpoint-manager>
 >>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+>>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
 </project>
