@@ -1,54 +1,63 @@
 package com.c0721g2srsrealestatebe.dto;
 
-import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Parameter;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
-//@Age
+import javax.validation.constraints.*;
+import java.time.LocalDate;
+
+// ThienND & TungLQ dùng chung Validate này
 public class CustomerDTO implements Validator {
+
 
     private String id;
 
-
-
     @NotBlank(message = "you have to input your name")
-    @Size(min = 2, message = "Tên ít nhất phải 2 ký tự")
-    @Pattern(regexp = "^[a-zA-ZàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼ" +
-            "ÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+(\\s[a-zA-Zàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợở" +
-            "ỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ]+)*$",
-            message = "Không được chứa ký tự đặc biệt")
+//    @Size(min = 2, message = "Tên ít nhất phải 2 ký tự")
+    @Pattern(regexp = "^([^0-9]{2,})$", message = "Tên không được có số và từ 2 kí tự trở lên")
     private String name;
 
 
-    //    @NotBlank(message = "you have to input your birthday")
+    @NotNull(message = "Không được bỏ trống")
 //    @Pattern(regexp = "^(?:19\\d{2}|20\\d{2})[-/.](?:0[1-9]|1[012])[-/.](?:0[1-9]|[12][0-9]|3[01])$",
 //            message = "Ngày sinh phải đúng định dạng: dd/MM/yyyy.")
-    @DateTimeFormat(pattern = "MM-dd-yyyy")
     private LocalDate dateOfBirth;
 
 
-
     @NotBlank(message = "Số CMND không được để trống.")
-    @Pattern(regexp = "^([0-9]{9})|([0-9]{12})$",
+    @Pattern(regexp = "^([0-9]{9})$|([0-9]{12})$",
             message = "Số CMND phải đúng định dạng: XXXXXXXXX hoặc XXXXXXXXXXXX.")
     private String idCard;
 
+
+    @NotBlank
     private String address;
+
+
+    @NotBlank(message = "Số điện thoại không được để trống.")
+    @Pattern(regexp = "^(0[0-9\\s.-]{9,13})$",
+            message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
+    private String phoneNumber;
+
+    @NotBlank(message = "Email không được để trống.")
+    @Email
+    private String email;
+
+    @NotNull
+    private Integer gender;
+
+    private AppUserDTO appUserDTO;
+    private ImageDTO image;
+
+    private Long roleDTO;
+
+    @NotEmpty
+    private String userName;
+
+    @NotEmpty
+    @Size(min = 5, max = 250)
+    private String password;
 
     public String getAddress() {
         return address;
@@ -58,22 +67,29 @@ public class CustomerDTO implements Validator {
         this.address = address;
     }
 
-    @NotBlank(message = "Số điện thoại không được để trống.")
-    @Pattern(regexp = "^(0|(\\(84\\)\\+))+([9][0-1][0-9]{7})$",
-            message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
-    private String phoneNumber;
+    public String getUserName() {
+        return userName;
+    }
 
-    @NotBlank(message = "Email không được để trống.")
-    @Pattern(regexp = "^(?:^|\\s)[\\w!#$%&'*+/=?^`{|}~-](\\.?[\\w!#$%&'*+/=?^`{|}~-]+)*@\\w+[.-]?\\w*\\.[a-zA-Z]{2,3}\\b$",
-            message = "Email phải đúng định dạng.")
-    private String email;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-    @NotNull
-    private Integer gender;
+    public String getPassword() {
+        return password;
+    }
 
-    private AppUserDTO appUserDTO;
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-    private ImageDTO image;
+    public Long getRoleDTO() {
+        return roleDTO;
+    }
+
+    public void setRoleDTO(Long roleDTO) {
+        this.roleDTO = roleDTO;
+    }
 
     public AppUserDTO getAppUserDTO() {
         return appUserDTO;
@@ -94,8 +110,8 @@ public class CustomerDTO implements Validator {
     private Boolean deleted = Boolean.FALSE;
 
     public CustomerDTO() {
+        // constructor no param
     }
-
 
     public String getId() {
         return id;
@@ -172,8 +188,6 @@ public class CustomerDTO implements Validator {
     private boolean checkPhone;
 
 
-
-
     public boolean isCheckIdCard() {
         return checkIdCard;
     }
@@ -218,4 +232,5 @@ public class CustomerDTO implements Validator {
                 ", checkIdCard=" + checkIdCard +
                 '}';
     }
+
 }
