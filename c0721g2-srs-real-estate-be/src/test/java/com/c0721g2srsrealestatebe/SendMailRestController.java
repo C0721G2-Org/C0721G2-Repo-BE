@@ -14,23 +14,23 @@ import org.springframework.http.ResponseEntity;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class SendMailRestController {
-    @Autowired
-    private RealEstateNewsController estateNewsController;
-
-    @Test
-    public void sendMailSuccess() {
-        ResponseEntity<  Void > responseEntity
-                = this.estateNewsController.emailSend
-                ("Ductai4992@gmail.com", "Tai", "0918876320");
-
-        Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
-    }
-    @Test
-    public void sendMailError() {
-        ResponseEntity<  Void > responseEntity
-                = this.estateNewsController.emailSend
-                ("", "Tai", "0918876320");
-
-        Assertions.assertEquals(501, responseEntity.getStatusCode().isError());
-    }
+//    @Autowired
+//    private RealEstateNewsController estateNewsController;
+//
+//    @Test
+//    public void sendMailSuccess() {
+//        ResponseEntity<  Void > responseEntity
+//                = this.estateNewsController.emailSend
+//                ("Ductai4992@gmail.com", "Tai", "0918876320");
+//
+//        Assertions.assertEquals(200, responseEntity.getStatusCodeValue());
+//    }
+//    @Test
+//    public void sendMailError() {
+//        ResponseEntity<  Void > responseEntity
+//                = this.estateNewsController.emailSend
+//                ("", "Tai", "0918876320");
+//
+//        Assertions.assertEquals(501, responseEntity.getStatusCode().isError());
+//    }
 }

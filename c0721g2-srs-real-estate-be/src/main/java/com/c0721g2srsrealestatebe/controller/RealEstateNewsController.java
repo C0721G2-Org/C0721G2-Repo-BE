@@ -60,7 +60,6 @@ public class RealEstateNewsController {
     @GetMapping("/{id}")
     public ResponseEntity< RealEstateNews > findNewById(@PathVariable(value = "id") String id) {
         Optional< RealEstateNews > realEstateNews = realEstateNewsService.findNewsById(id);
-        System.out.println(id);
         if (realEstateNews.isPresent()) {
             return new ResponseEntity<>(realEstateNews.get(), HttpStatus.OK);
         }
@@ -77,21 +76,17 @@ public class RealEstateNewsController {
         } else {
             emailService.sendSimpleMessage(customerMail, name, phone);
             return new ResponseEntity<>(HttpStatus.OK);
-
         }
-
     }
 
     // 5.6.2 add Real estate new detail
     @PostMapping("/post")
     public ResponseEntity<List<FieldError>> saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
-            System.out.println(bindingResult);
             return new ResponseEntity<>(bindingResult.getFieldErrors(),HttpStatus.NOT_ACCEPTABLE);
         }
         RealEstateNews news = this.copyProperties(realEstateDTO);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
-        System.out.println(realEstateNews);
         realEstateDTO.getImageList().forEach((imageDTO -> {
                     Image image = new Image();
                     image.setUrl(imageDTO.getUrl());

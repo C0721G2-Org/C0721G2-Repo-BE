@@ -37,10 +37,7 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
 //        realEstateNewsRepository.saveNews(realEstateNews.getAddress(),realEstateNews.getApproval(),realEstateNews.getArea(),realEstateNews.getDescription(),
 //                realEstateNews.getKindOfNews(),realEstateNews.getPrice(),realEstateNews.getStatus(),realEstateNews.getTitle(),realEstateNews.getCustomer().getId(),
 //                realEstateNews.getDirection().getId(),realEstateNews.getRealEstateType().getId());
-        System.out.println(123);
-        System.out.println(realEstateNews);
         iRealEstateNewsRepository.save(realEstateNews);
-        System.out.println(iRealEstateNewsRepository.lastId());
         return iRealEstateNewsRepository.findNewsById(iRealEstateNewsRepository.lastId()).orElse(null);
     }
 

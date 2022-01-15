@@ -4,7 +4,6 @@ import com.c0721g2srsrealestatebe.dto.realstatenews.CusDTO;
 import com.c0721g2srsrealestatebe.dto.realstatenews.DirectionDTO;
 import com.c0721g2srsrealestatebe.dto.realstatenews.ImageDTO;
 import com.c0721g2srsrealestatebe.dto.realstatenews.RealEstateTypeDTO;
-import org.springframework.format.annotation.NumberFormat;
 
 import javax.validation.constraints.*;
 import java.util.List;
@@ -13,14 +12,19 @@ public class RealEstateDTO{
 
     private String id;
     @NotBlank(message = "NotBlank")
+    @Size(max = 256, message = "max 256")
     private String title;
+    @Size(max = 256, message = "max 256")
     private String description;
     @NotBlank(message = "NotBlank")
+    @Size(max = 256, message = "max 256")
     private String address;
-    @Min(value = 0, message = "positive numbers")
+    @Min(value = 1, message = "positive numbers")
+    @Max(value = 99999, message = "max is 99999")
     @NotNull(message = "NotNull")
     private Double area;
-    @Min(value = 0, message = "positive numbers")
+    @Min(value = 1, message = "positive numbers")
+    @Max(value = 1999999999, message = "max is 1999999999")
     @NotNull(message = "NotNull")
     private Double price;
     private Integer approval;
@@ -37,7 +41,7 @@ public class RealEstateDTO{
     @NotNull(message = "NotNull")
     private DirectionDTO direction;
     private CusDTO customer;
-    @Size(min=1, max=3,message = "size 1-5")
+    @Size(min=1, max=5,message = "size 1-5")
     private List<ImageDTO> imageList;
 
     public RealEstateDTO() {
