@@ -41,7 +41,7 @@ public class Customer {
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class)
     private Image image;
-    @OneToMany(mappedBy = "customer" )
+    @OneToMany(mappedBy ="customer")
     @JsonBackReference
     private List<RealEstateNews> realEstateNewsList;
     private Boolean deleted = Boolean.FALSE;
