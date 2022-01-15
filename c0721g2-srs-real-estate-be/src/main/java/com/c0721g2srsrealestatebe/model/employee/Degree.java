@@ -1,7 +1,5 @@
 package com.c0721g2srsrealestatebe.model.employee;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,6 +13,7 @@ public class Degree {
     private String name;
 
     public Degree() {
+        //update data
     }
 
     public Long getId() {
