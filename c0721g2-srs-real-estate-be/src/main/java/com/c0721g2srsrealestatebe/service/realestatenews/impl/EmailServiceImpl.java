@@ -14,27 +14,11 @@ import java.io.UnsupportedEncodingException;
 
 @Service
 public class EmailServiceImpl implements EmailService {
-    //    @Qualifier("getJavaMailSender")
     @Autowired
     private JavaMailSender emailSender;
 
     @Override
     public void sendSimpleMessage(String customerEmail, String name, String phone) throws MessagingException, UnsupportedEncodingException {
-//        System.out.println("âbcc");
-//        SimpleMailMessage message = new SimpleMailMessage();
-//        message.setFrom("plthienbkdn@gmail.com");
-//        message.setTo(customerEmail);
-//        message.setSubject("Một khách hàng quan tâm tới bài đăng của bạn");
-//        message.setText("Chào bạn \n" +
-//                "Khách hàng" + name + " số điện thoại " + phone + " đang quan tâm đến bài đăng của bạn tên trang \n" +
-//                "hungthinhgroup.com.\n" +
-//                "Thanks and Regards\n" +
-//                "<p>-----------------------------------------------------------</p>" +
-//                        "<p>Bất động sản Hưng Thịnh Group</p>" +
-//                        "<p>Địa chỉ: Tòa nhà Hưng Thịnh Group, số 99 đường Lê Duẩn</p>" +
-//                        "<p>Email: plthienbkdn@gmail.com</p>" +
-//                        "<p>Số điện thoại: 0905686868</p>");
-//        emailSender.send(message);
         String mailContent = "";
         MimeMessage message = emailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, "UTF-8");

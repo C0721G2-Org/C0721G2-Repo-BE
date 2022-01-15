@@ -45,17 +45,6 @@ public class RealEstateNewsController {
     IRealEstateTypeService iRealEstateTypeService;
     @Autowired
     IDirectionService iDirectionService;
-    //Khai get direction
-    @GetMapping(value = "/direction")
-    public List<Direction> directionList(){
-        return iDirectionService.directionList();
-    }
-    //Khai get realEstateType
-    @GetMapping(value = "/realEstateType")
-    public List<RealEstateType> realEstateTypes(){
-        return iRealEstateTypeService.realEstateTypeList();
-    }
-
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
     @GetMapping("/history-post")
@@ -124,32 +113,5 @@ public class RealEstateNewsController {
         realEstateNews.setDirection(new Direction(realEstateDTO.getDirection().getId()));
         realEstateNews.setCustomer(customer);
         return realEstateNews;
-    }
-    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType, direction
-    @GetMapping("/list-real-estate-new/search")
-    public ResponseEntity< Page< RealEstateNews > > getListRealEstateNews(
-            @RequestParam(defaultValue = "", value = "address") String address,
-            @RequestParam(defaultValue = "", value = "kindOfNews") String kindOfNews,
-            @RequestParam(defaultValue = "", value = "realEstateType") String realEstateType,
-            @RequestParam(defaultValue = "", value = "direction") String direction,
-            @RequestParam(defaultValue = "0", value = "minPrice") String minPrice,
-            @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
-            @RequestParam(defaultValue = "0") int page
-    ) {
-        if(realEstateType.equals("undefined")){
-            realEstateType = "";
-        }
-        if(direction.equals("undefined")){
-            direction = "";
-        }
-        Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
-        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
-                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
-
-        if (realEstateNewsPage.isEmpty()) {
-            System.out.println("no content");
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
     }
 }
