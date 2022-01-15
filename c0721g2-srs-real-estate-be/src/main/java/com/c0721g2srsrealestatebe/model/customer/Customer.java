@@ -49,6 +49,7 @@ public class Customer {
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {
+        //this is constructor
     }
 
     public Customer(String id, String name, String email, String phoneNumber, String address, String idCard, LocalDate dateOfBirth, Integer gender, AppUser appUser, Image image, List<RealEstateNews> realEstateNewsList, Boolean deleted) {

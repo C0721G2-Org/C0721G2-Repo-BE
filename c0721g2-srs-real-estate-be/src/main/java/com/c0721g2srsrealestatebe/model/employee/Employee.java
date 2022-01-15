@@ -46,6 +46,7 @@ public class Employee {
     private Boolean deleted = Boolean.FALSE;
 
     public Employee() {
+        //this is constructor
     }
 
     public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, String idCard, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {

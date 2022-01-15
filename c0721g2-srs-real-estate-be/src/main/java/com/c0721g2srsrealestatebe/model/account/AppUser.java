@@ -19,6 +19,7 @@ public class AppUser {
     private Set<Role> roles;
 
     public AppUser() {
+        //this is constructor
     }
 
     public AppUser(String id, String username, String password, Boolean isEnabled, String verificationCode, Set<Role> roles) {

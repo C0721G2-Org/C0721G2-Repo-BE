@@ -13,6 +13,7 @@ public class Image {
     private String url;
 
     public Image() {
+        //this is constructor
     }
 
     public Image(Long id, String url) {

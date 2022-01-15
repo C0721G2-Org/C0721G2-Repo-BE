@@ -5,24 +5,52 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+import java.io.UnsupportedEncodingException;
 
 @Service
 public class EmailServiceImpl implements EmailService {
-//    @Qualifier("getJavaMailSender")
+    //    @Qualifier("getJavaMailSender")
     @Autowired
     private JavaMailSender emailSender;
+
     @Override
-    public void sendSimpleMessage(String customerEmail, String name, String phone) {
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("hungthinhc07g2@gmail.com");
-        message.setTo(customerEmail);
-        message.setSubject("Một khách hàng quan tâm tới bài đăng của bạn");
-        message.setText("Chào bạn \n" +
+    public void sendSimpleMessage(String customerEmail, String name, String phone) throws MessagingException, UnsupportedEncodingException {
+//        System.out.println("âbcc");
+//        SimpleMailMessage message = new SimpleMailMessage();
+//        message.setFrom("plthienbkdn@gmail.com");
+//        message.setTo(customerEmail);
+//        message.setSubject("Một khách hàng quan tâm tới bài đăng của bạn");
+//        message.setText("Chào bạn \n" +
+//                "Khách hàng" + name + " số điện thoại " + phone + " đang quan tâm đến bài đăng của bạn tên trang \n" +
+//                "hungthinhgroup.com.\n" +
+//                "Thanks and Regards\n" +
+//                "<p>-----------------------------------------------------------</p>" +
+//                        "<p>Bất động sản Hưng Thịnh Group</p>" +
+//                        "<p>Địa chỉ: Tòa nhà Hưng Thịnh Group, số 99 đường Lê Duẩn</p>" +
+//                        "<p>Email: plthienbkdn@gmail.com</p>" +
+//                        "<p>Số điện thoại: 0905686868</p>");
+//        emailSender.send(message);
+        String mailContent = "";
+        MimeMessage message = emailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message, "UTF-8");
+        helper.setFrom("plthienbkdn@gmail.com", "Bất động sản Hưng Thịnh Group");
+        helper.setTo(customerEmail);
+        helper.setSubject("Một khách hàng quan tâm tới bài đăng của bạn");
+        mailContent = "Chào bạn \n" +
                 "Khách hàng" + name + " số điện thoại " + phone + " đang quan tâm đến bài đăng của bạn tên trang \n" +
                 "hungthinhgroup.com.\n" +
-                "Thanks and Regards\n");
+                "Thanks and Regards\n" +
+                "<p>------------------------------------------</p>" +
+                "<p>Bất động sản Hưng Thịnh Group</p>" +
+                "<p>Địa chỉ: Tòa nhà Hưng Thịnh Group, số 99 đường Lê Duẩn</p>" +
+                "<p>Email: plthienbkdn@gmail.com</p>" +
+                "<p>Số điện thoại: 0905686868</p>";
+        helper.setText(mailContent, true);
         emailSender.send(message);
-
     }
 }

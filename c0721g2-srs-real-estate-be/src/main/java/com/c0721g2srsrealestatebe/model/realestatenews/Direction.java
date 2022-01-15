@@ -15,6 +15,7 @@ public class Direction {
     @JsonBackReference("real_estate_news_directions")
     private List<RealEstateNews> realEstateNewsList ;
     public Direction() {
+        //this is constructor
     }
 
     public List<RealEstateNews> getRealEstateNewsList() {

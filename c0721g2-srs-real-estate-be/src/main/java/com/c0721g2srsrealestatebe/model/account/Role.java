@@ -13,6 +13,7 @@ public class Role {
     private String name;
 
     public Role() {
+        //this is constructor
     }
 
     public Role(Long id, String name) {
