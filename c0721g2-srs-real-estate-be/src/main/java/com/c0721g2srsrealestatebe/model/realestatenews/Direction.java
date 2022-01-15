@@ -13,6 +13,8 @@ public class Direction {
     private String name;
 
     public Direction() {
+        //constructor
+
     }
 
     public Long getId() {

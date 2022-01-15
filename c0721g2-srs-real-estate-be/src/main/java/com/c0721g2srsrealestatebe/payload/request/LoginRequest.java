@@ -7,6 +7,7 @@ public class LoginRequest {
     private String email;
 
     public LoginRequest() {
+        //constructor
     }
 
     public String getEmail() {

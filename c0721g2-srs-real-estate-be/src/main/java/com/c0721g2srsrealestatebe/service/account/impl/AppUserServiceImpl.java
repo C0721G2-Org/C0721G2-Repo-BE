@@ -9,7 +9,6 @@ import com.c0721g2srsrealestatebe.service.account.IAppUserService;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import net.bytebuddy.utility.RandomString;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -55,17 +54,15 @@ public class AppUserServiceImpl implements IAppUserService {
         String code = RandomString.make(64);
         appUserRepository.addVerificationCode(code, username);
         this.sendVerificationEmailForResetPassWord(username, code, email);
-        CompletableFuture<Void> future = CompletableFuture.runAsync(() -> {
-            System.out.println("Chờ xác nhận email");
+        CompletableFuture.runAsync(() -> {
             try {
                 TimeUnit.MINUTES.sleep(10);
             } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
                 throw new IllegalStateException(e);
             }
             appUserRepository.deleteVerificationCode(username);
-            System.out.println("Xóa verification code " + appUserRepository.findUserByVerificationCode(code));
         });
-
     }
 
     @Override

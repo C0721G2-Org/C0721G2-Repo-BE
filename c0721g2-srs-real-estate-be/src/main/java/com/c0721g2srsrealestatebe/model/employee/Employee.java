@@ -2,7 +2,6 @@ package com.c0721g2srsrealestatebe.model.employee;
 
 import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
-import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;

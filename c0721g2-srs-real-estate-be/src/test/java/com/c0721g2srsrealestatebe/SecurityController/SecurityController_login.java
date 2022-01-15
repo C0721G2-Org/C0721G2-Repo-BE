@@ -15,18 +15,18 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class SecurityController_login {
+class SecurityController_login {
     @Autowired
     private MockMvc mockMvc;
 
     //test chua dang nhap
     @Test
-    public void authenticateUser_1() throws Exception {
+    void authenticateUser_1() throws Exception {
         this.mockMvc.perform(MockMvcRequestBuilders.get("/test")).andExpect(status().is4xxClientError());
     }
     //test dăng nhap thanh cong
     @Test
-    public void authenticateUser_2() throws Exception {
+    void authenticateUser_2() throws Exception {
         String username = "admin";
         String password = "123";
 
@@ -43,7 +43,7 @@ public class SecurityController_login {
     }
     //test sql injection
     @Test
-    public void authenticateUser_3() throws Exception {
+    void authenticateUser_3() throws Exception {
         String username = "'' OR '' = ''";
         String password = "123";
 
@@ -56,7 +56,7 @@ public class SecurityController_login {
 
     //test sai username
     @Test
-    public void authenticateUser_4() throws Exception {
+    void authenticateUser_4() throws Exception {
         String username = "wrongusername";
         String password = "123";
 
@@ -69,7 +69,7 @@ public class SecurityController_login {
 
     //test sai password
     @Test
-    public void authenticateUser_5() throws Exception {
+    void authenticateUser_5() throws Exception {
         String username = "admin";
         String password = "wrongpassword";
 

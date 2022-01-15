@@ -10,7 +10,7 @@ import java.util.*;
 
 public class MyUserDetailsImpl implements UserDetails {
 
-    private AppUser appUser;
+    private transient AppUser appUser;
 
     public MyUserDetailsImpl(AppUser appUser) {
         this.appUser = appUser;

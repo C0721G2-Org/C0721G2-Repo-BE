@@ -9,14 +9,9 @@ import java.util.Properties;
 
 @Configuration
 public class MailConfig {
-    // your email
     public static final String MY_EMAIL = "plthienbkdn@gmail.com";
 
-    // password
-    public static final String MY_PASSWORD = "uermylnoujwkdsdk";
-
-    // And receiver!
-    public static final String MAIL_RECEIVER= "";
+    public static final String APP_PASS = "uermylnoujwkdsdk";
 
     @Bean
     public JavaMailSender getJavaMailSender() {
@@ -25,7 +20,7 @@ public class MailConfig {
         mailSender.setPort(587);
 
         mailSender.setUsername(MY_EMAIL);
-        mailSender.setPassword(MY_PASSWORD);
+        mailSender.setPassword(APP_PASS);
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
