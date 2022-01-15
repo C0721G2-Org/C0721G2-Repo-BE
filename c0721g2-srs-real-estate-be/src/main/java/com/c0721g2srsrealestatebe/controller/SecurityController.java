@@ -1,10 +1,12 @@
 package com.c0721g2srsrealestatebe.controller;
 
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.jwt.JwtUtils;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.payload.request.*;
 import com.c0721g2srsrealestatebe.payload.response.JwtResponse;
 import com.c0721g2srsrealestatebe.payload.response.MessageResponse;
+import com.c0721g2srsrealestatebe.service.account.IAppUserService;
 import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.account.impl.MyUserDetailsImpl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
@@ -20,9 +22,11 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.User;
 import org.springframework.social.facebook.api.impl.FacebookTemplate;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
@@ -174,5 +178,52 @@ public class SecurityController {
         loginRequest.setUsername(appUser.getUsername());
         loginRequest.setPassword(secretPsw);
         return authenticateUser(loginRequest);
+    }
+
+    //Thien
+
+    @Autowired
+    IAppUserService iAppUserService;
+
+    @PatchMapping(value = "/password")
+    public ResponseEntity<Object> update(@Valid @RequestBody AppUserDTO appUserDTO,
+                                         BindingResult bindingResult) {
+        try {
+            AppUser appUser1 = iAppUserService.findAppUserByUserName(appUserDTO.getUsername());
+            new AppUserDTO().validate(appUserDTO, bindingResult);
+            if (bindingResult.hasFieldErrors("password")) {
+                System.out.println("mật nhập không đúng form");
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            System.out.println(appUserDTO.toString());
+            if (bCryptPasswordEncoder.matches(
+                    appUserDTO.getPassword(),appUser1.getPassword())
+                    && !appUserDTO.getNewPassword().equals(appUserDTO.getPassword())
+                    && appUserDTO.getNewPassword().equals(appUserDTO.getReNewPassword())) {
+
+                appUserDTO.setPassword(bCryptPasswordEncoder.encode(appUserDTO.getNewPassword()));
+                System.out.println("chưa lưu");
+                System.out.println(appUserDTO.toString());
+                iAppUserService.updatePassword(appUserDTO);
+                System.out.println("đã lưu");
+                return new ResponseEntity<>(HttpStatus.OK);
+            } else {
+                System.out.println("nhập sai password");
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity<AppUser> update(@RequestBody AppUserDTO password) {
+        try {
+            iAppUserService.updatePassword(password);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 }

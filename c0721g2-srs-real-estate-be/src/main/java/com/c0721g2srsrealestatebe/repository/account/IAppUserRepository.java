@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
@@ -51,4 +52,10 @@ public interface IAppUserRepository extends JpaRepository<AppUser,UUID> {
     @Modifying
     @Query(value ="update app_users set verification_code=null where username=?1",nativeQuery = true)
     void deleteVerificationCode( String username);
+
+
+    @Query(value = "select real_estate_news.app_users.password from real_estate_news.app_users where real_estate_news.app_users.username = ?", nativeQuery = true)
+    String findPasswordByUsername(String username);
+
+    Optional<AppUser> findAppUserByUsername(String id);
 }

@@ -25,3 +25,4 @@ public class ImageDTO {
         this.url = url;
     }
 }
+
