@@ -5,6 +5,12 @@ public class PositionDTO {
     private String name;
 
     public PositionDTO() {
+        //comment
+    }
+
+    public PositionDTO(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public Long getId() {

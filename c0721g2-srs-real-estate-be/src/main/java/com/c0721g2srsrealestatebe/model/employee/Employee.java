@@ -39,13 +39,14 @@ public class Employee {
     private Degree degree;
     @ManyToOne(targetEntity = Position.class)
     private Position position;
-    @OneToOne(targetEntity = AppUser.class, cascade = CascadeType.ALL)
+    @OneToOne(targetEntity = AppUser.class, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class)
     private Image image;
     private Boolean deleted = Boolean.FALSE;
 
     public Employee() {
+        //comment
     }
 
     public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, String idCard, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {

@@ -1,9 +1,4 @@
 package com.c0721g2srsrealestatebe.dto;
-
-import com.c0721g2srsrealestatebe.model.account.Role;
-
-import javax.persistence.FetchType;
-import javax.persistence.ManyToMany;
 import java.util.Set;
 
 public class AppUserDTO {
@@ -16,6 +11,7 @@ public class AppUserDTO {
     private Set<RoleDTO> rolesDTO;
 
     public AppUserDTO() {
+        //comment
     }
 
     public String getId() {

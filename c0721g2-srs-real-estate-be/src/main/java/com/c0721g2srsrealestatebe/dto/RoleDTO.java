@@ -5,6 +5,7 @@ public class RoleDTO {
     private String name;
 
     public RoleDTO() {
+        //comment
     }
 
     public Long getId() {

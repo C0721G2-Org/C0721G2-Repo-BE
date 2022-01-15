@@ -1,13 +1,13 @@
 package com.c0721g2srsrealestatebe.controller;
 
-import com.c0721g2srsrealestatebe.dto.AppUserDTO;
-import com.c0721g2srsrealestatebe.dto.EmployeeDTO;
-import com.c0721g2srsrealestatebe.dto.PositionDTO;
+import com.c0721g2srsrealestatebe.dto.*;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.employee.Degree;
 import com.c0721g2srsrealestatebe.model.employee.Employee;
 import com.c0721g2srsrealestatebe.model.employee.Position;
+import com.c0721g2srsrealestatebe.service.account.IRoleService;
+import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.employee.IDegreeService;
 import com.c0721g2srsrealestatebe.service.employee.IEmployeeService;
 import com.c0721g2srsrealestatebe.service.employee.IPositionService;
@@ -23,10 +23,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
@@ -46,9 +43,13 @@ public class EmployeeController {
     @Autowired
     IPositionService iPositionService;
 
-//    @Autowired
-//    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    @Autowired
+    AppUserServiceImpl appUserService;
 
+    @Autowired
+    private IRoleService roleService;
+
+    //Lấy danh sách position
     @GetMapping(value = "/position")
     public ResponseEntity<List<Position>> getPosition() {
         List<Position> positions = iPositionService.findAll();
@@ -58,7 +59,7 @@ public class EmployeeController {
         return new ResponseEntity<>(positions, HttpStatus.OK);
     }
 
-
+    //Lấy danh sách degree
     @GetMapping(value = "/degree")
     public ResponseEntity<List<Degree>> getDegree() {
         List<Degree> degrees = iDegreeService.findAll();
@@ -68,6 +69,7 @@ public class EmployeeController {
         return new ResponseEntity<>(degrees, HttpStatus.OK);
     }
 
+    //hiển thị danh sách Employee (Hưng)
     @GetMapping(value = "/list")
     public ResponseEntity<Page<Employee>> showListEmployee(@PageableDefault(value = 10) Pageable pageable) {
         Page<Employee> employeeList = iEmployeeService.findAllEmployeePage(pageable);
@@ -77,6 +79,7 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeList, HttpStatus.OK);
     }
 
+    //Tìm kiếm nhân viên (Hưng)
     @GetMapping(value = "/search")
     public ResponseEntity<Page<Employee>> searchEmployee(@PageableDefault(value = 10) Pageable pageable,
                                                          @RequestParam(defaultValue = "") String name,
@@ -90,7 +93,8 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeListSearch, HttpStatus.OK);
     }
 
-    @DeleteMapping("delete/{id}")
+    //Xóa nhân viên (Hưng)
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Employee> delete(@PathVariable String id) {
         Optional<Employee> employeeOptional = this.iEmployeeService.findByIdOp(id);
         if (!employeeOptional.isPresent()) {
@@ -100,35 +104,55 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeOptional.get(), HttpStatus.OK);
     }
 
-
-    @GetMapping(value = "/detail/{id}")
-    public ResponseEntity<Employee> findByIdEmployee(@PathVariable String id) {
+    //Thịnh lấy id
+    @GetMapping(value = "/edit/{id}")
+    public ResponseEntity<Object> findByIdEmployee(@PathVariable String id) {
         Optional<Employee> employeeOptional = iEmployeeService.findById(id);
         if (!employeeOptional.isPresent()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(employeeOptional.get(), HttpStatus.OK);
+        EmployeeEditDTO employeeEditDTO = new EmployeeEditDTO();
+        BeanUtils.copyProperties(employeeOptional.get(), employeeEditDTO);
+        DegreeDTO degreeDTO = new DegreeDTO(employeeOptional.get().getDegree().getId(), employeeOptional.get().getDegree().getName());
+        employeeEditDTO.setDegreeDTO(degreeDTO);
+        employeeEditDTO.setPositionDTO(new PositionDTO(employeeOptional.get().getPosition().getId(), employeeOptional.get().getPosition().getName()));
+
+        Set<Role> roles = employeeOptional.get().getAppUser().getRoles();
+        Long idRole = 0L;
+        for (Role role : roles) {
+            idRole = role.getId();
+        }
+        employeeEditDTO.setRoleDTO(idRole);
+        return new ResponseEntity<Object>(employeeEditDTO, HttpStatus.OK);
+
+
     }
 
-
+    //Thịnh create
     @PostMapping(value = "/create")
-    public ResponseEntity<?> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
-                                            BindingResult bindingResult) {
+    public ResponseEntity<Object> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
+                                                 BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(bindingResult.getFieldErrors(),
                     HttpStatus.NOT_ACCEPTABLE);
         }
+        //kiểm tra email có bị trùng lặp hay không
+        Map<String, String> listErrors = new HashMap<>();
+        if (appUserService.existByUsername(employeeDTO.getEmail())) {
+            System.out.println("Test");
+            listErrors.put("errorEmail", "Email đã có người sử dụng");
+            return ResponseEntity.badRequest().body(listErrors);
+        }
+
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
-//        System.out.println("dto"+ employeeDTO.toString());
-//        System.out.println(employee);
+
 
         //set vị trí
         Position position = new Position();
-        System.out.println(position.toString());
         position.setId(employeeDTO.getPositionDTO().getId());
         employee.setPosition(position);
-        System.out.println(employee);
+
 
         //set bằng cấp
         Degree degree = new Degree();
@@ -137,60 +161,67 @@ public class EmployeeController {
 
 
         // Set role
-        Role role = new Role();
-        role.setId(employeeDTO.getRoleDTO());
+        Role role = roleService.getRoleById(employeeDTO.getRoleDTO());
         Set<Role> roles = new HashSet<>();
         roles.add(role);
+
 
         //tạo account
         AppUser appUser = new AppUser();
         appUser.setUsername(employeeDTO.getEmail());
-//        appUser.setPassword(bCryptPasswordEncoder.encode("abc123456"));
         appUser.setPassword("abc123456");
         appUser.setRoles(roles);
+
         employee.setAppUser(appUser);
-        System.out.println("Test employee: " + employee);
-        System.out.println("Test app user: " + " " + appUser.toString());
         this.iEmployeeService.saveEmployee(employee);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    //tạo thuộc tính role tỏng dto
-    @PatchMapping(value = "/edit")
-    public ResponseEntity<Object> updateEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
+    //Thịnh edit
+    @PatchMapping(value = "/edit/{id}")
+    public ResponseEntity<Object> updateEmployee(@RequestBody @Valid EmployeeEditDTO employeeDTO,
                                                  BindingResult bindingResult) {
-        System.out.println(employeeDTO);
+
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.NOT_ACCEPTABLE);
 
         }
+        //kiểm tra email có bị trùng lặp hay không
+        Map<String, String> listErrors = new HashMap<>();
+        if (appUserService.existByUsername(employeeDTO.getEmail())) {
+
+            listErrors.put("errorEmail", "Email đã có người sử dụng");
+            return ResponseEntity.badRequest().body(listErrors);
+        }
+
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
-//        System.out.println("dto"+ employeeDTO.toString());
-//        System.out.println(employee);
+
 
         //set vị trí
         Position position = new Position();
-        System.out.println(position.toString());
+
         position.setId(employeeDTO.getPositionDTO().getId());
         employee.setPosition(position);
-        System.out.println(employee);
+
 
         //set bằng cấp
         Degree degree = new Degree();
         degree.setId(employeeDTO.getDegreeDTO().getId());
         employee.setDegree(degree);
 
+
         // Set role
-        Role role = new Role();
-        role.setId(employeeDTO.getRoleDTO());
+        Role role = roleService.getRoleById(employeeDTO.getRoleDTO());
         Set<Role> roles = new HashSet<>();
         roles.add(role);
+
         AppUser appUser = new AppUser();
         appUser.setRoles(roles);
+        appUser.setUsername(employeeDTO.getEmail());
         employee.setAppUser(appUser);
 
         this.iEmployeeService.saveEmployee(employee);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(employee, HttpStatus.OK);
     }
 }

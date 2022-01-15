@@ -12,10 +12,10 @@ import org.springframework.stereotype.Repository;
 import javax.transaction.Transactional;
 
 @Repository
+@Transactional
 public interface IEmployeeRepository extends JpaRepository<Employee, String> {
 
     @Modifying
-    @Transactional
     @Query(value = "insert into employees (id, address, date_of_birth, email, gender,id_card, `name`, phone_number, app_user_id, degree_id, image_id,position_id) " +
             " VALUES (:id, :address, :date_of_birth,:deleted, :email, :gender,:id_card, :name, :phone_number, :app_user_id, :degree_id, :image_id,:position_id)", nativeQuery = true)
     Employee saveEmployee(@Param("id") String id, @Param("address") String address,
@@ -26,7 +26,7 @@ public interface IEmployeeRepository extends JpaRepository<Employee, String> {
                           @Param("degree_id") Long degree_id, @Param("image_id") Long image_id,
                           @Param("position_id") Long position_id);
 
-    @Query(value = "select * from employees ", nativeQuery = true)
+    @Query(value = "select * from employees where deleted = false ", nativeQuery = true)
     Page<Employee> findAllEmployee(Pageable pageable);
 
     @Query(value = " delete from employees where id = :id", nativeQuery = true)

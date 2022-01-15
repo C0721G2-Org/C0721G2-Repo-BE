@@ -5,6 +5,12 @@ public class DegreeDTO {
     private String name;
 
     public DegreeDTO() {
+        //comment
+    }
+
+    public DegreeDTO(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public Long getId() {

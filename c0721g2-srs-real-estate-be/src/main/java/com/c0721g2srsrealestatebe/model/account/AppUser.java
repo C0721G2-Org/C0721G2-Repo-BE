@@ -1,11 +1,15 @@
 package com.c0721g2srsrealestatebe.model.account;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity(name = "app_users")
+@SQLDelete(sql = "UPDATE app_users SET deleted = true WHERE id=?")
+@Where(clause = "deleted=false")
 public class AppUser {
     @Id
     @GeneratedValue(generator = "uuid2")
@@ -15,8 +19,9 @@ public class AppUser {
     private String password;
     private Boolean isEnabled;
     private String verificationCode;
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST,targetEntity = Role.class)
     private Set<Role> roles;
+    private Boolean deleted = Boolean.FALSE;
 
     public AppUser() {
     }

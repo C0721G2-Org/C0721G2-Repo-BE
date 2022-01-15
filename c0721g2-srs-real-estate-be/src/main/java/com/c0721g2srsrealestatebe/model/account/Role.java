@@ -1,9 +1,7 @@
 package com.c0721g2srsrealestatebe.model.account;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity(name = "roles")
 public class Role {
@@ -11,6 +9,8 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @ManyToMany( mappedBy = "roles")
+    private Set<AppUser> appUsers;
 
     public Role() {
     }

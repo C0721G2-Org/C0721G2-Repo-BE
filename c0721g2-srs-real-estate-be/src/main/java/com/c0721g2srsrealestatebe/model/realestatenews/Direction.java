@@ -13,6 +13,7 @@ public class Direction {
     private String name;
 
     public Direction() {
+        //comment
     }
 
     public Long getId() {

@@ -89,27 +89,63 @@
       <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/create-emp.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/edit-emp.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/giaodien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeEditDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/json/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 2/Module 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/Module 2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 2/src/_test_btnhom_vs_bttuan/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/src/_test_btnhom_vs_bttuan/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-delete/customer-delete.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-delete/customer-delete.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/json-server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/json-server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/DegreeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/DegreeDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IDegreeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IDegreeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/PositionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/PositionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IPositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IPositionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/IDegreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/IDegreeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/IEmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/IPositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/IPositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/DegreeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/DegreeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/PositionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/PositionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" afterDir="false" />
@@ -171,6 +207,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../a hưng/C0721G2-Repo-BE/c0721g2-srs-real-estate-be" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -179,6 +216,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
@@ -188,25 +226,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_name_14&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EmployeeController_createEmployee.createEmployee_name_15" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_name_15&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -277,6 +296,25 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="c0721g2-srs-real-estate-be [sonarqube]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="sonarqube" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="c0721g2-srs-real-estate-be.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
@@ -286,11 +324,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
         <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_18" />
         <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_name_13" />
         <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_name_14" />
         <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_idCard_17" />
-        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_name_15" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +354,10 @@
       <workItem from="1641906783673" duration="3002000" />
       <workItem from="1641969858605" duration="20159000" />
       <workItem from="1641995005923" duration="661000" />
-      <workItem from="1642043807904" duration="11565000" />
+      <workItem from="1642043807904" duration="14169000" />
+      <workItem from="1642124277705" duration="8600000" />
+      <workItem from="1642136346983" duration="13944000" />
+      <workItem from="1642214891215" duration="16713000" />
     </task>
     <servers />
   </component>
@@ -348,6 +389,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="726" y="61" key="#Auto_Import" timestamp="1642217414378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="61" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1642217414378" />
     <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641797135026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -357,10 +402,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641893725749" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1642071898542">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1642232609442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1642071898542" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1642232609442" />
     <state x="715" y="389" width="492" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1641977663051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -370,69 +415,73 @@
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
     <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642071516072" />
-    <state width="1877" height="720" key="GridCell.Tab.0.bottom" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.0.bottom" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="720" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="720" key="GridCell.Tab.0.center" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.center" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1877" height="720" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="720" key="GridCell.Tab.0.left" timestamp="1642072624744">
+    <state width="1877" height="735" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.left" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1877" height="720" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624744" />
-    <state width="1877" height="720" key="GridCell.Tab.0.right" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.right" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1877" height="720" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="720" key="GridCell.Tab.1.bottom" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.bottom" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="720" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="720" key="GridCell.Tab.1.center" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.center" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="720" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="720" key="GridCell.Tab.1.left" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.left" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="720" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="720" key="GridCell.Tab.1.right" timestamp="1642072624745">
+    <state width="1877" height="735" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.right" timestamp="1642236744744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1877" height="720" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642072624745" />
-    <state width="1877" height="507" key="GridCell.Tab.2.bottom" timestamp="1642066564676">
+    <state width="1877" height="735" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="507" key="GridCell.Tab.2.bottom" timestamp="1642076902046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="507" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642066564676" />
-    <state width="1877" height="507" key="GridCell.Tab.2.center" timestamp="1642066564676">
+    <state width="1877" height="507" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.center" timestamp="1642076902046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="507" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642066564676" />
-    <state width="1877" height="507" key="GridCell.Tab.2.left" timestamp="1642066564676">
+    <state width="1877" height="507" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.left" timestamp="1642076902046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="507" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642066564676" />
-    <state width="1877" height="507" key="GridCell.Tab.2.right" timestamp="1642066564676">
+    <state width="1877" height="507" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.right" timestamp="1642076902046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="507" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642066564676" />
+    <state width="1877" height="507" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1642232452422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642232452422" />
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog" timestamp="1641702219739">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.816@0.0.1536.816" timestamp="1641702219739" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1641991220114">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1642221928443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641991220114" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1642221928443" />
   </component>
 </project>
