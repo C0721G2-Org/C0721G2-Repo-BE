@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.service.account;
 
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 
@@ -8,7 +9,7 @@ import java.io.UnsupportedEncodingException;
 
 
 public interface IAppUserService {
-    public AppUser getAppUserByEmail(String email);
+    AppUser getAppUserByEmail(String email);
 
     boolean existsUserByEmail(String email);
 
@@ -21,4 +22,10 @@ public interface IAppUserService {
     AppUser createCustomerSocial(CustomerSocial customerSocial);
 
     boolean existsByUserName(String username);
+
+    void updatePassword(AppUserDTO appUserDTO);
+
+    String findPasswordByUsername(String username);
+
+    AppUser findAppUserByUserName(String id);
 }

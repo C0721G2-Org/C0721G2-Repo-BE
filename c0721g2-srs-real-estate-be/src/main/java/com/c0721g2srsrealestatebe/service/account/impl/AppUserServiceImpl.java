@@ -1,5 +1,7 @@
 package com.c0721g2srsrealestatebe.service.account.impl;
 
+import com.c0721g2srsrealestatebe.Exception.AppUserException;
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
@@ -38,8 +40,6 @@ public class AppUserServiceImpl implements IAppUserService {
     @Autowired
     private CustomerServiceImpl customerService;
 
-    @Autowired
-    IAppUserRepository iAppUserRepository;
 
     @Override
     public AppUser getAppUserByEmail(String email) {
@@ -126,7 +126,24 @@ public class AppUserServiceImpl implements IAppUserService {
 
     // Tùng kiểm tra username
     public boolean existsByUserName(String username) {
-        return iAppUserRepository.existsByUsername(username);
+        return appUserRepository.existsByUsername(username);
     }
 
+
+    @Override
+    public String findPasswordByUsername(String username) {
+        return appUserRepository.findPasswordByUsername(username);
+    }
+
+
+    @Override
+    public void updatePassword(AppUserDTO appUserDTO) {
+        appUserRepository.saveNewPassword(appUserDTO.getPassword(), appUserDTO.getUsername());
+    }
+
+    @Override
+    public AppUser findAppUserByUserName(String id) {
+        return appUserRepository.findAppUserByUsername(id).orElseThrow(() -> new AppUserException(
+                "không thể tìm thấy id " + id + ""));
+    }
 }

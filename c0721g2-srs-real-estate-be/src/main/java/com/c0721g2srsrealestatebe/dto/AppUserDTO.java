@@ -2,39 +2,27 @@ package com.c0721g2srsrealestatebe.dto;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
-
-import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class AppUserDTO implements Validator {
-    private String id;
-
     private String username;
-    //    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",
+    //    @Size(min = 8, max = 12)
+//    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$" ,
 //            message = "Mật khẩu phải ít nhất có 1 ký tự hoa và thường và 1 số")
-//    @Min(value = 7,message = "Mật khẩu từ 7 kí tự trở lên")
     private String password;
-    private Boolean isEnabled;
-    private String verificationCode;
+    private String newPassword;
+    private String reNewPassword;
+
 
     public AppUserDTO() {
     }
 
-    public AppUserDTO(String id, String username, String password, Boolean isEnabled, String verificationCode) {
-        this.id = id;
+    public AppUserDTO(String username, String password, String newPassword, String reNewPassword) {
         this.username = username;
         this.password = password;
-        this.isEnabled = isEnabled;
-        this.verificationCode = verificationCode;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+        this.newPassword = newPassword;
+        this.reNewPassword = reNewPassword;
     }
 
     public String getUsername() {
@@ -53,30 +41,29 @@ public class AppUserDTO implements Validator {
         this.password = password;
     }
 
-    public Boolean getEnabled() {
-        return isEnabled;
+    public String getNewPassword() {
+        return newPassword;
     }
 
-    public void setEnabled(Boolean enabled) {
-        isEnabled = enabled;
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
     }
 
-    public String getVerificationCode() {
-        return verificationCode;
+    public String getReNewPassword() {
+        return reNewPassword;
     }
 
-    public void setVerificationCode(String verificationCode) {
-        this.verificationCode = verificationCode;
+    public void setReNewPassword(String reNewPassword) {
+        this.reNewPassword = reNewPassword;
     }
 
     @Override
     public String toString() {
         return "AppUserDTO{" +
-                "id='" + id + '\'' +
-                ", username='" + username + '\'' +
+                "username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", isEnabled=" + isEnabled +
-                ", verificationCode='" + verificationCode + '\'' +
+                ", newPassword='" + newPassword + '\'' +
+                ", reNewPassword='" + reNewPassword + '\'' +
                 '}';
     }
 
@@ -87,6 +74,6 @@ public class AppUserDTO implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-
+//chứa đoạn code validate
     }
 }
