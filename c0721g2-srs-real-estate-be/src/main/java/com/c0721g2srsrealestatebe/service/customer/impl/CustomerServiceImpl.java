@@ -11,14 +11,15 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 @Service
 public class CustomerServiceImpl implements ICustomerService {
+//    thienlb
     @Autowired
     ICustomerRepository iCustomerRepository;
 
     @Override
-    public Iterable<Customer> findAllCustomer() {
-        return iCustomerRepository.findAllCustomerByNative();
+    public Page<Customer> findAllCustomer(Pageable pageable) {
+        return iCustomerRepository.findAllCustomerByNative(pageable);
     }
-
+//    thienlb
     @Override
     public Optional<Customer> findCustomerById(String id) {
         return iCustomerRepository.findById(id);
@@ -28,10 +29,9 @@ public class CustomerServiceImpl implements ICustomerService {
     public Customer saveCustomer(Customer customer) {
         return iCustomerRepository.save(customer);
     }
-
+//thienlb
     @Override
     public void removeCustomer(String id) {
-//        iCustomerRepository.deleteById(id);
         iCustomerRepository.updateCustomer(id);
     }
 
@@ -40,18 +40,10 @@ public class CustomerServiceImpl implements ICustomerService {
         return iCustomerRepository.findAll(pageable);
     }
 
+// thienlb
     @Override
-    public Optional<Customer> findCustomerByName(String name) {
-        return iCustomerRepository.findCustomerByName(name);
+    public Page<Customer> findAllCustomerByNameAndPhoneAndEmailPage(String name, String phone, String email, Pageable pageable) {
+        return iCustomerRepository.findAllCustomerByNameAndPhoneAndEmail(name, phone, email, pageable);
     }
 
-    @Override
-    public Optional<Customer> findCustomerByPhone(String phone) {
-        return iCustomerRepository.findCustomerByPhone(phone);
-    }
-
-    @Override
-    public Optional<Customer> findCustomerByEmail(String email) {
-        return iCustomerRepository.findCustomerByEmail(email);
-    }
 }

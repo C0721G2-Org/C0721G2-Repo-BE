@@ -3,6 +3,7 @@ package com.c0721g2srsrealestatebe.model.account;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.Set;
 
 @Entity(name = "app_users")
@@ -77,4 +78,5 @@ public class AppUser {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
 }

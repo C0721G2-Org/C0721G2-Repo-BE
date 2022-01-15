@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public interface IRealEstateNewsService {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post

@@ -9,18 +9,19 @@ import java.util.Optional;
 
 @Service
 public interface ICustomerService {
-    Iterable<Customer> findAllCustomer();
+    Page<Customer> findAllCustomer(Pageable pageable);
 
+//  thienlb
     Optional<Customer> findCustomerById(String id);
 
     Customer saveCustomer(Customer customer);
 
+//  thienlb
     void removeCustomer(String id);
 
     Page<Customer> findCustomerPage(Pageable pageable);
 
-    Optional<Customer> findCustomerByName(String name);
-    Optional<Customer> findCustomerByPhone(String phone);
 
-    Optional<Customer> findCustomerByEmail(String email);
+// thienlb
+    Page<Customer> findAllCustomerByNameAndPhoneAndEmailPage(String name, String phone, String email, Pageable pageable);
 }
