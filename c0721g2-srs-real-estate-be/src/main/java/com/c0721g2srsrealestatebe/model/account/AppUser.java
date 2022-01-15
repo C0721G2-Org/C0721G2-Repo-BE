@@ -19,7 +19,6 @@ public class AppUser {
     private Set<Role> roles;
 
     public AppUser() {
-        //update data
     }
 
     public AppUser(String id, String username, String password, Boolean isEnabled, String verificationCode, Set<Role> roles) {

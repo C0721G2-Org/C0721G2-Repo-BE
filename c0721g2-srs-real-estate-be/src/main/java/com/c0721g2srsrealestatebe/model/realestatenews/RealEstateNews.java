@@ -44,6 +44,7 @@ public class RealEstateNews {
     private List<Image> imageList;
 
     public RealEstateNews() {
+        //this is constructor
     }
 
     @SuppressWarnings("squid:S00107")

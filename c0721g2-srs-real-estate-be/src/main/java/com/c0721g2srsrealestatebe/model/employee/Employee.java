@@ -45,6 +45,7 @@ public class Employee {
     private Boolean deleted = Boolean.FALSE;
 
     public Employee() {
+        //this is constructor
     }
 
     @SuppressWarnings("squid:S00107")

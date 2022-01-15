@@ -13,7 +13,6 @@ public class Role {
     private String name;
 
     public Role() {
-        //update data
     }
 
     public Role(Long id, String name) {

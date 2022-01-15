@@ -5,6 +5,7 @@ import com.c0721g2srsrealestatebe.dto.RealEstateDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
+import com.c0721g2srsrealestatebe.model.realestatenews.Email;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
@@ -24,7 +25,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
+import javax.mail.MessagingException;
 import javax.validation.Valid;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +43,6 @@ public class RealEstateNewsController {
     @Autowired
     private EmailService emailService;
 
-
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
     @GetMapping("/history-post")
@@ -50,7 +52,7 @@ public class RealEstateNewsController {
             @RequestParam(defaultValue = "", value = "title") String title,
             @RequestParam(defaultValue = "", value = "kindOfNew") String kindOfNew,
             @RequestParam(defaultValue = "", value = "realNewType") String realNewType) {
-        Pageable pageable = PageRequest.of(page, 10, Sort.by("id"));
+        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
                 findAllNewsBySearchField(customerId, title, kindOfNew, realNewType, pageable);
 
@@ -59,7 +61,6 @@ public class RealEstateNewsController {
         }
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
     }
-
 
     //     5.6.3 show Real estate new detail
     @GetMapping("/{id}")
@@ -73,19 +74,17 @@ public class RealEstateNewsController {
 
     // 5.6.3 send mail to customer
     @PostMapping("/email")
-    public ResponseEntity< Void > emailSend(@RequestParam(defaultValue = "",value ="customerMail") String customerMail,
-                                            @RequestParam(defaultValue = "",value = "name") String  name,
-                                            @RequestParam(defaultValue = "",value ="phone") String  phone) {
-        if (customerMail.equals("") || name.equals("") || phone.equals("")) {
+    public ResponseEntity< Void > emailSend(@RequestBody() Email email) throws UnsupportedEncodingException, MessagingException {
+        if (email == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } else {
-            emailService.sendSimpleMessage(customerMail, name, phone);
+            emailService.sendSimpleMessage(email.getCustomerMail(), email.getName(), email.getPhone());
             return new ResponseEntity<>(HttpStatus.OK);
         }
     }
 
     // 5.7.1 Xem danh sách nhu cầu - Tìm kiếm DoanhNV
-    @GetMapping("/search")
+    @GetMapping("/search-approval")
     public ResponseEntity<Page<RealEstateNews>> searchListPostApproval(@PageableDefault(value = 10) Pageable pageable,
                                                                        @RequestParam(defaultValue = "",value ="kind_of_news" ) String kindOfNews,
                                                                        @RequestParam(defaultValue = "", value = "direction_id") String directionId,
@@ -152,9 +151,10 @@ public class RealEstateNewsController {
 
     // 5.6.2 add Real estate new detail TranNN
     @PostMapping("/post")
-    public ResponseEntity<List<FieldError>> saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
-            return new ResponseEntity<>(bindingResult.getFieldErrors(),HttpStatus.NOT_ACCEPTABLE);
+    public ResponseEntity< List< FieldError > > saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+//            System.out.println(bindingResult);
+            return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.NOT_ACCEPTABLE);
         }
         RealEstateNews news = this.copyProperties(realEstateDTO);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);

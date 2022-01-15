@@ -16,18 +16,22 @@ import java.util.Optional;
 public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews, String > {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
-    @Query(value = "    select * \n" +
+    @Query(value = " select * \n" +
             "  from real_estate_news\n" +
-            "  where customer_id like concat('%',:customerId,'%') " +
-            "  and title like concat('%',trim(:title),'%')  " +
-            "  and kind_of_news like concat('%',:kindOfNew,'%')" +
-            "  and real_estate_type_id like concat('%',:realNewType,'%')" +
-            "  and approval =2 ", nativeQuery = true)
+            "  where customer_id like concat('%',trim(:customerId),'%') \n" +
+            "  and title like concat('%',trim(:title),'%')\n" +
+            "  and kind_of_news like concat('%',:kindOfNew,'%')\n" +
+            "  and real_estate_type_id like concat('%',:realNewType,'%') ",
+            nativeQuery = true, countQuery = " select count(*) from real_estate_news " +
+            " where customer_id like concat('%',trim(:customerId),'%') " +
+            " and title like concat('%',trim(:title),'%') " +
+            " and kind_of_news like concat('%',:kindOfNew,'%') " +
+            " and real_estate_type_id like concat('%',:realNewType,'%')")
     Page< RealEstateNews > findAllNewsBySearchField(@Param("customerId") String customerId,
                                                     @Param("title") String title,
                                                     @Param("kindOfNew") String typeOfNew,
                                                     @Param("realNewType") String realNewType,
-                                                    Pageable pageable);
+                                                    @Param("page") Pageable pageable);
 
     // 5.6.3 show Real estate new detail
     @Query(value = " select * from real_estate_news where id =:id ", nativeQuery = true)
