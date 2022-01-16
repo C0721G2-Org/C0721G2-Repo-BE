@@ -43,8 +43,17 @@ public class RealEstateDTO{
     private CusDTO customer;
     @Size(min=1, max=5,message = "size 1-5")
     private List<ImageDTO> imageList;
+    private String urls;
 
     public RealEstateDTO() {
+    }
+
+    public String getUrls() {
+        return urls;
+    }
+
+    public void setUrls(String urls) {
+        this.urls = urls;
     }
 
     public String getId() {
