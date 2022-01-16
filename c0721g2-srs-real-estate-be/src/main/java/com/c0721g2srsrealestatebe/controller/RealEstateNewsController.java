@@ -53,30 +53,11 @@ public class RealEstateNewsController {
             @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
             @RequestParam(defaultValue = "0") int page
     ) {
-        if(realEstateType.equals("undefined")){
-            realEstateType = "";
-        }
-        if(direction.equals("undefined")){
-            direction = "";
-        }
-        if(minArea.equals("undefined")){
-            minArea = "0";
-        }
-        if(maxArea.equals("undefined")){
-            maxArea = "10000000000000000000000";
-        }
-        if(minPrice.equals("undefined")){
-            minPrice = "0";
-        }
-        if(maxPrice.equals("undefined")){
-            maxPrice = "10000000000000000000000";
-        }
-        Pageable pageable = PageRequest.of(page, 4, Sort.by("id"));
+        Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
                 findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction,minArea, maxArea, minPrice, maxPrice, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
-            System.out.println("no content");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
