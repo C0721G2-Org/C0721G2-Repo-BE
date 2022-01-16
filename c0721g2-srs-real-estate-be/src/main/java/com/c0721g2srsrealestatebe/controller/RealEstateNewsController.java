@@ -41,12 +41,14 @@ public class RealEstateNewsController {
     }
 
 //    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType, direction
-    @GetMapping("/list-real-estate-new/search")
+    @GetMapping("/api/real-estate-new/search")
     public ResponseEntity< Page< RealEstateNews > > getListRealEstateNews(
             @RequestParam(defaultValue = "", value = "address") String address,
             @RequestParam(defaultValue = "", value = "kindOfNews") String kindOfNews,
             @RequestParam(defaultValue = "", value = "realEstateType") String realEstateType,
             @RequestParam(defaultValue = "", value = "direction") String direction,
+            @RequestParam(defaultValue = "0", value = "minArea") String minArea,
+            @RequestParam(defaultValue = "10000000000000000000000", value = "maxArea") String maxArea,
             @RequestParam(defaultValue = "0", value = "minPrice") String minPrice,
             @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
             @RequestParam(defaultValue = "0") int page
@@ -57,9 +59,21 @@ public class RealEstateNewsController {
         if(direction.equals("undefined")){
             direction = "";
         }
-        Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
+        if(minArea.equals("undefined")){
+            minArea = "0";
+        }
+        if(maxArea.equals("undefined")){
+            maxArea = "10000000000000000000000";
+        }
+        if(minPrice.equals("undefined")){
+            minPrice = "0";
+        }
+        if(maxPrice.equals("undefined")){
+            maxPrice = "10000000000000000000000";
+        }
+        Pageable pageable = PageRequest.of(page, 4, Sort.by("id"));
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
-                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
+                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction,minArea, maxArea, minPrice, maxPrice, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
             System.out.println("no content");

@@ -10,5 +10,5 @@ import org.springframework.data.domain.Pageable;
 
 public interface IRealEstateNewsService {
 
-    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice,Pageable pageable);
+    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minArea, String maxArea, String minPrice, String maxPrice,Pageable pageable);
 }
