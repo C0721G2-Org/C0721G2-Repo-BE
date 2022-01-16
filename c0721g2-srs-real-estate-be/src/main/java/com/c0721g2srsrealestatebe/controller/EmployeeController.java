@@ -104,6 +104,16 @@ public class EmployeeController {
         return new ResponseEntity<>(employeeOptional.get(), HttpStatus.OK);
     }
 
+    @GetMapping(value = "/detail/{id}")
+    public ResponseEntity<Employee> getEmployee(@PathVariable String id) {
+        Optional<Employee> employee = iEmployeeService.findByIdOp(id);
+
+        if (!employee.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(employee.get(), HttpStatus.OK);
+    }
+
     //Thịnh lấy id
     @GetMapping(value = "/edit/{id}")
     public ResponseEntity<Object> findByIdEmployee(@PathVariable String id) {
@@ -124,7 +134,6 @@ public class EmployeeController {
         }
         employeeEditDTO.setRoleDTO(idRole);
         return new ResponseEntity<Object>(employeeEditDTO, HttpStatus.OK);
-
 
     }
 
@@ -187,12 +196,12 @@ public class EmployeeController {
 
         }
         //kiểm tra email có bị trùng lặp hay không
-        Map<String, String> listErrors = new HashMap<>();
-        if (appUserService.existByUsername(employeeDTO.getEmail())) {
-
-            listErrors.put("errorEmail", "Email đã có người sử dụng");
-            return ResponseEntity.badRequest().body(listErrors);
-        }
+//        Map<String, String> listErrors = new HashMap<>();
+//        if (appUserService.existByUsername(employeeDTO.getEmail())) {
+//
+//            listErrors.put("errorEmail", "Email đã có người sử dụng");
+//            return ResponseEntity.badRequest().body(listErrors);
+//        }
 
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);

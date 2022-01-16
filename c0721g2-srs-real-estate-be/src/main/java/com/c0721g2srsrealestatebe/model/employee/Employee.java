@@ -4,12 +4,12 @@ import com.c0721g2srsrealestatebe.customid.CustomIdGenerator;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.image.Image;
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.*;
 import org.hibernate.annotations.Parameter;
-import org.hibernate.annotations.SQLDelete;
-import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import java.time.LocalDate;
 
 @Entity(name = "employees")
@@ -40,6 +40,7 @@ public class Employee {
     @ManyToOne(targetEntity = Position.class)
     private Position position;
     @OneToOne(targetEntity = AppUser.class, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @NotFound(action = NotFoundAction.IGNORE)
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class)
     private Image image;
