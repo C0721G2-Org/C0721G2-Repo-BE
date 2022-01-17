@@ -1,8 +1,11 @@
 package com.c0721g2srsrealestatebe.service.account.impl;
 
+import com.c0721g2srsrealestatebe.Exception.AppUserException;
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 import com.c0721g2srsrealestatebe.repository.account.IAppUserRepository;
 import com.c0721g2srsrealestatebe.service.account.IAppUserService;
@@ -37,6 +40,7 @@ public class AppUserServiceImpl implements IAppUserService {
 
     @Autowired
     private CustomerServiceImpl customerService;
+
 
     @Override
     public AppUser getAppUserByEmail(String email) {
@@ -82,6 +86,10 @@ public class AppUserServiceImpl implements IAppUserService {
         customer.setName(customerSocial.getName());
         customer.setEmail(customerSocial.getEmail());
 
+        Image image = new Image();
+        image.setUrl(customerSocial.getUrlImg());
+        customer.setImage(image);
+
         AppUser appUser = new AppUser();
         appUser.setUsername(customerSocial.getEmail());
         appUser.setPassword(customerSocial.getPassword());
@@ -121,5 +129,26 @@ public class AppUserServiceImpl implements IAppUserService {
 
     }
 
+    // Tùng kiểm tra username
+    public boolean existsByUserName(String username) {
+        return appUserRepository.existsByUsername(username);
+    }
 
+
+    @Override
+    public String findPasswordByUsername(String username) {
+        return appUserRepository.findPasswordByUsername(username);
+    }
+
+
+    @Override
+    public void updatePassword(AppUserDTO appUserDTO) {
+        appUserRepository.saveNewPassword(appUserDTO.getPassword(), appUserDTO.getUsername());
+    }
+
+    @Override
+    public AppUser findAppUserByUserName(String id) {
+        return appUserRepository.findAppUserByUsername(id).orElseThrow(() -> new AppUserException(
+                "không thể tìm thấy id " + id + ""));
+    }
 }

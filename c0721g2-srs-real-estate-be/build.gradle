@@ -2,17 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.2'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-    id "org.sonarqube" version "3.0"
-}
-
-sonarqube {
-    properties {
-        property 'sonar.host.url' , 'http://3.14.14.123:9000'
-        property 'sonar.login', 'f4570cffe1dd5bf39ecbeed0ef04eef921709b5a'
-        property 'sonar.projectKey', 'C0721G2_ReviewCode_HienPLT'
-        property 'sonar.projectName', 'C0721G2_ReviewCode_HienPLT'
-
-    }
+    id 'war'
 }
 
 group = 'com'
@@ -25,20 +15,31 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+// https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto
+    implementation group: 'org.springframework.security', name: 'spring-security-crypto', version: '5.6.1'
+
     runtimeOnly 'mysql:mysql-connector-java'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
     implementation 'org.springframework.boot:spring-boot-starter-security'
     testImplementation 'org.springframework.security:spring-security-test'
     implementation 'io.jsonwebtoken:jjwt:0.9.1'
 //    implementation 'javax.mail:mail:1.4.7'
     implementation 'org.springframework.boot:spring-boot-starter-mail:2.2.0.RELEASE'
-    // https://mvnrepository.com/artifact/com.google.api-client/google-api-client
     implementation 'com.google.api-client:google-api-client:1.30.9'
 
     implementation 'org.springframework.boot:spring-boot-starter-social-facebook:1.5.22.RELEASE'
 
+
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.6.2'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-websocket', version: '2.6.1'
 
 }
 

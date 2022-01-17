@@ -1,9 +1,7 @@
 package com.c0721g2srsrealestatebe.model.account;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity(name = "roles")
 public class Role {
@@ -11,6 +9,8 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @ManyToMany( mappedBy = "roles")
+    private Set<AppUser> appUsers;
 
     public Role() {
     }
@@ -18,6 +18,11 @@ public class Role {
     public Role(Long id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Role(String name) {
+        this.name = name;
+
     }
 
     public Long getId() {
@@ -34,5 +39,13 @@ public class Role {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

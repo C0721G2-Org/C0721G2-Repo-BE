@@ -1,9 +1,10 @@
 package com.c0721g2srsrealestatebe.model.realestatenews;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "real_estate_type")
 public class RealEstateType {
@@ -12,8 +13,23 @@ public class RealEstateType {
     private Long id;
     private String name;
 
+    @OneToMany(mappedBy = "realEstateType")
+    @JsonBackReference("real_estate_news_real_estate_type")
+    private List<RealEstateNews> realEstateNewsList ;
+
     public RealEstateType() {
-        //constructor
+    }
+
+    public List<RealEstateNews> getRealEstateNewsList() {
+        return realEstateNewsList;
+    }
+
+    public void setRealEstateNewsList(List<RealEstateNews> realEstateNewsList) {
+        this.realEstateNewsList = realEstateNewsList;
+    }
+
+    public RealEstateType(Long id) {
+        this.id = id;
     }
 
     public Long getId() {
@@ -30,5 +46,13 @@ public class RealEstateType {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "RealEstateType{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

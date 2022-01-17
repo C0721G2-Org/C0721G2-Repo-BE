@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="ade7b572-b310-4f10-befb-4fa4d21191f6" name="Default Changelist" comment="">
+=======
     <list default="true" id="7be9e626-4a8c-41d7-811b-b02c8cb04006" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
+>>>>>>> ce2de74dfc2701ee38d5b650ebeff89d6ac01f16
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/file-system.probe" afterDir="false" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateRelatedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateRelatedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/accessdenied/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/accessdenied/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/MailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/jwt/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/jwt/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/jwt/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/jwt/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/jwt/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/jwt/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/CustomerSocial.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/CustomerSocial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/ResetPasswordRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/ResetPasswordRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/TokenSocialRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/TokenSocialRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/VerifyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/request/VerifyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/response/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/payload/response/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" afterDir="false" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/resources/application.properties" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/MyUserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/MyUserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/test/java/com/c0721g2srsrealestatebe/SecurityController/SecurityController_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/test/java/com/c0721g2srsrealestatebe/SecurityController/SecurityController_login.java" afterDir="false" />
+>>>>>>> 1fbee32d57764e66614cf75cceae44612bd386e8
+>>>>>>> ce2de74dfc2701ee38d5b650ebeff89d6ac01f16
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23dQIt481ecxm0r8wuqai64YQLX" />
+=======
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/c0721g2-srs-real-estate-be">
       <ProjectState />
@@ -44,21 +107,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23RXqzhEtapPEFWKgFLo80o4AkW" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+=======
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../5 .module 4/furama-resort-management" />
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/c0721g2-srs-real-estate-be" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../5 .module 4/15_authorization/exercise/spring-security" />
+>>>>>>> ce2de74dfc2701ee38d5b650ebeff89d6ac01f16
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -175,12 +249,29 @@
         <item itemvalue="Gradle.SecurityController_login.authenticateUser_4" />
       </list>
     </recent_temporary>
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="ade7b572-b310-4f10-befb-4fa4d21191f6" name="Default Changelist" comment="" />
+      <created>1642061407268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642061407268</updated>
+      <workItem from="1642061408800" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1642061413692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642061413692" />
+=======
       <changelist id="7be9e626-4a8c-41d7-811b-b02c8cb04006" name="Default Changelist" comment="" />
       <created>1641698067659</created>
       <option name="number" value="Default" />
@@ -254,5 +345,6 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1641698286678" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
 </project>

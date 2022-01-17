@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.service.account.impl;
 
+
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,12 +1,16 @@
 package com.c0721g2srsrealestatebe.controller;
 
+import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.jwt.JwtUtils;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.payload.request.*;
 import com.c0721g2srsrealestatebe.payload.response.JwtResponse;
 import com.c0721g2srsrealestatebe.payload.response.MessageResponse;
+import com.c0721g2srsrealestatebe.service.account.IAppUserService;
 import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.account.impl.MyUserDetailsImpl;
+import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;
 import com.google.api.client.http.javanet.NetHttpTransport;
@@ -20,9 +24,11 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.User;
 import org.springframework.social.facebook.api.impl.FacebookTemplate;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
@@ -53,6 +59,9 @@ public class SecurityController {
     private AppUserServiceImpl appUserService;
 
     @Autowired
+    private CustomerServiceImpl customerService;
+
+    @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Value("${google.clientId}")
@@ -75,7 +84,20 @@ public class SecurityController {
 
         List<String> roles = myUserDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority).collect(Collectors.toList());
-        return ResponseEntity.ok(new JwtResponse(jwtToken, myUserDetails.getUsername(), roles));
+
+        Customer customer = customerService.getCustomerByUsername(myUserDetails.getUsername());
+        System.out.println("test 3");
+        JwtResponse jwtResponse = new JwtResponse();
+        jwtResponse.setName(customer.getName());
+        jwtResponse.setJwtToken(jwtToken);
+        jwtResponse.setUsername(myUserDetails.getUsername());
+        jwtResponse.setEmail(customer.getEmail());
+        jwtResponse.setRoles(roles);
+        jwtResponse.setIdCustomer(customer.getId());
+        String urlImgDefault = "https://cdyduochopluc.edu.vn/wp-content/uploads/2019/07/anh-dai-dien-FB-200-1.jpg";
+        jwtResponse.setUrlImg(customer.getImage() == null ? urlImgDefault:customer.getImage().getUrl());
+
+        return ResponseEntity.ok(jwtResponse);
 
     }
 
@@ -133,6 +155,8 @@ public class SecurityController {
                         .setAudience(Collections.singletonList(googleClientId));
         final GoogleIdToken googleIdToken = GoogleIdToken.parse(verifier.getJsonFactory(), token.getToken());
         final GoogleIdToken.Payload payload = googleIdToken.getPayload();
+        System.out.println("payload" + payload.toPrettyString());
+
 
         AppUser appUser;
         if (appUserService.existsUserByEmail(payload.getEmail())) {
@@ -141,6 +165,7 @@ public class SecurityController {
             CustomerSocial customerSocial = new CustomerSocial();
             customerSocial.setEmail(payload.getEmail());
             customerSocial.setName(payload.get("name").toString());
+            customerSocial.setUrlImg(payload.get("picture").toString());
             customerSocial.setPassword(bCryptPasswordEncoder.encode(secretPsw));
 
             appUser = appUserService.createCustomerSocial(customerSocial);
@@ -158,14 +183,18 @@ public class SecurityController {
         Facebook facebook = new FacebookTemplate(tokenSocialRequest.getToken());
         final String[] fields = {"email", "name"};
         User user = facebook.fetchObject("me", User.class, fields);
+
         AppUser appUser;
         if (appUserService.existsUserByEmail(user.getEmail())) {
             appUser = appUserService.getAppUserByEmail(user.getEmail());
 
         } else {
+            String urlImg = facebook.getBaseGraphApiUrl()  + user.getId() + "/picture";
+
             CustomerSocial customerSocial = new CustomerSocial();
             customerSocial.setEmail(user.getEmail());
             customerSocial.setName(user.getName());
+            customerSocial.setUrlImg(urlImg);
             customerSocial.setPassword(bCryptPasswordEncoder.encode(secretPsw));
 
             appUser = appUserService.createCustomerSocial(customerSocial);
@@ -174,5 +203,52 @@ public class SecurityController {
         loginRequest.setUsername(appUser.getUsername());
         loginRequest.setPassword(secretPsw);
         return authenticateUser(loginRequest);
+    }
+
+    //Thien
+
+    @Autowired
+    IAppUserService iAppUserService;
+
+    @PatchMapping(value = "/password")
+    public ResponseEntity<Object> update(@Valid @RequestBody AppUserDTO appUserDTO,
+                                         BindingResult bindingResult) {
+        try {
+            AppUser appUser1 = iAppUserService.findAppUserByUserName(appUserDTO.getUsername());
+            new AppUserDTO().validate(appUserDTO, bindingResult);
+            if (bindingResult.hasFieldErrors("password")) {
+                System.out.println("mật nhập không đúng form");
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            System.out.println(appUserDTO.toString());
+            if (bCryptPasswordEncoder.matches(
+                    appUserDTO.getPassword(),appUser1.getPassword())
+                    && !appUserDTO.getNewPassword().equals(appUserDTO.getPassword())
+                    && appUserDTO.getNewPassword().equals(appUserDTO.getReNewPassword())) {
+
+                appUserDTO.setPassword(bCryptPasswordEncoder.encode(appUserDTO.getNewPassword()));
+                System.out.println("chưa lưu");
+                System.out.println(appUserDTO.toString());
+                iAppUserService.updatePassword(appUserDTO);
+                System.out.println("đã lưu");
+                return new ResponseEntity<>(HttpStatus.OK);
+            } else {
+                System.out.println("nhập sai password");
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity<AppUser> update(@RequestBody AppUserDTO password) {
+        try {
+            iAppUserService.updatePassword(password);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 }

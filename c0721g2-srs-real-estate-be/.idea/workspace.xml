@@ -1,16 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <item name="BRANCH:post-history-TaiVD" type="e8cecc67:BranchNodeDescriptor" />
+=======
+        <item name="BRANCH:post-approval-DoanhNV" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+        <item name="BRANCH:employee-create-ThinhTP" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+=======
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+=======
+    <list default="true" id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
+>>>>>>> 2983574122b4ccbd908d50f1b2d3ed09b6bdaa7b
+=======
+=======
     <list default="true" id="a1f594ae-de9e-4f9e-b853-e5d1c90e66b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
     <list default="true" id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+>>>>>>> origin/real-estate
+=======
+>>>>>>> origin/real-estate
+=======
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+<<<<<<< HEAD
+>>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
+>>>>>>> 8d0a5635471aba49a399373603a7c0db0d02b39c
+=======
+=======
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/customer/IAppUserRepository.java" afterDir="false" />
+=======
+>>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/src/_02_loop_java/exercise/max.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/src/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 2/test/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 5/exam/src/json/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/.idea/procduce.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/create-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/edit-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/[C0721G2]_Prototype_ThinhTP/create-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/[C0721G2]_Prototype_ThinhTP/edit-employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/img/Untitled-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/img/final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/img/logo-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/asset/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/create-emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/final/final/edit-emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module 6/procduce/giaodien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeEditDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/json/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/.idea/libraries/codegym_file_utils.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 2/Module 2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/Module 2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 2/src/_test_btnhom_vs_bttuan/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 2/src/_test_btnhom_vs_bttuan/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-create/customer-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-delete/customer-delete.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-delete/customer-delete.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/customer/customer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/json-server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module 5/case-study-new/src/json-server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/checksums/checksums.lock" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/customer/Customer.class" afterDir="false" />
+=======
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/account/AppUser.class" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/employee/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/DegreeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/DegreeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/EmployeeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/PositionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/PositionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/account/Role.java" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Degree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateType.java" afterDir="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/customer/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IDegreeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IDegreeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IPositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IPositionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IDirectionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IDirectionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/MyUserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/MyUserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/customer/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/DegreeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/DegreeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/PositionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/employee/impl/PositionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/real/list-post-approval.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController_getListApproval.java" afterDir="false" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
 >>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsRestController_getList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsRestController_getListTest.java" afterDir="false" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/CustomerController_createCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/CustomerController_createCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/CustomerController_findCustomerById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/CustomerController_findCustomerById.java" afterDir="false" />
+>>>>>>> 8a67c6c81af6bbd06394be47bc050676c25e87d8
+=======
+>>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/C0721g2SrsRealEstateBeApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_createEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_editEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/c0721g2srsrealestatebe/controller/EmployeeController_getEmployeeId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-create/exam-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam-list/exam-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../angular-exam-demo/src/app/exam/exam.module.ts" afterDir="false" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     </list>
+=======
+    <list default="true" id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +319,8 @@
     </projectState>
   </component>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -30,22 +329,90 @@
       </list>
     </option>
 =======
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="c0721g2-srs-real-estate-be" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+<<<<<<< HEAD
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <option value="Class" />
+        <option value="Interface" />
+=======
+        <option value="Interface" />
+        <option value="Class" />
+>>>>>>> origin/real-estate
+=======
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+      </list>
+    </option>
+=======
 >>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
+  <component name="ProjectId" id="23PUbdhUm7Tz2TvLgGpht78EFEF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+=======
 <<<<<<< HEAD
   <component name="ProjectId" id="23Gujg3BMfv299JbLddKNClXRg1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,9 +423,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
 >>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+=======
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -67,6 +440,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../thi_md5/thi-md5" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 <<<<<<< HEAD
     <property name="project.structure.last.edited" value="Project" />
@@ -74,16 +457,283 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
 =======
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../New folder/C0721G2-Repo-BE/c0721g2-srs-real-estate-be" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../thamkhaomodule6/Vaccine-Management-SpringBoot/c0720g1-vaccine" />
+>>>>>>> 8a67c6c81af6bbd06394be47bc050676c25e87d8
+=======
+    <property name="last.edited.regexp" value="1234567890123" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../a hưng/C0721G2-Repo-BE/c0721g2-srs-real-estate-be" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+<<<<<<< HEAD
+=======
 >>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.c0721g2srsrealestatebe.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration name="RealEstateRestController_createRealEstate.createRealEstate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+=======
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.c0721g2srsrealestatebe.service.realestatenews" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration name="RealEstateNewsController_getListApproval.getListApproval_5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration name="RealEstateNewsRestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.c0721g2srsrealestatebe.controller.RealEstateNewsRestController" />
+      <module name="c0721g2-srs-real-estate-be.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.c0721g2srsrealestatebe.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealEstateNewsRestController_getList.getListRealEstateNew_1" type="GradleRunConfiguration" factoryName="Gradle">
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.c0721g2srsrealestatebe.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_findCustomerById.findCustomerById_4&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CustomerController_createCustomer.createCustomer_17" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.C0721g2SrsRealEstateBeApplication">
+    <configuration name="EmployeeController_createEmployee.createEmployee_name_14" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_createCustomer.createCustomer_17&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_createEmployee.createEmployee_name_14&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="CustomerController_createCustomer.createCustomer_18" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <configuration name="EmployeeController_editEmployee.editEmployee_18" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_createCustomer.createCustomer_18&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_editEmployee.editEmployee_18&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="CustomerController_findCustomerById.findCustomerById_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <configuration name="EmployeeController_editEmployee.editEmployee_idCard_17" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.RealEstateRestController_createRealEstate.createRealEstate&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsController_getListApproval.getListApproval_5&quot;" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsRestController_getList.getListRealEstateNew_1&quot;" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_findCustomerById.findCustomerById_1&quot;" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_editEmployee.editEmployee_idCard_17&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <configuration name="RealEstateNewsController_getListApproval.getListApproval_6" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <configuration name="RealEstateNewsRestController_getList.getListStudent_1" type="GradleRunConfiguration" factoryName="Gradle">
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+    <configuration name="CustomerController_findCustomerById.findCustomerById_4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <configuration name="EmployeeController_editEmployee.editEmployee_name_13" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsController_getListApproval.getListApproval_6&quot;" />
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.RealEstateNewsRestController_getList.getListStudent_1&quot;" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.CustomerController_findCustomerById.findCustomerById_4&quot;" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+        <option name="scriptParameters" value="--tests &quot;com.c0721g2srsrealestatebe.controller.EmployeeController_editEmployee.editEmployee_name_13&quot;" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+    <configuration name="c0721g2-srs-real-estate-be [sonarqube]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="sonarqube" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
     <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="c0721g2-srs-real-estate-be.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
@@ -91,6 +741,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <recent_temporary>
+      <list>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <item itemvalue="Gradle.RealEstateRestController_createRealEstate.createRealEstate" />
+=======
+        <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
+        <item itemvalue="Gradle.RealEstateNewsController_getListApproval.getListApproval_6" />
+        <item itemvalue="Gradle.RealEstateNewsController_getListApproval.getListApproval_5" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+        <item itemvalue="Application.RealEstateNewsRestController" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+    <list>
+      <item itemvalue="Gradle.CustomerController_findCustomerById.findCustomerById_1" />
+      <item itemvalue="Gradle.CustomerController_findCustomerById.findCustomerById_4" />
+      <item itemvalue="Gradle.CustomerController_createCustomer.createCustomer_18" />
+      <item itemvalue="Gradle.CustomerController_createCustomer.createCustomer_17" />
+      <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
+      <item itemvalue="Spring Boot.C0721g2SrsRealEstateBeApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
+        <item itemvalue="Gradle.CustomerController_createCustomer.createCustomer_17" />
+        <item itemvalue="Gradle.CustomerController_createCustomer.createCustomer_18" />
+        <item itemvalue="Gradle.CustomerController_findCustomerById.findCustomerById_4" />
+        <item itemvalue="Gradle.CustomerController_findCustomerById.findCustomerById_1" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.c0721g2-srs-real-estate-be [sonarqube]" />
+        <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_18" />
+        <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_name_13" />
+        <item itemvalue="Gradle.EmployeeController_createEmployee.createEmployee_name_14" />
+        <item itemvalue="Gradle.EmployeeController_editEmployee.editEmployee_idCard_17" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -98,6 +791,20 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+=======
+      <changelist id="10e04067-2452-4554-815d-7d330fd0248f" name="Default Changelist" comment="" />
+>>>>>>> origin/real-estate
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
       <changelist id="a1f594ae-de9e-4f9e-b853-e5d1c90e66b4" name="Default Changelist" comment="" />
       <created>1641372881785</created>
       <option name="number" value="Default" />
@@ -122,6 +829,19 @@
       <workItem from="1641804414213" duration="445000" />
 =======
       <changelist id="299d4dd4-94c7-4439-937a-37601ea64146" name="Default Changelist" comment="" />
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+=======
+      <changelist id="a969e24f-886d-4ef7-b1f5-a7ae074536b2" name="Default Changelist" comment="" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
       <created>1641635288431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -129,14 +849,324 @@
       <workItem from="1641635305449" duration="190000" />
       <workItem from="1641635550213" duration="604000" />
       <workItem from="1641636206133" duration="1980000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <workItem from="1641776353194" duration="31571000" />
+      <workItem from="1641865831049" duration="1967000" />
+=======
+      <workItem from="1641777460101" duration="908000" />
+      <workItem from="1641778387929" duration="24316000" />
+      <workItem from="1641806376413" duration="397000" />
+      <workItem from="1641865242847" duration="5032000" />
+<<<<<<< HEAD
+      <workItem from="1641870479915" duration="4450000" />
+      <workItem from="1641950275003" duration="297000" />
+=======
+<<<<<<< HEAD
+>>>>>>> origin/real-estate
+=======
+      <workItem from="1641870479915" duration="1949000" />
+<<<<<<< HEAD
+>>>>>>> origin/real-estate
+=======
+      <workItem from="1641971005574" duration="3945000" />
+>>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
+>>>>>>> 8d0a5635471aba49a399373603a7c0db0d02b39c
+=======
+      <workItem from="1641778459761" duration="21266000" />
+      <workItem from="1641823514964" duration="767000" />
+      <workItem from="1641884928615" duration="6423000" />
+      <workItem from="1641891725634" duration="480000" />
+      <workItem from="1641892268943" duration="3921000" />
+      <workItem from="1641958158148" duration="16009000" />
+      <workItem from="1641996723720" duration="549000" />
+      <workItem from="1642039001694" duration="1255000" />
+      <workItem from="1642046902031" duration="1502000" />
+      <workItem from="1642056771374" duration="1561000" />
+      <workItem from="1642063581415" duration="2566000" />
+      <workItem from="1642079639618" duration="1463000" />
+      <workItem from="1642124115059" duration="7878000" />
+      <workItem from="1642135492465" duration="7145000" />
+      <workItem from="1642214222592" duration="1599000" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
 >>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+      <workItem from="1641781755127" duration="172000" />
+      <workItem from="1641781999838" duration="14804000" />
+      <workItem from="1641827739363" duration="811000" />
+      <workItem from="1641866025833" duration="10929000" />
+      <workItem from="1642040045813" duration="14910000" />
+      <workItem from="1642124959133" duration="6829000" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+      <workItem from="1641974258260" duration="307000" />
+      <workItem from="1641976147717" duration="488000" />
+      <workItem from="1641979637205" duration="213000" />
+=======
+      <workItem from="1641804960324" duration="4479000" />
+      <workItem from="1641825692865" duration="940000" />
+      <workItem from="1641870492108" duration="600000" />
+      <workItem from="1641884160421" duration="1237000" />
+      <workItem from="1641885433426" duration="10727000" />
+<<<<<<< HEAD
+      <workItem from="1641902020646" duration="6763000" />
+>>>>>>> 8a67c6c81af6bbd06394be47bc050676c25e87d8
+=======
+      <workItem from="1641902020646" duration="7616000" />
+      <workItem from="1641952305578" duration="25000" />
+      <workItem from="1641995179901" duration="6242000" />
+      <workItem from="1642002860486" duration="125000" />
+      <workItem from="1642036530814" duration="4885000" />
+      <workItem from="1642055478382" duration="5031000" />
+      <workItem from="1642086305206" duration="2848000" />
+      <workItem from="1642124635758" duration="11147000" />
+      <workItem from="1642142701727" duration="13534000" />
+      <workItem from="1642170473288" duration="6207000" />
+>>>>>>> e0da02ac7919675a3f3769ac975c11a18b3fef38
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+      <workItem from="1641737590720" duration="6382000" />
+      <workItem from="1641778508733" duration="19467000" />
+      <workItem from="1641811278493" duration="174000" />
+      <workItem from="1641823294746" duration="1473000" />
+      <workItem from="1641872267953" duration="1527000" />
+      <workItem from="1641883196732" duration="18018000" />
+      <workItem from="1641906783673" duration="3002000" />
+      <workItem from="1641969858605" duration="20159000" />
+      <workItem from="1641995005923" duration="661000" />
+      <workItem from="1642043807904" duration="14169000" />
+      <workItem from="1642124277705" duration="8600000" />
+      <workItem from="1642136346983" duration="13944000" />
+      <workItem from="1642214891215" duration="16713000" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+=======
+      <workItem from="1641550789764" duration="13098000" />
+      <workItem from="1641748660681" duration="23311000" />
+      <workItem from="1642094566657" duration="3665000" />
+      <workItem from="1642216832430" duration="11960000" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <option value="post-history-TaiVD" />
+=======
+                        <option value="dev" />
+>>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
+=======
+                        <option value="post-approval-DoanhNV" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+                        <option value="main" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+                        <option value="employee-create-ThinhTP" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+=======
+                        <option value="main" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <state x="414" y="132" key="#C0721g2SrsRealEstateBeApplication" timestamp="1641781886881">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="132" key="#C0721g2SrsRealEstateBeApplication/0.0.1920.1040@0.0.1920.1040" timestamp="1641781886881" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641636248196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1641797892606">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1641797892606" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641783721050">
+=======
+    <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641885451141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+<<<<<<< HEAD
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641979850737">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641979850737" />
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom" timestamp="1641636410891">
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641885451141" />
+    <state x="93" y="100" width="774" height="847" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1641903372439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="93" y="100" width="774" height="847" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641903372439" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1642148246549">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1642148246549" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1641806400019">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641806400019" />
+    <state x="651" y="170" key="FileChooserDialogImpl" timestamp="1642145811197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642145811197" />
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 8a67c6c81af6bbd06394be47bc050676c25e87d8
+    </state>
+<<<<<<< HEAD
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641783721050" />
+    <state width="1306" height="220" key="GridCell.Tab.0.bottom" timestamp="1641833590527">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641833590527" />
+    <state width="1306" height="220" key="GridCell.Tab.0.center" timestamp="1641833590527">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641833590527" />
+    <state width="1306" height="220" key="GridCell.Tab.0.left" timestamp="1641833590527">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641833590527" />
+    <state width="1306" height="220" key="GridCell.Tab.0.right" timestamp="1641833590527">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641833590527" />
+    <state width="1306" height="220" key="GridCell.Tab.1.bottom" timestamp="1641833590542">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
+    <state width="1306" height="220" key="GridCell.Tab.1.center" timestamp="1641833590527">
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state x="612" y="177" key="#com.intellij.ide.util.MemberChooser" timestamp="1642230399053">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="612" y="177" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1642230399053" />
+    <state x="765" y="266" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1641789838756" />
+    <state x="434" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1641800351982">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="434" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1641800351982" />
+    <state x="651" y="210" key="FileChooserDialogImpl" timestamp="1641749796000">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="210" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1641749796000" />
+    <state width="1493" height="368" key="GridCell.Tab.0.bottom" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1493" height="368" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.0.center" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1493" height="368" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.0.left" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1493" height="368" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.0.right" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641833590527" />
+    <state width="1306" height="220" key="GridCell.Tab.1.left" timestamp="1641833590527">
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+<<<<<<< HEAD
+    <state width="1877" height="316" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.1.bottom" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="316" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.1.center" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641833590527" />
+    <state width="1306" height="220" key="GridCell.Tab.1.right" timestamp="1641833590542">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
+    <state width="1306" height="220" key="GridCell.Tab.2.bottom" timestamp="1641833590542">
+=======
 <<<<<<< HEAD
     <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1641803806247">
       <screen x="0" y="0" width="1536" height="816" />
@@ -188,45 +1218,589 @@
     <state x="209" y="69" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1641612951838" />
 =======
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641636248196">
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1493" height="368" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.1.bottom" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641636068945">
+    <state width="1306" height="220" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
+    <state width="1306" height="220" key="GridCell.Tab.2.center" timestamp="1641833590542">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1642153915082">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1642153915082" />
+    <state x="472" y="281" width="592" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1641978204895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="472" y="281" width="592" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1641978204895" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1641803483928">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1641803483928" />
+    <state x="521" y="135" key="FileChooserDialogImpl" timestamp="1641888110484">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
-    <state width="1306" height="176" key="GridCell.Tab.0.bottom" timestamp="1641636410891">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="521" y="135" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1641888110484" />
+    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1306" height="176" key="GridCell.Tab.0.center" timestamp="1641636410890">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1306" height="176" key="GridCell.Tab.0.left" timestamp="1641636410890">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1306" height="176" key="GridCell.Tab.0.right" timestamp="1641636410890">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
-    <state width="1306" height="176" key="GridCell.Tab.1.bottom" timestamp="1641636410891">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.1.bottom" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1306" height="176" key="GridCell.Tab.1.center" timestamp="1641636410891">
-      <screen x="0" y="0" width="1366" height="728" />
+<<<<<<< HEAD
+    <state width="1493" height="206" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.1.center" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1306" height="176" key="GridCell.Tab.1.left" timestamp="1641636410891">
-      <screen x="0" y="0" width="1366" height="728" />
+<<<<<<< HEAD
+    <state width="1493" height="206" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.1.left" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
-    <state width="1306" height="176" key="GridCell.Tab.1.right" timestamp="1641636410891">
+    <state width="1493" height="206" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.1.right" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
+    <state width="1306" height="220" key="GridCell.Tab.2.left" timestamp="1641833590542">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1306" height="220" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
+    <state width="1306" height="220" key="GridCell.Tab.2.right" timestamp="1641833590542">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="220" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1641833590542" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1641787458757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1641787458757" />
+=======
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1641813315435">
+      <screen x="0" y="0" width="1920" height="1040" />
+=======
+    <state x="544" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1641890791212">
+      <screen x="0" y="0" width="1366" height="728" />
+>>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
+    </state>
+    <state x="544" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1641890791212" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641813315435" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1641974824523">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1641974824523" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1641974996727">
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state x="726" y="61" key="#Auto_Import" timestamp="1642217414378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="61" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1642217414378" />
+    <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641797135026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1641636248195" />
+    <state x="193" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641797135026" />
+    <state x="100" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1641893725749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641893725749" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1642232609442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1642232609442" />
+    <state x="715" y="389" width="492" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1641977663051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="389" width="492" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1641977663051" />
+    <state x="651" y="170" key="FileChooserDialogImpl" timestamp="1642071516072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642071516072" />
+    <state width="1877" height="735" key="GridCell.Tab.0.bottom" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="735" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.center" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="735" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.left" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="735" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.0.right" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="735" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.bottom" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="735" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.center" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+    </state>
+<<<<<<< HEAD
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641709150179" />
+<<<<<<< HEAD
+    <state width="1877" height="153" key="GridCell.Tab.0.bottom" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.0.center" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="153" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.0.left" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="153" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.0.right" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="153" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.1.bottom" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="153" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.1.center" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+<<<<<<< HEAD
+    <state width="1877" height="153" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.1.left" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="153" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+    <state width="1877" height="153" key="GridCell.Tab.1.right" timestamp="1641882798740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
     <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <state width="1877" height="153" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641882798740" />
+=======
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1641893380908">
+=======
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641974996727" />
+    <state width="1323" height="328" key="GridCell.Tab.0.bottom" timestamp="1641974196735">
+>>>>>>> 8d0a5635471aba49a399373603a7c0db0d02b39c
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.0.center" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.0.left" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.0.right" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.1.bottom" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.1.center" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.1.left" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1493" height="368" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.1.center" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1493" height="368" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.1.left" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1323" height="328" key="GridCell.Tab.1.right" timestamp="1641974196735">
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1877" height="316" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.1.left" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+<<<<<<< HEAD
+    <state width="1877" height="316" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.1.right" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+    </state>
+    <state width="1323" height="328" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641974196735" />
+    <state width="1877" height="270" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+>>>>>>> 2983574122b4ccbd908d50f1b2d3ed09b6bdaa7b
+    <state width="1877" height="270" key="GridCell.Tab.2.bottom" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.center" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.left" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+    <state width="1877" height="270" key="GridCell.Tab.2.right" timestamp="1641870469429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="270" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641870469429" />
+<<<<<<< HEAD
+>>>>>>> origin/real-estate
+=======
+    <state x="184" y="9" key="SettingsEditor" timestamp="1641971850112">
+      <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state width="1877" height="735" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.left" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="735" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="735" key="GridCell.Tab.1.right" timestamp="1642236744744">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1641971850112" />
+>>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
+=======
+    <state width="1493" height="206" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.2.bottom" timestamp="1642155875015">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1642155875015" />
+    <state width="1493" height="206" key="GridCell.Tab.2.center" timestamp="1642155875015">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1642155875015" />
+    <state width="1493" height="206" key="GridCell.Tab.2.left" timestamp="1642155875014">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1642155875014" />
+    <state width="1493" height="206" key="GridCell.Tab.2.right" timestamp="1642155875015">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="206" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1642155875015" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1642125520212">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1642125520212" />
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
+    <state x="1530" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1641884356909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1530" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1641884356909" />
+    <state x="485" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1641781879748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="485" y="323" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641781879748" />
+    <state x="651" y="170" key="FileChooserDialogImpl" timestamp="1641896872790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641636068945" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641896872790" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410890" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.bottom" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.center" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.left" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1877" height="183" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.1.right" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <state width="1877" height="183" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.bottom" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.center" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.left" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+    <state width="1877" height="183" key="GridCell.Tab.2.right" timestamp="1642065302521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642065302521" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+    <state width="1877" height="316" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.2.bottom" timestamp="1642176690245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690245" />
+    <state width="1877" height="316" key="GridCell.Tab.2.center" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.2.left" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state width="1877" height="316" key="GridCell.Tab.2.right" timestamp="1642176690244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="316" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642176690244" />
+    <state x="496" y="222" key="RollbackChangesDialog" timestamp="1641806401597">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="496" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641806401597" />
+    <state x="-145" y="129" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1641807023655">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-145" y="129" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641807023655" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <state width="1877" height="735" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642236744744" />
+    <state width="1877" height="507" key="GridCell.Tab.2.bottom" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.center" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.left" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state width="1877" height="507" key="GridCell.Tab.2.right" timestamp="1642076902046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="507" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642076902046" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1642232452422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642232452422" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+=======
+    <state width="1493" height="368" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1493" height="368" key="GridCell.Tab.1.right" timestamp="1642230949618">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1306" height="176" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641636410891" />
+    <state width="1493" height="368" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1642230949618" />
+    <state width="1877" height="255" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1642098272758" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1641786965713">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="111" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1641735171036" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1641786965713" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1641786965713">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="111" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1641735171036" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.40.1920.1040@0.40.1920.1040" timestamp="1641786965713" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1641786965713">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="111" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1641735171036" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.40.1920.1040@0.40.1920.1040" timestamp="1641786965713" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1641786965713">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="111" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1641735171036" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.40.1920.1040@0.40.1920.1040" timestamp="1641786965713" />
+    <state x="514" y="262" key="RollbackChangesDialog" timestamp="1641785104346">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="514" y="262" key="RollbackChangesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1641785104346" />
+    <state x="461" y="205" key="SettingsEditor" timestamp="1641748710972">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="461" y="205" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1641748710972" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1641728673207">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1641728673207" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
+    <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog" timestamp="1641702219739">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="298" y="121" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.816@0.0.1536.816" timestamp="1641702219739" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <state x="118" y="25" key="new project wizard" timestamp="1641783723060">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="118" y="25" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1641783723060" />
+=======
+=======
+    <state x="339" y="162" key="run.anything.popup" timestamp="1641885237801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1641885237801" />
+>>>>>>> d2374114a45497a9f4be01e7497d44bf3bfc90ce
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641798110711">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641798110711" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="realEstateNews.value.customer" />
+      </configuration>
+    </watches-manager>
+>>>>>>> origin/real-estate
+=======
+    <state x="425" y="189" key="run.anything.popup" timestamp="1641961625368">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1641961625368" />
+=======
+    <state x="666" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1641887940696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641887940696" />
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+<<<<<<< HEAD
+          <url>file://$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> b50ad61cac0e1e48cecaaf427e75f4cd42635f0f
+=======
 >>>>>>> origin
+>>>>>>> aacdb590c7781f0dd1659e54abf76c52bb16b3f5
+=======
+    <state x="736" y="278" key="refactoring.ChangeSignatureDialog" timestamp="1641809621608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="278" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641809621608" />
+>>>>>>> 5f6c2e65e3f19feb3526ce91af2ca599a0634678
+=======
+          <url>file://$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/CustomerController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> 70fd5011cfb1ab7502d64180e8b5f24d5f68fc31
+=======
+    <state x="616" y="240" key="run.anything.popup" timestamp="1642221928443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1642221928443" />
+>>>>>>> 7470a018e596c89584e131149b1859e6636f26ba
+=======
+    <state x="472" y="252" key="git4idea.ui.GitTagDialog" timestamp="1641728611546">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="472" y="252" key="git4idea.ui.GitTagDialog/0.0.1536.816@0.0.1536.816" timestamp="1641728611546" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1641730825317">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1641730825317" />
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8
   </component>
 </project>

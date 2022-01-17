@@ -39,16 +39,17 @@ public class Customer {
     private Integer gender;
     @OneToOne(targetEntity = AppUser.class, cascade = CascadeType.ALL)
     private AppUser appUser;
-    @OneToOne(targetEntity = Image.class)
+    @OneToOne(targetEntity = Image.class, cascade = CascadeType.PERSIST)
     private Image image;
     @OneToMany(mappedBy = "customer" )
-    @JsonBackReference
-    private List<RealEstateNews> realEstateNewsList;
+    @JsonBackReference(value = "customers_real_estate_news")
+    private List< RealEstateNews > realEstateNewsList;
+
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {
     }
-
+    @SuppressWarnings("squid:S00107")
     public Customer(String id, String name, String email, String phoneNumber, String address, String idCard, LocalDate dateOfBirth, Integer gender, AppUser appUser, Image image, List<RealEstateNews> realEstateNewsList, Boolean deleted) {
         this.id = id;
         this.name = name;
@@ -158,5 +159,23 @@ public class Customer {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", gender=" + gender +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", realEstateNewsList=" + realEstateNewsList +
+                ", deleted=" + deleted +
+                '}';
     }
 }

@@ -1,1 +1,16 @@
-hello world everybody
+<<<<<<< HEAD
+hello world everybody123
+=======
+{
+    "id" : "KH-0011",
+    "address": "Đà Nẵng",
+    "date_of_birth": "1997-02-12",
+    "deleted": "0",
+    "emai": "quoctung@gmail.com",
+    "gender":   "0",
+    "name": "Nguyen duc thien",
+    "phone_number": "0905123321",
+    "app_user_id": null,
+    "image_id": null
+}
+>>>>>>> dd31dd65fe165d8095e2318e231e6efdbb2c0db8

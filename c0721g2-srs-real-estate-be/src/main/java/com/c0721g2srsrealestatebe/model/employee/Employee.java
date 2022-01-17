@@ -38,7 +38,7 @@ public class Employee {
     private Degree degree;
     @ManyToOne(targetEntity = Position.class)
     private Position position;
-    @OneToOne(targetEntity = AppUser.class)
+    @OneToOne(targetEntity = AppUser.class, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class)
     private Image image;
@@ -47,6 +47,7 @@ public class Employee {
     public Employee() {
     }
 
+    @SuppressWarnings("squid:S00107")
     public Employee(String id, String name, String email, String phoneNumber, String address, LocalDate dateOfBirth, String idCard, Integer gender, Degree degree, Position position, AppUser appUser, Image image, Boolean deleted) {
         this.id = id;
         this.name = name;
@@ -165,5 +166,24 @@ public class Employee {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", idCard='" + idCard + '\'' +
+                ", gender=" + gender +
+                ", degree=" + degree +
+                ", position=" + position +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", deleted=" + deleted +
+                '}';
     }
 }
