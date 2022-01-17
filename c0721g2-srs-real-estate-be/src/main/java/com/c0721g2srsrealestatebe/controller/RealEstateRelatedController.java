@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/real-estate-related")
-@CrossOrigin
+@CrossOrigin("http://localhost:4200")
 public class RealEstateRelatedController {
     @Autowired
     IDirectionService iDirectionService;

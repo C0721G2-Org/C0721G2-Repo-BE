@@ -25,10 +25,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.*;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin("http://localhost:4200")
 @RestController
-@RequestMapping(value = "/employee")
-
+@RequestMapping(value = "/api/employee")
 public class EmployeeController {
 
     @Qualifier("employeeServiceImpl")
