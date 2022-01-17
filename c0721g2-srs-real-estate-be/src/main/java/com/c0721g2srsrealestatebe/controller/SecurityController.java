@@ -3,12 +3,16 @@ package com.c0721g2srsrealestatebe.controller;
 import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.jwt.JwtUtils;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.model.employee.Employee;
 import com.c0721g2srsrealestatebe.payload.request.*;
 import com.c0721g2srsrealestatebe.payload.response.JwtResponse;
 import com.c0721g2srsrealestatebe.payload.response.MessageResponse;
 import com.c0721g2srsrealestatebe.service.account.IAppUserService;
 import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.account.impl.MyUserDetailsImpl;
+import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
+import com.c0721g2srsrealestatebe.service.employee.impl.EmployeeServiceImpl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;
 import com.google.api.client.http.javanet.NetHttpTransport;
@@ -57,6 +61,12 @@ public class SecurityController {
     private AppUserServiceImpl appUserService;
 
     @Autowired
+    private CustomerServiceImpl customerService;
+
+    @Autowired
+    private EmployeeServiceImpl employeeService;
+
+    @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Value("${google.clientId}")
@@ -79,7 +89,30 @@ public class SecurityController {
 
         List<String> roles = myUserDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority).collect(Collectors.toList());
-        return ResponseEntity.ok(new JwtResponse(jwtToken, myUserDetails.getUsername(), roles));
+        JwtResponse jwtResponse = new JwtResponse();
+        String urlImgDefault = "https://cdyduochopluc.edu.vn/wp-content/uploads/2019/07/anh-dai-dien-FB-200-1.jpg";
+
+        if (roles.contains("ROLE_CUSTOMER")) {
+            Customer customer = customerService.getCustomerByUsername(myUserDetails.getUsername());
+            jwtResponse.setName(customer.getName());
+            jwtResponse.setJwtToken(jwtToken);
+            jwtResponse.setUsername(myUserDetails.getUsername());
+            jwtResponse.setEmail(customer.getEmail());
+            jwtResponse.setRoles(roles);
+            jwtResponse.setIdCustomer(customer.getId());
+            jwtResponse.setUrlImg(customer.getImage() == null ? urlImgDefault:customer.getImage().getUrl());
+        } else {
+            Employee employee = employeeService.getEmployeeByUsername(myUserDetails.getUsername());
+            jwtResponse.setName(employee.getName());
+            jwtResponse.setJwtToken(jwtToken);
+            jwtResponse.setUsername(myUserDetails.getUsername());
+            jwtResponse.setEmail(employee.getEmail());
+            jwtResponse.setRoles(roles);
+            jwtResponse.setIdCustomer(employee.getId());
+            jwtResponse.setUrlImg(employee.getImage() == null ? urlImgDefault:employee.getImage().getUrl());
+        }
+
+        return ResponseEntity.ok(jwtResponse);
 
     }
 
@@ -137,6 +170,8 @@ public class SecurityController {
                         .setAudience(Collections.singletonList(googleClientId));
         final GoogleIdToken googleIdToken = GoogleIdToken.parse(verifier.getJsonFactory(), token.getToken());
         final GoogleIdToken.Payload payload = googleIdToken.getPayload();
+        System.out.println("payload" + payload.toPrettyString());
+
 
         AppUser appUser;
         if (appUserService.existsUserByEmail(payload.getEmail())) {
@@ -145,6 +180,7 @@ public class SecurityController {
             CustomerSocial customerSocial = new CustomerSocial();
             customerSocial.setEmail(payload.getEmail());
             customerSocial.setName(payload.get("name").toString());
+            customerSocial.setUrlImg(payload.get("picture").toString());
             customerSocial.setPassword(bCryptPasswordEncoder.encode(secretPsw));
 
             appUser = appUserService.createCustomerSocial(customerSocial);
@@ -162,14 +198,18 @@ public class SecurityController {
         Facebook facebook = new FacebookTemplate(tokenSocialRequest.getToken());
         final String[] fields = {"email", "name"};
         User user = facebook.fetchObject("me", User.class, fields);
+
         AppUser appUser;
         if (appUserService.existsUserByEmail(user.getEmail())) {
             appUser = appUserService.getAppUserByEmail(user.getEmail());
 
         } else {
+            String urlImg = facebook.getBaseGraphApiUrl()  + user.getId() + "/picture";
+
             CustomerSocial customerSocial = new CustomerSocial();
             customerSocial.setEmail(user.getEmail());
             customerSocial.setName(user.getName());
+            customerSocial.setUrlImg(urlImg);
             customerSocial.setPassword(bCryptPasswordEncoder.encode(secretPsw));
 
             appUser = appUserService.createCustomerSocial(customerSocial);

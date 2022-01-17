@@ -39,7 +39,7 @@ public class Customer {
     private Integer gender;
     @OneToOne(targetEntity = AppUser.class, cascade = CascadeType.ALL)
     private AppUser appUser;
-    @OneToOne(targetEntity = Image.class)
+    @OneToOne(targetEntity = Image.class, cascade = CascadeType.PERSIST)
     private Image image;
     @OneToMany(mappedBy = "customer" )
     @JsonBackReference(value = "customers_real_estate_news")

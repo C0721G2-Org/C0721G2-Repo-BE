@@ -4,9 +4,18 @@ public class CustomerSocial {
     private String name;
     private String email;
     private String password;
+    private String urlImg;
 
     public CustomerSocial() {
         //constructor
+    }
+
+    public String getUrlImg() {
+        return urlImg;
+    }
+
+    public void setUrlImg(String urlImg) {
+        this.urlImg = urlImg;
     }
 
     public String getPassword() {

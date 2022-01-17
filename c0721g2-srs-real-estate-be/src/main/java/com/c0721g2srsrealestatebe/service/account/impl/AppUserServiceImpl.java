@@ -5,6 +5,7 @@ import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 import com.c0721g2srsrealestatebe.repository.account.IAppUserRepository;
 import com.c0721g2srsrealestatebe.service.account.IAppUserService;
@@ -85,6 +86,10 @@ public class AppUserServiceImpl implements IAppUserService {
         customer.setName(customerSocial.getName());
         customer.setEmail(customerSocial.getEmail());
 
+        Image image = new Image();
+        image.setUrl(customerSocial.getUrlImg());
+        customer.setImage(image);
+
         AppUser appUser = new AppUser();
         appUser.setUsername(customerSocial.getEmail());
         appUser.setPassword(customerSocial.getPassword());
@@ -104,7 +109,7 @@ public class AppUserServiceImpl implements IAppUserService {
     public void sendVerificationEmailForResetPassWord(String userName, String randomCode, String email) throws MessagingException, UnsupportedEncodingException {
         String subject = "Email xác thực!";
         String mailContent = "";
-        String confirmUrl = "http://localhost:4200/verify-reset-password?code=" + randomCode;
+        String confirmUrl = "http://localhost:4200/security/verify-reset-password?code=" + randomCode;
 
 
         MimeMessage message = javaMailSender.createMimeMessage();

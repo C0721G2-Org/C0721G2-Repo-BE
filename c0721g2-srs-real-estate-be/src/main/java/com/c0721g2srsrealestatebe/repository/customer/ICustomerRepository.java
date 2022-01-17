@@ -72,4 +72,7 @@ public interface ICustomerRepository extends JpaRepository<Customer, String> {
     // Tùng kiểm tra email
     @Query
     Boolean existsByEmail(String email);
+
+    @Query(value = "SELECT * from customers c join app_users a on c.app_user_id = a.id where a.username =?1", nativeQuery = true)
+    Customer findCustomerByAppUser(String username);
 }
