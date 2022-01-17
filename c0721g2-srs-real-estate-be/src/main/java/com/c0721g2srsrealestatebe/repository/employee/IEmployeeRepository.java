@@ -1,5 +1,6 @@
 package com.c0721g2srsrealestatebe.repository.employee;
 
+import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.model.employee.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -36,4 +37,7 @@ public interface IEmployeeRepository extends JpaRepository<Employee, String> {
             " and position_id like concat('%',:position_id,'%')", nativeQuery = true)
     Page<Employee> searchEmployeeByNameOrEmailOrDegree(Pageable pageable, @Param("name") String name, @Param("email")
             String email, @Param("position_id") String position_id);
+
+    @Query(value = "SELECT * from employees e join app_users a on e.app_user_id = a.id where a.username =?1", nativeQuery = true)
+    Employee findEmployeeByAppUser(String username);
 }

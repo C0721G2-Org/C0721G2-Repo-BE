@@ -4,6 +4,7 @@ import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.jwt.JwtUtils;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.model.employee.Employee;
 import com.c0721g2srsrealestatebe.payload.request.*;
 import com.c0721g2srsrealestatebe.payload.response.JwtResponse;
 import com.c0721g2srsrealestatebe.payload.response.MessageResponse;
@@ -11,6 +12,7 @@ import com.c0721g2srsrealestatebe.service.account.IAppUserService;
 import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
 import com.c0721g2srsrealestatebe.service.account.impl.MyUserDetailsImpl;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
+import com.c0721g2srsrealestatebe.service.employee.impl.EmployeeServiceImpl;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;
 import com.google.api.client.http.javanet.NetHttpTransport;
@@ -62,6 +64,9 @@ public class SecurityController {
     private CustomerServiceImpl customerService;
 
     @Autowired
+    private EmployeeServiceImpl employeeService;
+
+    @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Value("${google.clientId}")
@@ -84,18 +89,28 @@ public class SecurityController {
 
         List<String> roles = myUserDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority).collect(Collectors.toList());
-
-        Customer customer = customerService.getCustomerByUsername(myUserDetails.getUsername());
-        System.out.println("test 3");
         JwtResponse jwtResponse = new JwtResponse();
-        jwtResponse.setName(customer.getName());
-        jwtResponse.setJwtToken(jwtToken);
-        jwtResponse.setUsername(myUserDetails.getUsername());
-        jwtResponse.setEmail(customer.getEmail());
-        jwtResponse.setRoles(roles);
-        jwtResponse.setIdCustomer(customer.getId());
         String urlImgDefault = "https://cdyduochopluc.edu.vn/wp-content/uploads/2019/07/anh-dai-dien-FB-200-1.jpg";
-        jwtResponse.setUrlImg(customer.getImage() == null ? urlImgDefault:customer.getImage().getUrl());
+
+        if (roles.contains("ROLE_CUSTOMER")) {
+            Customer customer = customerService.getCustomerByUsername(myUserDetails.getUsername());
+            jwtResponse.setName(customer.getName());
+            jwtResponse.setJwtToken(jwtToken);
+            jwtResponse.setUsername(myUserDetails.getUsername());
+            jwtResponse.setEmail(customer.getEmail());
+            jwtResponse.setRoles(roles);
+            jwtResponse.setIdCustomer(customer.getId());
+            jwtResponse.setUrlImg(customer.getImage() == null ? urlImgDefault:customer.getImage().getUrl());
+        } else {
+            Employee employee = employeeService.getEmployeeByUsername(myUserDetails.getUsername());
+            jwtResponse.setName(employee.getName());
+            jwtResponse.setJwtToken(jwtToken);
+            jwtResponse.setUsername(myUserDetails.getUsername());
+            jwtResponse.setEmail(employee.getEmail());
+            jwtResponse.setRoles(roles);
+            jwtResponse.setIdCustomer(employee.getId());
+            jwtResponse.setUrlImg(employee.getImage() == null ? urlImgDefault:employee.getImage().getUrl());
+        }
 
         return ResponseEntity.ok(jwtResponse);
 

@@ -109,7 +109,7 @@ public class AppUserServiceImpl implements IAppUserService {
     public void sendVerificationEmailForResetPassWord(String userName, String randomCode, String email) throws MessagingException, UnsupportedEncodingException {
         String subject = "Email xác thực!";
         String mailContent = "";
-        String confirmUrl = "http://localhost:4200/verify-reset-password?code=" + randomCode;
+        String confirmUrl = "http://localhost:4200/security/verify-reset-password?code=" + randomCode;
 
 
         MimeMessage message = javaMailSender.createMimeMessage();
