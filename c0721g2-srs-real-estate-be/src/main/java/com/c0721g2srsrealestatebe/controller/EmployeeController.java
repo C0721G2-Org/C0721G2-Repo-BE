@@ -19,6 +19,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,6 +48,9 @@ public class EmployeeController {
 
     @Autowired
     private IRoleService roleService;
+
+    @Autowired
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     //Lấy danh sách position
     @GetMapping(value = "/position")
@@ -90,6 +94,16 @@ public class EmployeeController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(employeeListSearch, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/detail/{id}")
+    public ResponseEntity<Employee> getEmployee(@PathVariable String id) {
+        Optional<Employee> employee = iEmployeeService.findByIdOp(id);
+
+        if (!employee.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(employee.get(), HttpStatus.OK);
     }
 
     //Xóa nhân viên (Hưng)
@@ -168,7 +182,8 @@ public class EmployeeController {
         //tạo account
         AppUser appUser = new AppUser();
         appUser.setUsername(employeeDTO.getEmail());
-        appUser.setPassword("abc123456");
+        appUser.setPassword(bCryptPasswordEncoder.encode("abc123456"));
+        // appUser.setPassword("abc123456");
         appUser.setRoles(roles);
 
         employee.setAppUser(appUser);
