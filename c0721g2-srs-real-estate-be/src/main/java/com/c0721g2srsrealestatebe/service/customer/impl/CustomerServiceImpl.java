@@ -65,4 +65,9 @@ public class CustomerServiceImpl implements ICustomerService {
     public void saveCustomerSocial(Customer customer) {
         this.iCustomerRepository.save(customer);
     }
+
+    @Override
+    public Customer getCustomerByUsername(String username) {
+        return this.iCustomerRepository.findCustomerByAppUser(username);
+    }
 }

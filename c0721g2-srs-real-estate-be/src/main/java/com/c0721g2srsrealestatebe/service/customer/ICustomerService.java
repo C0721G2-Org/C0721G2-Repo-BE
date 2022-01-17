@@ -24,4 +24,6 @@ public interface ICustomerService {
 
     //phuong thuc nay cua Hien
     void saveCustomerSocial(Customer customer);
+
+    Customer getCustomerByUsername(String username);
 }
