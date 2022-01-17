@@ -46,4 +46,9 @@ public class EmployeeServiceImpl implements IEmployeeService {
     public Optional<Employee> findByIdOp(String id) {
         return this.iEmployeeRepository.findById(id);
     }
+
+    @Override
+    public Employee getEmployeeByUsername(String username) {
+        return this.iEmployeeRepository.findEmployeeByAppUser(username);
+    }
 }
