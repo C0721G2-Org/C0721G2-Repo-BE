@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.mail.MessagingException;
 import javax.validation.Valid;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -158,9 +159,10 @@ public class RealEstateNewsController {
         }
         RealEstateNews news = this.copyProperties(realEstateDTO);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
-        realEstateDTO.getImageList().forEach((imageDTO -> {
+        List<String> items = Arrays.asList(realEstateDTO.getUrls().split("\\s*,\\s*"));
+        items.forEach((item -> {
                     Image image = new Image();
-                    image.setUrl(imageDTO.getUrl());
+                    image.setUrl(item);
                     iImageService.saveImg(image, realEstateNews.getId());
                 })
         );
