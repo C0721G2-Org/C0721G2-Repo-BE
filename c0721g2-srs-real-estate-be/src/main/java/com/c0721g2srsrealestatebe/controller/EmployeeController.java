@@ -183,6 +183,7 @@ public class EmployeeController {
         AppUser appUser = new AppUser();
         appUser.setUsername(employeeDTO.getEmail());
         appUser.setPassword(bCryptPasswordEncoder.encode("abc123456"));
+        appUser.setEnabled(true);
         // appUser.setPassword("abc123456");
         appUser.setRoles(roles);
         appUser.setEnabled(true);

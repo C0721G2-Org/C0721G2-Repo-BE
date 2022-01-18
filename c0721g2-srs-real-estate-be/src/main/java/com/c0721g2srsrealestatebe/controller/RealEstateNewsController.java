@@ -159,7 +159,6 @@ public class RealEstateNewsController {
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.NOT_ACCEPTABLE);
         }
-        System.out.println(realEstateDTO);
         RealEstateNews news = this.copyProperties(realEstateDTO);
         List<Image> imageList = new ArrayList<>();
         List<String> items = Arrays.asList(realEstateDTO.getUrls().split("\\s*,\\s*"));
@@ -171,7 +170,6 @@ public class RealEstateNewsController {
         );
         news.setImageList(imageList);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
-        System.out.println(realEstateNews);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -200,15 +198,6 @@ public class RealEstateNewsController {
     @GetMapping(value = "/realEstateType")
     public List<RealEstateType> realEstateTypes(){
         return iRealEstateTypeService.realEstateTypeList();
-    }
-
-    public String createID(){
-        String lastId = realEstateNewsService.findLastId();
-        String[] parts = lastId.split("(?<=-)");
-        String lastIdString = parts[1];
-        Integer lastIdNumber = Integer.parseInt(lastIdString);
-        Integer newId = lastIdNumber + 1;
-        return "BD-"+newId;
     }
 }
 
