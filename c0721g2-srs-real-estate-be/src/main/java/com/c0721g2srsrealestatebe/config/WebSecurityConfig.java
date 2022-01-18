@@ -51,12 +51,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()
                 // Các trang không yêu cầu login
-                .antMatchers("/api/public/**","/api/real-estate-new/search", "/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png")
+                .antMatchers("/api/public/**","/api/real-estate-new/search","/api/real-estate-related/**", "/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png")
                 .permitAll()
                 //phan quyen
-                .and().authorizeRequests().antMatchers("/api/**").hasRole("ADMIN")
-                .and().authorizeRequests().antMatchers("/api/customers/**", "/api/real-estate-new/**").hasRole("EMPLOYEE")
-                .and().authorizeRequests().antMatchers("/api/customers/create","/api/customers/edit-customer","/api/real-estate-new/**").hasRole("CUSTOMER")
+                .and().authorizeRequests().antMatchers("/api/**","/api/real-estate-related/**").hasRole("ADMIN")
+                .and().authorizeRequests().antMatchers("/api/customers/**", "/api/real-estate-new/**","/api/real-estate-related/**").hasRole("EMPLOYEE")
+                .and().authorizeRequests().antMatchers("/api/customers/create","/api/customers/edit-customer","/api/real-estate-new/**","/api/real-estate-related/**").hasRole("CUSTOMER")
                 .anyRequest().authenticated()
                 .and().cors()
                 .and().exceptionHandling().accessDeniedHandler(accessDeniedHandler())
