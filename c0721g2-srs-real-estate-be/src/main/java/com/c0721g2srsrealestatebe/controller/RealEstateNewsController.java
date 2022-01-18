@@ -64,7 +64,7 @@ public class RealEstateNewsController {
     }
 
     //     5.6.3 show Real estate new detail
-    @GetMapping("/{id}")
+    @GetMapping("/detail/{id}")
     public ResponseEntity< RealEstateNews > findNewById(@PathVariable(value = "id") String id) {
         Optional< RealEstateNews > realEstateNews = realEstateNewsService.findNewsById(id);
         if (realEstateNews.isPresent()) {
