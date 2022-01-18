@@ -183,6 +183,7 @@ public class EmployeeController {
         AppUser appUser = new AppUser();
         appUser.setUsername(employeeDTO.getEmail());
         appUser.setPassword(bCryptPasswordEncoder.encode("abc123456"));
+        appUser.setEnabled(true);
         // appUser.setPassword("abc123456");
         appUser.setRoles(roles);
 
@@ -230,10 +231,14 @@ public class EmployeeController {
         Set<Role> roles = new HashSet<>();
         roles.add(role);
 
-        AppUser appUser = new AppUser();
+        AppUser appUser = appUserService.getAppUserByEmployee(employee.getId());
         appUser.setRoles(roles);
-        appUser.setUsername(employeeDTO.getEmail());
+        System.out.println("Kiểm tra: " + appUser.getRoles());
         employee.setAppUser(appUser);
+//        appUser.setRoles(roles);
+//        appUser.setUsername(employeeDTO.getEmail());
+//        employee.setAppUser(appUser);
+
 
         this.iEmployeeService.saveEmployee(employee);
         return new ResponseEntity<>(employee, HttpStatus.OK);

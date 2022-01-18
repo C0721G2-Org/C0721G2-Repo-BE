@@ -28,4 +28,6 @@ public interface IAppUserService {
     String findPasswordByUsername(String username);
 
     AppUser findAppUserByUserName(String id);
+
+    AppUser getAppUserByEmployee(String id);
 }

@@ -166,4 +166,23 @@ public class RealEstateNews {
     public void setImageList(List<Image> imageList) {
         this.imageList = imageList;
     }
+
+    @Override
+    public String toString() {
+        return "RealEstateNews{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", address='" + address + '\'' +
+                ", area=" + area +
+                ", price=" + price +
+                ", approval=" + approval +
+                ", kindOfNews=" + kindOfNews +
+                ", status=" + status +
+                ", realEstateType=" + realEstateType +
+                ", direction=" + direction +
+                ", customer=" + customer +
+                ", imageList=" + imageList +
+                '}';
+    }
 }

@@ -151,4 +151,11 @@ public class AppUserServiceImpl implements IAppUserService {
         return appUserRepository.findAppUserByUsername(id).orElseThrow(() -> new AppUserException(
                 "không thể tìm thấy id " + id + ""));
     }
+
+    @Override
+    public AppUser getAppUserByEmployee(String id) {
+        return appUserRepository.getAppUserByEmployee(id);
+    }
+
+
 }
