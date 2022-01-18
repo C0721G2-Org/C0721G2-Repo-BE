@@ -176,6 +176,7 @@ public class RealEstateDTO{
                 ", direction=" + direction +
                 ", customer=" + customer +
                 ", imageList=" + imageList +
+                ", urls='" + urls + '\'' +
                 '}';
     }
 }
