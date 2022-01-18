@@ -5,7 +5,6 @@ import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.SQLDelete;
@@ -29,38 +28,28 @@ public class Customer {
                     @Parameter(name = CustomIdGenerator.VALUE_PREFIX_PARAMETER, value = "KH-"),
                     @Parameter(name = CustomIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%04d")})
     private String id;
-
     private String name;
-
     private String email;
-
     private String phoneNumber;
-
     private String address;
-
     private String idCard;
-
     @Column(name = "date_of_Birth", columnDefinition = "DATE")
     private LocalDate dateOfBirth;
-
     @Column(name = "gender", columnDefinition = "TINYINT")
     private Integer gender;
-
-    @OneToOne(targetEntity = AppUser.class)
+    @OneToOne(targetEntity = AppUser.class, cascade = CascadeType.ALL)
     private AppUser appUser;
-
-    @OneToOne(targetEntity = Image.class)
+    @OneToOne(targetEntity = Image.class, cascade = CascadeType.PERSIST)
     private Image image;
-
     @OneToMany(mappedBy = "customer" )
-    @JsonManagedReference
-    @JsonBackReference
-    private List<RealEstateNews> realEstateNewsList;
+    @JsonBackReference(value = "customers_real_estate_news")
+    private List< RealEstateNews > realEstateNewsList;
+
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {
     }
-
+    @SuppressWarnings("squid:S00107")
     public Customer(String id, String name, String email, String phoneNumber, String address, String idCard, LocalDate dateOfBirth, Integer gender, AppUser appUser, Image image, List<RealEstateNews> realEstateNewsList, Boolean deleted) {
         this.id = id;
         this.name = name;
@@ -170,5 +159,23 @@ public class Customer {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", idCard='" + idCard + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", gender=" + gender +
+                ", appUser=" + appUser +
+                ", image=" + image +
+                ", realEstateNewsList=" + realEstateNewsList +
+                ", deleted=" + deleted +
+                '}';
     }
 }

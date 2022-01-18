@@ -38,7 +38,7 @@ public class RealEstateNews {
     @ManyToOne(targetEntity = Direction.class)
     private Direction direction;
     @ManyToOne(targetEntity = Customer.class)
-    @JsonManagedReference
+//    @JsonManagedReference
     private Customer customer;
     @OneToMany(targetEntity = Image.class)
     private List<Image> imageList;
@@ -46,6 +46,7 @@ public class RealEstateNews {
     public RealEstateNews() {
     }
 
+    @SuppressWarnings("squid:S00107")
     public RealEstateNews(String id, String title, String description, String address, Double area, Double price, Integer approval, Integer kindOfNews, Integer status, RealEstateType realEstateType, Direction direction, Customer customer, List<Image> imageList) {
         this.id = id;
         this.title = title;
@@ -164,5 +165,24 @@ public class RealEstateNews {
 
     public void setImageList(List<Image> imageList) {
         this.imageList = imageList;
+    }
+
+    @Override
+    public String toString() {
+        return "RealEstateNews{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", address='" + address + '\'' +
+                ", area=" + area +
+                ", price=" + price +
+                ", approval=" + approval +
+                ", kindOfNews=" + kindOfNews +
+                ", status=" + status +
+                ", realEstateType=" + realEstateType +
+                ", direction=" + direction +
+                ", customer=" + customer +
+                ", imageList=" + imageList +
+                '}';
     }
 }
