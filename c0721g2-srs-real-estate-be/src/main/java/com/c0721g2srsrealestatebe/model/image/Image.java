@@ -1,9 +1,8 @@
 package com.c0721g2srsrealestatebe.model.image;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
+
+import javax.persistence.*;
 
 @Entity(name = "images")
 public class Image {
@@ -11,6 +10,7 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String url;
+
 
     public Image() {
         //this is constructor

@@ -10,10 +10,8 @@ import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
 import com.c0721g2srsrealestatebe.service.realestatenews.EmailService;
-import com.c0721g2srsrealestatebe.service.realestatenews.IDirectionService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
 
-import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateTypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -180,21 +178,6 @@ public class RealEstateNewsController {
         realEstateNews.setDirection(new Direction(realEstateDTO.getDirection().getId()));
         realEstateNews.setCustomer(customer);
         return realEstateNews;
-    }
-
-    @Autowired
-    IDirectionService iDirectionService;
-    @Autowired
-    IRealEstateTypeService iRealEstateTypeService;
-
-    @GetMapping(value = "/direction")
-    public List<Direction> directionList(){
-        return iDirectionService.directionList();
-    }
-
-    @GetMapping(value = "/realEstateType")
-    public List<RealEstateType> realEstateTypes(){
-        return iRealEstateTypeService.realEstateTypeList();
     }
 }
 
