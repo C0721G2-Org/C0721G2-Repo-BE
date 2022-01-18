@@ -25,6 +25,6 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
                     request.getRequestURI());
             LOG.info(message);
         }
-        response.sendRedirect(request.getContextPath() + "api/public/access-denied");
+//        response.sendRedirect(request.getContextPath() + "api/public/access-denied");
     }
 }
