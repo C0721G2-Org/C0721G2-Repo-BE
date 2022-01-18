@@ -40,7 +40,7 @@ public class RealEstateNews {
     @ManyToOne(targetEntity = Customer.class)
 //    @JsonManagedReference
     private Customer customer;
-    @OneToMany(targetEntity = Image.class, cascade = CascadeType.PERSIST)
+    @OneToMany(targetEntity = Image.class,cascade = CascadeType.PERSIST)
     private List<Image> imageList;
 
     public RealEstateNews() {
@@ -181,8 +181,6 @@ public class RealEstateNews {
                 ", status=" + status +
                 ", realEstateType=" + realEstateType +
                 ", direction=" + direction +
-                ", customer=" + customer +
-                ", imageList=" + imageList +
                 '}';
     }
 }

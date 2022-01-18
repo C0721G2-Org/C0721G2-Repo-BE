@@ -10,8 +10,10 @@ import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
 import com.c0721g2srsrealestatebe.service.realestatenews.EmailService;
+import com.c0721g2srsrealestatebe.service.realestatenews.IDirectionService;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
 
+import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateTypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -28,6 +30,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.mail.MessagingException;
 import javax.validation.Valid;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -154,18 +157,21 @@ public class RealEstateNewsController {
     @PostMapping("/post")
     public ResponseEntity< List< FieldError > > saveRealEstateNews(@RequestBody @Valid RealEstateDTO realEstateDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-//            System.out.println(bindingResult);
             return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.NOT_ACCEPTABLE);
         }
+        System.out.println(realEstateDTO);
         RealEstateNews news = this.copyProperties(realEstateDTO);
-        RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
+        List<Image> imageList = new ArrayList<>();
         List<String> items = Arrays.asList(realEstateDTO.getUrls().split("\\s*,\\s*"));
         items.forEach((item -> {
                     Image image = new Image();
                     image.setUrl(item);
-                    iImageService.saveImg(image, realEstateNews.getId());
+                    imageList.add(image);
                 })
         );
+        news.setImageList(imageList);
+        RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
+        System.out.println(realEstateNews);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -177,7 +183,32 @@ public class RealEstateNewsController {
         realEstateNews.setRealEstateType(new RealEstateType(realEstateDTO.getRealEstateType().getId()));
         realEstateNews.setDirection(new Direction(realEstateDTO.getDirection().getId()));
         realEstateNews.setCustomer(customer);
+        realEstateNews.setApproval(1);
         return realEstateNews;
+    }
+
+    @Autowired
+    IDirectionService iDirectionService;
+    @Autowired
+    IRealEstateTypeService iRealEstateTypeService;
+
+    @GetMapping(value = "/direction")
+    public List<Direction> directionList(){
+        return iDirectionService.directionList();
+    }
+
+    @GetMapping(value = "/realEstateType")
+    public List<RealEstateType> realEstateTypes(){
+        return iRealEstateTypeService.realEstateTypeList();
+    }
+
+    public String createID(){
+        String lastId = realEstateNewsService.findLastId();
+        String[] parts = lastId.split("(?<=-)");
+        String lastIdString = parts[1];
+        Integer lastIdNumber = Integer.parseInt(lastIdString);
+        Integer newId = lastIdNumber + 1;
+        return "BD-"+newId;
     }
 }
 
