@@ -2,7 +2,9 @@ package com.c0721g2srsrealestatebe.service.customer;
 
 import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
+import org.springframework.data.domain.Page;
 
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,7 +15,10 @@ public interface ICustomerService {
 
     Customer save(Customer customer);
 
-    void remove(String id);
+    void removeCustomer(String id);
 
     List<Customer> searchByName(String name);
+
+    // thienlb
+    Page<Customer> findAllCustomerByNameAndPhoneAndEmailPage(String name, String phone, String email, Pageable pageable);
 }

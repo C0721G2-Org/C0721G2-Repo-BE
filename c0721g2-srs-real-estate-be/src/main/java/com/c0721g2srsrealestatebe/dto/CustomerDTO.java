@@ -1,7 +1,5 @@
 package com.c0721g2srsrealestatebe.dto;
 
-
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -9,7 +7,7 @@ import org.springframework.validation.Validator;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 
-
+// ThienND & TungLQ dùng chung Validate này
 public class CustomerDTO implements Validator {
 
 
@@ -17,18 +15,14 @@ public class CustomerDTO implements Validator {
 
     @NotBlank(message = "you have to input your name")
 //    @Size(min = 2, message = "Tên ít nhất phải 2 ký tự")
-    @Pattern(regexp = "^([^0-9]{2,})$",message = "Tên không được có số và từ 2 kí tự trở lên")
+    @Pattern(regexp = "^([^0-9]{2,100})$", message = "Tên không được có số và từ 2 kí tự trở lên")
     private String name;
 
 
-//        @NotBlank(message = "you have to input your birthday")
+    @NotNull(message = "Không được bỏ trống")
 //    @Pattern(regexp = "^(?:19\\d{2}|20\\d{2})[-/.](?:0[1-9]|1[012])[-/.](?:0[1-9]|[12][0-9]|3[01])$",
 //            message = "Ngày sinh phải đúng định dạng: dd/MM/yyyy.")
-//    @DateTimeFormat(pattern = "mm-dd-yyyy")
     private LocalDate dateOfBirth;
-
-
-
 
 
     @NotBlank(message = "Số CMND không được để trống.")
@@ -37,18 +31,12 @@ public class CustomerDTO implements Validator {
     private String idCard;
 
 
+    @NotBlank
     private String address;
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     @NotBlank(message = "Số điện thoại không được để trống.")
-    @Pattern(regexp = "^(0[0-9\\s.-]{9,13})$",
+    @Pattern(regexp = "^(0[0-9\\s.-]{9,12})$",
             message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
     private String phoneNumber;
 
@@ -60,14 +48,24 @@ public class CustomerDTO implements Validator {
     private Integer gender;
 
     private AppUserDTO appUserDTO;
-
     private ImageDTO image;
 
     private Long roleDTO;
 
+    @NotEmpty
     private String userName;
 
+    @NotEmpty
+    @Size(min = 5, max = 200)
     private String password;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public String getUserName() {
         return userName;
@@ -188,8 +186,6 @@ public class CustomerDTO implements Validator {
 
     private boolean checkIdCard;
     private boolean checkPhone;
-
-
 
 
     public boolean isCheckIdCard() {
