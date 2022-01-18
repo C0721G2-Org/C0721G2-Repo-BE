@@ -185,6 +185,7 @@ public class EmployeeController {
         appUser.setPassword(bCryptPasswordEncoder.encode("abc123456"));
         // appUser.setPassword("abc123456");
         appUser.setRoles(roles);
+        appUser.setEnabled(true);
 
         employee.setAppUser(appUser);
         this.iEmployeeService.saveEmployee(employee);
