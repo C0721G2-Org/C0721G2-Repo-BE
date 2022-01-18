@@ -146,6 +146,7 @@ public class EmployeeController {
     public ResponseEntity<Object> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
                                                  BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
+            System.out.println("Test error");
             return new ResponseEntity<>(bindingResult.getFieldErrors(),
                     HttpStatus.NOT_ACCEPTABLE);
         }
