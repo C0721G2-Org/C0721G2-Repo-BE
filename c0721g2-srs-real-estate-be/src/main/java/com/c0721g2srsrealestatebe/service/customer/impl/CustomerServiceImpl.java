@@ -70,4 +70,5 @@ public class CustomerServiceImpl implements ICustomerService {
     public Customer getCustomerByUsername(String username) {
         return this.iCustomerRepository.findCustomerByAppUser(username);
     }
+
 }

@@ -56,10 +56,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png")
                 .permitAll()
                 //phan quyen
-                .and().authorizeRequests().antMatchers("/api/customers/create", "/api/customers/edit-customer",
-                "/api/customers/id", "/api/real-estate-new/**", "/api/real-estate-related/**")
+                .and().authorizeRequests().antMatchers("/api/customers/create", "/api/customers/edit-customer/**",
+                "/api/customers/KH-**","/api/public/password", "/api/real-estate-new/**", "/api/real-estate-related/**")
                 .hasAnyRole("CUSTOMER", "EMPLOYEE", "ADMIN")
-                .and().authorizeRequests().antMatchers("/api/customers/**", "/api/real-estate-new/**")
+                .and().authorizeRequests().antMatchers("/api/customers/**")
                 .hasAnyRole("EMPLOYEE", "ADMIN")
                 .and().authorizeRequests().antMatchers("/api/**").hasRole("ADMIN")
                 .anyRequest().authenticated()

@@ -6,7 +6,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class AppUserDTO implements Validator {
-    private String username;
+    private String usernameChange;
     //    @Size(min = 8, max = 12)
 //    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$" ,
 //            message = "Mật khẩu phải ít nhất có 1 ký tự hoa và thường và 1 số")
@@ -18,19 +18,19 @@ public class AppUserDTO implements Validator {
     public AppUserDTO() {
     }
 
-    public AppUserDTO(String username, String password, String newPassword, String reNewPassword) {
-        this.username = username;
+    public AppUserDTO(String usernameChange, String password, String newPassword, String reNewPassword) {
+        this.usernameChange = usernameChange;
         this.password = password;
         this.newPassword = newPassword;
         this.reNewPassword = reNewPassword;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUsernameChange() {
+        return usernameChange;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsernameChange(String usernameChange) {
+        this.usernameChange = usernameChange;
     }
 
     public String getPassword() {
@@ -55,16 +55,6 @@ public class AppUserDTO implements Validator {
 
     public void setReNewPassword(String reNewPassword) {
         this.reNewPassword = reNewPassword;
-    }
-
-    @Override
-    public String toString() {
-        return "AppUserDTO{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", newPassword='" + newPassword + '\'' +
-                ", reNewPassword='" + reNewPassword + '\'' +
-                '}';
     }
 
     @Override
