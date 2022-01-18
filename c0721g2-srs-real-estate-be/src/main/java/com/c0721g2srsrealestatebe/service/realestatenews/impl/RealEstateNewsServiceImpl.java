@@ -71,4 +71,9 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice, Pageable pageable) {
         return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, direction,  minPrice,  maxPrice, pageable);
     }
+
+    @Override
+    public String findLastId() {
+        return iRealEstateNewsRepository.lastId();
+    }
 }
