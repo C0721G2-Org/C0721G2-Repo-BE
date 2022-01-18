@@ -58,6 +58,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().authorizeRequests().antMatchers("/api/customers/**", "/api/real-estate-new/**").hasRole("EMPLOYEE")
                 .and().authorizeRequests().antMatchers("/api/customers/create","/api/customers/edit-customer","/api/real-estate-new/**").hasRole("CUSTOMER")
                 .anyRequest().authenticated()
+                .and().cors()
                 .and().exceptionHandling().accessDeniedHandler(accessDeniedHandler())
                 .authenticationEntryPoint(jwtAuthenticationEntryPoint)
                 // make sure we use stateless session; session won't be used to
