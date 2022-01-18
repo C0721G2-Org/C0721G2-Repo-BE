@@ -1,0 +1,228 @@
+use real_estate_news;
+INSERT INTO `roles` VALUES (1,'ROLE_ADMIN'),(2,'ROLE_EMPLOYEE'),(3,'ROLE_CUSTOMER');
+INSERT INTO `app_users` VALUES 
+('159c674c-d64c-4649-abc0-68564e05dfa0',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','admin',null),
+('3ebcc654-ecee-4208-9a62-7338d74f9586',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','hienplt',null),
+('2005eb90-dd59-402a-95a3-7618d02bf4f3',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','hungnn',null),
+('9b2d3f71-94f5-4c47-90e4-be30a96cf433',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','taivd',null),
+('17bab4b8-c4cd-44f4-a86a-1cd50cfa4925',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','tunglq',null),
+('65a0ab5b-00ea-4e35-9e56-8c1d39399800',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','trannn',null),
+('8a3dfcee-41c8-4050-bd42-88c730869e32',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','thinhlp',null),
+('f3ea6f0b-bbdc-4652-a43b-1ef78e593436',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','thienlb',null),
+('3e716bc9-4d44-4223-955a-89ed1b3bdeb1',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','thiennd',null),
+('e407890e-fcab-41ec-84b0-ce9c033bddb9',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khaipn',null),
+('d8a064d6-a795-480c-9189-7d6b2c89e8c5',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','doanhnv',null),
+('484700e8-56da-4e4f-b904-82cc23c4bd93',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang1',null),
+('1b6e8b65-086d-4ea7-bf7d-3dc68e58357a',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang2',null),
+('d6b9af98-e03d-46a7-bc58-29d1e76a8df2',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang3',null),
+('5d785d81-1b41-44bd-af58-bebcf528e7fe',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang4',null),
+('d20699c6-567a-4cb7-85b4-1098ec27a509',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang5',null),
+('06a7978d-ad4a-4b96-95d2-271bd641caa9',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang6',null),
+('39f5d3a8-5d5c-4001-b993-c84017cec464',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang7',null),
+('59046fe6-ebe1-4709-99ae-6e531421f7bd',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang8',null),
+('08459377-63c5-4794-b69c-f665ecf00c8a',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang9',null),
+('4f35902c-af4e-4a81-bc3d-23be5d48d110',0,1,'$2a$12$.Mfx0vhTiWRZL723RZD4.uROZM6QVKpYJ4ZM.JSuc54IJVMz7rJAi','khachhang10',null);
+INSERT INTO `app_users_roles` VALUES
+('159c674c-d64c-4649-abc0-68564e05dfa0',1),
+('3ebcc654-ecee-4208-9a62-7338d74f9586',2),
+('2005eb90-dd59-402a-95a3-7618d02bf4f3',2),
+('9b2d3f71-94f5-4c47-90e4-be30a96cf433',2),
+('17bab4b8-c4cd-44f4-a86a-1cd50cfa4925',2),
+('65a0ab5b-00ea-4e35-9e56-8c1d39399800',2),
+('8a3dfcee-41c8-4050-bd42-88c730869e32',2),
+('f3ea6f0b-bbdc-4652-a43b-1ef78e593436',2),
+('3e716bc9-4d44-4223-955a-89ed1b3bdeb1',2),
+('e407890e-fcab-41ec-84b0-ce9c033bddb9',2),
+('d8a064d6-a795-480c-9189-7d6b2c89e8c5',2),
+('484700e8-56da-4e4f-b904-82cc23c4bd93',3),
+('1b6e8b65-086d-4ea7-bf7d-3dc68e58357a',3),
+('d6b9af98-e03d-46a7-bc58-29d1e76a8df2',3),
+('5d785d81-1b41-44bd-af58-bebcf528e7fe',3),
+('d20699c6-567a-4cb7-85b4-1098ec27a509',3),
+('06a7978d-ad4a-4b96-95d2-271bd641caa9',3),
+('39f5d3a8-5d5c-4001-b993-c84017cec464',3),
+('59046fe6-ebe1-4709-99ae-6e531421f7bd',3),
+('08459377-63c5-4794-b69c-f665ecf00c8a',3),
+('4f35902c-af4e-4a81-bc3d-23be5d48d110',3);
+
+insert into images (id, url)
+value ( 1 , "https://cdyduochopluc.edu.vn/wp-content/uploads/2019/07/anh-dai-dien-FB-200-1.jpg"),
+ ( 2 , "https://cdn.nap.edu.vn/avatar/202192/trend-avatar-facebook-1-1630566628626.jpg");
+ insert into images (id, `url`)
+value ( 3 , "https://file4.batdongsan.com.vn/crop/257x147/2021/11/28/20211128220348-1a17_wm.jpg"),
+  ( 4 , "https://file4.batdongsan.com.vn/crop/257x147/2022/01/04/20220104095042-13c2_wm.jpg"),
+  (5 , "https://file4.batdongsan.com.vn/crop/257x147/2020/03/17/20200317102146-f05d_wm.jpg"),
+  ( 6 , "https://file4.batdongsan.com.vn/crop/257x147/2022/01/14/20220114163532-f5e4_wm.jpg"),
+  ( 7 , "https://file4.batdongsan.com.vn/crop/257x147/2021/12/22/20211222163505-ecad_wm.jpg"),
+  ( 8 , "https://file4.batdongsan.com.vn/crop/257x147/2020/07/18/20200718122425-1bef_wm.jpg"),
+  ( 9 , "https://file4.batdongsan.com.vn/crop/260x146/2021/06/13/20210613155351-c517.jpg"),
+  ( 10 , "https://file4.batdongsan.com.vn/crop/260x146/2021/12/08/20211208165329-3714.jpg"),
+  ( 11 , "https://file4.batdongsan.com.vn/crop/354x200/2022/01/11/wxbwknn6/20220111162607-84e4.jpg");
+  insert into images (id, url)
+values 
+ ( 12 , "https://richnguyen.vn/wp-content/uploads/2020/08/25622596622_1f7f158139_c.jpg"),
+ ( 13 , "https://richnguyen.vn/wp-content/uploads/2020/08/b%E1%BA%A5t-%C4%91%E1%BB%99ng-s%E1%BA%A3n-%C4%91ep.jpg"),
+ ( 14 , "https://richnguyen.vn/wp-content/uploads/2020/08/25743601235_f21a52b928_c-768x480.jpg"),
+ ( 15 , "https://i.pinimg.com/236x/f1/4c/c5/f14cc5cc2d31c884a7bfa7e1e1f6678b.jpg"),
+ ( 16 , "https://i.pinimg.com/236x/bc/15/4b/bc154b66d31e2aaeec5ff193591b47f8.jpg"),
+ ( 17 , "https://cdn.pixabay.com/photo/2016/07/26/18/30/kitchen-1543493_960_720.jpg"),
+ ( 18 , "https://i.pinimg.com/236x/60/d4/a2/60d4a2feb78ec47b882100fc9ff3cfe1.jpg"),
+ ( 19 , "https://i.pinimg.com/564x/16/88/d0/1688d06887421aec37c0817c24a72982.jpg"),
+ ( 20 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-1.jpg.webp"),
+ ( 21 , "https://gotrangtri.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-chung-cu9.jpg.webp"),
+ ( 22 , "https://gotrangtri.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-chung-cu6.jpg.webp"),
+ ( 23 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-2.jpg.webp"),
+ ( 24 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-4-1024x683.jpg.webp"),
+ ( 25 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-5-1024x640.jpg.webp"),
+ ( 26 , "https://gotrangtri.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-chung-cu7.jpg.webp"),
+ ( 27 , "https://gotrangtri.vn/wp-content/uploads/2018/10/noi-that-can-ho-hien-dai1-copy.jpg.webp"),
+ ( 28 , "https://noithatviet24h.vn/wp-content/uploads/2021/01/hinh-anh-can-ho-chung-cu-dep-1.jpg"),
+ ( 29 , "https://noithatviet24h.vn/wp-content/uploads/2021/01/hinh-anh-can-ho-chung-cu-dep-5.jpg"),
+ ( 30 , "https://noithatviet24h.vn/wp-content/uploads/2021/01/hinh-anh-can-ho-chung-cu-dep-16.jpg"),
+  (31 , "https://i.pinimg.com/564x/16/88/d0/1688d06887421aec37c0817c24a72982.jpg"),
+ ( 32 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-1.jpg.webp"),
+ ( 33 , "https://gotrangtri.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-chung-cu9.jpg.webp"),
+ ( 34 , "https://gotrangtri.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-chung-cu6.jpg.webp"),
+ ( 35 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-2.jpg.web"),
+ ( 36 , "https://i.pinimg.com/236x/bc/15/4b/bc154b66d31e2aaeec5ff193591b47f8.jpg"),
+ ( 37 , "https://cdn.pixabay.com/photo/2016/07/26/18/30/kitchen-1543493_960_720.jpg"),
+ ( 38 , "https://i.pinimg.com/236x/60/d4/a2/60d4a2feb78ec47b882100fc9ff3cfe1.jpg"),
+ ( 39 , "https://i.pinimg.com/564x/16/88/d0/1688d06887421aec37c0817c24a72982.jpg"),
+ ( 40 , "https://gotrangtri.vn/wp-content/uploads/2021/04/can-ho-chung-cu-dep-1.jpg.webp"),
+ ( 41 , "https://gotrangtri.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-chung-cu9.jpg.webp"),
+ ( 42 , "https://olydesign.vn/wp-content/uploads/2021/02/1-3-1536x1024.jpg"),
+ ( 43 , "https://olydesign.vn/wp-content/uploads/2021/02/IMG_1482_HDR-1536x1024.jpg"),
+ ( 44 , "https://olydesign.vn/wp-content/uploads/2021/02/IMG_1326_HDR-1536x1024.jpg"),
+ ( 45 , "https://olydesign.vn/wp-content/uploads/2021/02/IMG_1341_HDR-1536x1023.jpg"),
+ ( 46 , "https://olydesign.vn/wp-content/uploads/2021/02/IMG_1371_HDR-1536x1024.jpg"),
+ ( 47 , "https://olydesign.vn/wp-content/uploads/2021/02/IMG_1389_HDR-1536x1024.jpg"),	
+ ( 48 , "https://blog.rever.vn/hubfs/cac-loai-hinh-can-ho-1.jpg"),
+ ( 49 , "https://blog.rever.vn/hs-fs/hubfs/can-ho-thong-thuong.jpg?width=750&name=can-ho-thong-thuong.jpg"),
+ ( 50 , "https://blog.rever.vn/hs-fs/hubfs/can-ho-studio.jpg?width=750&name=can-ho-studio.jpg");
+  insert into positions (id, `name`)
+value ( 1 , "Nhân Viên"),
+  ( 2 , "Kế Toán"),
+  ( 3 , "Chuyên Viên"),
+  ( 4 , "Trưởng Phòng"),
+  ( 5 , "Giám Đốc");
+
+insert into degrees (id, `name`)
+value ( 1 , "Trung Cấp"),
+  ( 2 , "Cao Đẳng"),
+  ( 3 , "Đại Học"),
+  ( 4 , "Sau Đại Học");
+  
+  insert into employees (id, address, date_of_birth,deleted, email, gender,id_card, `name`, phone_number, app_user_id
+,degree_id, image_id,position_id) 
+VALUES ("NV-1001","Đà Nẵng","1998-10-30", 0,"quoctung@gmail.com","1","197241502","Lê Quốc Tùng","0911111111",'159c674c-d64c-4649-abc0-68564e05dfa0',1,1,1);
+insert into employees (id, address, date_of_birth,deleted, email, gender, id_card, `name`, phone_number, app_user_id
+,degree_id, image_id,position_id) 
+values("NV-1002","Huế","1988-10-30", 0,"bichphuong12@gmail.com","0","197241502","Mai Thị Bích Phương","0911111111",'3ebcc654-ecee-4208-9a62-7338d74f9586',1,1,1),
+  ("NV-1003","Quảng Trị","1989-12-30", 0,"nam31@gmail.com","1","197241502","Nguyễn Văn Nam","0911111111",'2005eb90-dd59-402a-95a3-7618d02bf4f3',3,2,1),
+  ("NV-1004","Quảng Ngãi","1992-04-30", 0,"phamkhoa22@gmail.com","1","197241502","Phạm Khoa","0911111111",'9b2d3f71-94f5-4c47-90e4-be30a96cf433',2,1,1),
+  ("NV-1005","Cần Thơ","1995-12-12", 0,"nhatvuong11@gmail.com","1","197241502","Phạm Khoa","0911111111",'17bab4b8-c4cd-44f4-a86a-1cd50cfa4925',2,1,1),
+  ("NV-1006","Quảng Bình","1997-04-12", 0,"hathu27@gmail.com","0","197241502","Trương Thị Hà Thư","0911111111",'65a0ab5b-00ea-4e35-9e56-8c1d39399800',1,1,1),
+  ("NV-1007","Vũng Tàu","1999-04-19", 0,"ainhu87@gmail.com","0","197241502","Lê Ái Như","0911111111",'8a3dfcee-41c8-4050-bd42-88c730869e32',1,1,1),
+  ("NV-1008","Quảng Ngãi","1998-04-01", 0,"thinhhoang12@gmail.com","1","197241502","Lê Phước Thịnh","0911111111",'f3ea6f0b-bbdc-4652-a43b-1ef78e593436',3,2,1),
+  ("NV-1009","Quảng Nam","1998-04-01", 0,"dung23@gmail.com","1","197241502","Lê Văn Dũng","0911111111",'3e716bc9-4d44-4223-955a-89ed1b3bdeb1',3,2,1),
+  ("NV-1010","Hà Nội","1998-04-01", 0,"thidiem@gmail.com","1","197241502","Đoàn Thị Điểm","0911111111",'e407890e-fcab-41ec-84b0-ce9c033bddb9',3,2,1),
+  ("NV-1011","Quảng Ngãi","1998-04-01", 0,"vanson@gmail.com","1","197241502","Lê Văn Sơn","0911111111",'d8a064d6-a795-480c-9189-7d6b2c89e8c5',3,2,1);
+  
+  insert into customers ( customers.id,customers.address, customers.date_of_birth, customers.deleted, 
+customers.email, customers.gender,customers.id_card, customers.`name`, customers.phone_number, customers.app_user_id, customers.image_id)
+values("KH-1011","Đà Nẵng", "1997-02-12", 0, "quoctung@gmail.com", "0","197241502", "Lê Quốc Tùng", "0905123321", '484700e8-56da-4e4f-b904-82cc23c4bd93', null),
+("KH-1002","Quảng Nam", "2000-02-04", 0, "dat@gmail.com", "0","197241502", "Nguyễn Văn Đạt", "0907123456", '1b6e8b65-086d-4ea7-bf7d-3dc68e58357a', null),
+("KH-1003","Hồ Chí Minh", "1990-04-11", 0, "thanhtruc@gmail.com", "1","197241502", "Hoàng Thanh Trúc", "0902345263",'d6b9af98-e03d-46a7-bc58-29d1e76a8df2', null),
+("KH-1004","Hà Nội", "1994-09-16", 0, "ngocnhat@gmail.com", "0","197241502", "Võ Ngọc Nhật", "0907123123", '5d785d81-1b41-44bd-af58-bebcf528e7fe', null),
+("KH-1005","Cần Thơ", "1996-12-12", 0, "phuocduc@gmail.com", "0","197241502", "Phan Phước Đức", "0902312221", 'd20699c6-567a-4cb7-85b4-1098ec27a509', null),
+("KH-1006","Huế", "1889-05-10", 0, "hoangthien@gmail.com", "0","197241502", "Mai Hoàng Thiện", "0909123897", '06a7978d-ad4a-4b96-95d2-271bd641caa9', null),
+("KH-1007","Quảng Trị", "2002-02-28", 0, "thaovi@gmail.com", "1","197241502", "Nguyễn Thị Thảo Vi", "0907129873", '39f5d3a8-5d5c-4001-b993-c84017cec464', null),
+("KH-1008","Quảng Bình", "1987-07-24", 0, "tuanhuynh@gmail.com", "0","197241502", "Huỳnh Tuấn", "0934123987", '59046fe6-ebe1-4709-99ae-6e531421f7bd', null),
+("KH-1009","Bình Định", "1995-03-12", 0, "bichtram@gmail.com", "1","197241502", "Ngô Thị Bích Trâm", "0923876982", '08459377-63c5-4794-b69c-f665ecf00c8a', null),
+("KH-1010","Phú Yên", "1993-09-09", 0, "nhatminh@gmail.com", "0","197241502", "Phan Nhật Minh", "0905888999", '4f35902c-af4e-4a81-bc3d-23be5d48d110', null);
+
+ insert into real_estate_type (id, `name`)
+value ( 1 , "Đất"),
+  ( 2 , "Nhà ở");
+    insert into directions (id, `name`)
+value ( 1 , 'Đông'),
+  ( 2 , "Đông Nam"),
+  ( 3 , "Đông Bắc"),
+  ( 4 , "Tây"),
+  ( 5 , "Tây Nam"),
+  ( 6 , "Tây Bắc"),
+  ( 7 , "Nam"),
+  ( 8 , "Bắc");
+  
+   insert into real_estate_news 
+ (id,address,approval,area,`description`,kind_of_news,price,
+  `status`,title,customer_id,direction_id,real_estate_type_id)
+  values
+('BD-0001', 'Đường 2/9, Phường Hòa Cường Bắc, Hải Châu, Đà Nẵng', '2', '100', 'Chính chủ cần bán cặp đất mặt tiền đường 2/9, trục đường chính của thành phố Đà Nẵng,\n  Nằm trong cụm khai thác tổ hợp khách sạn, du lịch, văn phòng cho thuê...\n  Đối diện khu thương mại tổ hợp dịch vụ du lịch bậc nhất Đà Nẵng.', '1', '15000000000', '1', 'BÁN GẤP CẶP ĐẤT ĐƯỜNG 2/9', 'KH-1002', '1', '1'),
+('BD-0002', 'Nguyễn Hữu Thọ, Thanh Khê, Đà Nẵng', '2', '50', 'Bán đất nền trung tâm thành phố, Đường rộng, mặt tiền gần sân bay gần trung tâm', '1', '15000000000', '1', 'Bán đất mặt tiền Nguyễn Hữu Thọ', 'KH-1002', '4', '1'),
+('BD-0003', 'Hòa Xuân, Đà Nẵng', '2', '200', 'Sở hữu vị trí trung tâm của trung tâm thành phố Đà Nẵng', '2', '40000000', '1', 'Cho thuê lô góc Hòa Xuân giá rẻ', 'KH-1003', '3', '1'),
+('BD-0004', 'Đường Nại Nam, Phường Hòa Cường Bắc, Hải Châu, Đà Nẵng', '2', '120', 'Chính chủ cần bán gấp căn nhà phố ngay trung tâm Đà Nẵng - Cạnh siêu thị Lotte mart.\nNhà phố thương mại, đồng bộ mặt ngoài giúp cho dãy phố sang trọng, khác biệt với các khu phố hiện trạng tại Đà Nẵng.', '1', '400000000', '1', 'NHÀ PHỐ 4 TẦNG CẠNH LOTTE MART', 'KH-1003', '3', '2'),
+('BD-0005', 'Đường Bạch Đằng, Phường Hòa Thuận Đông, Hải Châu, Đà Nẵng', '2', '100', 'Chính chủ cần cho thuê gấp căn nhà phố ngay trung tâm Đà Nẵng - Cạnh siêu thị Lotte mart.\r Nhà phố thương mại, đồng bộ mặt ngoài giúp cho dãy phố sang trọng, khác biệt với các khu phố hiện trạng tại Đà Nẵng.', '2', '20000000', '1', 'Cần cho thuê nhà phố giá rẻ', 'KH-1004', '1', '2'),
+('BD-0006', 'Bán căn hộ chung cư tại HaDo Centrosa Garden - Quận 10 - Hồ Chí Minh', '2', '60', 'Cần bán căn hộ Hà Đô Centrosa Garden, Q10:\n- Căn 2pn loại 86m2.\n- Lầu 6 trở lên.\n- Theo giá thị trường. (6 - 6,3 tỷ).', '1', '13000000', '1', 'Cần bán Hà Đô Centrosa căn 2pn', 'KH-1005', '1', '2'),
+('BD-0007', 'Bán căn hộ chung cư tại Quận Nam Từ Liêm - Hà Nội', '2', '60', '- Loanh quanh bán kính 1 - 2km so với Nguyễn Văn Giáp, Hàm Nghi, Vinhome Gardenia, Lê Đức Thọ, Trần Hữu Dực:\n- Không cần mới nhưng không bàn giao cũ quá 10 năm.\n- Có quỹ bảo trì của ban quản trị.\n- Loanh quanh 2 tỷ.', '1', '13000000', '1', 'Cần bán chung cư cũ 2 - 3 PN', 'KH-1005', '1', '2'),
+('BD-0008', 'Xã Ngọc Thanh - Thành phố Phúc Yên - Vĩnh Phúc', '2', '1000', 'Hiện tại mình đang muốn cho thuê đất tại khu vực Đại Lải, Phúc Yên.\nDiện tích 1000m2. View hồ hoặc trong khu đô thị, full thổ cư.\nGiá từ 10 - 15 tỷ.', '2', '150000000', '1', 'Cho thuê đất khu vực Đại Lải, Phúc Yên, Vĩnh Phúc', 'KH-1006', '1', '1'),
+('BD-0009', 'Phường An Hòa - Thành phố Biên Hòa - Đồng Nai', '2', '100', 'Hiện tại tôi đang có một số khách đầu tư cần bán đất khu vực P. An Hòa.\nDiện tích từ 60m2 đổ lên, nằm trên đường giao thông thuận tiện,\nkhông dính quy hoạch. Đất có thổ cư', '2', '1300000', '1', 'Cho thuê đất phường An Hoà', 'KH-1007', '4', '2'),
+('BD-0010', 'Quận 2, Thành phố Thủ Đức - Hồ Chí Minh', '2', '100', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh và đầu tư khu vực quận 2,\ntp Thủ Đức. Các phường Bình An, An Phú An Khánh, Thảo điền. Diện tích 5x20m, 8x20m, 10x20m,\n 20x20m hoặc lớn hơn hoặc đất biệt thự 500 đến 600m2 hoặc nhà mới đẹp...', '1', '1300000000', '1', 'Bán đất  phố biệt thự quận 2, tp Thủ Đức', 'KH-1009', '6', '1'),
+('BD-0011', 'Hai Bà Trưng, TP Huế', '2', '100', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '2', '15000000', '1', 'Thuê nhà phố, 2 tầng, Hai Bà Trưng, TP. Huế', 'KH-1002', '3', '2'),
+('BD-0012', 'Trần Phú, Hải Châu, Đà Nẵng', '2', '150', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '2', '20000000', '1', 'Thuê  nhà phố, 2 tầng, Duy Tân, Đà Nẵng', 'KH-1003', '6', '2'),
+('BD-0013', 'Bạch Đằng, Hải Châu, Đà Nẵng', '2', '100', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Bạch Đằng, Hải Châu,  Đà Nẵng', 'KH-1002', '3', '2'),
+('BD-0014', 'Trần Phú, Hải Châu, Đà Nẵng', '2', '100', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Hải Châu, Đà Nẵng', 'KH-1002', '6', '2'),
+('BD-0015', 'Trần Phú, Hải Châu, Đà Nẵng', '2', '100', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Hải Châu, Đà Nẵng', 'KH-1008', '2', '2'),
+('BD-0016', 'Quận 2, Thành phố Thủ Đức - Hồ Chí Minh', '2', '200', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1300000000', '1', 'Bán đất mặt tiền', 'KH-1002', '6', '2'),
+('BD-0017', 'Quận 2, Thành phố Thủ Đức - Hồ Chí Minh', '2', '80', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '2', '800000000', '1', 'Cần cho thuê đất nhà phố biệt thự quận 2, tp Thủ Đức', 'KH-1011', '6', '1'),
+('BD-0018', 'Trần Phú, Hải Châu, Đà Nẵng', '2', '200', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Hải Châu, Đà Nẵng', 'KH-1002', '6', '2'),
+('BD-0019', 'Phan Châu Trinh, Hải Châu, Đà Nẵng', '2', '60', 'Cho thuê chung cư cao cấp, 2 phòng ngủ, diện tích 60m2, thích hợp cho hộ gia đình nhỏ, gần chợ gần trường', '2', '15000000', '1', 'Cho thuê căn hộ, 2 tầng, Phan Châu Trinh, Hải Châu, Đà Nẵng', 'KH-1002', '1', '2'),
+('BD-0020', 'Chương Dương, Ngũ Hành Sơn, Đà Nẵng', '2', '100', 'Bán đất mặt tiền gần cầu Trần Thị Lý, view bờ sông, giá thương lượng', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Hải Châu, Đà Nẵng', 'KH-1002', '6', '2'),
+('BD-0021', 'Đường 2/9, Phường Hòa Cường Bắc, Hải Châu, Đà Nẵng', '2', '100', 'Chính chủ cần bán cặp đất mặt tiền đường 2/9, trục đường chính của thành phố Đà Nẵng,\n  Nằm trong cụm khai thác tổ hợp khách sạn, du lịch, văn phòng cho thuê...\n  Đối diện khu thương mại tổ hợp dịch vụ du lịch bậc nhất Đà Nẵng.', '1', '15000000000', '1', 'BÁN GẤP CẶP ĐẤT ĐƯỜNG 2/9', 'KH-1002', '1', '1'),
+('BD-0022', 'Nguyễn Hữu Thọ, Thanh Khê, Đà Nẵng', '2', '100', 'Bán đất nền trung tâm thành phố, Đường rộng, mặt tiền gần sân bay gần trung tâm', '1', '15000000000', '1', 'Bán đất mặt tiền Nguyễn Hữu Thọ', 'KH-1002', '4', '1'),
+('BD-0023', 'Hòa Xuân, Đà Nẵng', '2', '100', 'Sở hữu vị trí trung tâm của trung tâm thành phố Đà Nẵng', '1', '4000000000', '1', 'Bán lô góc Hòa Xuân giá rẻ', 'KH-1003', '3', '1'),
+('BD-0024', 'Đường Bạch Đằng, Phường Hòa Thuận Đông, Hải Châu, Đà Nẵng', '1', '100', 'Chính chủ cần bán gấp căn nhà phố ngay trung tâm Đà Nẵng - Cạnh siêu thị Lotte mart.\nNhà phố thương mại, đồng bộ mặt ngoài giúp cho dãy phố sang trọng, khác biệt với các khu phố hiện trạng tại Đà Nẵng.', '1', '8000000000', '1', 'CẦN BÁN LÔ ĐẤT MẶT TIỀN ĐƯỜNG BẠCH ĐẰNG', 'KH-1004', '1', '2'),
+('BD-0025', 'Bán căn hộ chung cư tại HaDo Centrosa Garden - Quận 10 - Hồ Chí Minh', '2', '100', 'Cần bán căn hộ Hà Đô Centrosa Garden, Q10:\n- Căn 2pn loại 86m2.\n- Lầu 6 trở lên.\n- Theo giá thị trường. (6 - 6,3 tỷ).', '1', '13000000', '1', 'Cần bán Hà Đô Centrosa căn 2pn', 'KH-1005', '1', '2'),
+('BD-0026', 'Bán căn hộ chung cư tại Quận Nam Từ Liêm - Hà Nội', '2', '100', '- Loanh quanh bán kính 1 - 2km so với Nguyễn Văn Giáp, Hàm Nghi, Vinhome Gardenia, Lê Đức Thọ, Trần Hữu Dực:\n- Không cần mới nhưng không bàn giao cũ quá 10 năm.\n- Có quỹ bảo trì của ban quản trị.\n- Loanh quanh 2 tỷ.', '1', '13000000', '1', 'Cần bán chung cư cũ 2 - 3 PN', 'KH-1005', '1', '2'),
+('BD-0027', 'Xã Ngọc Thanh - Thành phố Phúc Yên - Vĩnh Phúc', '2', '1000', 'Hiện tại mình đang muốn cho thuê đất tại khu vực Đại Lải, Phúc Yên.\nDiện tích 1000m2. View hồ hoặc trong khu đô thị, full thổ cư.\nGiá từ 10 - 15 tỷ.', '2', '150000000', '1', 'Cho cho thuê đất khu vực Đại Lải, Phúc Yên, Vĩnh Phúc', 'KH-1006', '1', '1'),
+('BD-0028', 'Phường An Hòa - Thành phố Biên Hòa - Đồng Nai', '2', '200', 'Hiện tại tôi đang có một số khách đầu tư cần bán đất khu vực P. An Hòa.\nDiện tích từ 60m2 đổ lên, nằm trên đường giao thông thuận tiện,\nkhông dính quy hoạch. Đất có thổ cư', '2', '1300000', '1', 'Cần cho thuê đất phường An Hoà', 'KH-1007', '1', '2'),
+('BD-0029', 'Quận 2, Thành phố Thủ Đức - Hồ Chí Minh', '2', '150', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh và đầu tư khu vực quận 2,\ntp Thủ Đức. Các phường Bình An, An Phú An Khánh, Thảo điền. Diện tích 5x20m, 8x20m, 10x20m,\n 20x20m hoặc lớn hơn hoặc đất biệt thự 500 đến 600m2 hoặc nhà mới đẹp...', '2', '1300000000', '1', 'Cần cho thuê nhà phố biệt thự quận 2, tp Thủ Đức', 'KH-1009', '6', '1'),
+('BD-0030', 'Trần Phú, Hải Châu, Đà Nẵng', '2', '80', 'Sở hữu vị trí trung tâm của trung tâm thành phố Đà Nẵng', '2', '450000000', '1', 'MẶT BẰNG ĐƯỜNG TRẦN PHÚ-BẠCH ĐẰNG', 'KH-1003', '2', '2'),
+('BD-0031', 'Đường Nại Nam, Phường Hòa Cường Bắc, Hải Châu, Đà Nẵng', '2', '120', 'Chính chủ cần bán gấp căn nhà phố ngay trung tâm Đà Nẵng - Cạnh siêu thị Lotte mart.\nNhà phố thương mại, đồng bộ mặt ngoài giúp cho dãy phố sang trọng, khác biệt với các khu phố hiện trạng tại Đà Nẵng.', '1', '400000000', '1', 'NHÀ PHỐ 4 TẦNG CẠNH LOTTE MART', 'KH-1003', '3', '2'),
+('BD-0032', 'Đường Bạch Đằng, Phường Hòa Thuận Đông, Hải Châu, Đà Nẵng', '1', '100', 'Chính chủ cần cho thuê gấp căn nhà phố ngay trung tâm Đà Nẵng - Cạnh siêu thị Lotte mart.\r Nhà phố thương mại, đồng bộ mặt ngoài giúp cho dãy phố sang trọng, khác biệt với các khu phố hiện trạng tại Đà Nẵng.', '2', '20000000', '1', 'Cần cho thuê nhà phố giá rẻ', 'KH-1004', '1', '2'),
+('BD-0033', 'Bán căn hộ chung cư tại HaDo Centrosa Garden - Quận 10 - Hồ Chí Minh', '1', '60', 'Cần bán căn hộ Hà Đô Centrosa Garden, Q10:\n- Căn 2pn loại 86m2.\n- Lầu 6 trở lên.\n- Theo giá thị trường. (6 - 6,3 tỷ).', '1', '13000000', '1', 'Cần bán Hà Đô Centrosa căn 2pn', 'KH-1005', '1', '2'),
+('BD-0034', 'Bán căn hộ chung cư tại HaDo Centrosa Garden - Quận 10 - Hồ Chí Minh', '1', '60', 'Cần bán căn hộ Hà Đô Centrosa Garden, Q10:\n- Căn 2pn loại 86m2.\n- Lầu 6 trở lên.\n- Theo giá thị trường. (6 - 6,3 tỷ).', '1', '13000000', '1', 'Cần bán Hà Đô Centrosa căn 2pn', 'KH-1005', '1', '2'),
+('BD-0035', 'Bán căn hộ chung cư tại Quận Nam Từ Liêm - Hà Nội', '1', '60', '- Loanh quanh bán kính 1 - 2km so với Nguyễn Văn Giáp, Hàm Nghi, Vinhome Gardenia, Lê Đức Thọ, Trần Hữu Dực:\n- Không cần mới nhưng không bàn giao cũ quá 10 năm.\n- Có quỹ bảo trì của ban quản trị.\n- Loanh quanh 2 tỷ.', '1', '13000000', '1', 'Cần bán chung cư cũ 2 - 3 PN', 'KH-1005', '1', '2'),
+('BD-0036', 'Xã Ngọc Thanh - Thành phố Phúc Yên - Vĩnh Phúc', '1', '1000', 'Hiện tại mình đang muốn cho thuê đất tại khu vực Đại Lải, Phúc Yên.\nDiện tích 1000m2. View hồ hoặc trong khu đô thị, full thổ cư.\nGiá từ 10 - 15 tỷ.', '2', '150000000', '1', 'Cho thuê đất khu vực Đại Lải, Phúc Yên, Vĩnh Phúc', 'KH-1006', '1', '1'),
+('BD-0037', 'Phường An Hòa - Thành phố Biên Hòa - Đồng Nai', '1', '100', 'Hiện tại tôi đang có một số khách đầu tư cần bán đất khu vực P. An Hòa.\nDiện tích từ 60m2 đổ lên, nằm trên đường giao thông thuận tiện,\nkhông dính quy hoạch. Đất có thổ cư', '2', '1300000', '1', 'Cho thuê đất phường An Hoà', 'KH-1007', '4', '2'),
+('BD-0038', 'Trần Phú, Hải Châu, Đà Nẵng', '1', '100', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Hải Châu, Đà Nẵng', 'KH-1008', '2', '2'),
+('BD-0039', 'Quận 2, Thành phố Thủ Đức - Hồ Chí Minh', '1', '200', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1300000000', '1', 'Bán đất mặt tiền', 'KH-1002', '6', '2'),
+('BD-0040', 'Quận 2, Thành phố Thủ Đức - Hồ Chí Minh', '1', '80', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '2', '800000000', '1', 'Cần cho thuê đất nhà phố biệt thự quận 2, tp Thủ Đức', 'KH-1011', '6', '1'),
+('BD-0041', 'Trần Phú, Hải Châu, Đà Nẵng', '1', '200', 'Nguồn khách có nhu cầu bán đất nhà phố biệt thự ở kinh doanh.', '1', '1100000000', '1', 'Bán nhà phố, 2 tầng, Hải Châu, Đà Nẵng', 'KH-1002', '6', '2'),
+('BD-0042', 'Phan Châu Trinh, Hải Châu, Đà Nẵng', '1', '60', 'Cho thuê chung cư cao cấp, 2 phòng ngủ, diện tích 60m2, thích hợp cho hộ gia đình nhỏ, gần chợ gần trường', '2', '15000000', '1', 'Cho thuê căn hộ, 2 tầng, Phan Châu Trinh, Hải Châu, Đà Nẵng', 'KH-1002', '1', '2')
+ ; 
+
+insert into real_estate_news_image_list value
+  ('BD-0001', 41), ('BD-0001', 42), ('BD-0001', 43), ('BD-0001',44),
+  ('BD-0002', 45), ('BD-0002', 46), ('BD-0001', 47),
+  ('BD-0003', 48), ('BD-0003', 49),
+  ('BD-0004', 50), 
+  ('BD-0005', 12), ('BD-0005', 13),
+  ('BD-0006', 14), ('BD-0006', 15),
+  ('BD-0007', 16), ('BD-0007', 17),
+  ('BD-0008', 18), ('BD-0008', 19),
+  ('BD-0009', 20), ('BD-0009', 21),
+  ('BD-0010', 22), ('BD-0010', 23),
+  ('BD-0011', 24), ('BD-0011', 25),
+  ('BD-0012', 26), ('BD-0012', 27),
+  ('BD-0013', 28), ('BD-0013', 29),
+  ('BD-0014', 30), 
+  ('BD-0015', 31),
+  ('BD-0016', 32),
+  ('BD-0017', 33),
+  ('BD-0018', 34),
+  ('BD-0019', 35),
+  ('BD-0020', 36),
+  ('BD-0021', 37),
+  ('BD-0022', 38),('BD-0022', 39),('BD-0022', 40)
+  ;
