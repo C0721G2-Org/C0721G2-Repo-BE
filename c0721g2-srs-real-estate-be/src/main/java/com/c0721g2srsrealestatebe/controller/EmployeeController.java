@@ -146,6 +146,7 @@ public class EmployeeController {
     public ResponseEntity<Object> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
                                                  BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
+            System.out.println("Test error");
             return new ResponseEntity<>(bindingResult.getFieldErrors(),
                     HttpStatus.NOT_ACCEPTABLE);
         }
@@ -232,9 +233,8 @@ public class EmployeeController {
         Set<Role> roles = new HashSet<>();
         roles.add(role);
 
-        AppUser appUser = new AppUser();
+        AppUser appUser = appUserService.getAppUserByEmployee(employee.getId());
         appUser.setRoles(roles);
-        appUser.setUsername(employeeDTO.getEmail());
         employee.setAppUser(appUser);
 
         this.iEmployeeService.saveEmployee(employee);

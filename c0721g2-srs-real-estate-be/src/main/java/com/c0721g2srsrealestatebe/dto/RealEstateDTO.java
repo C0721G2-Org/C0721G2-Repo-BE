@@ -20,11 +20,9 @@ public class RealEstateDTO{
     @Size(max = 256, message = "max 256")
     private String address;
     @Min(value = 1, message = "positive numbers")
-    @Max(value = 99999, message = "max is 99999")
     @NotNull(message = "NotNull")
     private Double area;
     @Min(value = 1, message = "positive numbers")
-    @Max(value = 1999999999, message = "max is 1999999999")
     @NotNull(message = "NotNull")
     private Double price;
     private Integer approval;

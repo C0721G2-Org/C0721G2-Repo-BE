@@ -43,7 +43,7 @@ public interface IRealEstateNewsService {
 
     /////////////////////////////DOANH/////////////////////////////////////////////////////////////////////////////////////
     // 5.6.1 KhaiPN
-    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice,Pageable pageable);
+    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minArea, String maxArea, String minPrice, String maxPrice,Pageable pageable);
 
     String findLastId();
 }
