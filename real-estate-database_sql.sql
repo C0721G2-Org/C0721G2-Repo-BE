@@ -8,8 +8,7 @@ INSERT INTO `app_users_roles` VALUES
 ('159c674c-d64c-4649-abc0-68564e05dfa0',1),
 ('3ebcc654-ecee-4208-9a62-7338d74f9586',2),
 ('484700e8-56da-4e4f-b904-82cc23c4bd93',3);
-insert into app_users_roles (app_users_id, roles_id)
-value ( 1 , 1),( 2 , 1);
+
 insert into images (id, url)
 value ( 1 , "https://cdyduochopluc.edu.vn/wp-content/uploads/2019/07/anh-dai-dien-FB-200-1.jpg"),
  ( 2 , "https://cdn.nap.edu.vn/avatar/202192/trend-avatar-facebook-1-1630566628626.jpg");
