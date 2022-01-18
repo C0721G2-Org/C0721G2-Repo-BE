@@ -24,7 +24,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 appUser = appUserRepository.getAppUserByEmailCustomer(s);
             }
         }
-
         return new MyUserDetailsImpl(appUser);
     }
 }

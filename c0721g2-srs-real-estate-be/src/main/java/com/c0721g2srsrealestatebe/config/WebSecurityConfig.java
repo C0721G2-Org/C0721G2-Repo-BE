@@ -51,12 +51,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()
                 // Các trang không yêu cầu login
-                .antMatchers("/api/public/**", "/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png")
+                .antMatchers("/api/public/**","/api/real-estate-new/search", "/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png")
                 .permitAll()
                 //phan quyen
-//                .and().authorizeRequests().antMatchers("/employees/**").hasRole("ADMIN")
-//                .and().authorizeRequests().antMatchers("/customers/**", "/facilities/**", "/contracts/**").hasAnyRole("USER", "ADMIN")
+                .and().authorizeRequests().antMatchers("/api/**").hasRole("ADMIN")
+                .and().authorizeRequests().antMatchers("/api/customers/**", "/api/real-estate-new/**").hasRole("EMPLOYEE")
+                .and().authorizeRequests().antMatchers("/api/customers/create","/api/customers/edit-customer","/api/real-estate-new/**").hasRole("CUSTOMER")
                 .anyRequest().authenticated()
+                .and().cors()
                 .and().exceptionHandling().accessDeniedHandler(accessDeniedHandler())
                 .authenticationEntryPoint(jwtAuthenticationEntryPoint)
                 // make sure we use stateless session; session won't be used to

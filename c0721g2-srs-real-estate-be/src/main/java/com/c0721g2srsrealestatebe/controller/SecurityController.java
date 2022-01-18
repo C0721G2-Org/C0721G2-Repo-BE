@@ -49,7 +49,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/public")
-@CrossOrigin(origins = "*")
+@CrossOrigin("http://localhost:4200")
 public class SecurityController {
     @Autowired
     private AuthenticationManager authenticationManager;
