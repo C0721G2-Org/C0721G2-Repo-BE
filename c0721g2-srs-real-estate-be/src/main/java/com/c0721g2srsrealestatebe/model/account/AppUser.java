@@ -18,9 +18,9 @@ public class AppUser {
     private String id;
     private String username;
     private String password;
-    private Boolean isEnabled;
+    private Boolean isEnabled = Boolean.TRUE;
     private String verificationCode;
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST,targetEntity = Role.class)
+    @ManyToMany(fetch = FetchType.EAGER,targetEntity = Role.class)
     private Set<Role> roles;
     private Boolean deleted = Boolean.FALSE;
 

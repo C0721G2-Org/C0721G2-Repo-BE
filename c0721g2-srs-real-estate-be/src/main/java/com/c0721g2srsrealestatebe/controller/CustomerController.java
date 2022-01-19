@@ -1,6 +1,5 @@
 package com.c0721g2srsrealestatebe.controller;
 
-
 import com.c0721g2srsrealestatebe.dto.CustomerDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
@@ -17,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -35,6 +35,8 @@ public class CustomerController {
     CustomerServiceImpl customerService;
     @Autowired
     AppUserServiceImpl appUserService;
+    @Autowired
+    BCryptPasswordEncoder bCryptPasswordEncoder;
 
 
     // TungLe tìm kiếm khách hàng
@@ -57,43 +59,33 @@ public class CustomerController {
         }
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
-        System.out.println(customer);
         Map<String,String> listErrors = new HashMap<>();
         
         //set role
-        Role role = new Role();
-        role.setId((long) 3);
+        Role role = new Role((long)3,"ROLE_CUSTOMER");
         Set<Role> roleSet = new HashSet<>();
         roleSet.add(role);
 
         // tạo account
         AppUser appUser = new AppUser();
         if (appUserService.existsByUserName(customerDTO.getUserName())) {
-            System.out.println("Error");
+            System.out.println("errorUsername");
             listErrors.put("errorUsername","Tài khoản đã được đăng kí ");
             return ResponseEntity.badRequest().body(listErrors);
         }
 
         if(customerService.existByEmail(customerDTO.getEmail())){
-            System.out.println("Error");
+            System.out.println("errorEmail");
             listErrors.put("errorEmail","Email đã được đăng kí ");
             return ResponseEntity.badRequest().body(listErrors);
         }
 
-
-
-//        appUser.setUsername(appUser.getUsername());
-//        appUser.setPassword(appUser.getPassword());
-//        appUser.setUsername(customerDTO.getUserName());
-//        appUser.setPassword(customerDTO.getPassword());
-//        appUser.getPassword();
-//        appUser.getUsername();
-        appUser.setPassword(customerDTO.getPassword());
+        appUser.setPassword(bCryptPasswordEncoder.encode(customerDTO.getPassword()));
         appUser.setUsername(customerDTO.getUserName());
         appUser.setRoles(roleSet);
+        appUser.setEnabled(true);
 
         customer.setAppUser(appUser);
-        System.out.println(appUser);
         customerService.save(customer);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
