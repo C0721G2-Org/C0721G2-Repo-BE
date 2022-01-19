@@ -196,6 +196,8 @@ public class RealEstateNewsController {
                 })
         );
         news.setImageList(imageList);
+        System.out.println(news);
+        System.out.println(news.getCustomer().getId());
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
         return new ResponseEntity<>(HttpStatus.OK);
     }
