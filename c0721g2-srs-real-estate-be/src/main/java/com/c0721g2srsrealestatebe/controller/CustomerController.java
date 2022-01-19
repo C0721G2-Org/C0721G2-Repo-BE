@@ -39,8 +39,8 @@ public class CustomerController {
     BCryptPasswordEncoder bCryptPasswordEncoder;
 
 
-    // TungLe tìm kiếm khách hàng
-    @GetMapping("/{id}")
+    // TungLe detail
+    @GetMapping("/detail/{id}")
     public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
         Optional<Customer> customer = customerService.findById(id);
         if (!customer.isPresent()) {
