@@ -39,14 +39,14 @@ public class CustomerController {
 
     // TungLe tìm kiếm khách hàng
     @GetMapping("/{id}")
-    public ResponseEntity<Customer> findCustomerById(@PathVariable("id") String id) {
+    public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
         Optional<Customer> customer = customerService.findById(id);
-
         if (!customer.isPresent()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(customer.get(), HttpStatus.OK);
     }
+
 
 
     // TungLe thêm mới khách hàng
@@ -129,6 +129,16 @@ public class CustomerController {
         return new ResponseEntity<>(customersNewPage, HttpStatus.OK);
 
     }
+
+//    @GetMapping("/{id}")
+//    public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
+//        Optional<Customer> customerOptional = customerService.findCustomerById(id);
+//        if (!customerOptional.isPresent()) {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<>(customerOptional.get(), HttpStatus.OK);
+//    }
+
     //thienlb-xoa khach hang
     @DeleteMapping("delete-customer/{id}")
     public ResponseEntity<Customer> deleteCustomer(@PathVariable String id) {
@@ -154,9 +164,11 @@ public class CustomerController {
             }
             customerDTO.setId(id);
             customerService.findById(customerDTO.getId());
+            customerDTO.toString();
             Customer customer1 = new Customer();
             System.out.println(customerDTO.toString());
             BeanUtils.copyProperties(customerDTO, customer1);
+
             customerService.save(customer1);
             return new ResponseEntity<>(customer1, HttpStatus.OK);
         } catch (BeansException e) {

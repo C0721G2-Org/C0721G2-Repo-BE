@@ -5,6 +5,7 @@ import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
+import com.c0721g2srsrealestatebe.model.employee.Employee;
 import com.c0721g2srsrealestatebe.model.image.Image;
 import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 import com.c0721g2srsrealestatebe.repository.account.IAppUserRepository;
@@ -143,17 +144,17 @@ public class AppUserServiceImpl implements IAppUserService {
 
     @Override
     public void updatePassword(AppUserDTO appUserDTO) {
-
-        System.out.println(appUserDTO.getUsernameChange());
-        AppUser appUser = this.findAppUserByUserName(appUserDTO.getUsernameChange());
-        System.out.println(appUser.toString());
-        appUser.setPassword(appUserDTO.getPassword());
-        appUserRepository.save(appUser);
+        appUserRepository.saveNewPassword(appUserDTO.getPassword(), appUserDTO.getUsernameChange());
     }
 
     @Override
     public AppUser findAppUserByUserName(String id) {
         return appUserRepository.findAppUserByUsername(id).orElseThrow(() -> new AppUserException(
                 "không thể tìm thấy id " + id + ""));
+    }
+
+    @Override
+    public AppUser getAppUserByEmployee(String id) {
+        return appUserRepository.findByEmployee(id);
     }
 }

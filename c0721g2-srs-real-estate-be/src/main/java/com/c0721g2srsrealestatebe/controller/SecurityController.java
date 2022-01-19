@@ -230,35 +230,25 @@ public class SecurityController {
                                          BindingResult bindingResult) {
         try {
             AppUser appUser1 = iAppUserService.findAppUserByUserName(appUserDTO.getUsernameChange());
+
             new AppUserDTO().validate(appUserDTO, bindingResult);
             if (bindingResult.hasFieldErrors("password")) {
                 System.out.println("mật nhập không đúng form");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
             if (bCryptPasswordEncoder.matches(
-                    appUserDTO.getPassword(),appUser1.getPassword())
+                    appUserDTO.getPassword(), appUser1.getPassword())
                     && !appUserDTO.getNewPassword().equals(appUserDTO.getPassword())
                     && appUserDTO.getNewPassword().equals(appUserDTO.getReNewPassword())) {
-
                 appUserDTO.setPassword(bCryptPasswordEncoder.encode(appUserDTO.getNewPassword()));
                 iAppUserService.updatePassword(appUserDTO);
                 return new ResponseEntity<>(HttpStatus.OK);
-            } else {
+            } else{
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 
-    @PostMapping("/save")
-    public ResponseEntity<AppUser> update(@RequestBody AppUserDTO password) {
-        try {
-            iAppUserService.updatePassword(password);
-            return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-    }
 }

@@ -2,6 +2,7 @@ package com.c0721g2srsrealestatebe.service.account;
 
 import com.c0721g2srsrealestatebe.dto.AppUserDTO;
 import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.employee.Employee;
 import com.c0721g2srsrealestatebe.payload.request.CustomerSocial;
 
 import javax.mail.MessagingException;
@@ -28,4 +29,6 @@ public interface IAppUserService {
     String findPasswordByUsername(String username);
 
     AppUser findAppUserByUserName(String id);
+
+    AppUser getAppUserByEmployee(String id);
 }

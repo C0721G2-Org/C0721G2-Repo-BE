@@ -52,6 +52,8 @@ public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews
 
     Optional< RealEstateNews > findById(String id);
 
+    //////////////////////////////////////DOANH//////////////////////////////////////////////////////////////
+
     // 5.7.1 Xem danh sách nhu cầu - Câu Query hiển thị List DoanhNV
     @Query(value = "select * from real_estate_news ", nativeQuery = true)
     Page<RealEstateNews> findAllByRealEstateNews(Pageable pageable);
@@ -61,11 +63,27 @@ public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews
             "from real_estate_news \n" +
             "where kind_of_news like :kind_of_news " +
             " and direction_id like :direction_id " +
-            " and real_estate_type_id like :real_estate_type_id "
+            " and real_estate_type_id like :real_estate_type_id " +
+            "and approval =1 "
             , nativeQuery = true )
     Page<RealEstateNews> searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(Pageable pageable,@Param("kind_of_news") String kindOfNews,
                                                                                        @Param("direction_id") String directionId,
                                                                                        @Param("real_estate_type_id") String realEstateTypeId);
+
+    // 5.7.1 Xem danh sách nhu cầu - Câu Query Duyệt bài đăng DoanhNV
+    @Modifying
+    @javax.transaction.Transactional
+    @Query(value = "update real_estate_news a set a.approval= 2 where a.id = :id", nativeQuery = true)
+    void updateApproval(@Param("id") String id);
+
+    // 5.7.1 Xem danh sách nhu cầu - Câu Query Không Duyệt bài đăng DoanhNV
+    @Modifying
+    @javax.transaction.Transactional
+    @Query(value = "update real_estate_news a set a.approval = 3 where a.id = :id", nativeQuery = true)
+    void deleteApproval(@Param("id") String id);
+
+    ////////////////////////////////////////DOANH//////////////////////////////////////////////////////////////////////////////
+
     // 5.6.1 KhaiPN
     @Query(value = " select * \n" +
             " from real_estate_news\n " +
@@ -73,18 +91,22 @@ public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews
             " and kind_of_news like concat('%',trim(:kindOfNews),'%')\n " +
             " and real_estate_type_id like concat('%',trim(:realEstateType),'%')\n " +
             " and direction_id like concat('%',trim(:direction),'%')\n " +
+            " and area between :minArea and :maxArea " +
             " and price between :minPrice and :maxPrice " +
             " and approval =2 ", nativeQuery = true, countQuery = " select count(*) from real_estate_news " +
             " where address like concat('%',trim(:address),'%') " +
             " and kind_of_news like concat('%',trim(:kindOfNews),'%') " +
             " and real_estate_type_id like concat('%',trim(:realEstateType),'%') " +
             " and direction_id like concat('%',trim(:direction),'%') " +
+            " and area between :minArea and :maxArea " +
             " and price between :minPrice and :maxPrice " +
             " and approval =2 ")
     Page<RealEstateNews> findAllRealEstateNewsByFilter(@Param("address")String address,
                                                        @Param("kindOfNews")String kindOfNews,
                                                        @Param("realEstateType")String realEstateType,
                                                        @Param("direction")String direction,
+                                                       @Param("minArea")String minArea,
+                                                       @Param("maxArea")String maxArea,
                                                        @Param("minPrice")String minPrice,
                                                        @Param("maxPrice")String maxPrice,
                                                        Pageable pageable);

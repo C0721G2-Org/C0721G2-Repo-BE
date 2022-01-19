@@ -22,20 +22,28 @@ public interface IRealEstateNewsService {
     // 5.6.2 add Real estate new detail
     RealEstateNews saveRealEstateNews(RealEstateNews realEstateNews);
 
+    ////////////////////////////DOANH/////////////////////////////////////////////////////////////////////////////////////
+
     // 5.7.1 Xem danh sách nhu cầu - Method Tìm kiếm DoanhNV
     Page<RealEstateNews> searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(Pageable pageable, String kindOfNews, String directionId, String realEstateTypeId);
 
     // 5.7.1 Xem danh sách nhu cầu - Method hiển thị List DoanhNV
-    Page<RealEstateNews> findAllNewsPage(Pageable pageable);
+    Page<RealEstateNews> findAllNewsPage( Pageable pageable);
+
+
+    // 5.7.1 Xem danh sách nhu cầu - Method duyệt gọi Dialog DoanhNV
+    void approveListPost(String id);
 
     // 5.7.1 Xem danh sách nhu cầu - Method Không duyệt gọi Dialog DoanhNV
-    Optional<RealEstateNews> findByIdOp(String id);
+    void approvalListPost(String id);
 
     // 5.7.1 Xem danh sách nhu cầu - Method Không duyệt gọi Dialog DoanhNV
-    void deleteById(String id);
+    Optional<RealEstateNews> findById(String id);
 
+
+    /////////////////////////////DOANH/////////////////////////////////////////////////////////////////////////////////////
     // 5.6.1 KhaiPN
-    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice,Pageable pageable);
+    Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minArea, String maxArea, String minPrice, String maxPrice,Pageable pageable);
 
     String findLastId();
 }

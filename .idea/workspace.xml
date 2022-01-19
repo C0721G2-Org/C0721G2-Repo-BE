@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb59ea70-f424-4fff-a61e-5d2e118f5a0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/dto/RealEstateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/dto/RealEstateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/c0721g2-srs-real-estate-be/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_vip.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database_vip.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/c0721g2-srs-real-estate-be">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23o0EaTKy36r0e4oJOPp7Rh3upd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="c0721g2-srs-real-estate-be.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb59ea70-f424-4fff-a61e-5d2e118f5a0a" name="Default Changelist" comment="" />
+      <created>1642385021452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642385021452</updated>
+      <workItem from="1642385023031" duration="70000" />
+      <workItem from="1642385168838" duration="22000" />
+      <workItem from="1642385483757" duration="43000" />
+      <workItem from="1642519545734" duration="4161000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1642385525128">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1642385525128" />
+    <state width="1860" height="350" key="GridCell.Tab.0.bottom" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.0.center" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.0.left" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.0.right" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.1.bottom" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.1.center" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.1.left" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+    <state width="1860" height="350" key="GridCell.Tab.1.right" timestamp="1642521445371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="350" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642521445371" />
+  </component>
+</project>

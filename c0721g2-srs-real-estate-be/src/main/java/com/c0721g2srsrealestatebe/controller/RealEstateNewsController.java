@@ -4,16 +4,10 @@ package com.c0721g2srsrealestatebe.controller;
 import com.c0721g2srsrealestatebe.dto.RealEstateDTO;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.model.image.Image;
-import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
-import com.c0721g2srsrealestatebe.model.realestatenews.Email;
-import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
-import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
+import com.c0721g2srsrealestatebe.model.realestatenews.*;
 import com.c0721g2srsrealestatebe.service.image.IImageService;
-import com.c0721g2srsrealestatebe.service.realestatenews.EmailService;
-import com.c0721g2srsrealestatebe.service.realestatenews.IDirectionService;
-import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
+import com.c0721g2srsrealestatebe.service.realestatenews.*;
 
-import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateTypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -46,6 +40,8 @@ public class RealEstateNewsController {
     private IImageService iImageService;
     @Autowired
     private EmailService emailService;
+    @Autowired
+    IApprovalMailService iApprovalMailService;
 
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
@@ -87,31 +83,7 @@ public class RealEstateNewsController {
         }
     }
 
-    // 5.7.1 Xem danh sách nhu cầu - Tìm kiếm DoanhNV
-    @GetMapping("/search-approval")
-    public ResponseEntity<Page<RealEstateNews>> searchListPostApproval(@PageableDefault(value = 10) Pageable pageable,
-                                                                       @RequestParam(defaultValue = "",value ="kind_of_news" ) String kindOfNews,
-                                                                       @RequestParam(defaultValue = "", value = "direction_id") String directionId,
-                                                                       @RequestParam(defaultValue = "", value = "real_estate_type_id") String realEstateTypeId){
-        Page<RealEstateNews> realEstateNewsPage =
-                realEstateNewsService.searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(pageable, kindOfNews, directionId, realEstateTypeId);
-        if (realEstateNewsPage.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
-    }
-
-    // 5.7.1 Xem danh sách nhu cầu - Khi Không Duyệt hiển thị Dialog DoanhNV
-    @DeleteMapping("delete/{id}")
-    public ResponseEntity<RealEstateNews> delete(@PathVariable String id) {
-        Optional<RealEstateNews> realEstateNewsOptional = this.realEstateNewsService.findByIdOp(id);
-        if (!realEstateNewsOptional.isPresent()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        realEstateNewsService.deleteById(id);
-        return new ResponseEntity<>(realEstateNewsOptional.get(), HttpStatus.OK);
-    }
-
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // 5.7.1 Xem danh sách nhu cầu - Hiển thị List DoanhNV
     @GetMapping(value = "/list")
@@ -123,6 +95,66 @@ public class RealEstateNewsController {
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
     }
 
+    // 5.7.1 Xem danh sách nhu cầu - Tìm kiếm DoanhNV
+    @GetMapping("/search-approval-list")
+    public ResponseEntity<Page<RealEstateNews>> searchListPostApproval(@PageableDefault(value = 10) Pageable pageable,
+                                                                       @RequestParam(defaultValue = "",value ="kind_of_news" ) String kindOfNews,
+                                                                       @RequestParam(defaultValue = "", value = "direction_id") String directionId,
+                                                                       @RequestParam(defaultValue = "", value = "real_estate_type_id") String realEstateTypeId){
+        Page<RealEstateNews> realEstateNewsPage =
+                realEstateNewsService.searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(pageable, kindOfNews, directionId, realEstateTypeId);
+        if (realEstateNewsPage.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
+    }
+    // 5.7.1 Xem danh sách nhu cầu - Method duyệt gọi Dialog DoanhNV
+    @PostMapping("/approve/{id}")
+    public ResponseEntity<RealEstateNews> approve(@PathVariable String id, @RequestBody RealEstateNews realEstateNews) {
+        Optional<RealEstateNews> realEstateNewsOptional = realEstateNewsService.findById(id);
+        if (!realEstateNewsOptional.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        realEstateNewsOptional.get();
+        realEstateNewsService.approveListPost(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    // 5.7.1 Xem danh sách nhu cầu - Method Không duyệt gọi Dialog DoanhNV
+    @PostMapping("/approval/{id}")
+    public ResponseEntity<RealEstateNews> approval(@PathVariable String id, @RequestBody RealEstateNews realEstateNews) {
+        Optional<RealEstateNews> realEstateNewsOptional = realEstateNewsService.findById(id);
+        if (!realEstateNewsOptional.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        realEstateNewsOptional.get();
+        realEstateNewsService.approvalListPost(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    //5.7.1 DoanhNV
+//    @PostMapping("/approval-email")
+//    public ResponseEntity< Void > approvalSendMail(@RequestBody() ApprovalMail approvalMail) throws UnsupportedEncodingException, MessagingException {
+//        if (approvalMail == null) {
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//        } else {
+//            iApprovalMailService.sendApprovalMail(approvalMail.getCustomerEmail(), approvalMail.getStatus(), approvalMail.getReason());
+//            return new ResponseEntity<>(HttpStatus.OK);
+//        }
+//    }
+
+    //    //5.7.1 DoanhNV
+//    @GetMapping("/{id}")
+//    public ResponseEntity< RealEstateNews > findNewById(@PathVariable(value = "id") String id) {
+//        Optional< RealEstateNews > realEstateNews = realEstateNewsService.findNewsById(id);
+//        if (realEstateNews.isPresent()) {
+//            return new ResponseEntity<>(realEstateNews.get(), HttpStatus.OK);
+//        }
+//        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+//    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //    // 5.6.1  List real-estate ket hop tim kiem approvel, address, kindOfNews, realEstateType, direction KhaiPN
     @GetMapping("/search")
@@ -131,22 +163,17 @@ public class RealEstateNewsController {
             @RequestParam(defaultValue = "", value = "kindOfNews") String kindOfNews,
             @RequestParam(defaultValue = "", value = "realEstateType") String realEstateType,
             @RequestParam(defaultValue = "", value = "direction") String direction,
+            @RequestParam(defaultValue = "0", value = "minArea") String minArea,
+            @RequestParam(defaultValue = "10000000000000000000000", value = "maxArea") String maxArea,
             @RequestParam(defaultValue = "0", value = "minPrice") String minPrice,
             @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
             @RequestParam(defaultValue = "0") int page
     ) {
-        if(realEstateType.equals("undefined")){
-            realEstateType = "";
-        }
-        if(direction.equals("undefined")){
-            direction = "";
-        }
         Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
-                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
+                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction,minArea, maxArea, minPrice, maxPrice, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
-            System.out.println("no content");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
@@ -159,7 +186,6 @@ public class RealEstateNewsController {
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(bindingResult.getFieldErrors(), HttpStatus.NOT_ACCEPTABLE);
         }
-        System.out.println(realEstateDTO);
         RealEstateNews news = this.copyProperties(realEstateDTO);
         List<Image> imageList = new ArrayList<>();
         List<String> items = Arrays.asList(realEstateDTO.getUrls().split("\\s*,\\s*"));
@@ -171,7 +197,6 @@ public class RealEstateNewsController {
         );
         news.setImageList(imageList);
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
-        System.out.println(realEstateNews);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -200,15 +225,6 @@ public class RealEstateNewsController {
     @GetMapping(value = "/realEstateType")
     public List<RealEstateType> realEstateTypes(){
         return iRealEstateTypeService.realEstateTypeList();
-    }
-
-    public String createID(){
-        String lastId = realEstateNewsService.findLastId();
-        String[] parts = lastId.split("(?<=-)");
-        String lastIdString = parts[1];
-        Integer lastIdNumber = Integer.parseInt(lastIdString);
-        Integer newId = lastIdNumber + 1;
-        return "BD-"+newId;
     }
 }
 

@@ -1,6 +1,8 @@
 package com.c0721g2srsrealestatebe.service.realestatenews.impl;
 
+import com.c0721g2srsrealestatebe.model.realestatenews.Direction;
 import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateNews;
+import com.c0721g2srsrealestatebe.model.realestatenews.RealEstateType;
 import com.c0721g2srsrealestatebe.repository.realestatenews.IRealEstateNewsRepository;
 import com.c0721g2srsrealestatebe.service.realestatenews.IRealEstateNewsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -41,7 +44,10 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return iRealEstateNewsRepository.findNewsById(iRealEstateNewsRepository.lastId()).orElse(null);
     }
 
-    // 5.7.1 Xem danh sách nhu cầu - Override method hiển thị List DoanhNV
+
+    //////////////////////////////////////DOANH//////////////////////////////////////////////////////////////////////
+
+// 5.7.1 Xem danh sách nhu cầu - Override method hiển thị List DoanhNV
     @Override
     public Page<RealEstateNews> findAllNewsPage(Pageable pageable) {
         return iRealEstateNewsRepository.findAllByRealEstateNews(pageable);
@@ -55,21 +61,34 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
         return iRealEstateNewsRepository.searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(pageable,
                 "%" +kinOfNews+ "%","%" +directionId+ "%", "%" +realEstateTypeId+ "%");
     }
+
+    // 5.7.1 Xem danh sách nhu cầu - Override method Duyệt hiển thị Dialog DoanhNV
+    @Override
+    public void approveListPost(String id) {
+        this.iRealEstateNewsRepository.updateApproval(id);
+    }
+
     // 5.7.1 Xem danh sách nhu cầu - Override method Không Duyệt hiển thị Dialog DoanhNV
     @Override
-    public Optional<RealEstateNews> findByIdOp(String id) {
+    public void approvalListPost(String id) {
+        this.iRealEstateNewsRepository.deleteApproval(id);
+    }
+
+
+
+    @Override
+    public Optional<RealEstateNews> findById(String id) {
         return iRealEstateNewsRepository.findById(id);
     }
-    // 5.7.1 Xem danh sách nhu cầu - Override method Không Duyệt hiển thị Dialog DoanhNV
-    @Override
-    public void deleteById(String id) {
-        iRealEstateNewsRepository.deleteById(id);
-    }
+
+    /////////////////////////////////////DOANH////////////////////////////////////////////////////////////////////////
+
+
 
     // 5.6.1 KhaiPN
     @Override
-    public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, direction,  minPrice,  maxPrice, pageable);
+    public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minArea, String maxArea, String minPrice, String maxPrice, Pageable pageable) {
+        return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, direction, minArea, maxArea, minPrice,  maxPrice, pageable);
     }
 
     @Override
