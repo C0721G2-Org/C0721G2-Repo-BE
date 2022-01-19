@@ -60,7 +60,7 @@ public interface IAppUserRepository extends JpaRepository<AppUser, UUID> {
     Optional<AppUser> findAppUserByUsername(String id);
 
     @Query(value = "SELECT * FROM app_users a " +
-            " JOIN employees e ON a.id = e.app_user_id  WHERE e.email= :email", nativeQuery = true)
+            " JOIN employees e ON a.id = e.app_user_id  WHERE e.id= ?1", nativeQuery = true)
     AppUser getAppUserByEmployee(String id);
 
 }

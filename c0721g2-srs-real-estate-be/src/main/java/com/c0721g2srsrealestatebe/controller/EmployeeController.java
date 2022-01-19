@@ -186,6 +186,7 @@ public class EmployeeController {
         appUser.setEnabled(true);
         // appUser.setPassword("abc123456");
         appUser.setRoles(roles);
+        appUser.setEnabled(true);
 
         employee.setAppUser(appUser);
         this.iEmployeeService.saveEmployee(employee);
@@ -201,13 +202,13 @@ public class EmployeeController {
             return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.NOT_ACCEPTABLE);
 
         }
-        //kiểm tra email có bị trùng lặp hay không
-        Map<String, String> listErrors = new HashMap<>();
-        if (appUserService.existsByUserName(employeeDTO.getEmail())) {
-
-            listErrors.put("errorEmail", "Email đã có người sử dụng");
-            return ResponseEntity.badRequest().body(listErrors);
-        }
+//        //kiểm tra email có bị trùng lặp hay không
+//        Map<String, String> listErrors = new HashMap<>();
+//        if (appUserService.existsByUserName(employeeDTO.getEmail())) {
+//
+//            listErrors.put("errorEmail", "Email đã có người sử dụng");
+//            return ResponseEntity.badRequest().body(listErrors);
+//        }
 
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
@@ -233,13 +234,13 @@ public class EmployeeController {
 
         AppUser appUser = appUserService.getAppUserByEmployee(employee.getId());
         appUser.setRoles(roles);
-        System.out.println("Kiểm tra: " + appUser.getRoles());
+        //System.out.println("Kiểm tra: " + appUser.getRoles());
         employee.setAppUser(appUser);
 //        appUser.setRoles(roles);
 //        appUser.setUsername(employeeDTO.getEmail());
 //        employee.setAppUser(appUser);
 
-
+        System.out.println("kiểm tra đối tượng:" + employee.toString());
         this.iEmployeeService.saveEmployee(employee);
         return new ResponseEntity<>(employee, HttpStatus.OK);
     }
