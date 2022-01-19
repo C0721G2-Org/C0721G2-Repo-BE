@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="058b12bf-ccb1-4bcb-bb4e-20f7054e9ab8" name="Default Changelist" comment="" />
+    <list default="true" id="058b12bf-ccb1-4bcb-bb4e-20f7054e9ab8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../181/C0721G2-Repo-BE/c0721g2-srs-real-estate-be" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,6 +61,7 @@
       <updated>1642499337197</updated>
       <workItem from="1642499338728" duration="12210000" />
       <workItem from="1642514879261" duration="139000" />
+      <workItem from="1642556535422" duration="611000" />
     </task>
     <servers />
   </component>
@@ -70,6 +73,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1642510034857" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1642556707543">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1642556707543" />
     <state width="1493" height="318" key="GridCell.Tab.0.bottom" timestamp="1642511781753">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
