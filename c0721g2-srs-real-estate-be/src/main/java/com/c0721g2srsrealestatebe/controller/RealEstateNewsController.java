@@ -163,22 +163,17 @@ public class RealEstateNewsController {
             @RequestParam(defaultValue = "", value = "kindOfNews") String kindOfNews,
             @RequestParam(defaultValue = "", value = "realEstateType") String realEstateType,
             @RequestParam(defaultValue = "", value = "direction") String direction,
+            @RequestParam(defaultValue = "0", value = "minArea") String minArea,
+            @RequestParam(defaultValue = "10000000000000000000000", value = "maxArea") String maxArea,
             @RequestParam(defaultValue = "0", value = "minPrice") String minPrice,
             @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
             @RequestParam(defaultValue = "0") int page
     ) {
-        if(realEstateType.equals("undefined")){
-            realEstateType = "";
-        }
-        if(direction.equals("undefined")){
-            direction = "";
-        }
         Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
-                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction, minPrice, maxPrice, pageable);
+                findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction,minArea, maxArea, minPrice, maxPrice, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
-            System.out.println("no content");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(realEstateNewsPage, HttpStatus.OK);
