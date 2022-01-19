@@ -20,7 +20,7 @@ public class AppUser {
     private String password;
     private Boolean isEnabled = Boolean.TRUE;
     private String verificationCode;
-    @ManyToMany(fetch = FetchType.EAGER,targetEntity = Role.class)
+    @ManyToMany(fetch = FetchType.EAGER, targetEntity = Role.class)
     private Set<Role> roles;
     private Boolean deleted = Boolean.FALSE;
 
