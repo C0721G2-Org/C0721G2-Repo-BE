@@ -8,8 +8,11 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity(name = "real_estate_news")
@@ -47,12 +50,13 @@ public class RealEstateNews {
     @OneToMany(targetEntity = Image.class,cascade = CascadeType.PERSIST)
     private List<Image> imageList;
     private Boolean deleted = Boolean.FALSE;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDateTime postDate;
 
     public RealEstateNews() {
     }
 
-    @SuppressWarnings("squid:S00107")
-    public RealEstateNews(String id, String title, String description, String address, Double area, Double price, Integer approval, Integer kindOfNews, Integer status, RealEstateType realEstateType, Direction direction, Customer customer, List<Image> imageList) {
+    public RealEstateNews(String id, String title, String description, String address, Double area, Double price, Integer approval, Integer kindOfNews, Integer status, RealEstateType realEstateType, Direction direction, Customer customer, List<Image> imageList, Boolean deleted, LocalDateTime postDate) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -66,6 +70,24 @@ public class RealEstateNews {
         this.direction = direction;
         this.customer = customer;
         this.imageList = imageList;
+        this.deleted = deleted;
+        this.postDate = postDate;
+    }
+
+    public Boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
+    }
+
+    public LocalDateTime getPostDate() {
+        return postDate;
+    }
+
+    public void setPostDate(LocalDateTime postDate) {
+        this.postDate = postDate;
     }
 
     public String getId() {
