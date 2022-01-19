@@ -84,7 +84,7 @@ public class RealEstateNewsController {
             return new ResponseEntity<>(HttpStatus.OK);
         }
     }
-    
+
     // 5.7.1 Xem danh sách nhu cầu - Hiển thị List DoanhNV
     @GetMapping(value = "/list")
     public ResponseEntity<Page<RealEstateNews>> getListPostApproval(@PageableDefault(value = 10) Pageable pageable) {

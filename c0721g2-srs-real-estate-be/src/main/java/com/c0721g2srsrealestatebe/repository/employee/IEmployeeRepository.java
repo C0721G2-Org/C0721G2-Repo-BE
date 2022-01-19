@@ -9,11 +9,10 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 
 @Repository
-@Transactional
 public interface IEmployeeRepository extends JpaRepository<Employee, String> {
 
     @Modifying
@@ -30,7 +29,9 @@ public interface IEmployeeRepository extends JpaRepository<Employee, String> {
     @Query(value = "select * from employees where deleted = false ", nativeQuery = true)
     Page<Employee> findAllEmployee(Pageable pageable);
 
-    @Query(value = " delete from employees where id = :id", nativeQuery = true)
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE employees SET deleted = 1 WHERE (id = :id);", nativeQuery = true)
     void deleteEmployeeByID(@Param("id") String id);
 
     @Query(value = "select *  from employees where  name like concat('%',:name,'%') and  email like concat('%',:email,'%') " +
