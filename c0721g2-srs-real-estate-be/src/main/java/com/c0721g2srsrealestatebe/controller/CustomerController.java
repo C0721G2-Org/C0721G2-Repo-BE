@@ -48,9 +48,8 @@ public class CustomerController {
     }
 
 
-
     // TungLe thêm mới khách hàng
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE,value = "/create")
+    @PostMapping(value = "/create")
     public ResponseEntity<Object> saveCustomer(@RequestBody @Valid CustomerDTO customerDTO, BindingResult bindingResult) {
         new CustomerDTO().validate(customerDTO, bindingResult);
         if (bindingResult.hasErrors()) {
@@ -58,9 +57,9 @@ public class CustomerController {
         }
         Customer customer = new Customer();
         BeanUtils.copyProperties(customerDTO, customer);
+        System.out.println(customer);
         Map<String,String> listErrors = new HashMap<>();
-
-
+        
         //set role
         Role role = new Role();
         role.setId((long) 3);
@@ -94,7 +93,7 @@ public class CustomerController {
         appUser.setRoles(roleSet);
 
         customer.setAppUser(appUser);
-
+        System.out.println(appUser);
         customerService.save(customer);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

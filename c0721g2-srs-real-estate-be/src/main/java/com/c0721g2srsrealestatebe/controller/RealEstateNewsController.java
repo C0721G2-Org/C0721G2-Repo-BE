@@ -24,6 +24,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.mail.MessagingException;
 import javax.validation.Valid;
 import java.io.UnsupportedEncodingException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -195,6 +197,7 @@ public class RealEstateNewsController {
                 })
         );
         news.setImageList(imageList);
+        news.setPostDate(LocalDateTime.now());
         RealEstateNews realEstateNews = realEstateNewsService.saveRealEstateNews(news);
         return new ResponseEntity<>(HttpStatus.OK);
     }
