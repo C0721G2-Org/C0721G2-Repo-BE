@@ -168,7 +168,7 @@ public class RealEstateNewsController {
             @RequestParam(defaultValue = "10000000000000000000000", value = "maxPrice") String maxPrice,
             @RequestParam(defaultValue = "0") int page
     ) {
-        Pageable pageable = PageRequest.of(page, 8, Sort.by("id"));
+        Pageable pageable = PageRequest.of(page, 8, Sort.by("post_date").descending());
         Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
                 findAllRealEstateNewsByFilter(address, kindOfNews,realEstateType, direction,minArea, maxArea, minPrice, maxPrice, pageable);
 
