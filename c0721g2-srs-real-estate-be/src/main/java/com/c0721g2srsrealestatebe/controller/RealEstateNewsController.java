@@ -96,7 +96,7 @@ public class RealEstateNewsController {
     }
 
     // 5.7.1 Xem danh sách nhu cầu - Tìm kiếm DoanhNV
-    @GetMapping("/search")
+    @GetMapping("/search-approval-list")
     public ResponseEntity<Page<RealEstateNews>> searchListPostApproval(@PageableDefault(value = 10) Pageable pageable,
                                                                        @RequestParam(defaultValue = "",value ="kind_of_news" ) String kindOfNews,
                                                                        @RequestParam(defaultValue = "", value = "direction_id") String directionId,
