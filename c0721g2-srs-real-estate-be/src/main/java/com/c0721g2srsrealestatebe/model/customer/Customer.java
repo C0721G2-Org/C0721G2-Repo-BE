@@ -41,7 +41,7 @@ public class Customer {
     private AppUser appUser;
     @OneToOne(targetEntity = Image.class, cascade = CascadeType.PERSIST)
     private Image image;
-    @OneToMany(mappedBy = "customer" )
+    @OneToMany(mappedBy = "customer")
     @JsonBackReference(value = "customers_real_estate_news")
     private List< RealEstateNews > realEstateNewsList;
 
