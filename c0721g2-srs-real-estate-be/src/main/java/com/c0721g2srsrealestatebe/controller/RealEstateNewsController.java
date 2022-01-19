@@ -83,7 +83,6 @@ public class RealEstateNewsController {
         }
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // 5.7.1 Xem danh sách nhu cầu - Hiển thị List DoanhNV
     @GetMapping(value = "/list")
@@ -132,16 +131,16 @@ public class RealEstateNewsController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    //5.7.1 DoanhNV
-//    @PostMapping("/approval-email")
-//    public ResponseEntity< Void > approvalSendMail(@RequestBody() ApprovalMail approvalMail) throws UnsupportedEncodingException, MessagingException {
-//        if (approvalMail == null) {
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//        } else {
-//            iApprovalMailService.sendApprovalMail(approvalMail.getCustomerEmail(), approvalMail.getStatus(), approvalMail.getReason());
-//            return new ResponseEntity<>(HttpStatus.OK);
-//        }
-//    }
+//    5.7.1 DoanhNV
+    @PostMapping("/approval-email")
+    public ResponseEntity< Void > approvalSendMail(@RequestBody() ApprovalMail approvalMail) throws UnsupportedEncodingException, MessagingException {
+        if (approvalMail == null) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        } else {
+            iApprovalMailService.sendApprovalMail(approvalMail.getCustomerEmail(), approvalMail.getStatus(), approvalMail.getReason());
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
+    }
 
     //    //5.7.1 DoanhNV
 //    @GetMapping("/{id}")

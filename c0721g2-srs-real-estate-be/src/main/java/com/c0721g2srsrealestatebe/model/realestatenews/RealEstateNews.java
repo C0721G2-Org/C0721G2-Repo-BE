@@ -6,11 +6,15 @@ import com.c0721g2srsrealestatebe.model.image.Image;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "real_estate_news")
+@SQLDelete(sql = "UPDATE customers SET deleted = true WHERE id=?")
+@Where(clause = "deleted=false")
 public class RealEstateNews {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "real_estate_news_seq")
@@ -42,6 +46,7 @@ public class RealEstateNews {
     private Customer customer;
     @OneToMany(targetEntity = Image.class,cascade = CascadeType.PERSIST)
     private List<Image> imageList;
+    private Boolean deleted = Boolean.FALSE;
 
     public RealEstateNews() {
     }
