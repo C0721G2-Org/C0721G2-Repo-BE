@@ -15,13 +15,11 @@ public class CustomerDTO implements Validator {
 
     @NotBlank(message = "you have to input your name")
 //    @Size(min = 2, message = "Tên ít nhất phải 2 ký tự")
-    @Pattern(regexp = "^([^0-9]{2,})$", message = "Tên không được có số và từ 2 kí tự trở lên")
+    @Pattern(regexp = "^([^0-9]{2,100})$", message = "Tên không được có số và từ 2 kí tự trở lên")
     private String name;
 
 
     @NotNull(message = "Không được bỏ trống")
-//    @Pattern(regexp = "^(?:19\\d{2}|20\\d{2})[-/.](?:0[1-9]|1[012])[-/.](?:0[1-9]|[12][0-9]|3[01])$",
-//            message = "Ngày sinh phải đúng định dạng: dd/MM/yyyy.")
     private LocalDate dateOfBirth;
 
 
@@ -36,7 +34,7 @@ public class CustomerDTO implements Validator {
 
 
     @NotBlank(message = "Số điện thoại không được để trống.")
-    @Pattern(regexp = "^(0[0-9\\s.-]{9,13})$",
+    @Pattern(regexp = "^((\\+91-?)|0)?[0-9]{9,12}$",
             message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
     private String phoneNumber;
 
