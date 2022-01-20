@@ -40,10 +40,12 @@ public class EmployeeServiceImpl implements IEmployeeService {
     @Override
     public void deleteById(String id) {
         this.iEmployeeRepository.deleteEmployeeByID(id);
+        this.iEmployeeRepository.deleteById(id);
     }
 
     @Override
     public Optional<Employee> findByIdOp(String id) {
+
         return this.iEmployeeRepository.findById(id);
     }
 

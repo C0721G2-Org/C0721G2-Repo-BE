@@ -22,7 +22,7 @@ public class EmployeeEditDTO {
     private String phoneNumber;
 
     @NotBlank(message = "Không được bỏ trống địa chỉ")
-    @Size(min = 6, max = 255, message = "Địa chỉ phải từ 6 đến 255 ký tự")
+    @Size(min = 1, max = 255, message = "Địa chỉ phải từ 6 đến 255 ký tự")
     private String address;
 
     @NotNull(message = "Không được để trống ngày sinh")
