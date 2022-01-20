@@ -12,7 +12,6 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity(name = "employees")
-@SQLDelete(sql = "UPDATE employees SET deleted = true WHERE id=?")
 @Where(clause = "deleted=false")
 public class Employee {
     @Id

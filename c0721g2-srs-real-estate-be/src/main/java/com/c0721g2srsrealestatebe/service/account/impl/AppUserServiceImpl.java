@@ -144,7 +144,10 @@ public class AppUserServiceImpl implements IAppUserService {
 
     @Override
     public void updatePassword(AppUserDTO appUserDTO) {
-        appUserRepository.saveNewPassword(appUserDTO.getPassword(), appUserDTO.getUsernameChange());
+        AppUser appUser = this.findAppUserByUserName(appUserDTO.getUsernameChange());
+        appUser.setPassword(appUserDTO.getPassword());
+        appUserRepository.save(appUser);
+//        appUserRepository.saveNewPassword(appUserDTO.getPassword(), appUserDTO.getUsernameChange());
     }
 
     @Override
