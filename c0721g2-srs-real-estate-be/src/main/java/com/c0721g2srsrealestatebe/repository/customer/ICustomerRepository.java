@@ -48,7 +48,8 @@ public interface ICustomerRepository extends JpaRepository<Customer, String> {
 
     @Modifying
     @Transactional
-    @Query(value = "update customers a set a.deleted= true where a.id = :id", nativeQuery = true)
+    @Query(value = "update customers as a join real_estate_news as b \n" +
+            "on (a.id = b.customer_id) set a.deleted= 1, b.deleted = 1  where a.id = :id", nativeQuery = true)
     void updateCustomer(@Param("id") String id);
 
 
