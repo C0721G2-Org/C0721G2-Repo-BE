@@ -57,7 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 //phan quyen
                 .and().authorizeRequests().antMatchers( "/api/customers/edit-customer/**",
-                "/api/customers/KH-**", "/api/real-estate-new/**", "/api/real-estate-related/**")
+                "/api/customers/KH-**","/api/public/password", "/api/real-estate-new/**", "/api/real-estate-related/**")
                 .hasAnyRole("CUSTOMER", "EMPLOYEE", "ADMIN")
                 .and().authorizeRequests().antMatchers("/api/customers/**")
                 .hasAnyRole("EMPLOYEE", "ADMIN")

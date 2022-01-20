@@ -39,7 +39,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void deleteById(String id) {
-        this.iEmployeeRepository.deleteById(id);
+        this.iEmployeeRepository.deleteEmployeeByID(id);
     }
 
     @Override

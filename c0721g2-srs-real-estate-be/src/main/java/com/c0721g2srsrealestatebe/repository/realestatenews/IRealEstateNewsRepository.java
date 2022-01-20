@@ -21,16 +21,21 @@ public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews
             "  where customer_id like concat('%',trim(:customerId),'%') \n" +
             "  and title like concat('%',trim(:title),'%')\n" +
             "  and kind_of_news like concat('%',:kindOfNew,'%')\n" +
-            "  and real_estate_type_id like concat('%',:realNewType,'%') ",
+            "  and real_estate_type_id like concat('%',:realNewType,'%') " +
+            "  and approval like concat('%',:approval,'%') " +
+            "  and deleted = false ",
             nativeQuery = true, countQuery = " select count(*) from real_estate_news " +
             " where customer_id like concat('%',trim(:customerId),'%') " +
             " and title like concat('%',trim(:title),'%') " +
             " and kind_of_news like concat('%',:kindOfNew,'%') " +
-            " and real_estate_type_id like concat('%',:realNewType,'%')")
+            " and real_estate_type_id like concat('%',:realNewType,'%')" +
+            " and approval like concat('%',:approval,'%') " +
+            " and deleted = false ")
     Page< RealEstateNews > findAllNewsBySearchField(@Param("customerId") String customerId,
                                                     @Param("title") String title,
                                                     @Param("kindOfNew") String typeOfNew,
                                                     @Param("realNewType") String realNewType,
+                                                    @Param("approval") String approval,
                                                     @Param("page") Pageable pageable);
 
     // 5.6.3 show Real estate new detail

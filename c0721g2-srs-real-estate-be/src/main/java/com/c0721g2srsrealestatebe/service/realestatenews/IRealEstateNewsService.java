@@ -11,8 +11,9 @@ public interface IRealEstateNewsService {
     // 5.5.4  List history post
     Page<RealEstateNews> findAllNewsBySearchField(String customerId,
                                                   String title,
-                                                  String typeOfNew,
+                                                  String kindOfNew,
                                                   String realNewType,
+                                                  String approval,
                                                   Pageable pageable);
 
 
