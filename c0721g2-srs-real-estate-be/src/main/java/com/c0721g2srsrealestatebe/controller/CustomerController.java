@@ -49,7 +49,6 @@ public class CustomerController {
         return new ResponseEntity<>(customer.get(), HttpStatus.OK);
     }
 
-
     // TungLe thêm mới khách hàng
     @PostMapping(value = "/create")
     public ResponseEntity<Object> saveCustomer(@RequestBody @Valid CustomerDTO customerDTO, BindingResult bindingResult) {
