@@ -87,8 +87,8 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
 
     // 5.6.1 KhaiPN
     @Override
-    public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minPrice, String maxPrice, Pageable pageable) {
-        return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, direction,  minPrice,  maxPrice, pageable);
+    public Page<RealEstateNews> findAllRealEstateNewsByFilter(String address, String kindOfNews, String realEstateType, String direction, String minArea, String maxArea, String minPrice, String maxPrice, Pageable pageable) {
+        return iRealEstateNewsRepository.findAllRealEstateNewsByFilter(address,kindOfNews, realEstateType, direction, minArea, maxArea, minPrice,  maxPrice, pageable);
     }
 
     @Override

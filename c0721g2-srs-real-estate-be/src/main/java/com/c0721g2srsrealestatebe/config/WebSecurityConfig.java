@@ -51,12 +51,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()
                 // Các trang không yêu cầu login
-                .antMatchers("/api/public/**", "/api/real-estate-new/search",
+                .antMatchers("/api/public/**", "/api/real-estate-new/search","/api/customers/create",
                         "/api/real-estate-new/detail/**","/api/real-estate-new/direction","/api/real-estate-new/realEstateType",
                         "/**/*.js", "/**/*.css", "/**/*.jpg", "/**/*.png")
                 .permitAll()
                 //phan quyen
-                .and().authorizeRequests().antMatchers("/api/customers/create", "/api/customers/edit-customer/**",
+                .and().authorizeRequests().antMatchers( "/api/customers/edit-customer/**",
                 "/api/customers/KH-**", "/api/real-estate-new/**", "/api/real-estate-related/**")
                 .hasAnyRole("CUSTOMER", "EMPLOYEE", "ADMIN")
                 .and().authorizeRequests().antMatchers("/api/customers/**")

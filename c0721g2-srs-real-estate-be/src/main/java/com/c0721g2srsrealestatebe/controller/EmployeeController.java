@@ -91,7 +91,7 @@ public class EmployeeController {
     ) {
         Page<Employee> employeeListSearch = iEmployeeService.findAllEmployeeSearch(pageable, name, email, position_id);
         if (employeeListSearch.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(employeeListSearch, HttpStatus.OK);
     }
@@ -146,9 +146,11 @@ public class EmployeeController {
     public ResponseEntity<Object> createEmployee(@RequestBody @Valid EmployeeDTO employeeDTO,
                                                  BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
+            System.out.println("Test error");
             return new ResponseEntity<>(bindingResult.getFieldErrors(),
                     HttpStatus.NOT_ACCEPTABLE);
         }
+
         //kiểm tra email có bị trùng lặp hay không
         Map<String, String> listErrors = new HashMap<>();
         if (appUserService.existsByUserName(employeeDTO.getEmail())) {
@@ -186,10 +188,10 @@ public class EmployeeController {
         appUser.setEnabled(true);
         // appUser.setPassword("abc123456");
         appUser.setRoles(roles);
-        appUser.setEnabled(true);
 
         employee.setAppUser(appUser);
         this.iEmployeeService.saveEmployee(employee);
+        System.out.println("Kiểm tra crreate: " + employee.toString());
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -202,14 +204,14 @@ public class EmployeeController {
             return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.NOT_ACCEPTABLE);
 
         }
+
 //        //kiểm tra email có bị trùng lặp hay không
 //        Map<String, String> listErrors = new HashMap<>();
 //        if (appUserService.existsByUserName(employeeDTO.getEmail())) {
-//
+//            System.out.println("Test");
 //            listErrors.put("errorEmail", "Email đã có người sử dụng");
 //            return ResponseEntity.badRequest().body(listErrors);
 //        }
-
         Employee employee = new Employee();
         BeanUtils.copyProperties(employeeDTO, employee);
 
@@ -234,6 +236,7 @@ public class EmployeeController {
 
         AppUser appUser = appUserService.getAppUserByEmployee(employee.getId());
         appUser.setRoles(roles);
+
         //System.out.println("Kiểm tra: " + appUser.getRoles());
         employee.setAppUser(appUser);
 //        appUser.setRoles(roles);

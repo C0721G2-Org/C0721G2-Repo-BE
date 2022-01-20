@@ -229,41 +229,26 @@ public class SecurityController {
     public ResponseEntity<Object> update(@Valid @RequestBody AppUserDTO appUserDTO,
                                          BindingResult bindingResult) {
         try {
-            AppUser appUser1 = iAppUserService.findAppUserByUserName(appUserDTO.getUsername());
+            AppUser appUser1 = iAppUserService.findAppUserByUserName(appUserDTO.getUsernameChange());
+
             new AppUserDTO().validate(appUserDTO, bindingResult);
             if (bindingResult.hasFieldErrors("password")) {
                 System.out.println("mật nhập không đúng form");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-            System.out.println(appUserDTO.toString());
             if (bCryptPasswordEncoder.matches(
-                    appUserDTO.getPassword(),appUser1.getPassword())
+                    appUserDTO.getPassword(), appUser1.getPassword())
                     && !appUserDTO.getNewPassword().equals(appUserDTO.getPassword())
                     && appUserDTO.getNewPassword().equals(appUserDTO.getReNewPassword())) {
-
                 appUserDTO.setPassword(bCryptPasswordEncoder.encode(appUserDTO.getNewPassword()));
-                System.out.println("chưa lưu");
-                System.out.println(appUserDTO.toString());
                 iAppUserService.updatePassword(appUserDTO);
-                System.out.println("đã lưu");
                 return new ResponseEntity<>(HttpStatus.OK);
-            } else {
-                System.out.println("nhập sai password");
+            } else{
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.OK);
-        }
-    }
-
-    @PostMapping("/save")
-    public ResponseEntity<AppUser> update(@RequestBody AppUserDTO password) {
-        try {
-            iAppUserService.updatePassword(password);
-            return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
+
 }

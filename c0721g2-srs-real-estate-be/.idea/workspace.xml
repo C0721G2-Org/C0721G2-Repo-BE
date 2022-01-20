@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b1c3e82-5f4c-4964-86fa-d51edcfd002b" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main' into ThinhTP&#10;&#10;# Conflicts:&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/resourceHashesCache.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/file-system.probe&#10;#&#9;c0721g2-srs-real-estate-be/build/resources/main/application.properties&#10;#&#9;c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/resources/application.properties">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/changePassword/UpdatePassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/changePassword/endcodePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/RealEstateNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/AppUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RealEstateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/dto/RealEstateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/model/realestatenews/RealEstateNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/repository/realestatenews/IRealEstateNewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/IAppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/IRealEstateNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/c0721g2srsrealestatebe/service/realestatenews/impl/RealEstateNewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database_vip.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database_vip.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="23tei6JbTzdu2ZG4pZRcfEON9Vb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="C0721g2SrsRealEstateBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="c0721g2-srs-real-estate-be.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.c0721g2srsrealestatebe.C0721g2SrsRealEstateBeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b1c3e82-5f4c-4964-86fa-d51edcfd002b" name="Default Changelist" comment="" />
+      <created>1642557934933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642557934933</updated>
+      <workItem from="1642557936483" duration="472000" />
+      <workItem from="1642558843466" duration="361000" />
+      <workItem from="1642583341190" duration="7200000" />
+      <workItem from="1642641540383" duration="419000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/main' into ThinhTP&#10;&#10;# Conflicts:&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/resourceHashesCache.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/file-system.probe&#10;#&#9;c0721g2-srs-real-estate-be/build/resources/main/application.properties&#10;#&#9;c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/resources/application.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main' into ThinhTP&#10;&#10;# Conflicts:&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/executionHistory/executionHistory.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/fileHashes.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/7.3.2/fileHashes/resourceHashesCache.bin&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;c0721g2-srs-real-estate-be/.gradle/file-system.probe&#10;#&#9;c0721g2-srs-real-estate-be/build/resources/main/application.properties&#10;#&#9;c0721g2-srs-real-estate-be/build/tmp/compileJava/previous-compilation-data.bin&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/controller/EmployeeController.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/repository/account/IAppUserRepository.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/java/com/c0721g2srsrealestatebe/service/account/impl/AppUserServiceImpl.java&#10;#&#9;c0721g2-srs-real-estate-be/src/main/resources/application.properties" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="584" key="GridCell.Tab.0.bottom" timestamp="1642607795645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795645" />
+    <state width="1877" height="584" key="GridCell.Tab.0.center" timestamp="1642607795644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795644" />
+    <state width="1877" height="584" key="GridCell.Tab.0.left" timestamp="1642607795644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795644" />
+    <state width="1877" height="584" key="GridCell.Tab.0.right" timestamp="1642607795644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795644" />
+    <state width="1877" height="584" key="GridCell.Tab.1.bottom" timestamp="1642607795645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795645" />
+    <state width="1877" height="584" key="GridCell.Tab.1.center" timestamp="1642607795645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795645" />
+    <state width="1877" height="584" key="GridCell.Tab.1.left" timestamp="1642607795645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795645" />
+    <state width="1877" height="584" key="GridCell.Tab.1.right" timestamp="1642607795645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="584" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642607795645" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1642589143427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1642589143427" />
+  </component>
+</project>

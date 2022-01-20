@@ -1,6 +1,7 @@
 package com.c0721g2srsrealestatebe.repository.account;
 
 import com.c0721g2srsrealestatebe.model.account.AppUser;
+import com.c0721g2srsrealestatebe.model.employee.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -62,5 +63,4 @@ public interface IAppUserRepository extends JpaRepository<AppUser, UUID> {
     @Query(value = "SELECT * FROM app_users a " +
             " JOIN employees e ON a.id = e.app_user_id  WHERE e.id= ?1", nativeQuery = true)
     AppUser getAppUserByEmployee(String id);
-
 }
