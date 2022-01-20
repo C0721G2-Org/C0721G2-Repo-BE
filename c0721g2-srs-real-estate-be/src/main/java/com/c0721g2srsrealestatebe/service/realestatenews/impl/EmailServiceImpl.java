@@ -25,11 +25,11 @@ public class EmailServiceImpl implements EmailService {
         helper.setFrom("plthienbkdn@gmail.com", "Bất động sản Hưng Thịnh Group");
         helper.setTo(customerEmail);
         helper.setSubject("Một khách hàng quan tâm tới bài đăng của bạn");
-        mailContent = "Chào bạn \n" +
-                "Khách hàng" + name + " số điện thoại " + phone + " đang quan tâm đến bài đăng của bạn tên trang \n" +
-                "hungthinhgroup.com.\n" +
-                "Thanks and Regards\n" +
-                "<p>------------------------------------------</p>" +
+        mailContent = "<p> Chào bạn!</p>\n" +
+                "<p>Khách hàng " + name + " số điện thoại " + phone + " đang quan tâm đến bài đăng của bạn tên trang \n" +
+                "hungthinhgroup.com.</p>\n" +
+                "<p>Thanks and Regards</p>\n" +
+                "<hr>" +
                 "<p>Bất động sản Hưng Thịnh Group</p>" +
                 "<p>Địa chỉ: Tòa nhà Hưng Thịnh Group, số 99 đường Lê Duẩn</p>" +
                 "<p>Email: plthienbkdn@gmail.com</p>" +

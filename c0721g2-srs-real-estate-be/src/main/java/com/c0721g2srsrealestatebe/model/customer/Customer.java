@@ -44,7 +44,6 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     @JsonBackReference(value = "customers_real_estate_news")
     private List< RealEstateNews > realEstateNewsList;
-
     private Boolean deleted = Boolean.FALSE;
 
     public Customer() {

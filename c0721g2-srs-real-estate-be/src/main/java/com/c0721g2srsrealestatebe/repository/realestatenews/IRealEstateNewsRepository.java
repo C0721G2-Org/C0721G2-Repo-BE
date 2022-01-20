@@ -16,21 +16,27 @@ import java.util.Optional;
 public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews, String > {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
+    //Repository
     @Query(value = " select * \n" +
             "  from real_estate_news\n" +
             "  where customer_id like concat('%',trim(:customerId),'%') \n" +
             "  and title like concat('%',trim(:title),'%')\n" +
             "  and kind_of_news like concat('%',:kindOfNew,'%')\n" +
-            "  and real_estate_type_id like concat('%',:realNewType,'%') ",
+            "  and real_estate_type_id like concat('%',:realNewType,'%') " +
+            "  and approval like concat('%',:approval,'%') " +
+            "  and deleted = false ",
             nativeQuery = true, countQuery = " select count(*) from real_estate_news " +
             " where customer_id like concat('%',trim(:customerId),'%') " +
             " and title like concat('%',trim(:title),'%') " +
             " and kind_of_news like concat('%',:kindOfNew,'%') " +
-            " and real_estate_type_id like concat('%',:realNewType,'%')")
+            " and real_estate_type_id like concat('%',:realNewType,'%')" +
+            " and approval like concat('%',:approval,'%') " +
+            " and deleted = false ")
     Page< RealEstateNews > findAllNewsBySearchField(@Param("customerId") String customerId,
                                                     @Param("title") String title,
                                                     @Param("kindOfNew") String typeOfNew,
                                                     @Param("realNewType") String realNewType,
+                                                    @Param("approval") String approval,
                                                     @Param("page") Pageable pageable);
 
     // 5.6.3 show Real estate new detail
@@ -64,7 +70,7 @@ public interface IRealEstateNewsRepository extends JpaRepository< RealEstateNews
             "where kind_of_news like :kind_of_news " +
             " and direction_id like :direction_id " +
             " and real_estate_type_id like :real_estate_type_id " +
-            "and approval =1 "
+            " and approval =1 "
             , nativeQuery = true )
     Page<RealEstateNews> searchRealEstateNewsByKindOfNewsAndRealEstateTypeAndDirection(Pageable pageable,@Param("kind_of_news") String kindOfNews,
                                                                                        @Param("direction_id") String directionId,
