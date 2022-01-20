@@ -120,7 +120,7 @@ public class AppUserServiceImpl implements IAppUserService {
         helper.setSubject(subject);
         mailContent = "<p style='color:red;font-size: 20px'>Xin chào " + userName + " ,<p>" + "<p style='font-size: 16px'> Nhấn vào link sau để thay đổi mật khẩu của bạn:</p>" +
                 "<h3><a href='" + confirmUrl + "'>Link Xác thực( nhấn vào đây)!</a></h3>" +
-                "<p>-----------------------------------------------------------</p>" +
+                "<hr>" +
                 "<div style=\"text-size-adjust: none !important; -ms-text-size-adjust: none !important; -webkit-text-size-adjust: none !important;\"><span style=\"margin: 0px; padding: 0px; line-height: 100%; display: block; font-family: Helvetica, Arial, sans-serif;\"> </span><span style=\"margin:0; padding:0; font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height:20px; color: #212121; display:block;\">\n" +
                 "        <span style=\"font-weight: bold; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; display: inline;\">Phan Lê Thanh Hiền</span><span style=\"display: inline; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif;\"> / </span><span style=\"color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; display: inline;\">Chuyên viên</span><span style=\"display: inline; font-family: Helvetica, Arial, sans-serif;\"><br></span><a href=\"mailto:plthienbkdn@gmail.com\"\n" +
                 "           style=\"color: rgb(71, 124, 204); text-decoration: none; display: inline;\">plthienbkdn@gmail.com</a><span\n" +

@@ -5,6 +5,7 @@ import com.c0721g2srsrealestatebe.model.account.AppUser;
 import com.c0721g2srsrealestatebe.model.account.Role;
 import com.c0721g2srsrealestatebe.model.customer.Customer;
 import com.c0721g2srsrealestatebe.service.account.impl.AppUserServiceImpl;
+import com.c0721g2srsrealestatebe.service.account.impl.RoleServiceImpl;
 import com.c0721g2srsrealestatebe.service.customer.impl.CustomerServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeansException;
@@ -33,14 +34,18 @@ import java.util.*;
 public class CustomerController {
     @Autowired
     CustomerServiceImpl customerService;
+
     @Autowired
     AppUserServiceImpl appUserService;
+
     @Autowired
     BCryptPasswordEncoder bCryptPasswordEncoder;
 
+    @Autowired
+    RoleServiceImpl roleService;
 
     // TungLe detail
-    @GetMapping("/detail/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Customer> findCustomerById(@PathVariable String id) {
         Optional<Customer> customer = customerService.findById(id);
         if (!customer.isPresent()) {
@@ -62,7 +67,7 @@ public class CustomerController {
         Map<String,String> listErrors = new HashMap<>();
         
         //set role
-        Role role = new Role((long)3,"ROLE_CUSTOMER");
+        Role role = roleService.getRoleById((long)3);
         Set<Role> roleSet = new HashSet<>();
         roleSet.add(role);
 

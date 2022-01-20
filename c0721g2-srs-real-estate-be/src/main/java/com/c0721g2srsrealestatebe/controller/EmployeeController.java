@@ -199,8 +199,9 @@ public class EmployeeController {
     @PatchMapping(value = "/edit/{id}")
     public ResponseEntity<Object> updateEmployee(@RequestBody @Valid EmployeeEditDTO employeeDTO,
                                                  BindingResult bindingResult) {
-
+        System.out.println("test");
         if (bindingResult.hasErrors()) {
+            System.out.println(bindingResult.toString());
             return new ResponseEntity<>(bindingResult.getFieldError(), HttpStatus.NOT_ACCEPTABLE);
 
         }
