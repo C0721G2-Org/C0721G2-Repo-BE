@@ -158,6 +158,7 @@ public class AppUserServiceImpl implements IAppUserService {
 
     @Override
     public AppUser getAppUserByEmployee(String id) {
-        return appUserRepository.findByEmployee(id);
+        return appUserRepository.getAppUserByEmployee(id);
     }
+
 }
