@@ -22,10 +22,14 @@ public class RealEstateNewsServiceImpl implements IRealEstateNewsService {
     // 5.5.4  List history post
 
     @Override
-    public Page< RealEstateNews > findAllNewsBySearchField
-            (String customerId, String title, String typeOfNew, String realNewType, Pageable pageable) {
+    public Page< RealEstateNews > findAllNewsBySearchField(String customerId,
+                                                           String title,
+                                                           String kindOfNew,
+                                                           String realNewType,
+                                                           String approval,
+                                                           Pageable pageable) {
         return iRealEstateNewsRepository.findAllNewsBySearchField
-                (customerId, title, typeOfNew, typeOfNew, pageable);
+                (customerId, title, kindOfNew, realNewType, approval, pageable);
     }
 
     // 5.6.3 show Real estate new detail

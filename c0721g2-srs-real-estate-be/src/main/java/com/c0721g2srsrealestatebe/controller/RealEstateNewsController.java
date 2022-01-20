@@ -48,15 +48,16 @@ public class RealEstateNewsController {
     // TaiVD get history post - please dont delete my task
     // 5.5.4  List history post
     @GetMapping("/history-post")
-    public ResponseEntity<Page<RealEstateNews>> showHistoryPostNews(
+    public ResponseEntity< Page< RealEstateNews > > showHistoryPostNews(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "", value = "customerId") String customerId,
             @RequestParam(defaultValue = "", value = "title") String title,
             @RequestParam(defaultValue = "", value = "kindOfNew") String kindOfNew,
-            @RequestParam(defaultValue = "", value = "realNewType") String realNewType) {
-        Pageable pageable = PageRequest.of(page, 5, Sort.by("id"));
-        Page<RealEstateNews> realEstateNewsPage = realEstateNewsService.
-                findAllNewsBySearchField(customerId, title, kindOfNew, realNewType, pageable);
+            @RequestParam(defaultValue = "", value = "realNewType") String realNewType,
+            @RequestParam(defaultValue = "", value = "approval") String approval) {
+        Pageable pageable = PageRequest.of(page, 10, Sort.by("post_date"));
+        Page< RealEstateNews > realEstateNewsPage = realEstateNewsService.
+                findAllNewsBySearchField(customerId, title, kindOfNew, realNewType, approval, pageable);
 
         if (realEstateNewsPage.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
