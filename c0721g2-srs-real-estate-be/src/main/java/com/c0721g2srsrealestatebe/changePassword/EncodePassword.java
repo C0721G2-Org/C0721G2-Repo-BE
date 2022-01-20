@@ -6,11 +6,10 @@
 //import org.springframework.security.crypto.password.PasswordEncoder;
 //
 //@Configuration
-//public class endcodePassword {
+//public class EncodePassword {
+//
 //    @Bean
 //    public PasswordEncoder passwordEncoder() {
 //        return new BCryptPasswordEncoder();
 //    }
-//
-//
 //}

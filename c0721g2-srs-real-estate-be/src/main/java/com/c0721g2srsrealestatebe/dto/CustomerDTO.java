@@ -36,8 +36,8 @@ public class CustomerDTO implements Validator {
 
 
     @NotBlank(message = "Số điện thoại không được để trống.")
-    @Pattern(regexp = "^(0[0-9\\s.-]{9,13})$",
-            message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
+//    @Pattern(regexp = "^(0[0-9\\s.-]{9,13})$",
+//            message = "Số điện thoại phải đúng định dạng: 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx")
     private String phoneNumber;
 
     @NotBlank(message = "Email không được để trống.")
